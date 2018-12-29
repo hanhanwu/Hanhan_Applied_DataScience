@@ -14,7 +14,7 @@ Applied data science recommendations and tutorials
 * Check correlation between every 2 continuous features
 * 2 way table or Sracked Column Chart - for 2 variable features, check count, percentage of group by the 2 features
 * Check chi-square test between 2 categorical features (similar to correlation for continuous features)
-  
+  * probability 0 means the 2 features are dependent; 1 means independent; a value x in [0,1] range means the dependence between the 2 features is at `(1-x)*100%`
 
 #### Reference
 * [Data Exploration Guidance][1]

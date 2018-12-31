@@ -40,8 +40,37 @@ Applied data science recommendations and tutorials
 * Impute with mean/median/mode
   * General Imputation - Replace missing values with selected value in the whole column
   * Similar Case Imputation - For different group of values, impute with the selected value from that group
+* Impute with special values, such as "MISSING", -1, etc.
 * KNN Imputation
 * Model prediction to compare whether imputing missing values will help
+
+#### Deal With Outliers
+* To check whether there is ourliers, I normally check distribution, even just by using percentile. And only deal with a very small percentage of outliers.
+  * It's recommended that to use the model run on raw features without any preprocessing, this is the baseline result. Then run the same model with preprocessed data, to compare. So that you will know how much does preprocessing affect your prediction in each project.
+* Sometimes I also check boxplot, but the data I am dealing with tend to have large amount of outliers, and imputing data above & below 1.5*IQR will reduce the prediction power too much.
+* <b>Better to know what caused the outliers</b>, this may help you decide how to deal with them
+* To deal with ourliers, I normally use:
+  * Simply replace the outliers with NULL
+  * Replace outliers with median/mean/mode, or a special value
+  * Binning the feature
+  * Just leave it there
+  * Anoter suggest method is to build seperate models for normal data and outliers when there are large amount of outliers which are not caused by errors. In industry, you may not be allowed to build seperate models but it's still a method to consider.
+  
+#### Feature Engineering
+* Scaling the features
+  * Sometimes, you want all the features to be normalized into the same scale, this is especially helpful in parametric algorithms.
+  * [sklearn scaling methods on data with outliers][5]
+    * PowerTransformer is better in dealing with outliers
+    * Sometimes, you just want to scale the values between 0 and 1 so MaxMinScaler is still popular
+* Transform nonlinear relationship to linear relationship, this is not only easier to comprehend, but also required for parametric algorithms
+  * scatter plot to check the relationship
+  * Such as `log`
+* Convert skewed distribution to symmetric distribution, this is also prefered for parametric algorithms
+  * `log` to deal with righ skewness
+  * squre root, cube root
+  * binning
+* derived features
+* one-hot features
 
 #### Reference
 * [Data Exploration Guidance][1]
@@ -51,3 +80,4 @@ Applied data science recommendations and tutorials
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif
 [4]: https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2
+[5]:https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html

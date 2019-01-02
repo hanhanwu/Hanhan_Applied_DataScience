@@ -68,6 +68,7 @@ Applied data science recommendations and tutorials
 * Convert skewed distribution to symmetric distribution, this is also prefered for parametric algorithms
   * `log` to deal with righ skewness
   * squre root, cube root
+  * `exp` to deal with left skewness
   * binning
 * derived features
 * one-hot features

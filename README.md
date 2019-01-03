@@ -75,6 +75,11 @@ Applied data science recommendations and tutorials
 
 #### Reference
 * [Data Exploration Guidance][1]
+* [Impact of Data Size on Model Performance][6]
+  * It's using deep learning, but can inspire on multiple other models, especially those using stochastic methods
+  * Use bootstrap methods + multiple seeds to do multiple run, cross validatio are suggested. Because for stochastic methods, different seed could lead to different direction and optimal results. It could also help dealing with the high variance issue in a model.
+  * "As such, we refer to neural network models as having a low bias and a high variance. They have a low bias because the approach makes few assumptions about the mathematical functional form of the mapping function. They have a high variance because they are sensitive to the specific examples used to train the model."
+  * Larger training set tend to lead to better prediction results, smaller test case may not always be the case. So 7:3 or 8:2 train-test ratio is always a good start.
 
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
@@ -82,3 +87,4 @@ Applied data science recommendations and tutorials
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif
 [4]: https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2
 [5]:https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html
+[6]:https://machinelearningmastery.com/impact-of-dataset-size-on-deep-learning-model-skill-and-performance-estimates/

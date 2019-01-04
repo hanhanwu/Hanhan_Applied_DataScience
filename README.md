@@ -88,6 +88,8 @@ Applied data science recommendations and tutorials
   * [TPOT Params for Estimators][8]
     * 10-fold of cross validation, 5 CV iterations by default
     * TPOT will evaluate `population_size + generations × offspring_size` pipelines in total. So when the dataset is large, it can be slow.
+  * [All the classifiers that TPOT supports][9]
+  * [All the regressors that TPOT supports][10]
   * Different TPOT runs may result in different pipeline recommendations. TPOT's optimization algorithm is stochastic in nature, which means that it uses randomness (in part) to search the possible pipeline space.
   * <b>The suggestion here is:</b> Run TPOT multiple times with different random_state, narrow down to fewer models and do further evaluation (see below spot check pipeline). If the data size is large, try to reduce `population_size + generations × offspring_size`, `cv` and use `subsample` 
 
@@ -100,3 +102,5 @@ Applied data science recommendations and tutorials
 [6]:https://machinelearningmastery.com/impact-of-dataset-size-on-deep-learning-model-skill-and-performance-estimates/
 [7]:https://github.com/EpistasisLab/tpot
 [8]:https://epistasislab.github.io/tpot/api/
+[9]:https://github.com/EpistasisLab/tpot/blob/master/tpot/config/classifier.py
+[10]:https://github.com/EpistasisLab/tpot/blob/master/tpot/config/regressor.py

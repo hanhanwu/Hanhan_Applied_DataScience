@@ -3,6 +3,7 @@ Applied data science recommendations and tutorials
 
 # Applied Recommendations
 ## Data Exploration
+[My Code][11]
 ### Univariate Analysis
 * Check distribution for continuous, categorical variables
   * For continuous variables, in many cases, I just check percentile at min, 1%, 5%, 25%, 50%, 75%, 95%, 99% and max. This is easier to implement and even more straightforward to find the outliers.
@@ -82,6 +83,7 @@ Applied data science recommendations and tutorials
   * Larger training set tend to lead to better prediction results, smaller test case may not always be the case. So 7:3 or 8:2 train-test ratio is always a good start.
   
 ## Models
+[My code][12]
 ### Which Model to Choose
 * TPOT Automatic Machine Learning
   * It's a very nice tool that helps you find the model with optimized param, and also export the python code for using the selected model [TPOT Examples][7]
@@ -92,6 +94,10 @@ Applied data science recommendations and tutorials
   * [All the regressors that TPOT supports][10]
   * Different TPOT runs may result in different pipeline recommendations. TPOT's optimization algorithm is stochastic in nature, which means that it uses randomness (in part) to search the possible pipeline space.
   * <b>The suggestion here is:</b> Run TPOT multiple times with different random_state, narrow down to fewer models and do further evaluation (see below spot check pipeline). If the data size is large, try to reduce `population_size + generations × offspring_size`, `cv` and use `subsample` 
+  * [Sample exported TPOT python file][13]
+* Spot-check Model Evaluation
+  * After you have a few list of models, you want to quickly check which one performs better. What I'm doing here is, for each model, use all the training data but with stratified kfold cross validation. Finally it evaluates the average score and the score variance.
+    * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
 
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
@@ -104,3 +110,6 @@ Applied data science recommendations and tutorials
 [8]:https://epistasislab.github.io/tpot/api/
 [9]:https://github.com/EpistasisLab/tpot/blob/master/tpot/config/classifier.py
 [10]:https://github.com/EpistasisLab/tpot/blob/master/tpot/config/regressor.py
+[11]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/data_exploration.ipynb
+[12]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/model_selection.ipynb
+[13]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/tpot_bigmart_pipeline0.py

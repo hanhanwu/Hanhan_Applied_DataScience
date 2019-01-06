@@ -100,6 +100,20 @@ Applied data science recommendations and tutorials
     * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
 
 
+## Tools
+### R Tools
+#### Data Manipulation Tools
+* `dplyr` - majorly to do query related operation, such as "select", "group by", "filter", "arrage", "mutate", etc.
+* `data.table` - fast, even more convenient than data.frame, can also do queries inside
+* `ggplot2`
+* `reshape2` - reshape the data, such as "melt", "dcast", "acast" (reversed melt)
+* `readr` - read files faster, different functions supports different files
+* `tidyr` - makes the data "tidy". "gather" is similar to above "melt" in `reshape2`; "seperate", "sperate_d" could help seperate 1 column into multiple columns and vice versa, etc.
+* `lubridate` - deal witb datetime
+
+#### reference
+* [7 R data manipulation tools][14]
+
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif
@@ -113,3 +127,4 @@ Applied data science recommendations and tutorials
 [11]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/data_exploration.ipynb
 [12]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/model_selection.ipynb
 [13]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/tpot_bigmart_pipeline0.py
+[14]: https://www.analyticsvidhya.com/blog/2015/12/faster-data-manipulation-7-packages/

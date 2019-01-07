@@ -121,9 +121,19 @@ Applied data science recommendations and tutorials
 * `readr` - read files faster, different functions supports different files
 * `tidyr` - makes the data "tidy". "gather" is similar to above "melt" in `reshape2`; "seperate", "sperate_d" could help seperate 1 column into multiple columns and vice versa, etc.
 * `lubridate` - deal witb datetime
+* [My code of R 5 packages for dealing with missing values][17]
+  * `MICE` - it assumes that the missing data are Missing at Random (MAR), which means that the probability that a value is missing depends only on observed value and can be predicted using them.
+  * `Amelia` - It assumpes that All variables in a data set have Multivariate Normal Distribution (MVN). It uses means and covariances to summarize data. 
+  * `missForest` - It builds a random forest model for each variable. Then it uses the model to predict missing values in the variable with the help of observed values.
+  * `Hmisc` - It automatically recognizes the variables types and uses bootstrap sample and predictive mean matching to impute missing values. <b>You don’t need to separate or treat categorical variable</b>. It assumes linearity in the variables being predicted.
+  * `mi` - It allows graphical diagnostics of imputation models and convergence of imputation process. It uses bayesian version of regression models to handle issue of separation. Imputation model specification is similar to regression output in R. It automatically detects irregularities in data such as high collinearity among variables. Also, it adds noise to imputation process to solve the problem of additive constraints.
+  * <b>Recommend to start with missForest, Hmisc, MICE</b>, and then try others
+
 
 #### reference
 * [7 R data manipulation tools][14]
+* [My code of R 5 packages for dealing with missing values][17]
+  * [Original tutorial][18]
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
@@ -141,3 +151,5 @@ Applied data science recommendations and tutorials
 [14]: https://www.analyticsvidhya.com/blog/2015/12/faster-data-manipulation-7-packages/
 [15]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.decomposition
 [16]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_selection
+[17]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/5R_packages_for_missing_values.R
+[18]:https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/?utm_content=buffer916b5&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer

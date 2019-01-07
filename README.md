@@ -57,6 +57,17 @@ Applied data science recommendations and tutorials
   * Just leave it there
   * Anoter suggest method is to build seperate models for normal data and outliers when there are large amount of outliers which are not caused by errors. In industry, you may not be allowed to build seperate models but it's still a method to consider.
   
+### Dimensional Reduction
+* Check <b>missing values</b>, for those with high percentage of missing values, you may want to remove them.
+* Check variance
+* Check correlation between features
+* Use tree models to find feature importance
+  * Better to remove highly correlated features before doing this. Some tree model will put highly correlated features all as important if one of them is highly ranked
+* Dimensional Reduction Algorithms
+  * [sklearn decomposition][15]
+* Feature Selection Methods
+  * [sklearn feature selection][16]
+  
 ### Feature Engineering
 * Scaling the features
   * Sometimes, you want all the features to be normalized into the same scale, this is especially helpful in parametric algorithms.
@@ -128,3 +139,5 @@ Applied data science recommendations and tutorials
 [12]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/model_selection.ipynb
 [13]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/tpot_bigmart_pipeline0.py
 [14]: https://www.analyticsvidhya.com/blog/2015/12/faster-data-manipulation-7-packages/
+[15]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.decomposition
+[16]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_selection

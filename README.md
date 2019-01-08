@@ -161,6 +161,9 @@ Applied data science recommendations and tutorials
 * [Concordant & Discordant][25]
 * [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
 
+#### reference
+[My model evaluation previous detailed summary][27]
+
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif
@@ -187,3 +190,4 @@ Applied data science recommendations and tutorials
 [24]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.model_selection
 [25]:https://www.listendata.com/2014/08/modeling-tips-calculating-concordant.html
 [26]:https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+[27]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources2#model-evaluation

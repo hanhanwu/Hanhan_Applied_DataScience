@@ -129,11 +129,37 @@ Applied data science recommendations and tutorials
   * `mi` - It allows graphical diagnostics of imputation models and convergence of imputation process. It uses bayesian version of regression models to handle issue of separation. Imputation model specification is similar to regression output in R. It automatically detects irregularities in data such as high collinearity among variables. Also, it adds noise to imputation process to solve the problem of additive constraints.
   * <b>Recommend to start with missForest, Hmisc, MICE</b>, and then try others
 
-
 #### reference
 * [7 R data manipulation tools][14]
 * [My code of R 5 packages for dealing with missing values][17]
   * [Original tutorial][18]
+  
+
+## Model Evaluation
+### Before Evaluation
+* There are things we can do to make the evaluation more reliable:
+  * Hold-out Data
+    * If the dataset is large enough, it's always better to have a piece of hold-out data, and always use this piece of data to evaluate the models
+  * Bootstrap, to run the same model multiple times
+    * You can try different seeds with the whole dataset (I refer this one)
+    * Or split the dataset into different folds, and run the model in each fold, finally aggregate the results
+  * Cross Validation
+    * We can calculate the average evaluation score and the score variance to compare model performance
+    * In sklearn, we can just use [cross_val_score][23], which allows us either to use integer as stratified kfold cv folds, or [cross validation instances][24]
+### Evaluation Methods
+* "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
+* [sklearn classification evaluation metrics][19]
+* [sklearn regression evaluation metrics][20]
+* [sklearn clustering metrics][21]
+  * Still needs labels
+  * Sometimes, in simply do not have the label at all. You can:
+    * Compare with the datasets that have label, at the risk of non-transformable
+    * Check predicted results distribution, comparing between different rounds
+    * Your customer will expect a percentage for each label, compare with that...
+### After Evaluation - The confidence/reliability of prediction
+* [Calibration][22]
+* [Concordant & Discordant][25]
+* [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
@@ -153,3 +179,11 @@ Applied data science recommendations and tutorials
 [16]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_selection
 [17]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/5R_packages_for_missing_values.R
 [18]:https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/?utm_content=buffer916b5&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+[19]:https://scikit-learn.org/stable/modules/classes.html#classification-metrics
+[20]:https://scikit-learn.org/stable/modules/classes.html#regression-metrics
+[21]:https://scikit-learn.org/stable/modules/classes.html#clustering-metrics
+[22]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources2/blob/master/about_calibration.ipynb
+[23]:https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score
+[24]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.model_selection
+[25]:https://www.listendata.com/2014/08/modeling-tips-calculating-concordant.html
+[26]:https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa

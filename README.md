@@ -77,6 +77,9 @@ Applied data science recommendations and tutorials
 * Transform nonlinear relationship to linear relationship, this is not only easier to comprehend, but also required for parametric algorithms
   * scatter plot to check the relationship
   * Such as `log`
+  * PCA - It can convert the whole feature set into normalized linear combination
+    * [How to use PCA for dimensional reduction/feature selection][29]
+    * The components are independent from each other, earlier components capture more variance. Each principle component is also a linear combination of original features
 * Convert skewed distribution to symmetric distribution, this is also prefered for parametric algorithms
   * `log` to deal with righ skewness
   * squre root, cube root
@@ -111,6 +114,41 @@ Applied data science recommendations and tutorials
     * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
 
 
+## Model Evaluation
+### Before Evaluation
+* There are things we can do to make the evaluation more reliable:
+  * Hold-out Data
+    * If the dataset is large enough, it's always better to have a piece of hold-out data, and always use this piece of data to evaluate the models
+  * Run the same model multiple times
+    * You can try different seeds with the whole dataset (I refer this one)
+    * Bootstrap - split the dataset into different folds, and run the model in each fold, finally aggregate the results
+      * Resample with replacement
+      * UNIFORMALY random draw
+      * The advantage of draw with replacement is, the distribution of the data won't be changed when you are drawing
+      * [sklearn methods in data spliting][28]
+
+  * Cross Validation
+    * We can calculate the average evaluation score and the score variance to compare model performance
+    * In sklearn, we can just use [cross_val_score][23], which allows us either to use integer as stratified kfold cv folds, or [cross validation instances][24]
+### Evaluation Methods
+* "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
+* [sklearn classification evaluation metrics][19]
+* [sklearn regression evaluation metrics][20]
+  * Logloss works better for discrete numerical target; MSE/RMSE works better for continuous target
+* [sklearn clustering metrics][21]
+  * Still needs labels
+  * Sometimes, in simply do not have the label at all. You can:
+    * Compare with the datasets that have label, at the risk of non-transformable
+    * Check predicted results distribution, comparing between different rounds
+    * Your customer will expect a percentage for each label, compare with that...
+### After Evaluation - The confidence/reliability of prediction
+* [Calibration][22]
+* [Concordant & Discordant][25]
+* [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
+
+#### reference
+[My model evaluation previous detailed summary][27]
+
 ## Tools
 ### R Tools
 #### Data Manipulation Tools
@@ -134,35 +172,6 @@ Applied data science recommendations and tutorials
 * [My code of R 5 packages for dealing with missing values][17]
   * [Original tutorial][18]
   
-
-## Model Evaluation
-### Before Evaluation
-* There are things we can do to make the evaluation more reliable:
-  * Hold-out Data
-    * If the dataset is large enough, it's always better to have a piece of hold-out data, and always use this piece of data to evaluate the models
-  * Bootstrap, to run the same model multiple times
-    * You can try different seeds with the whole dataset (I refer this one)
-    * Or split the dataset into different folds, and run the model in each fold, finally aggregate the results
-  * Cross Validation
-    * We can calculate the average evaluation score and the score variance to compare model performance
-    * In sklearn, we can just use [cross_val_score][23], which allows us either to use integer as stratified kfold cv folds, or [cross validation instances][24]
-### Evaluation Methods
-* "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
-* [sklearn classification evaluation metrics][19]
-* [sklearn regression evaluation metrics][20]
-* [sklearn clustering metrics][21]
-  * Still needs labels
-  * Sometimes, in simply do not have the label at all. You can:
-    * Compare with the datasets that have label, at the risk of non-transformable
-    * Check predicted results distribution, comparing between different rounds
-    * Your customer will expect a percentage for each label, compare with that...
-### After Evaluation - The confidence/reliability of prediction
-* [Calibration][22]
-* [Concordant & Discordant][25]
-* [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
-
-#### reference
-[My model evaluation previous detailed summary][27]
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
@@ -191,3 +200,5 @@ Applied data science recommendations and tutorials
 [25]:https://www.listendata.com/2014/08/modeling-tips-calculating-concordant.html
 [26]:https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 [27]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources2#model-evaluation
+[28]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.model_selection
+[29]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/make_sense_dimension_reduction.ipynb

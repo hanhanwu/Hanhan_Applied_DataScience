@@ -88,6 +88,19 @@ Applied data science recommendations and tutorials
 * derived features
 * one-hot features
 
+## Deal With Imbalanced Data
+### Sampling Methods
+* There are oversampling, undersampling and synthetic sampling (which is also oversampling), combined sampling (oversampling + undersampling). In practice, I tried different methods in different projects, so far non of them worked well in both training and testing data.
+### Cost Sensitive Learning
+* This method is becoming more and more popular recently. Majorly you just set the class weights based on the importance of false positive and false negative.
+* In practice, it is worthy to know more from the customers or the marketing team, trying to understand the cost of TP/TN or FP/FN.
+### Thresholding
+* When the prediction result is in probability format, we can change the threshold of class prediction. By default the reshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
+### Other Methods
+* Clustering & Multiple Model Training
+  * Cluster the majority class into multiple non-overlapped clusters. For each cluster, train them with the minority class and build a model. Average the final prediction
+  * You don't need testing data here, but the drawback is you always need the label which won't be the case in practice. When there are more data, you also need to operate on all the data, which can be time & computational consuming.
+
 ### Reference
 * [Data Exploration Guidance][1]
 * [Impact of Data Size on Model Performance][6]
@@ -95,6 +108,7 @@ Applied data science recommendations and tutorials
   * Use bootstrap methods + multiple seeds to do multiple run, cross validatio are suggested. Because for stochastic methods, different seed could lead to different direction and optimal results. It could also help dealing with the high variance issue in a model.
   * "As such, we refer to neural network models as having a low bias and a high variance. They have a low bias because the approach makes few assumptions about the mathematical functional form of the mapping function. They have a high variance because they are sensitive to the specific examples used to train the model."
   * Larger training set tend to lead to better prediction results, smaller test case may not always be the case. So 7:3 or 8:2 train-test ratio is always a good start.
+* [Guidance on dealing with imbalnced data 1][30], [Guidance on dealing with imbalnced data 2][31]
   
 ## Models
 [My code][12]
@@ -202,3 +216,5 @@ Applied data science recommendations and tutorials
 [27]:https://github.com/hanhanwu/Hanhan_Data_Science_Resources2#model-evaluation
 [28]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.model_selection
 [29]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/make_sense_dimension_reduction.ipynb
+[30]:https://www.analyticsvidhya.com/blog/2016/03/practical-guide-deal-imbalanced-classification-problems/?utm_content=buffer929f7&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+[31]:https://stackoverflow.com/questions/26221312/dealing-with-the-class-imbalance-in-binary-classification

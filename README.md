@@ -80,10 +80,11 @@ Applied data science recommendations and tutorials
   * PCA - It can convert the whole feature set into normalized linear combination
     * [How to use PCA for dimensional reduction/feature selection][29]
     * The components are independent from each other, earlier components capture more variance. Each principle component is also a linear combination of original features
-* Convert skewed distribution to symmetric distribution, this is also prefered for parametric algorithms
+* Convert skewed distribution to symmetric distribution, this is also prefered for parametric algorithms. Skewed data could reduce the impact from lower values which may also important to the prediction.
   * `log` to deal with righ skewness
   * squre root, cube root
   * `exp` to deal with left skewness
+  * `power`
   * binning
 * derived features
 * one-hot features

@@ -88,6 +88,11 @@ Applied data science recommendations and tutorials
   * binning
 * derived features
 * one-hot features
+* Methods to deal wit categorical features
+  * Of course, the converted eatures still belong to one-hot or derived features, but there are different methods
+  * label encoding
+  * Convert to value frequency or response rate, aggregated value. Also for categorical value, we can use part of the value and convert to numerical values
+  * one-hot
 
 ## Deal With Imbalanced Data
 ### Sampling Methods
@@ -187,11 +192,17 @@ Applied data science recommendations and tutorials
 * [My code of R 5 packages for dealing with missing values][17]
   * [Original tutorial][18]
   
+### Python Tools
+* [Some quick methods in pandas][32]
+  * pivot table - generate aggregate results for multiple columns
+  * multi-indexing - using the values of multiple columns as the index to locate
+  * cross-tab - this can be used to check whether a feature affects the label with percentage value
+  * cut - binning
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
 [3]:https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif
-[4]: https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2
+[4]:https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2
 [5]:https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html
 [6]:https://machinelearningmastery.com/impact-of-dataset-size-on-deep-learning-model-skill-and-performance-estimates/
 [7]:https://github.com/EpistasisLab/tpot
@@ -219,3 +230,4 @@ Applied data science recommendations and tutorials
 [29]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/make_sense_dimension_reduction.ipynb
 [30]:https://www.analyticsvidhya.com/blog/2016/03/practical-guide-deal-imbalanced-classification-problems/?utm_content=buffer929f7&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 [31]:https://stackoverflow.com/questions/26221312/dealing-with-the-class-imbalance-in-binary-classification
+[32]:https://www.analyticsvidhya.com/blog/2016/01/12-pandas-techniques-python-data-manipulation/?utm_content=bufferfa8d9&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer

@@ -75,8 +75,8 @@ Applied data science recommendations and tutorials
     * PowerTransformer is better in dealing with outliers
     * Sometimes, you just want to scale the values between 0 and 1 so MaxMinScaler is still popular
 * Transform nonlinear relationship to linear relationship, this is not only easier to comprehend, but also required for parametric algorithms
-  * scatter plot to check the relationship
-  * Such as `log`
+  * scatter plot to check the relationship; we can also use pandas cross tab method
+  * Such as `log`, here are a list of methods for nonlinear transformation: https://people.revoledu.com/kardi/tutorial/Regression/nonlinear/NonLinearTransformation.htm
   * PCA - It can convert the whole feature set into normalized linear combination
     * [How to use PCA for dimensional reduction/feature selection][29]
     * The components are independent from each other, earlier components capture more variance. Each principle component is also a linear combination of original features

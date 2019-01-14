@@ -133,6 +133,12 @@ Applied data science recommendations and tutorials
   * After you have a few list of models, you want to quickly check which one performs better. What I'm doing here is, for each model, use all the training data but with stratified kfold cross validation. Finally it evaluates the average score and the score variance.
     * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
 
+## Algorithms Details
+### SVM
+* [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
+* [How does kernal SVM work for nonlinear data][34]
+  * Gaussian kernal is `rbf` kernal in sklearn
+
 
 ## Model Evaluation
 ### Before Evaluation
@@ -231,3 +237,5 @@ Applied data science recommendations and tutorials
 [30]:https://www.analyticsvidhya.com/blog/2016/03/practical-guide-deal-imbalanced-classification-problems/?utm_content=buffer929f7&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 [31]:https://stackoverflow.com/questions/26221312/dealing-with-the-class-imbalance-in-binary-classification
 [32]:https://www.analyticsvidhya.com/blog/2016/01/12-pandas-techniques-python-data-manipulation/?utm_content=bufferfa8d9&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+[33]:https://nlp.stanford.edu/IR-book/html/htmledition/support-vector-machines-the-linearly-separable-case-1.html
+[34]:https://albahnsen.com/2018/09/13/machine-learning-algorithms-explained-support-vector-machines/

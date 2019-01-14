@@ -100,6 +100,10 @@ Applied data science recommendations and tutorials
 ### Cost Sensitive Learning
 * This method is becoming more and more popular recently. Majorly you just set the class weights based on the importance of false positive and false negative.
 * In practice, it is worthy to know more from the customers or the marketing team, trying to understand the cost of TP/TN or FP/FN.
+* Example-dependent Cost Sensitive method
+  * [Costcla][36] - it's a package that do model prediction including cost matrix
+    * The cost matrix is example dependent. Each row has the cost of [FP, FN, TP, TN]. So when you are creating this cost matrix yourself, your training & testing data all records the costs, each row of your data is an example. [Sample Model Prediction][36]
+    * The drawback is, testing data also needs the cost matrix, but in practice, you may not know. However this method can still be used in train-validation dataset, in order to find the optimal model.
 ### Thresholding
 * When the prediction result is in probability format, we can change the threshold of class prediction. By default the reshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
 ### Other Methods
@@ -138,7 +142,6 @@ Applied data science recommendations and tutorials
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
 * [How does kernal SVM work for nonlinear data][34]
   * Gaussian kernal is `rbf` kernal in sklearn
-
 
 ## Model Evaluation
 ### Before Evaluation
@@ -239,3 +242,5 @@ Applied data science recommendations and tutorials
 [32]:https://www.analyticsvidhya.com/blog/2016/01/12-pandas-techniques-python-data-manipulation/?utm_content=bufferfa8d9&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 [33]:https://nlp.stanford.edu/IR-book/html/htmledition/support-vector-machines-the-linearly-separable-case-1.html
 [34]:https://albahnsen.com/2018/09/13/machine-learning-algorithms-explained-support-vector-machines/
+[35]:https://github.com/albahnsen/CostSensitiveClassification
+[36]:http://albahnsen.github.io/CostSensitiveClassification/ThresholdingOptimization.html

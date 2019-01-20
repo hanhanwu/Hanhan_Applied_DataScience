@@ -89,10 +89,10 @@ Applied data science recommendations and tutorials
 * derived features
 * one-hot features
 * Methods to deal wit categorical features
-  * Of course, the converted eatures still belong to one-hot or derived features, but there are different methods
-  * label encoding
+  * [Categorical Encoding Methods][37]
+    * It has one-hot and other label encoding methods
+    * `TargetEncoder` can be used when the categorical column contains lots of uniquen values (High-Cardinality), such as zipcode
   * Convert to value frequency or response rate, aggregated value. Also for categorical value, we can use part of the value and convert to numerical values
-  * one-hot
 
 ## Deal With Imbalanced Data
 ### Sampling Methods
@@ -244,3 +244,4 @@ Applied data science recommendations and tutorials
 [34]:https://albahnsen.com/2018/09/13/machine-learning-algorithms-explained-support-vector-machines/
 [35]:https://github.com/albahnsen/CostSensitiveClassification
 [36]:http://albahnsen.github.io/CostSensitiveClassification/ThresholdingOptimization.html
+[37]:https://github.com/scikit-learn-contrib/categorical-encoding

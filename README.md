@@ -207,6 +207,10 @@ Applied data science recommendations and tutorials
   * multi-indexing - using the values of multiple columns as the index to locate
   * cross-tab - this can be used to check whether a feature affects the label with percentage value
   * cut - binning
+  
+# [My Production Solutions Notes][38]
+* It records my simple solutions in production deployment.
+
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
@@ -245,3 +249,4 @@ Applied data science recommendations and tutorials
 [35]:https://github.com/albahnsen/CostSensitiveClassification
 [36]:http://albahnsen.github.io/CostSensitiveClassification/ThresholdingOptimization.html
 [37]:https://github.com/scikit-learn-contrib/categorical-encoding
+[38]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Simple%20Production%20Solutions.ipynb

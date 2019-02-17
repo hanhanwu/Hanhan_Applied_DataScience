@@ -15,8 +15,17 @@
     * With the distribution, you can generate samples with HMC
 
 
+## Pseudo Ground Truth
+* Found the inspiration from the method used [here][5] - Psuedo Ground Truth Generation
+* In the industry, there can be so many cases that you don't have complete labels of the data or you even have no label at all, and no matter whether you are using unsupervised method, you may drop into a situation where you still hope there could be some psuedo labels to give a certain level of insights or even help further model development.
+* The inspiration got here is to use multiple estimators, use them to make some prediction, get max/avg/median results as the pseudo label. 
+  * For example there is a dataset, we are not sure which is real fraud, nonfarud. We can try multiple unsupervised or even supervised estimators to make the prediction, choose the aggregated results to label the data or label part of the data that we have more confidence. 
+  * With the pseudo labeled data, we can use it as training data for supervised learning, and may achieve better accuracy in the final prediction.
+
+
 
 [1]:https://dl.acm.org/citation.cfm?id=507538
 [2]:https://www.pythonforfinance.net/2016/11/28/monte-carlo-simulation-in-python/
 [3]:https://pythonhosted.org/pyhmc/
 [4]:https://mikulskibartosz.name/monte-carlo-simulation-in-python-d63f0cfcdf6f
+[5]:https://static1.squarespace.com/static/56368331e4b08347cb5555e1/t/5c47d75bb91c915700195753/1548212060246/SCP_draft.pdf

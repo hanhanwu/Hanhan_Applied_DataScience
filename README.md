@@ -60,7 +60,17 @@ Applied data science recommendations and tutorials
 ### Dimensional Reduction
 * Check <b>missing values</b>, for those with high percentage of missing values, you may want to remove them.
 * Check variance
-* Check correlation between features
+* Deal with collinearity issues
+  * Correlation matrix to check the correlation between pairs of features - Collinearity
+  * VIF (Variance Inflation Factor) to check the correlation exists between 3+ features but could not be found in any pair of features - Multicollinearity
+    * How to use this method, check the code [here][11], "Check Multicollinearity" section.
+    * Normally when VIF is between 5 and 10, there could be multicollineary issue of the feature. When VIF > 10, it's too high and the feature should be removed.
+    * 2 major methods to deal with features with high VIF
+      * Remove it
+      * Combine features with high VIF into 1 feature
+    * [The implementation of using VIF to drop features][39]
+    * [Description of VIF][40]
+      * The Variance Inflation Factor (VIF) is a measure of colinearity among predictor variables within a multiple regression. It is calculated by taking the the ratio of the variance of all a given model's betas divide by the variane of a single beta if it were fit alone.
 * Use tree models to find feature importance
   * Better to remove highly correlated features before doing this. Some tree model will put highly correlated features all as important if one of them is highly ranked
 * Dimensional Reduction Algorithms
@@ -254,3 +264,5 @@ Applied data science recommendations and tutorials
 [36]:http://albahnsen.github.io/CostSensitiveClassification/ThresholdingOptimization.html
 [37]:https://github.com/scikit-learn-contrib/categorical-encoding
 [38]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Simple%20Production%20Solutions.ipynb
+[39]:https://www.kaggle.com/ffisegydd/sklearn-multicollinearity-class
+[40]:https://etav.github.io/python/vif_factor_python.html

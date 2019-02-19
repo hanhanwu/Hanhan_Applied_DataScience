@@ -88,7 +88,7 @@ Applied data science recommendations and tutorials
   * binning
 * derived features
 * one-hot features
-* Methods to deal wit categorical features
+* Methods to deal with categorical features
   * [Categorical Encoding Methods][37]
     * It has one-hot and other label encoding methods
     * `TargetEncoder` can be used when the categorical column contains lots of uniquen values (High-Cardinality), such as zipcode
@@ -123,6 +123,8 @@ Applied data science recommendations and tutorials
 ## Models
 [My code][12]
 ### Which Model to Choose
+* Linear or Nonlinear
+  * In the code [here][11], we can use residual plot to check whether there is linear/non-linear relationship between the feature set and the label, to decide to use linear/nonlinear model.
 * TPOT Automatic Machine Learning
   * It's a very nice tool that helps you find the model with optimized param, and also export the python code for using the selected model [TPOT Examples][7]
   * [TPOT Params for Estimators][8]

@@ -125,6 +125,8 @@ Applied data science recommendations and tutorials
 ### Which Model to Choose
 * Linear or Nonlinear
   * In the code [here][11], we can use residual plot to check whether there is linear/non-linear relationship between the feature set and the label, to decide to use linear/nonlinear model.
+    * If the residual plot is showing funnel shape, it indicates non-constant variance in error terms (heteroscedasticity), which also tends to have residuals increase with the response value (Y). So we can also try to use a concave function (such as log, sqrt) to transform `Y` to a much smaller value, in order to reduce heteroscedasticity. 
+    * As we can see in the code, after transforming `Y` with `log`, the residual plot was showing a much more linear relationship (the residuals are having a more constant variance)
 * TPOT Automatic Machine Learning
   * It's a very nice tool that helps you find the model with optimized param, and also export the python code for using the selected model [TPOT Examples][7]
   * [TPOT Params for Estimators][8]

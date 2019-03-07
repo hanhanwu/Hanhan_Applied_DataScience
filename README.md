@@ -184,6 +184,10 @@ Applied data science recommendations and tutorials
     * Compare with the datasets that have label, at the risk of non-transformable
     * Check predicted results distribution, comparing between different rounds
     * Your customer will expect a percentage for each label, compare with that...
+* Suggestions to improve scores
+    * Making the probabilities less sharp (less confident). This means adjusting the predicted probabilities away from the hard 0 and 1 bounds to limit the impact of penalties of being completely wrong.
+    * Shift the distribution to the naive prediction (base rate). This means shifting the mean of the predicted probabilities to the probability of the base rate, such as 0.5 for a balanced prediction problem.
+    * [Reference][41]
 ### After Evaluation - The confidence/reliability of prediction
 * [Calibration][22]
 * [Concordant & Discordant][25]
@@ -266,3 +270,4 @@ Applied data science recommendations and tutorials
 [38]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Simple%20Production%20Solutions.ipynb
 [39]:https://www.kaggle.com/ffisegydd/sklearn-multicollinearity-class
 [40]:https://etav.github.io/python/vif_factor_python.html
+[41]:https://machinelearningmastery.com/how-to-score-probability-predictions-in-python/

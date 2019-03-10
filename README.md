@@ -4,6 +4,7 @@ Applied data science recommendations and tutorials
 # Applied Recommendations
 ## Data Exploration
 * [My Code - IPython][11]
+  * When you are using `chi2` or `f_classif`, the features should have no NULL, no negative value.
 * [Data Exploration Code I often use][42]
 ### Univariate Analysis
 * Check distribution for continuous, categorical variables

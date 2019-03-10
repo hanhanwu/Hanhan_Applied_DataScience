@@ -3,7 +3,8 @@ Applied data science recommendations and tutorials
 
 # Applied Recommendations
 ## Data Exploration
-[My Code][11]
+* [My Code - IPython][11]
+* [Data Exploration Code I often use][42]
 ### Univariate Analysis
 * Check distribution for continuous, categorical variables
   * For continuous variables, in many cases, I just check percentile at min, 1%, 5%, 25%, 50%, 75%, 95%, 99% and max. This is easier to implement and even more straightforward to find the outliers.
@@ -271,3 +272,4 @@ Applied data science recommendations and tutorials
 [39]:https://www.kaggle.com/ffisegydd/sklearn-multicollinearity-class
 [40]:https://etav.github.io/python/vif_factor_python.html
 [41]:https://machinelearningmastery.com/how-to-score-probability-predictions-in-python/
+[42]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/data_exploration_functions.py

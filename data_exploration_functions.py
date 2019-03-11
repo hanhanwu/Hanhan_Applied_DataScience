@@ -193,3 +193,64 @@ def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_col
         ax.legend()
     fig.tight_layout()
     plt.show()
+
+    
+# replace null with median or mode
+def replace_na(feature_df, agg):
+    processed_df = feature_df.copy()
+    features = feature_df.columns
+    
+    for feature in features:
+        if agg == 'median':
+            processed_df[feature] = processed_df[feature].fillna(np.nanmedian(feature_df[feature]))
+        elif agg == 'mode':
+            processed_df[feature] = processed_df[feature].fillna(processed_df[feature].mode().iloc[0])
+    return processed_df
+
+
+# categorical vs categorical (chi2); numerical vs categorical (f_classif, namely ANOVA)
+def dependency_chosen_features(feature_df, label_col, pvalue_threshold, feature_type):
+    if feature_type == 'num':
+        _, pvalue_lst = f_classif(feature_df, feature_df[label_col])
+    else:
+        _, pvalue_lst = chi2(feature_df, feature_df[label_col])
+    
+    features = feature_df.columns
+    
+    high_dependency_features = []
+    
+    for i in range(len(features)):
+        if features[i] != label_col and pvalue_lst[i] <= pvalue_threshold:
+            high_dependency_features.append(features[i])
+    return high_dependency_features
+
+
+# scatter plot to show linearity relationship
+def multi_scatter_plot(n_rows, n_cols, sample_data, y):
+    i = 0
+    area = np.pi*3
+    
+    fig=plt.figure(figsize=(40, 15))
+    for feature in sample_data.columns:
+        i += 1
+        ax=fig.add_subplot(n_rows,n_cols,i)
+
+        plt.scatter(sample_data[feature], sample_data[y], s=area, c='g', alpha=0.5)
+        plt.title('Feature & Label Relationships', fontsize=30)
+        plt.xlabel(feature, fontsize=30)
+        plt.ylabel(y, fontsize=30)
+    fig.tight_layout()
+    plt.show()
+    
+    
+# residual plot of all features vs the label, to find linearity relationship
+ridge = Ridge()
+visualizer = ResidualsPlot(ridge)
+
+X_train, X_test, y_train, y_test = train_test_split(processed_labeled_num_df.iloc[:, 1:-1], 
+                                                    processed_labeled_num_df.iloc[:, 0],
+                                                    train_size=0.75, test_size=0.25)
+
+visualizer.fit(X_train, y_train)  # Fit the training data to the model
+visualizer.score(X_test, y_test)  # Evaluate the model on the test data
+visualizer.poof()

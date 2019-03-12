@@ -250,7 +250,38 @@ visualizer = ResidualsPlot(ridge)
 X_train, X_test, y_train, y_test = train_test_split(processed_labeled_num_df.iloc[:, 1:-1], 
                                                     processed_labeled_num_df.iloc[:, 0],
                                                     train_size=0.75, test_size=0.25)
-
 visualizer.fit(X_train, y_train)  # Fit the training data to the model
 visualizer.score(X_test, y_test)  # Evaluate the model on the test data
 visualizer.poof()
+
+
+# Remove 2D highly correlated features 
+## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation
+def remove_highly_correlated_features(data, threshold):
+    """
+    For feature pairs that are highly correlated, remove one of the feature from each pair.
+    :param data: features input, pandas dataframe
+    :param threshold: the correlation threshold decides which feature pairs are highly correlated
+    :return: removed features, data with remained features
+    """
+    corr_matrix = data.corr().abs()  # create correlation matrix
+    upper_matrix = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(np.bool))  # upper triangle
+    drop_lst = [column for column in upper_matrix.columns if any(upper_matrix[column] > threshold)]
+    remained_features = [c for c in data.columns if c not in drop_lst]
+
+    print('****** Remove Highly Correlated Features:')
+    print('Removed Features:', drop_lst)
+    print()
+
+    return remained_features
+
+
+# Remove 3D+ highly correlated features, to deal with multicollinearity issue
+## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+def remove_multicollineary_features(feature_df, vif_threshold):
+    vif = pd.DataFrame()
+    vif["VIF Factor"] = [variance_inflation_factor(feature_df.values, i) for i in range(feature_df.shape[1])]
+    vif["features"] = feature_df.columns
+    drop_lst = vif.loc[vif['VIF Factor']>vif_threshold]['features'].values
+    return list(drop_lst)

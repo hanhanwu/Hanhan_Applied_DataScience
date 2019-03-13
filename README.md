@@ -202,7 +202,13 @@ Applied data science recommendations and tutorials
 * [My code - time series functions][45]
 * [11 Forecasting methods][46]
   * When to use which model
-  * [My code with 7 methods][47]
+  * It seems that methods do not have `forcast` but only have `predict` will only predict the next value. With `forecast` we can predict the next period of values
+* [My code with 7 methods][47]
+  * Some are not in above 11 methods
+  * Simple, Exponential & Weighted Moving Average
+    * Simple moving average (SMA) calculates an average of the last n prices
+    * The exponential moving average (EMA) is a weighted average of the last n prices, where the weighting decreases exponentially with each previous price/period. In other words, the formula gives recent prices more weight than past prices.
+    * The weighted moving average (WMA) gives you a weighted average of the last n prices, where the weighting decreases with each previous price. This works similarly to the EMA.
   * [Grid Search to tune ARIMA params][48]
 
 #### reference

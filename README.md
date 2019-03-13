@@ -195,6 +195,16 @@ Applied data science recommendations and tutorials
 * [Concordant & Discordant][25]
 * [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
 
+## Time Series Analysis Cheatsheet
+* If you want a quick forecast, such as hourly, daily, weekly, yearly forecast, try Facebook Prophet
+  * [My Prophet Python code][43]
+  * [My Prophet R code][44]
+* [My code - time series functions][45]
+* [11 Forecasting methods][46]
+  * When to use which model
+  * [My code with 7 methods][47]
+  * [Grid Search to tune ARIMA params][48]
+
 #### reference
 [My model evaluation previous detailed summary][27]
 
@@ -274,3 +284,9 @@ Applied data science recommendations and tutorials
 [40]:https://etav.github.io/python/vif_factor_python.html
 [41]:https://machinelearningmastery.com/how-to-score-probability-predictions-in-python/
 [42]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/data_exploration_functions.py
+[43]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/try_prophet.ipynb
+[44]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/try_prophet_R.R
+[45]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/time_series_functions.py
+[46]:https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/
+[47]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/time_series_forecasting.ipynb
+[48]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/ARIMA_grid_search.ipynb

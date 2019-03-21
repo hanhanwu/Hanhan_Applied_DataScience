@@ -23,6 +23,11 @@
   * With the pseudo labeled data, we can use it as training data for supervised learning, and may achieve better accuracy in the final prediction.
 
 
+## Bayes Classification Methods
+* Bayes' Theorem vs Naive Bayesian
+  * This week, a task makes me think about the independence between attributes.
+  * Naive Bayesian requires features to be independent to each other, so that the calculation can be 
+
 
 [1]:https://dl.acm.org/citation.cfm?id=507538
 [2]:https://www.pythonforfinance.net/2016/11/28/monte-carlo-simulation-in-python/

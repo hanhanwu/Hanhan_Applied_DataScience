@@ -26,7 +26,14 @@
 ## Bayes Classification Methods
 * Bayes' Theorem vs Naive Bayesian
   * This week, a task makes me think about the independence between attributes.
-  * Naive Bayesian requires features to be independent to each other, so that the calculation can be 
+  * Bayes' Theorem
+    * `P(H|X) = P(X|H)*P(H)/P(X)`
+      * `P(H)` is the prior probability, which is independent from X.
+      * `P(X|H)` is the posterior probability of X conditioned on H. `P(H|X)` is the posterior probability of H conditioned on X.
+    * For example, "H" indicates a transaction is fraud; "X" is the feature set that includes transaction amount, transaction time, such as $5000, at midnight. So the problem is we want to calculate the probability when a transaction of $5000 at midnight is fraud (`P(H|X)`). So we need the probability of transaction of $5000 at midnight (`P(X)`); the probability of fraud regardless of transaction amount and time (`P(H)`); and the probability of transaction amount=$5000 at midnight when it's fraud.
+  * Naive Bayesian requires features to be independent to each other, given the class label. So that the calculation can be much easier. Here's why:
+    * `P(Ci|X) = P(X|Ci)*P(Ci)/P(X)` is the problem Naive Bayesian needs to solve in order to get P(Ci|X).
+    * P(X|Ci) can be very complex to calculate unless we assume each feature is independent given class label Ci, so that `P(X|Ci) = P(x1|Ci)*P(x2|Ci)*...*P(xn|Ci)`. This is the core for understad whether in practice, we should make sure attributes are independent from each other conditioned on H.
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

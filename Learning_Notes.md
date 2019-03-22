@@ -36,7 +36,7 @@
     * P(X|Ci) can be very complex to calculate unless we assume each feature is independent given class label Ci, so that `P(X|Ci) = P(x1|Ci)*P(x2|Ci)*...*P(xn|Ci)`. This is the core for understand whether in practice, we should make sure attributes are independent from each other conditioned on H.
   * <b>Laplacia Correction</b>
     * When one of the P(xi|Ci) is 0, the whole P(X|Ci) will become 0, which means it cancles out all the other posterior probability conditioned on Ci.
-    * To deal with this problem, with "Laplacia Correction", you can add 1 to each divisor when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones
+    * To deal with this problem, with "Laplacia Correction", you can add 1 to each dividend when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

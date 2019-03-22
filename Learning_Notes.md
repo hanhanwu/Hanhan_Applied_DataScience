@@ -33,7 +33,10 @@
     * For example, "H" indicates a transaction is fraud; "X" is the feature set that includes transaction amount, transaction time, such as $5000, at midnight. So the problem is we want to calculate the probability when a transaction of $5000 at midnight is fraud (`P(H|X)`). So we need the probability of transaction of $5000 at midnight (`P(X)`); the probability of fraud regardless of transaction amount and time (`P(H)`); and the probability of transaction amount=$5000 at midnight when it's fraud.
   * Naive Bayesian requires features to be independent to each other, given the class label. So that the calculation can be much easier. Here's why:
     * `P(Ci|X) = P(X|Ci)*P(Ci)/P(X)` is the problem Naive Bayesian needs to solve in order to get P(Ci|X).
-    * P(X|Ci) can be very complex to calculate unless we assume each feature is independent given class label Ci, so that `P(X|Ci) = P(x1|Ci)*P(x2|Ci)*...*P(xn|Ci)`. This is the core for understad whether in practice, we should make sure attributes are independent from each other conditioned on H.
+    * P(X|Ci) can be very complex to calculate unless we assume each feature is independent given class label Ci, so that `P(X|Ci) = P(x1|Ci)*P(x2|Ci)*...*P(xn|Ci)`. This is the core for understand whether in practice, we should make sure attributes are independent from each other conditioned on H.
+  * <b>Laplacia Correction</b>
+    * When one of the P(xi|Ci) is 0, the whole P(X|Ci) will become 0, which means it cancles out all the other posterior probability conditioned on Ci.
+    * To deal with this problem, with "Laplacia Correction", you can add 1 to each divisor when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

@@ -37,6 +37,20 @@
   * <b>Laplacia Correction</b>
     * When one of the P(xi|Ci) is 0, the whole P(X|Ci) will become 0, which means it cancles out all the other posterior probability conditioned on Ci.
     * To deal with this problem, with "Laplacia Correction", you can add 1 to each dividend when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones
+* Likelihood vs Probability
+  * Likelihood `L(H|D) = k * P(D|H)`
+    * The likelihood of a hypothesis (H) given some data (D) is proportional to the probability of obtaining D given that H is true, multiplied by an arbitrary positive constant k
+    * For conditional probability, the hypothesis is treated as a given and the data are free to vary. For likelihood, the data are a given and the hypotheses vary.
+    * When you are comparing the likelihood of 2 cases, you need to know/assume the distribution. With the distribution function, you calculate the probabilities P1, P2 for the 2 cases. Then likelihood ratio `LR = P1/P2` to tell you which case is more likely happen.
+    * With more data records in the sample, your distribution can be narrower. Below is the sample distribution (likelihood function), left has 10 records, right has 100 records. The vertical dotted line marks the hypothesis best supported by the data. The 2 blue dots represent tge likelihood of 2 cases, higher the better. On the right side, even though the likelihood ratio between 2 cases is larger, both 2 have very low position in the likelihood function.
+    <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/likelihood.png" width="700" height="400">
+    
+    * Considering the issue we are seeing above, here comes <b>Bayes Factor</b>.
+      * A Bayes factor is a weighted average likelihood ratio based on the prior distribution specified for the hypotheses.
+      * The likelihood ratio is evaluated at each point of the prior distribution and weighted by the probability we assign that value.
+      * [How to calculate Bayesian Factor in Python][6]
+        * They added prior in `beta_binom` function
+  * Reference: https://alexanderetz.com/2015/04/15/understanding-bayes-a-look-at-the-likelihood/
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538
@@ -44,3 +58,4 @@
 [3]:https://pythonhosted.org/pyhmc/
 [4]:https://mikulskibartosz.name/monte-carlo-simulation-in-python-d63f0cfcdf6f
 [5]:https://static1.squarespace.com/static/56368331e4b08347cb5555e1/t/5c47d75bb91c915700195753/1548212060246/SCP_draft.pdf
+[6]:https://docs.pymc.io/notebooks/Bayes_factor.html

@@ -33,7 +33,11 @@
     * For example, "H" indicates a transaction is fraud; "X" is the feature set that includes transaction amount, transaction time, such as $5000, at midnight. So the problem is we want to calculate the probability when a transaction of $5000 at midnight is fraud (`P(H|X)`). So we need the probability of transaction of $5000 at midnight (`P(X)`); the probability of fraud regardless of transaction amount and time (`P(H)`); and the probability of transaction amount=$5000 at midnight when it's fraud.
   * Naive Bayesian requires features to be independent to each other, given the class label. So that the calculation can be much easier. Here's why:
     * `P(Ci|X) = P(X|Ci)*P(Ci)/P(X)` is the problem Naive Bayesian needs to solve in order to get P(Ci|X).
-    * P(X|Ci) can be very complex to calculate unless we assume each feature is independent given class label Ci, so that `P(X|Ci) = P(x1|Ci)*P(x2|Ci)*...*P(xn|Ci)`. This is the core for understand whether in practice, we should make sure attributes are independent from each other conditioned on H.
+    * P(X|Ci) can be very complex to calculate unless we assume each feature is independent given class label Ci, so that `P(X|Ci) = P(x1|Ci)*P(x2|Ci)*...*P(xn|Ci)`. This is the core for understanding whether in practice, we should make sure attributes are independent from each other conditioned on H.
+  * <b>Bayes' Could Get > 1 Probability?</b>
+    * Real world problem is always more complex, have you ever met a situation that your Bayes' Theorem got ">1" probability? This is not supposed to happen, but here's the reason and the solution.
+    * <b>Reason:</b> Let's look at Bayes' Theorem formula again `P(Ci|X) = P(X|Ci)*P(Ci)/P(X)`. `P(X)` is calculated in the whole population, `P(X|Ci)` is calculated within class Ci. So if the cases almost all exist in class Ci, then P(X) will be smaller than P(X|Ci), and you may get the final probability larger than 1.
+    * <b>Solution:</b> Change the population range, and see is there any way to make X could happen across classes
   * <b>Laplacia Correction</b>
     * When one of the P(xi|Ci) is 0, the whole P(X|Ci) will become 0, which means it cancles out all the other posterior probability conditioned on Ci.
     * To deal with this problem, with "Laplacia Correction", you can add 1 to each dividend when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones

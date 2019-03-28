@@ -55,6 +55,10 @@
       * [How to calculate Bayesian Factor in Python][6]
         * They added prior in `beta_binom` function
   * Reference: https://alexanderetz.com/2015/04/15/understanding-bayes-a-look-at-the-likelihood/
+  
+## Linear Discriminant Analysis (LDA)
+* LDA vs Bayesian
+  * The LDA classifier assumes that the observations within each class come from a normal distribution with a class-specific mean vector and a common variance, and plugging estimates for these parameters into the Bayes classifier.
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

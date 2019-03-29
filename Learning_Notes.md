@@ -59,6 +59,7 @@
 ## Linear Discriminant Analysis (LDA)
 * LDA vs Bayesian
   * The LDA classifier assumes that the observations within each class come from a normal distribution with a class-specific mean vector and a common variance, and <b>plugging estimates for these parameters into the Bayes classifier</b>.
+  <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/bayesian_vs_LDA.png" width="600" height="400">
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

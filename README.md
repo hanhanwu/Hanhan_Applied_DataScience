@@ -118,6 +118,9 @@ Applied data science recommendations and tutorials
     * The drawback is, testing data also needs the cost matrix, but in practice, you may not know. However this method can still be used in train-validation dataset, in order to find the optimal model.
 ### Thresholding
 * When the prediction result is in probability format, we can change the threshold of class prediction. By default the reshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
+<img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/error_rate_thresholds.png" width="500" height="200">
+
+
 ### Other Methods
 * Clustering & Multiple Model Training
   * Cluster the majority class into multiple non-overlapped clusters. For each cluster, train them with the minority class and build a model. Average the final prediction

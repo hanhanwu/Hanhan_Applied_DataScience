@@ -61,6 +61,12 @@
   * The LDA classifier assumes that the observations within each class come from a normal distribution with a class-specific mean vector and a common variance, and <b>plugging estimates for these parameters into the Bayes classifier</b>.
   * In a word, LDA is a method that plugs in estimated mean, variance and priori probability into logged function of bayes' theorem which was written with normal density function
   <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/bayesian_vs_LDA.png" width="600" height="400">
+  
+* LDA vs QDA (Quadratic Discriminant Analysis)
+  * Same as LDA, QUA assumes that observations from each class are drawn from a Gaussian distribution, and plugs in estimates into Bayes' theorem
+  * Different from LDA, QDA assumes each class has its own covariance matrix, while LDA assumes classes are sharing the same covariance matrix
+  * When there's shared covariance matrix, Bayes decision boundry is linear; when each class has its own covariance matrix, Bayes decision boundry is non-linear
+  * When there is less training observations so that the variance of each class is small, LDA is better than QDA; when there is larger amount of training observations that the variance of each class is larger, QDA is better than LDA
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

@@ -67,6 +67,12 @@
   * Different from LDA, QDA assumes each class has its own covariance matrix, while LDA assumes classes are sharing the same covariance matrix
   * When there's shared covariance matrix, Bayes decision boundry is linear; when each class has its own covariance matrix, Bayes decision boundry is non-linear
   * When there is less training observations so that the variance of each class is small, LDA is better than QDA; when there is larger amount of training observations that the variance of each class is larger, QDA is better than LDA
+* LDA, Logistic Regression, QDA and KNN
+  * When the true decision boundry is linear, LDA and Logictic regression can be better
+    * Both LDA and Logictics Regression are linear function of `x`
+    * The way they got coefficients are different. Logistic regresion uses maximum likelihood, LDA uses estimated mean and variance from a normal distribution
+  * When the decision boundry is moderate non-linear, QDA maybe better
+  * When the decison boundry is more complicated, non-parametric methods such as KNN can be better
 
 
 [1]:https://dl.acm.org/citation.cfm?id=507538

@@ -199,6 +199,9 @@ Applied data science recommendations and tutorials
 * [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
 
 ## Time Series Analysis Cheatsheet
+* Data Exploration
+  * Lagged Features
+    * When you features are created by lagged data, you can check the correlation between these lags. If the correlation is close to 0, it means current values have no correlation to previous time values
 * If you want a quick forecast, such as hourly, daily, weekly, yearly forecast, try Facebook Prophet
   * [My Prophet Python code][43]
   * [My Prophet R code][44]
@@ -214,7 +217,7 @@ Applied data science recommendations and tutorials
     * The weighted moving average (WMA) gives you a weighted average of the last n prices, where the weighting decreases with each previous price. This works similarly to the EMA.
   * [Grid Search to tune ARIMA params][48]
 
-#### reference
+#### Reference
 [My model evaluation previous detailed summary][27]
 
 ## Tools

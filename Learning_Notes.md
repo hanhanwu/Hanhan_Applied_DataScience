@@ -57,6 +57,7 @@
   * Reference: https://alexanderetz.com/2015/04/15/understanding-bayes-a-look-at-the-likelihood/
   
 ## Linear Discriminant Analysis (LDA)
+* When using R, it will return priori probability, which is `nk/n`, the estimated values
 * LDA vs Bayesian
   * The LDA classifier assumes that the observations within each class come from a normal distribution with a class-specific mean vector and a common variance, and <b>plugging estimates for these parameters into the Bayes classifier</b>.
   * In a word, LDA is a method that plugs in estimated mean, variance and priori probability into logged function of bayes' theorem which was written with normal density function
@@ -74,6 +75,15 @@
   * When the decision boundry is moderate non-linear, QDA maybe better
   * When the decison boundry is more complicated, non-parametric methods such as KNN can be better
 
+## How to Understand Logictic Regression Output in R
+* [Sample Code in R][7]
+* Sample output
+<img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/logistic_regression_output.png" width="400" height="200">
+
+* The target in this sample is "Direction" which has value "Up" or "Down"
+* You can check p-value or z-value (opposite trend as p-value) to decide whether to reject NUll hypothesis, if reject the null hypothesis, it means the feature and the target has no clear correlation
+* Lag1 has the lowest p-value and negative coefficient, indicating that when there is positive return yesterday, it's less likely to have the direction goes up today.
+* Meanwhile, 0.145 p-value is still large enough to reject null hypothesis, which means there is no clear correlation between Lag1 and Direction
 
 [1]:https://dl.acm.org/citation.cfm?id=507538
 [2]:https://www.pythonforfinance.net/2016/11/28/monte-carlo-simulation-in-python/
@@ -81,3 +91,4 @@
 [4]:https://mikulskibartosz.name/monte-carlo-simulation-in-python-d63f0cfcdf6f
 [5]:https://static1.squarespace.com/static/56368331e4b08347cb5555e1/t/5c47d75bb91c915700195753/1548212060246/SCP_draft.pdf
 [6]:https://docs.pymc.io/notebooks/Bayes_factor.html
+[7]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/R_logistic_regression.R

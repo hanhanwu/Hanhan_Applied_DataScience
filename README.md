@@ -193,6 +193,11 @@ Applied data science recommendations and tutorials
     * Making the probabilities less sharp (less confident). This means adjusting the predicted probabilities away from the hard 0 and 1 bounds to limit the impact of penalties of being completely wrong.
     * Shift the distribution to the naive prediction (base rate). This means shifting the mean of the predicted probabilities to the probability of the base rate, such as 0.5 for a balanced prediction problem.
     * [Reference][41]
+* How to Compare 2 Models After Each has been Running Multiple Rounds
+  * [Recommended t-table][49]
+<img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/compare_2_model_multi_rounds_results.png" width="700" height="400">
+
+
 ### After Evaluation - The confidence/reliability of prediction
 * [Calibration][22]
 * [Concordant & Discordant][25]
@@ -302,3 +307,4 @@ Applied data science recommendations and tutorials
 [46]:https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/
 [47]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/time_series_forecasting.ipynb
 [48]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/ARIMA_grid_search.ipynb
+[49]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf

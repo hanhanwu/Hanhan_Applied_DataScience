@@ -13,6 +13,7 @@ Applied data science recommendations and tutorials
 * Check null percentage
 * Check distinct values count and percentage
   * Pay attention to features with 0 variance or low variance, think about the causes. Features with 0 variance should be removed before model training.
+  * For categorical features, besides count of unique values, we can also use [Simpson's Diversity Index][50]
 
 ### Bivariate Analysis
 * Check correlation between every 2 continuous variables
@@ -308,3 +309,4 @@ Applied data science recommendations and tutorials
 [47]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/time_series_forecasting.ipynb
 [48]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/ARIMA_grid_search.ipynb
 [49]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
+[50]:https://geographyfieldwork.com/Simpson'sDiversityIndex.htm

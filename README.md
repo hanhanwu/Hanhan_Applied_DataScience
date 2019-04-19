@@ -176,6 +176,9 @@ Applied data science recommendations and tutorials
       * The advantage of draw with replacement is, the distribution of the data won't be changed when you are drawing
       * [sklearn methods in data spliting][28]
       * Statistics proved that Bootstrap has close estimates as using the true population, when you have selected enough amount of samples (similar to central theorem)
+      * [My code - Using Bootstrap to Estimate the Coefficients of Linear Regression][51]
+        * Applied on linear regression, and quadratic linear regression
+        * It compares bootstrap results and standard formulas results. Even though both got the same estimated coefficients, standard formulas tend to show lower standard errors. However sinece standard formulas makes assumptions, while bootstrap is nonparametric, bootstrap tends to be more reliable
 
   * Cross Validation
     * We can calculate the average evaluation score and the score variance to compare model performance
@@ -311,3 +314,4 @@ Applied data science recommendations and tutorials
 [48]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/sequencial_analysis/ARIMA_grid_search.ipynb
 [49]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
 [50]:https://geographyfieldwork.com/Simpson'sDiversityIndex.htm
+[51]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/R_bootstrap_estimate_coefficients.R

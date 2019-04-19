@@ -169,12 +169,13 @@ Applied data science recommendations and tutorials
   * Hold-out Data
     * If the dataset is large enough, it's always better to have a piece of hold-out data, and always use this piece of data to evaluate the models
   * Run the same model multiple times
-    * You can try different seeds with the whole dataset (I refer this one)
-    * Bootstrap - split the dataset into different folds, and run the model in each fold, finally aggregate the results
-      * Resample with replacement
+    * You can try different seeds with the whole dataset
+    * Bootstrap - run the model on randomly selected samples, finally aggregate the results
+      * <b>Resample with replacement</b>
       * UNIFORMALY random draw
       * The advantage of draw with replacement is, the distribution of the data won't be changed when you are drawing
       * [sklearn methods in data spliting][28]
+      * Statistics proved that Bootstrap has close estimates as using the true population, when you have selected enough amount of samples (similar to central theorem)
 
   * Cross Validation
     * We can calculate the average evaluation score and the score variance to compare model performance

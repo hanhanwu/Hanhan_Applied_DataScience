@@ -106,6 +106,9 @@ Applied data science recommendations and tutorials
     * It has one-hot and other label encoding methods
     * `TargetEncoder` can be used when the categorical column contains lots of uniquen values (High-Cardinality), such as zipcode
   * Convert to value frequency or response rate, aggregated value. Also for categorical value, we can use part of the value and convert to numerical values
+* Normalize data into [0, 1] without min, max
+  * We can use sigmoid function `exp(x)/(exp(x) + 1)` to normalize any real value into 0, 1 range
+  * If we check the curve of sigmoid function, you can see that for any x that belongs to a real number, y is always between 0 and 1.
 
 ## Deal With Imbalanced Data
 ### Sampling Methods

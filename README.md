@@ -226,6 +226,19 @@ Applied data science recommendations and tutorials
     * The exponential moving average (EMA) is a weighted average of the last n prices, where the weighting decreases exponentially with each previous price/period. In other words, the formula gives recent prices more weight than past prices.
     * The weighted moving average (WMA) gives you a weighted average of the last n prices, where the weighting decreases with each previous price. This works similarly to the EMA.
   * [Grid Search to tune ARIMA params][48]
+  
+  
+## Optimization Problem
+### Linear Programming
+* This is a common solution used in industry problems. With multiple constraint functions and 1 function for optimized solution.
+* [My code - Linear Programming to Get Optimized List of Youtube Videos][52]
+  * Only supports minimized problem, so you need to adjust the optimization function if it's supposed to be maximized
+* [A detailed introduction of applied linear programming][53]
+* [How does Simplex Method work][54]
+  * Use this solution when 2D drawing is no longer enough
+* [Python Linear Programming - scipy.optimize.linprog][55]
+  * [How to use this library...][56]
+  * Only supports minimized problem, so you need to adjust the optimization function if it's supposed to be maximized
 
 #### Reference
 [My model evaluation previous detailed summary][27]
@@ -315,3 +328,8 @@ Applied data science recommendations and tutorials
 [49]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
 [50]:https://geographyfieldwork.com/Simpson'sDiversityIndex.htm
 [51]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/R_bootstrap_estimate_coefficients.R
+[52]:https://github.com/hanhanwu/Hanhan_Play_With_Social_Media/blob/master/DEF_CON_video_list_linear_optimization.ipynb
+[53]:https://www.analyticsvidhya.com/blog/2017/02/lintroductory-guide-on-linear-programming-explained-in-simple-english/?fbclid=IwAR3f6DSNp_vVdvET5SNIdv6AMhBnbF5prwFNk2tSQ2pnoRVW9V8T0R_IZYU&utm_medium=social&utm_source=facebook.com
+[54]:https://www.youtube.com/watch?v=XK26I9eoSl8
+[55]:https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html
+[56]:https://stackoverflow.com/questions/30849883/linear-programming-with-scipy-optimize-linprog

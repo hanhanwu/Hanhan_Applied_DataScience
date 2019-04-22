@@ -39,7 +39,10 @@
   * <b>Bayes' Could Get > 1 Probability?</b>
     * Real world problem is always more complex, have you ever met a situation that your Bayes' Theorem got ">1" probability? This is not supposed to happen, but here's the reason and the solution.
     * <b>Reason:</b> Let's look at Bayes' Theorem formula again `P(Ci|X) = P(X|Ci)*P(Ci)/P(X)`. `P(X)` is calculated in the whole population, `P(X|Ci)` is calculated within class Ci. So if the cases almost all exist in class Ci, then P(X) will be smaller than P(X|Ci), and you may get the final probability larger than 1.
-    * <b>Solution:</b> Change the population range, and see is there any way to make X could happen across classes
+    * <b>Solution 1 - change the population range:</b> Change the population range, and see is there any way to make X could happen across classes
+    * <b>Solution 2 - Force the values into 0 and 1:</b>
+      * We can use sigmoid function `exp(x)/(exp(x) + 1)` to normalize any real value into 0, 1 range
+      * If we check the curve of sigmoid function, you can see that for any x that belongs to a real number, y is always between 0 and 1.
   * <b>Laplacia Correction</b>
     * When one of the P(xi|Ci) is 0, the whole P(X|Ci) will become 0, which means it cancles out all the other posterior probability conditioned on Ci.
     * To deal with this problem, with "Laplacia Correction", you can add 1 to each dividend when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones

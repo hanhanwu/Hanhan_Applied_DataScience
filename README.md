@@ -187,6 +187,7 @@ Applied data science recommendations and tutorials
     * We can calculate the average evaluation score and the score variance to compare model performance
     * In sklearn, we can just use [cross_val_score][23], which allows us either to use integer as stratified kfold cv folds, or [cross validation instances][24]
 ### Evaluation Methods
+* There is a suggestion for model evaluation, which is, choose and train models on the same dataset and averaging the evaluation results. The idea here is, "combined models increase prediction accuracy"
 * "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
 * [sklearn classification evaluation metrics][19]
 * [sklearn regression evaluation metrics][20]
@@ -229,6 +230,10 @@ Applied data science recommendations and tutorials
     * The exponential moving average (EMA) is a weighted average of the last n prices, where the weighting decreases exponentially with each previous price/period. In other words, the formula gives recent prices more weight than past prices.
     * The weighted moving average (WMA) gives you a weighted average of the last n prices, where the weighting decreases with each previous price. This works similarly to the EMA.
   * [Grid Search to tune ARIMA params][48]
+* Combing multiple models forecasts
+  * Combining multiple forecasts leads to increased forecast accuracy.
+  * Choose and train models on the same time series and averaging the resulting forecasts
+  * [Reference][57]
   
   
 ## Optimization Problem
@@ -336,3 +341,4 @@ Applied data science recommendations and tutorials
 [54]:https://www.youtube.com/watch?v=XK26I9eoSl8
 [55]:https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html
 [56]:https://stackoverflow.com/questions/30849883/linear-programming-with-scipy-optimize-linprog
+[57]:https://medium.com/datadriveninvestor/systematic-solution-for-time-series-forecasting-in-real-business-problems-2816747799d6

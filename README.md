@@ -159,6 +159,8 @@ Applied data science recommendations and tutorials
 * Spot-check Model Evaluation
   * After you have a few list of models, you want to quickly check which one performs better. What I'm doing here is, for each model, use all the training data but with stratified kfold cross validation. Finally it evaluates the average score and the score variance.
     * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
+### Notes for Evaluation Methods in Model Selection
+* R-Square, RSS (residual sum of squares) = MSE*n, will decrease when there are more features, but the test error may not drop. Therefore, R-Square, RSS should not be used for selecting models that have difference number of features.
 
 ## Algorithms Details
 ### SVM

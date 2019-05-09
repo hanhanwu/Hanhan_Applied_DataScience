@@ -90,6 +90,14 @@
 * Lag1 has the lowest p-value and negative coefficient, indicating that when there is positive return yesterday, it's less likely to have the direction goes up today.
 * Meanwhile, 0.145 p-value is still large enough to reject null hypothesis, which means there is no clear correlation between Lag1 and Direction
 
+## Prove better than Random Guessing
+* The baseline of ROC is the random guess line, below it means the results are worse than random guess.
+  * [Understanding ROC random guessing][8]
+  * [A breif but easy-to-understand description][9]
+  * [There's a theory about using Precision-Recall curve to check randomness][10]
+    * It says the baseline should a horizontal line
+    * I personally think it a vertical line. Because think about an extreme case, you predict all the results as positive (majority class), then recall will be constant, while precision won't. Same in this case, ROC also has baseline as random guessing
+
 [1]:https://dl.acm.org/citation.cfm?id=507538
 [2]:https://www.pythonforfinance.net/2016/11/28/monte-carlo-simulation-in-python/
 [3]:https://pythonhosted.org/pyhmc/
@@ -97,3 +105,6 @@
 [5]:https://static1.squarespace.com/static/56368331e4b08347cb5555e1/t/5c47d75bb91c915700195753/1548212060246/SCP_draft.pdf
 [6]:https://docs.pymc.io/notebooks/Bayes_factor.html
 [7]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/R_logistic_regression.R
+[8]:https://medium.com/datadriveninvestor/understanding-roc-auc-curve-7b706fb710cb
+[9]:https://stats.stackexchange.com/questions/46502/why-is-the-roc-curve-of-a-random-classifier-the-line-x-y
+[10]:https://stats.stackexchange.com/questions/251175/what-is-baseline-in-precision-recall-curve

@@ -88,7 +88,8 @@
 * The target in this sample is "Direction" which has value "Up" or "Down"
 * You can check p-value or z-value (opposite trend as p-value) to decide whether to reject NUll hypothesis, if reject the null hypothesis, it means the feature and the target has no clear correlation
 * Lag1 has the lowest p-value and negative coefficient, indicating that when there is positive return yesterday, it's less likely to have the direction goes up today.
-* Meanwhile, 0.145 p-value is still large enough to reject null hypothesis, which means there is no clear correlation between Lag1 and Direction
+* 0.145 p-value is still larger than 0.05 (95% confidence level), therefore fail to reject the null hypothesis, which means there is correlation between Lag1 and Direction
+  * <b>Larger the p-value is, the more likely that null hypothesis is correct, fail to reject it</b>
 
 ## Prove better than Random Guessing
 * The baseline of ROC is the random guess line, below it means the results are worse than random guess.

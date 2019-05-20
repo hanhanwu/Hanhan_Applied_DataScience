@@ -90,6 +90,40 @@
 * Lag1 has the lowest p-value and negative coefficient, indicating that when there is positive return yesterday, it's less likely to have the direction goes up today.
 * 0.145 p-value is still larger than 0.05 (95% confidence level), therefore fail to reject the null hypothesis, which means there is correlation between Lag1 and Direction
   * <b>Larger the p-value is, the more likely that null hypothesis is correct, fail to reject it</b>
+  
+## 3 Types of t-test
+* The assumptions of t-test
+  * The data should follow a continuous or ordinal scale
+  * The observations in the data should be randomly selected
+  * The data should resemble a bell-shaped curve
+  * Large sample size should be taken for the data to approach a normal distribution
+  * Variances among the groups should be equal
+* One Sample t-test - Compare group mean with population/theoretical mean
+  * To compute t-value, `t = (m-μ) * sqrt(n)/s`
+    * t - t value
+    * m - group mean
+    * μ - population/theoretical mean
+    * n - the number of records in the group, sample size
+    * s - standard deviation of the group
+  * R t-test
+    * In R, you just need to type `t.test(df$col,mu=10)`, mu is the population/theoretical mean here
+    <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/one_sample_t_test.png" width="400" height="200">
+    
+    * To understand the output
+      * Method 1 - Compare calculated t value with [t-table][11]
+        * At the confidence level & degree of freedom (df = n-1), if calculated t is smaller than the value in t-table, then fail to reject the null hypothesis.
+        * Null Hypothesis tends to be ".... are correlated", "..... are the same", etc.
+      * Method 2 - Compare p-value with confidence level
+        * If p-value is higher than 1 - confidence level, then fail to reject null hypothesis.
+        * For example, cofidence level is 95%, p value is higher than 0.05, then accept the null hypothesis
+* Two Sample t-test - Compare the means of 2 groups
+  * [How to calculate t-value for 2 sample t-test][12]
+  * R t-test
+    * In R, you just need to type `t.test(df1$col, df2$col,var.equal = T)`
+    <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/two_sample_t_test.png" width="400" height="200">
+    
+* Paired Sample t-test - Compare the means for 1 group at 2 times/conditions
+* [Reference][12]
 
 ## Prove better than Random Guessing
 * The baseline of ROC is the random guess line, below it means the results are worse than random guess.
@@ -109,3 +143,5 @@
 [8]:https://medium.com/datadriveninvestor/understanding-roc-auc-curve-7b706fb710cb
 [9]:https://stats.stackexchange.com/questions/46502/why-is-the-roc-curve-of-a-random-classifier-the-line-x-y
 [10]:https://stats.stackexchange.com/questions/251175/what-is-baseline-in-precision-recall-curve
+[11]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
+[12]:https://www.analyticsvidhya.com/blog/2019/05/statistics-t-test-introduction-r-implementation/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

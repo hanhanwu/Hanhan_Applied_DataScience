@@ -288,6 +288,7 @@ def remove_multicollineary_features(feature_df, vif_threshold):
 
 
 # Show kernel density distribution, calculate K-L score to show difference between the 2 probability distributions
+## Lower K-L score, the more similarity between the distribution
 import numpy as np
 from scipy.stats import gaussian_kde
 from scipy.stats import entropy

@@ -125,6 +125,10 @@
 * Paired Sample t-test - Compare the means for 1 group at 2 times/conditions
 * [Reference][12]
 
+## Comparing Distribution vs Checking Identicalness vs Checking Distance
+* Recently I just realized, when comparing 2 distributions, even if they look very close in visualization, t-test or chi2 may still show larger difference then those having more visual difference. So currently, `K-L score` is what I'm using now.
+* Also `pearson correlation` can be better than t-test, chi2 when the date values in a list are not in the same scale.
+
 ## Prove better than Random Guessing
 * The baseline of ROC is the random guess line, below it means the results are worse than random guess.
   * [Understanding ROC random guessing][8]

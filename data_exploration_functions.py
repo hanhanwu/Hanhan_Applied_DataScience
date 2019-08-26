@@ -277,7 +277,10 @@ def remove_highly_correlated_features(data, threshold):
 
 
 # Remove 3D+ highly correlated features, to deal with multicollinearity issue
+## Normally when VIF is between 5 and 10, there could be multicollineary issue of the feature. 
+## When VIF > 10, it's too high and the feature should be removed.
 ## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation
+## NOTE: deal with nan before using this method, otherwise SVD won't converge
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 def remove_multicollineary_features(feature_df, vif_threshold):
     vif = pd.DataFrame()

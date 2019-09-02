@@ -2,6 +2,16 @@
 Applied data science recommendations and tutorials
 
 # Applied Recommendations
+## Data Quality Check
+When you got the data from the client or from other teams, better to check the quality first.
+### Label Quality Check
+* Overall Check
+  * Data Imbalance
+* Within Each Unit
+  * Unit here can be each account/user/application/etc.
+  * How does different labels distribute within each unit
+  * Better to understand why
+
 ## Data Exploration
 * [My Code - IPython][11]
   * When you are using `chi2` or `f_classif`, the features should have no NULL, no negative value.

@@ -139,6 +139,14 @@ When you got the data from the client or from other teams, better to check the q
 * When the prediction result is in probability format, we can change the threshold of class prediction. By default the reshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
 <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/error_rate_thresholds.png" width="500" height="200">
 
+### Given Partial Labels
+* When the labels are given by the client, without being able to work with any business expert, there can be many problems. Especially when they only gave you 1 class of the labels, and you might need to assume the rest of the data all belong to the other label, it can be more problematic.
+* Here're the suggestions
+  * Better not to build the machine learning pipeline at the early stage, since the pipeline can create much more limitation in the work when you want to try different modeling methods.
+  * If not trust the label quality, try clustering first, and check the pattern in each cluster, and compare with the given labels.
+  * Communicate with the business experts frequently if possible, to understand how did the labels get generated.
+  * If your model is supervised method, and if using all the data there will be huge data imbalance issue, better to choose representative sample data as the assumed label, and try to reduce the size, in order to reduce the data imbalance issue.
+
 
 ### Other Methods
 * Clustering & Multiple Model Training

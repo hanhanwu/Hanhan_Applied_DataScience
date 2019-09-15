@@ -99,6 +99,7 @@ When you got the data from the client or from other teams, better to check the q
     * Sometimes, you just want to scale the values between 0 and 1 so MaxMinScaler is still popular
 * Transform nonlinear relationship to linear relationship, this is not only easier to comprehend, but also required for parametric algorithms
   * scatter plot to check the relationship; we can also use pandas cross tab method
+  * Binning
   * Such as `log`, here are a list of methods for nonlinear transformation: https://people.revoledu.com/kardi/tutorial/Regression/nonlinear/NonLinearTransformation.htm
   * PCA - It can convert the whole feature set into normalized linear combination
     * [How to use PCA for dimensional reduction/feature selection][29]
@@ -116,10 +117,12 @@ When you got the data from the client or from other teams, better to check the q
   * binning
 * derived features
 * one-hot features
+* decision tree paths as the feature
 * Methods to deal with categorical features
   * [Categorical Encoding Methods][37]
     * It has one-hot and other label encoding methods
     * `TargetEncoder` can be used when the categorical column contains lots of uniquen values (High-Cardinality), such as zipcode
+  * Concat multiple categorical features as 1 feature
   * Convert to value frequency or response rate, aggregated value. Also for categorical value, we can use part of the value and convert to numerical values
 * Normalize data into [0, 1] without min, max
   * We can use sigmoid function `exp(x)/(exp(x) + 1)` to normalize any real value into 0, 1 range

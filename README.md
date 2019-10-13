@@ -119,7 +119,7 @@ When you got the data from the client or from other teams, better to check the q
 * one-hot features
 * decision tree paths as the feature
 * Methods to deal with categorical features
-  * [Categorical Encoding Methods][37]
+  * [10+ Built-in Categorical Encoding Methods][37]
     * It has one-hot and other label encoding methods
     * `TargetEncoder` can be used when the categorical column contains lots of uniquen values (High-Cardinality), such as zipcode
   * Concat multiple categorical features as 1 feature

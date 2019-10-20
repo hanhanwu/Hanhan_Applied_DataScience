@@ -127,6 +127,7 @@
 
 ## Comparing Distribution vs Checking Identicalness vs Checking Distance
 * Recently I just realized, when comparing 2 distributions, even if they look very close in visualization, t-test or chi2 may still show larger difference then those having more visual difference. So currently, `K-L score` is what I'm using now.
+  * <b>K-L score works better in normal distribution, for other types of distribution, it can return Inf</b>
   * However, K-L score does have its limitation. For example, 1 distribution is almost flat while the other has a very high peak, and k-l score could be 0. When this happens, using t-test statistics used [here][13] may help.
 * Also `pearson correlation` can be better than t-test, chi2 when the date values in a list are not in the same scale.
 

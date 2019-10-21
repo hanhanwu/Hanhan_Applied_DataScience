@@ -126,11 +126,16 @@
 * [Reference][12]
 
 ## Comparing Distribution vs Checking Identicalness vs Checking Distance
+### K-L Score vs T-test/Chi2/Pearson Correlation
 * Recently I just realized, when comparing 2 distributions, even if they look very close in visualization, t-test or chi2 may still show larger difference then those having more visual difference. So currently, `K-L score` is what I'm using now.
   * <b>K-L score works better in normal distribution, for other types of distribution, it can return Inf</b>
   * However, K-L score does have its limitation. For example, 1 distribution is almost flat while the other has a very high peak, and k-l score could be 0. When this happens, using t-test statistics used [here][13] may help.
 * Also `pearson correlation` can be better than t-test, chi2 when the date values in a list are not in the same scale.
   * But a common problem with python built-in `pearson correlation`, t-test and chi2 is, they all require the same size of 2 value lists. K-L score doesn't need that.
+### K-S Score (Kolmogorov–Smirnov test)
+* It's a <b>nonparametrics</b> method, which is used to compare a sample with a referenced distribution (such as normal distribution, chi2 distribution, etc.)
+* [Python Built-in K-S test][14]
+  * [Referenced Distribution you can use][15]
 
 ## Prove better than Random Guessing
 * The baseline of ROC is the random guess line, below it means the results are worse than random guess.
@@ -153,3 +158,5 @@
 [11]:http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
 [12]:https://www.analyticsvidhya.com/blog/2019/05/statistics-t-test-introduction-r-implementation/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [13]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Simple%20Production%20Solutions.ipynb
+[14]:https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.kstest.html
+[15]:https://docs.scipy.org/doc/scipy-0.14.0/reference/stats.html#module-scipy.stats

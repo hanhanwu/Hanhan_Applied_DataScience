@@ -43,9 +43,10 @@
     * <b>Solution 2 - Force the values into 0 and 1:</b>
       * We can use sigmoid function `exp(x)/(exp(x) + 1)` to normalize any real value into 0, 1 range
       * If we check the curve of sigmoid function, you can see that for any x that belongs to a real number, y is always between 0 and 1.
-  * <b>Laplacia Correction</b>
+  * <b>Laplace Correction</b>
     * When one of the P(xi|Ci) is 0, the whole P(X|Ci) will become 0, which means it cancles out all the other posterior probability conditioned on Ci.
-    * To deal with this problem, with "Laplacia Correction", you can add 1 to each dividend when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones
+    * To deal with this problem, with "Laplacia Correction", you can add a small value (usually 1) to each dividend when calculating each P(xi|Ci), so that you can avoid 0 probability and "corrected" probability is still close to the "uncorrected" ones
+      * Not related Bayesian method here, sometimes, when I was adding extra value to avoid calculation issue, such as `log(v)`, to avoid `log(0)`, you can use `log(v+1)`, but if v is a small value, such as a value between `[0,1]`, `log(v)` and `log(v+1)` has larger differences. At this time, you can try `log(v+0.0001)` or other small values.
 * Likelihood vs Probability
   * Likelihood `L(H|D) = k * P(D|H)`
     * The likelihood of a hypothesis (H) given some data (D) is proportional to the probability of obtaining D given that H is true, multiplied by an arbitrary positive constant k

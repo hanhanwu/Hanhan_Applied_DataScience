@@ -1,10 +1,10 @@
 # Prototype Toolkit
 
 ## Param Tuning
-* [Tune for Hyperparameter Tuning][5]
 * [Ray - Fast for building distributed applications][6]
   * Ray is a fast and simple framework for building and running distributed applications.
-  * It includes `Tune`
+  * It includes `Tune`, [Tune for Hyperparameter Tuning][5]
+  * [IPython Tutorials][7]
 * sklearn random search, grid search
 * [hyperopt][1]
 * [Bayesian Optimization][2]
@@ -20,4 +20,5 @@
 [4]:https://medium.com/analytics-vidhya/hyperparameters-optimization-for-lightgbm-catboost-and-xgboost-regressors-using-bayesian-6e7c495947a9
 [5]:https://ray.readthedocs.io/en/latest/tune.html
 [6]:https://github.com/ray-project/ray
+[7]:https://github.com/ray-project/tutorial
 

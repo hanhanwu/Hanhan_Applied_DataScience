@@ -12,6 +12,6 @@
 
 [1]:https://github.com/hyperopt/hyperopt
 [2]:https://github.com/fmfn/BayesianOptimization
-[3]:https://github.com/dc-aichara/DS-ML-Public/blob/master/Medium_Notebooks/hyp_tune.ipynb
+[3]:https://github.com/dc-aichara/DS-ML-Public/blob/master/Medium_Files/hyp_tune.ipynb
 [4]:https://medium.com/analytics-vidhya/hyperparameters-optimization-for-lightgbm-catboost-and-xgboost-regressors-using-bayesian-6e7c495947a9
 

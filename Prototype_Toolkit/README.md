@@ -3,6 +3,7 @@
 ## Param Tuning
 * [Ray - Fast for building distributed applications][6]
   * Ray is a fast and simple framework for building and running distributed applications.
+  * It supports GPU, but not supports windows...
   * It includes `Tune`, [Tune for Hyperparameter Tuning][5]
   * [IPython Tutorials][7]
 * sklearn random search, grid search

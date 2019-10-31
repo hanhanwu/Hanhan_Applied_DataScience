@@ -312,6 +312,7 @@ When you got the data from the client or from other teams, better to check the q
   * Record and query experiments: code, data, config, and results.
   * Packaging format for reproducible runs on any platform.
   * General format for sending models to diverse deployment tools.
+  * [My Code to try it][59]
   
 # [My Production Solutions Notes][38]
 * It records my simple solutions in production deployment.
@@ -375,3 +376,4 @@ When you got the data from the client or from other teams, better to check the q
 [56]:https://stackoverflow.com/questions/30849883/linear-programming-with-scipy-optimize-linprog
 [57]:https://medium.com/datadriveninvestor/systematic-solution-for-time-series-forecasting-in-real-business-problems-2816747799d6
 [58]:https://github.com/mlflow/mlflow/blob/master/docs/source/quickstart.rst
+[59]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/ML_Tools/Readme.md#mlflow

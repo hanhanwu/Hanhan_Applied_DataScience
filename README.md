@@ -88,6 +88,7 @@ When you got the data from the client or from other teams, better to check the q
   * Better to remove highly correlated features before doing this. Some tree model will put highly correlated features all as important if one of them is highly ranked
 * Dimensional Reduction Algorithms
   * [sklearn decomposition][15]
+  * [The intermediate result from autoencoder - encoder][60]
 * Feature Selection Methods
   * [sklearn feature selection][16]
   
@@ -377,3 +378,4 @@ When you got the data from the client or from other teams, better to check the q
 [57]:https://medium.com/datadriveninvestor/systematic-solution-for-time-series-forecasting-in-real-business-problems-2816747799d6
 [58]:https://github.com/mlflow/mlflow/blob/master/docs/source/quickstart.rst
 [59]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/ML_Tools/Readme.md#mlflow
+[60]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/AI_Experiments/ReadMe.md#more-about-autoencoder

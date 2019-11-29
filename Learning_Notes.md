@@ -137,6 +137,7 @@
 * It's a <b>nonparametrics</b> method, which is used to compare a sample with a referenced distribution (such as normal distribution, chi2 distribution, etc.)
 * [Python Built-in K-S test][14]
   * [Referenced Distribution you can use][15]
+* [K-L Divergence is also called as "Relative Entropy"][16], can be used as entropy to check contained info diversity.
 
 ## Prove better than Random Guessing
 * The baseline of ROC is the random guess line, below it means the results are worse than random guess.
@@ -161,3 +162,4 @@
 [13]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Simple%20Production%20Solutions.ipynb
 [14]:https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.kstest.html
 [15]:https://docs.scipy.org/doc/scipy-0.14.0/reference/stats.html#module-scipy.stats
+[16]:https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence

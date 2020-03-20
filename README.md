@@ -187,7 +187,12 @@ When you got the data from the client or from other teams, better to check the q
   * After you have a few list of models, you want to quickly check which one performs better. What I'm doing here is, for each model, use all the training data but with stratified kfold cross validation. Finally it evaluates the average score and the score variance.
     * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
 ### Notes for Evaluation Methods in Model Selection
-* R-Square, RSS (residual sum of squares) = MSE*n, will decrease when there are more features, but the test error may not drop. Therefore, R-Square, RSS should not be used for selecting models that have difference number of features.
+* R-Square, RSS (residual sum of squares), will decrease when there are more features, but the test error may not drop. <b>Therefore, R-Square, RSS should not be used for selecting models that have different number of features.</b>
+  * `RSS = MSE*n`
+  * `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.
+    * It's between 0% to 100%
+    * 0% indicates that the model explains none of the variability of the response data around its mean.
+    * 100% indicates that the model explains all the variability of the response data around its mean.
 
 ## Algorithms Details
 ### SVM
@@ -221,6 +226,20 @@ When you got the data from the client or from other teams, better to check the q
 * [sklearn classification evaluation metrics][19]
 * [sklearn regression evaluation metrics][20]
   * Logloss works better for discrete numerical target; MSE/RMSE works better for continuous target
+  * `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.
+    * It's between 0% to 100%
+      * 0% indicates that the model explains none of the variability of the response data around its mean.
+      * 100% indicates that the model explains all the variability of the response data around its mean.
+    * R-square cannot tell bias, so have to be used with residual plot.
+      * When the residual plot dots are randomly dispersed around the horizontal axis, a linear model is better for the data, otherwise a nonlinear model is better.
+    * Lower R-square doesn't mean the model is bad.
+      * For unpredictable things, lower R-square is expected. Or R-squared value is low but you have statistically significant predictors, it's also fine.
+    * High R-square doesn't mean good model.
+      * The residual plot may not be random and you would choose a nonlinear model rather than a linear model.
+  * Residual Plot
+    * References
+      * [R-square][61]
+      * [Why need residual plot in regression analysis][62]
 * [sklearn clustering metrics][21]
   * Still needs labels
   * Sometimes, in simply do not have the label at all. You can:
@@ -303,7 +322,7 @@ When you got the data from the client or from other teams, better to check the q
 * [My code of R 5 packages for dealing with missing values][17]
   * [Original tutorial][18]
   
-### Python Tools
+### Python & R Tools
 * [Some quick methods in pandas][32]
   * pivot table - generate aggregate results for multiple columns
   * multi-indexing - using the values of multiple columns as the index to locate
@@ -314,6 +333,7 @@ When you got the data from the client or from other teams, better to check the q
   * Packaging format for reproducible runs on any platform.
   * General format for sending models to diverse deployment tools.
   * [My Code to try it][59]
+* 
   
 # [My Production Solutions Notes][38]
 * It records my simple solutions in production deployment.
@@ -379,3 +399,5 @@ When you got the data from the client or from other teams, better to check the q
 [58]:https://github.com/mlflow/mlflow/blob/master/docs/source/quickstart.rst
 [59]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/ML_Tools/Readme.md#mlflow
 [60]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/AI_Experiments/ReadMe.md#more-about-autoencoder
+[61]:https://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
+[62]:https://blog.minitab.com/blog/adventures-in-statistics-2/why-you-need-to-check-your-residual-plots-for-regression-analysis

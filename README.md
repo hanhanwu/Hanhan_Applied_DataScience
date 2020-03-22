@@ -223,33 +223,52 @@ When you got the data from the client or from other teams, better to check the q
 ### Evaluation Methods
 * There is a suggestion for model evaluation, which is, choose and train models on the same dataset and averaging the evaluation results. The idea here is, "combined models increase prediction accuracy"
 * "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
-* [sklearn classification evaluation metrics][19]
-* [sklearn regression evaluation metrics][20]
-  * Logloss works better for discrete numerical target; MSE/RMSE works better for continuous target
-  * `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.
-    * It's between 0% to 100%
-      * 0% indicates that the model explains none of the variability of the response data around its mean.
-      * 100% indicates that the model explains all the variability of the response data around its mean.
-    * R-square cannot tell bias, so have to be used with residual plot.
-      * When the residual plot dots are randomly dispersed around the horizontal axis, a linear model is better for the data, otherwise a nonlinear model is better.
-    * Lower R-square doesn't mean the model is bad.
-      * For unpredictable things, lower R-square is expected. Or R-squared value is low but you have statistically significant predictors, it's also fine.
-    * High R-square doesn't mean good model.
-      * The residual plot may not be random and you would choose a nonlinear model rather than a linear model.
-  * Residual Plot
-    * References
-      * [R-square][61]
-      * [Why need residual plot in regression analysis][62]
-* [sklearn clustering metrics][21]
-  * Still needs labels
-  * Sometimes, in simply do not have the label at all. You can:
-    * Compare with the datasets that have label, at the risk of non-transformable
-    * Check predicted results distribution, comparing between different rounds
-    * Your customer will expect a percentage for each label, compare with that...
+#### [sklearn classification evaluation metrics][19]
+#### [sklearn regression evaluation metrics][20]
+* Logloss works better for discrete numerical target; MSE/RMSE works better for continuous target
+* `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.
+  * It's between 0% to 100%
+    * 0% indicates that the model explains none of the variability of the response data around its mean.
+    * 100% indicates that the model explains all the variability of the response data around its mean.
+  * R-square cannot tell bias, so have to be used with residual plot.
+    * When the residual plot dots are randomly dispersed around the horizontal axis, a linear model is better for the data, otherwise a nonlinear model is better.
+  * Lower R-square doesn't mean the model is bad.
+    * For unpredictable things, lower R-square is expected. Or R-squared value is low but you have statistically significant predictors, it's also fine.
+  * High R-square doesn't mean good model.
+    * The residual plot may not be random and you would choose a nonlinear model rather than a linear model.
+* Residual Plot
+  * In regression model, `Response = (Constant + Predictors) + Error  = Deterministic + Stochastic`
+    * Deterministic - The explanatory/predictive information, explained by the predictor variables.
+    * Stochastic - The unpredictable part, random, the error. Which also means the explanatory/predictive information should be in the error.
+  * Therefore, residual plot should be random, which means the error only contains the Stochastic part.
+  * So when the residual plot is not random, that means the predictor variables are not capturing some explanatory information leaked in the residual plot. Posibilities when predictive info could leak into the residual plot:
+    * Didn't capture a missing variable.
+    * Didn't capture a missing higher-order term of a variable in the model to explain the curvature.
+    * Didn't capture the interaction between terms already in the model.
+    * The residual is correlated to one or more variables, and these variables didn't get captured in the model.
+      * Better to check the correlation between residuals and variables.
+    * Autocorrelation - Adjacent residuals are correlated to each other.
+      * Typically this situation appears in time series, when you can use one residual to predict the next residual.
+      * Test autocorrelation with ACF, PACF
+        * ACF (AutoCorrelation Function), PACF (Partial AutoCorrelation Function)
+        * [More description about ACF, PACF][63]
+        * When there are 1+ lags have values beyond the interval in ACF, or PACF, then there is autocorrelation.
+      * [Test autocorrelation with python statsmodels][64]
+      * [What is Durbin Watson test for autocorrelation][66]
+        * [How to tell it's autocorrelation with Durbin Watson test result][65]
+* References
+  * [R-square][61]
+  * [Why need residual plot in regression analysis][62]
+#### [sklearn clustering metrics][21]
+* Still needs labels
+* Sometimes, in simply do not have the label at all. You can:
+  * Compare with the datasets that have label, at the risk of non-transformable
+  * Check predicted results distribution, comparing between different rounds
+  * Your customer will expect a percentage for each label, compare with that...
 * Suggestions to improve scores
-    * Making the probabilities less sharp (less confident). This means adjusting the predicted probabilities away from the hard 0 and 1 bounds to limit the impact of penalties of being completely wrong.
-    * Shift the distribution to the naive prediction (base rate). This means shifting the mean of the predicted probabilities to the probability of the base rate, such as 0.5 for a balanced prediction problem.
-    * [Reference][41]
+  * Making the probabilities less sharp (less confident). This means adjusting the predicted probabilities away from the hard 0 and 1 bounds to limit the impact of penalties of being completely wrong.
+  * Shift the distribution to the naive prediction (base rate). This means shifting the mean of the predicted probabilities to the probability of the base rate, such as 0.5 for a balanced prediction problem.
+  * [Reference][41]
 * How to Compare 2 Models After Each has been Running Multiple Rounds
   * [Recommended t-table][49]
 <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/compare_2_model_multi_rounds_results.png" width="700" height="400">
@@ -401,3 +420,7 @@ When you got the data from the client or from other teams, better to check the q
 [60]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/AI_Experiments/ReadMe.md#more-about-autoencoder
 [61]:https://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
 [62]:https://blog.minitab.com/blog/adventures-in-statistics-2/why-you-need-to-check-your-residual-plots-for-regression-analysis
+[63]:https://machinelearningmastery.com/gentle-introduction-autocorrelation-partial-autocorrelation/
+[64]:https://www.statsmodels.org/stable/generated/statsmodels.stats.diagnostic.acorr_ljungbox.html
+[65]:https://www.statisticshowto.datasciencecentral.com/durbin-watson-test-coefficient/
+[66]:http://www.math.nsysu.edu.tw/~lomn/homepage/class/92/DurbinWatsonTest.pdf

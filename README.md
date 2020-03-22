@@ -83,7 +83,8 @@ When you got the data from the client or from other teams, better to check the q
       * Combine features with high VIF into 1 feature
     * [The implementation of using VIF to drop features][39]
     * [Description of VIF][40]
-      * The Variance Inflation Factor (VIF) is a measure of colinearity among predictor variables within a multiple regression. It is calculated by taking the the ratio of the variance of all a given model's betas divide by the variane of a single beta if it were fit alone.
+      * The Variance Inflation Factor (VIF) is a measure of colinearity among predictor variables within a multiple regression. It is calculated by taking the the ratio of the variance of all a given model's betas divide by the variane of a single beta if it were fit alone. <b>VIF score of an independent variable represents how well the variable is explained by other independent variables.</b>
+      * `VIF = 1/(1-R^2)`, higher R^2 means higher correlation between the variable and other variables, so higher VIF indicates higher multicollinearity.
 * Use tree models to find feature importance
   * Better to remove highly correlated features before doing this. Some tree model will put highly correlated features all as important if one of them is highly ranked
 * Dimensional Reduction Algorithms

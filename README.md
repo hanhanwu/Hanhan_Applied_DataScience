@@ -79,7 +79,7 @@ When you got the data from the client or from other teams, better to check the q
     * How to use this method, check the code [here][11], "Check Multicollinearity" section.
     * Normally when VIF is between 5 and 10, there could be multicollineary issue of the feature. When VIF > 10, it's too high and the feature should be removed.
     * 2 major methods to deal with features with high VIF
-      * Remove it
+      * Remove it: Often start with removing features with highest VIF
       * Combine features with high VIF into 1 feature
     * [The implementation of using VIF to drop features][39]
     * [Description of VIF][40]

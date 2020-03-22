@@ -336,13 +336,17 @@ When you got the data from the client or from other teams, better to check the q
   * `Hmisc` - It automatically recognizes the variables types and uses bootstrap sample and predictive mean matching to impute missing values. <b>You don’t need to separate or treat categorical variable</b>. It assumes linearity in the variables being predicted.
   * `mi` - It allows graphical diagnostics of imputation models and convergence of imputation process. It uses bayesian version of regression models to handle issue of separation. Imputation model specification is similar to regression output in R. It automatically detects irregularities in data such as high collinearity among variables. Also, it adds noise to imputation process to solve the problem of additive constraints.
   * <b>Recommend to start with missForest, Hmisc, MICE</b>, and then try others
+* How does R output use p-value in regression
+  * In R, after we have applied regression, we will see coefficient values as well as p-values.
+  * The null hypothesis is, coefficient is 0 for a variable (no effect to the model). 
+  * So when p-value is lower than the significance level, fail to reject the null hypothesis, which also means the variable should be included in the model. When p-value is high, accept the null hypothesis, and the variable should be removed from the model.
 
-#### reference
+#### Reference
 * [7 R data manipulation tools][14]
 * [My code of R 5 packages for dealing with missing values][17]
   * [Original tutorial][18]
   
-### Python & R Tools
+### Python Tools
 * [Some quick methods in pandas][32]
   * pivot table - generate aggregate results for multiple columns
   * multi-indexing - using the values of multiple columns as the index to locate
@@ -353,7 +357,6 @@ When you got the data from the client or from other teams, better to check the q
   * Packaging format for reproducible runs on any platform.
   * General format for sending models to diverse deployment tools.
   * [My Code to try it][59]
-* 
   
 # [My Production Solutions Notes][38]
 * It records my simple solutions in production deployment.

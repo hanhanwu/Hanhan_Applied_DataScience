@@ -1,6 +1,9 @@
 # Hanhan_Applied_DataScience
 Applied data science recommendations and tutorials
 
+# Important Tips
+* Sampling strategies should be documented.
+
 # Applied Recommendations
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.

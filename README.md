@@ -228,6 +228,11 @@ When you got the data from the client or from other teams, better to check the q
 * There is a suggestion for model evaluation, which is, choose and train models on the same dataset and averaging the evaluation results. The idea here is, "combined models increase prediction accuracy"
 * "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
 #### [sklearn classification evaluation metrics][19]
+* ROC Curve vs. Precision-Recall Curve
+  * ROC curve requires the 2 classes are balanced. Precision-Recall curve is better at being used on imbalanced dataset.
+  * Both of them have TPR (recall/sensitivity, the percentage of TP cases are described as positive), the difference is in precision and FPR.
+    * `FPR = FP/(FP + TN)`, when the negative class is much larger than positive class, FPR can be small.
+    * `Precision = TP/(TP + FP)`, it indicates the percentage of TP are correct. When the negative class is much larger than the positive class, this can be affected less, comparing with ROC.
 #### [sklearn regression evaluation metrics][20]
 * Logloss works better for discrete numerical target; MSE/RMSE works better for continuous target
 * `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.

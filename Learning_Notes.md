@@ -139,13 +139,20 @@
   * [Referenced Distribution you can use][15]
 * [K-L Divergence is also called as "Relative Entropy"][16], can be used as entropy to check contained info diversity.
 
-## Prove better than Random Guessing
+## Prove Better than Random Guessing
 * The baseline of ROC is the random guess line, below it means the results are worse than random guess.
   * [Understanding ROC random guessing][8]
   * [A breif but easy-to-understand description][9]
   * [There's a theory about using Precision-Recall curve to check randomness][10]
     * It says the baseline should a horizontal line
     * I personally think it a vertical line. Because think about an extreme case, you predict all the results as positive (majority class), then recall will be constant, while precision won't. Same in this case, ROC also has baseline as random guessing
+    
+## Root Cause Analysis
+* This is an interesting term I have learned today. It's not any fancy machine learning method, also different from A/B test, or multi-variate test or feature importance. It's a type of analysis that's trying to find the root cause of a result.
+  * To be honest, I think more people should learn this skill and apply them in teamwork, maybe in this way we can understand each other much better!
+* Now back to this analysis method. I like a few ideas used in it:
+  * [Time series visualization with major factors][17]
+  * [Keep asking why till reach to the right cause][18]
 
 [1]:https://dl.acm.org/citation.cfm?id=507538
 [2]:https://www.pythonforfinance.net/2016/11/28/monte-carlo-simulation-in-python/
@@ -163,3 +170,5 @@
 [14]:https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.kstest.html
 [15]:https://docs.scipy.org/doc/scipy-0.14.0/reference/stats.html#module-scipy.stats
 [16]:https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+[17]:https://towardsdatascience.com/how-to-conduct-a-proper-root-cause-analysis-789b9847f84b
+[18]:https://www.tableau.com/learn/articles/root-cause-analysis

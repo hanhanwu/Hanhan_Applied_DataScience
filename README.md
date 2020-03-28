@@ -367,7 +367,8 @@ When you got the data from the client or from other teams, better to check the q
   * [My Code to try it][59]
   
 # [My Production Solutions Notes][38]
-* It records my simple solutions in production deployment.
+### Notes in Speed Up
+* Better not use pandas `iterrows()` but to store each record as a dictionary and store in a list for iteration. Iterating pandas rows can be much slower.
 
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/

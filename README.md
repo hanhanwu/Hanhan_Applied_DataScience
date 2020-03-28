@@ -1,6 +1,9 @@
 # Hanhan_Applied_DataScience
 Applied data science recommendations and tutorials
 
+# Older Notes
+* [Better 4 Industry][67]
+
 # Important Tips
 * Sampling strategies should be documented.
 
@@ -323,6 +326,47 @@ When you got the data from the client or from other teams, better to check the q
 * [Python Linear Programming - scipy.optimize.linprog][55]
   * [How to use this library...][56]
   * Only supports minimized problem, so you need to adjust the optimization function if it's supposed to be maximized
+  
+## Interpretating Machine Learning Model
+### Lime - Visualize feature importance for all machine learning models
+* Their GitHub, Examples and the Paper: https://github.com/marcotcr/lime
+  * Interpretable: The explanation must be easy to understand depending on the target demographic
+  * Local fidelity: The explanation should be able to explain how the model behaves for individual predictions
+  * Model-agnostic: The method should be able to explain any model
+  * Global perspective: The model, as a whole, should be considered while explaining it
+* The tool can be used for both classification and regression. The reason I put it here is because it can show feature importance even for blackbox models. In industry, the interpretability can always finally influence whether you can apply the more complex methods that can bring higher accuracy. Too many situations that finally the intustry went with the most simple models or even just intuitive math models. This tool may help better intrepretation for those better models.
+* My code: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Better4Industry/lime_interpretable_ML.ipynb
+  * It seems that GitHub cannot show those visualization I have created in IPython. But you can check LIME GitHub Examples
+  * LIME requires data input to be numpy array, it doesn't support pandas dataframe yet. So that's why you can see in my code, I was converting the dataframe, lists all to numpy arraies.
+* NOTES
+  * Currently they have to use predicted probability in `explain_instance()` function
+  * You also need to specify all the class names in `LimeTabularExplainer`, especially in classification problem, otherwise the visualization cannot show classes well
+  
+### SHAP
+* It uses Shapley values at its core and is aimed at explaining each individual record.
+  * "Shapley value for each feature is basically trying to find the correct weight such that the sum of all Shapley values is the difference between the predictions and average value of the model. In other words, Shapley values correspond to the contribution of each feature towards pushing the prediction away from the expected value."
+    * So higher shaply value indicates the feature pushes the prediction towards the positive class more.
+    * So lower shaply value indicates the feature pushes the prediction towards the negative class more.
+* [More details from my practice][68]
+
+### [ELI5][70]
+* It supports feature importance interpretation for those famous emsembling models, as well as deep learning model output interpretation.
+* [Tutorials][69]
+
+### [Yellowbrick][71]
+* The visualization generated from this library are more like sklearn stype, basic but useful. It has multiple visualizers: 
+  * Feature Analysis, Target visualizer, Regression/Classfication/Clustering visualizers, Model Selection visualizer, Text Modeling visualizers.
+* [Find all its visualizers][72]
+
+### [Tensorflow Lucid][75]
+* You can <b>visualize neural networks</b> without any prior setup. 
+* [Google Colab Notebooks][76]
+
+### [Alibi][73]
+* It might be better for deep learning. So far I haven't seen how impressive this tool is~
+* [Examples][74]
+  * Much more text than visualization
+
 
 #### Reference
 [My model evaluation previous detailed summary][27]
@@ -437,3 +481,13 @@ When you got the data from the client or from other teams, better to check the q
 [64]:https://www.statsmodels.org/stable/generated/statsmodels.stats.diagnostic.acorr_ljungbox.html
 [65]:https://www.statisticshowto.datasciencecentral.com/durbin-watson-test-coefficient/
 [66]:http://www.math.nsysu.edu.tw/~lomn/homepage/class/92/DurbinWatsonTest.pdf
+[67]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/Better4Industry
+[68]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Better4Industry/Feature_Selection_Collection/ReadMe.md#shap
+[69]:https://eli5.readthedocs.io/en/latest/tutorials/index.html
+[70]:https://github.com/TeamHG-Memex/eli5
+[71]:https://github.com/DistrictDataLabs/yellowbrick
+[72]:https://www.scikit-yb.org/en/latest/api/index.html
+[73]:https://github.com/SeldonIO/alibi
+[74]:https://docs.seldon.io/projects/alibi/en/latest/overview/getting_started.html
+[75]:https://github.com/tensorflow/lucid#community
+[76]:https://github.com/tensorflow/lucid#notebooks

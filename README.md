@@ -200,6 +200,15 @@ When you got the data from the client or from other teams, better to check the q
     * It's between 0% to 100%
     * 0% indicates that the model explains none of the variability of the response data around its mean.
     * 100% indicates that the model explains all the variability of the response data around its mean.
+### Cross Validation
+* When there is time order in the data
+  * Solution - Forward Chaining
+    * Step 1: training[1], testing[2]
+    * Step 2: training[1,2], testing[3]
+    * Step 3: training[1,2,3], testing[4]
+    * ...
+  * Application - [sklearn time series split][77] 
+
 
 ## Algorithms Details
 ### SVM
@@ -491,3 +500,4 @@ When you got the data from the client or from other teams, better to check the q
 [74]:https://docs.seldon.io/projects/alibi/en/latest/overview/getting_started.html
 [75]:https://github.com/tensorflow/lucid#community
 [76]:https://github.com/tensorflow/lucid#notebooks
+[77]:https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html

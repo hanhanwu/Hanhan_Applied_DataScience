@@ -135,6 +135,9 @@ When you got the data from the client or from other teams, better to check the q
 * Normalize data into [0, 1] without min, max
   * We can use sigmoid function `exp(x)/(exp(x) + 1)` to normalize any real value into 0, 1 range
   * If we check the curve of sigmoid function, you can see that for any x that belongs to a real number, y is always between 0 and 1.
+* <b>Data Transformation</b>
+  * Transform non-normal distribution into normal distribution
+    * Besides minmax mentioned above, [sklean has multiple transform methods][78], some are even robust to outlisers.
 
 ## Deal With Imbalanced Data
 ### Sampling Methods
@@ -501,3 +504,4 @@ When you got the data from the client or from other teams, better to check the q
 [75]:https://github.com/tensorflow/lucid#community
 [76]:https://github.com/tensorflow/lucid#notebooks
 [77]:https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html
+[78]:https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html#sphx-glr-auto-examples-preprocessing-plot-all-scaling-py

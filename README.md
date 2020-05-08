@@ -8,6 +8,13 @@ Applied data science recommendations and tutorials
 * Sampling strategies should be documented.
 
 # Applied Recommendations
+## Parallel Processing
+### Ray
+* Ray vs Python multiprocessing vs Python Serial coding
+  * [Code example][79]
+  * [Blog details][80]
+  * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
+
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.
 ### Label Quality Check
@@ -507,3 +514,5 @@ When you got the data from the client or from other teams, better to check the q
 [76]:https://github.com/tensorflow/lucid#notebooks
 [77]:https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html
 [78]:https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html#sphx-glr-auto-examples-preprocessing-plot-all-scaling-py
+[79]:https://gist.github.com/robertnishihara/2b81595abd4f50a049767a040ce435ab
+[80]:https://towardsdatascience.com/10x-faster-parallel-python-without-python-multiprocessing-e5017c93cce1

@@ -9,7 +9,10 @@
     * It has many metrics to plot
   * [Example - Classification][7]
     * It's using SHAP for model interpretation
-  * Many other things to explore at the left bar of its tutorials
+  * [Example - Deploy Model on AWS][8]
+  * [Example - Feature Engineering][9]
+    * I haven't used "Trigonometry" or "Ploynomial" features before
+  * More to explore at the left bar of its tutorials!
 * However, some functions are too basics
   * Association rules only has Apiori... Even Spark has FP-Growth...
   * Things like param tuning looks like a blackbox
@@ -28,4 +31,5 @@
 [5]:https://github.com/pycaret/pycaret
 [6]: https://pycaret.org/plot-model/
 [7]:https://www.analyticsvidhya.com/blog/2020/05/pycaret-machine-learning-model-seconds/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-
+[8]:https://pycaret.org/clustering/
+[9]:https://pycaret.org/trigonometry-features/

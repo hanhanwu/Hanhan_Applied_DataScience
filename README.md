@@ -8,6 +8,9 @@ Applied data science recommendations and tutorials
 * Sampling strategies should be documented.
 
 # Applied Recommendations
+## [Fast Prototyping][81]
+  * Fast Prototyping Tookit
+
 ## Parallel Processing
 ### Ray
 * Ray vs Python multiprocessing vs Python Serial coding
@@ -516,3 +519,4 @@ When you got the data from the client or from other teams, better to check the q
 [78]:https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html#sphx-glr-auto-examples-preprocessing-plot-all-scaling-py
 [79]:https://gist.github.com/robertnishihara/2b81595abd4f50a049767a040ce435ab
 [80]:https://towardsdatascience.com/10x-faster-parallel-python-without-python-multiprocessing-e5017c93cce1
+[81]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/Prototype_Toolkit

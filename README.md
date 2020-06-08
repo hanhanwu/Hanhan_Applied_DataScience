@@ -150,6 +150,8 @@ When you got the data from the client or from other teams, better to check the q
 * <b>Data Transformation</b>
   * Transform non-normal distribution into normal distribution
     * Besides minmax mentioned above, [sklean has multiple transform methods][78], some are even robust to outlisers.
+  * In [this example][82], using box-cox method can convert distributions with multiple peaks into normal distribution
+    * The requirement of box-cox is, all the values have to be positive.
 
 ## Deal With Imbalanced Data
 ### Sampling Methods
@@ -520,3 +522,4 @@ When you got the data from the client or from other teams, better to check the q
 [79]:https://gist.github.com/robertnishihara/2b81595abd4f50a049767a040ce435ab
 [80]:https://towardsdatascience.com/10x-faster-parallel-python-without-python-multiprocessing-e5017c93cce1
 [81]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/Prototype_Toolkit
+[82]:https://www.analyticsvidhya.com/blog/2020/06/introduction-anova-statistics-data-science-covid-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

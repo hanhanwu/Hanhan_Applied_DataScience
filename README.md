@@ -6,6 +6,7 @@ Applied data science recommendations and tutorials
 
 # Important Tips
 * Sampling strategies should be documented.
+* Split data into train and test first, then do data preprocessing on training data. After model trained, apply the final data preprocessing methods on the testing data.
 
 # Applied Recommendations
 ## [Fast Prototyping][81]

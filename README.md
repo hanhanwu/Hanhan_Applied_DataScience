@@ -11,6 +11,9 @@ Applied data science recommendations and tutorials
 # Applied Recommendations
 ## [Fast Prototyping][81]
   * Fast Prototyping Tookit
+  
+## Database
+* [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][83]
 
 ## Parallel Processing
 ### Ray
@@ -524,3 +527,4 @@ When you got the data from the client or from other teams, better to check the q
 [80]:https://towardsdatascience.com/10x-faster-parallel-python-without-python-multiprocessing-e5017c93cce1
 [81]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/Prototype_Toolkit
 [82]:https://www.analyticsvidhya.com/blog/2020/06/introduction-anova-statistics-data-science-covid-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[83]:https://www.analyticsvidhya.com/blog/2020/07/difference-between-sql-keys-primary-key-super-key-candidate-key-foreign-key/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

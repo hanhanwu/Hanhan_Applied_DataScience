@@ -143,9 +143,16 @@ When you got the data from the client or from other teams, better to check the q
 * Methods to deal with categorical features
   * 🚫The most simple label encoding is to convert each uniaque categorical value into a unique number. But this might make the machine learning model misunderstand the relationship between these converted numerical values.
     * ❌ Better not use this type of converted numerical values to calculate any type of relationship, such as correlation.
+    * Instead can use the methods below:
   * [10+ Built-in Categorical Encoding Methods][37]
-    * It has one-hot and other label encoding methods
-    * `TargetEncoder` can be used when the categorical column contains lots of uniquen values (High-Cardinality), such as zipcode
+    * [Params for each encoding method][84]
+    * [More descriptions of some of the encoding methods][85] 
+      * Base N creates less dimensions while represent the data effciently, if you choose the proper N
+      * "In target encoding, we calculate the mean of the target variable for each category and replace the category variable with the mean value."
+        * Target encoding should only be applied to the training data to avoid target leakage
+        * 2 methods mentioned in the article to reduce target leakage/overfitting
+        * When the categories in training and testing data are distributed improperly, the categories may assume extreme value
+    * Better to remove highly correlated features after applying these encoding methods. Even if the feature correlations affect tree models less, too many dimensions are not optimal to tree models either, might lead to large trees.
   * Concat multiple categorical features as 1 feature
   * Convert to value frequency or response rate, aggregated value. Also for categorical value, we can use part of the value and convert to numerical values
 * Normalize data into [0, 1] without min, max
@@ -528,3 +535,5 @@ When you got the data from the client or from other teams, better to check the q
 [81]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/Prototype_Toolkit
 [82]:https://www.analyticsvidhya.com/blog/2020/06/introduction-anova-statistics-data-science-covid-python/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [83]:https://www.analyticsvidhya.com/blog/2020/07/difference-between-sql-keys-primary-key-super-key-candidate-key-foreign-key/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[84]:http://contrib.scikit-learn.org/category_encoders/index.html
+[85]:https://www.analyticsvidhya.com/blog/2020/08/types-of-categorical-data-encoding/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

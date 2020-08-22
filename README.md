@@ -446,6 +446,8 @@ When you got the data from the client or from other teams, better to check the q
   * Packaging format for reproducible runs on any platform.
   * General format for sending models to diverse deployment tools.
   * [My Code to try it][59]
+* [Pymongo - Get access to MongoDB easier][86]
+  * [A tutorial][87]
   
 # [My Production Solutions Notes][38]
 ### Notes in Speed Up
@@ -537,3 +539,5 @@ When you got the data from the client or from other teams, better to check the q
 [83]:https://www.analyticsvidhya.com/blog/2020/07/difference-between-sql-keys-primary-key-super-key-candidate-key-foreign-key/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [84]:http://contrib.scikit-learn.org/category_encoders/index.html
 [85]:https://www.analyticsvidhya.com/blog/2020/08/types-of-categorical-data-encoding/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[86]:https://github.com/mongodb/mongo-python-driver
+[87]:https://www.analyticsvidhya.com/blog/2020/08/query-a-mongodb-database-using-pymongo/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

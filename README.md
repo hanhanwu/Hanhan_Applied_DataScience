@@ -8,6 +8,10 @@ Applied data science recommendations and tutorials
 * Sampling strategies should be documented.
 * Split data into train and test first, then do data preprocessing on training data. After model trained, apply the final data preprocessing methods on the testing data.
 
+## Research Resources
+* I especially like [Papers with Code][88] 🌺
+  * You can also find papers here under Methods groups: https://paperswithcode.com/methods
+
 # Applied Recommendations
 ## [Fast Prototyping][81]
   * Fast Prototyping Tookit
@@ -541,3 +545,4 @@ When you got the data from the client or from other teams, better to check the q
 [85]:https://www.analyticsvidhya.com/blog/2020/08/types-of-categorical-data-encoding/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [86]:https://github.com/mongodb/mongo-python-driver
 [87]:https://www.analyticsvidhya.com/blog/2020/08/query-a-mongodb-database-using-pymongo/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[88]:https://paperswithcode.com/

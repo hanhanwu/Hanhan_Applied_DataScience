@@ -18,6 +18,9 @@ Applied data science recommendations and tutorials
   
 ## Database
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][83]
+* [Consistency, Availability, Partition (CAP) for distributed DB][89]
+  * I like how it explains why MongoDB is mainly CP, and why Cassandra is mainly AP.
+  * Now I understand why our Cassandra sometimes had delay in data consistecy but finally you will get all the updates. Its ain benefits is highly available.
 
 ## Parallel Processing
 ### Ray
@@ -546,3 +549,4 @@ When you got the data from the client or from other teams, better to check the q
 [86]:https://github.com/mongodb/mongo-python-driver
 [87]:https://www.analyticsvidhya.com/blog/2020/08/query-a-mongodb-database-using-pymongo/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [88]:https://paperswithcode.com/
+[89]:https://www.analyticsvidhya.com/blog/2020/08/a-beginners-guide-to-cap-theorem-for-data-engineering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

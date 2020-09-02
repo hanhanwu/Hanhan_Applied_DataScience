@@ -254,6 +254,34 @@ visualizer.fit(X_train, y_train)  # Fit the training data to the model
 visualizer.score(X_test, y_test)  # Evaluate the model on the test data
 visualizer.poof()
 
+# Check close to constant features
+def get_constant_cols(df, exclude_cols=[]):
+    constant_cols = []
+    
+    for col in df.columns:
+        if col in exclude_cols:
+            continue
+        if df.loc[~df[col].isna()][col].nunique() == 1:
+            constant_cols.append(col)
+    return constant_cols
+
+def get_close_constant_cols(df, high_end=99.9, exclude_cols=[]):
+    constant_cols = []
+    
+    for col in df.columns:
+        if col in exclude_cols:
+            continue
+        if np.nanpercentile(df[col], high_end) == np.nanpercentile(df[col], 0):
+            constant_cols.append(col)
+    return constant_cols
+
+
+# normalize into 0..1 range
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+scaler.fit(df)
+norm_df = scaler.transform(df)
 
 # Remove 2D highly correlated features 
 ## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation
@@ -261,19 +289,14 @@ def remove_highly_correlated_features(data, threshold):
     """
     For feature pairs that are highly correlated, remove one of the feature from each pair.
     :param data: features input, pandas dataframe
-    :param threshold: the correlation threshold decides which feature pairs are highly correlated
+    :param threshold: the correlation threshold decides which feature pairs are highly correlated, value between 0..1 range
     :return: removed features, data with remained features
     """
     corr_matrix = data.corr().abs()  # create correlation matrix
     upper_matrix = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(np.bool))  # upper triangle
     drop_lst = [column for column in upper_matrix.columns if any(upper_matrix[column] > threshold)]
-    remained_features = [c for c in data.columns if c not in drop_lst]
 
-    print('****** Remove Highly Correlated Features:')
-    print('Removed Features:', drop_lst)
-    print()
-
-    return remained_features
+    return drop_lst
 
 
 # Remove 3D+ highly correlated features, to deal with multicollinearity issue

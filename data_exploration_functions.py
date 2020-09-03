@@ -1,4 +1,6 @@
 # These are the data exploration functions I often use
+import matplotlib.pyplot as plt
+
 
 # plot numerical features distribution
 def show_num_feature_distribution(feature_df, n_rows, n_cols):
@@ -317,6 +319,7 @@ def remove_multicollineary_features(feature_df, vif_threshold):
 import numpy as np
 from scipy.stats import gaussian_kde
 from scipy.stats import entropy
+import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(color_codes=True)
 
@@ -330,33 +333,39 @@ def calc_kl_score(x1, x2):
     :return float
     """
     positions = np.linspace(0,1,1000) # (Optional) If plotting, you can increase this number to generate a smoother KDE plot
-    kernel = gaussian_kde(x1)
-    values_prod = kernel(positions)
-    kernel = gaussian_kde(x2)
-    values_dev = kernel(positions)
-    return entropy(values_dev,values_prod)
+    kernel1 = gaussian_kde(x1)
+    values1 = kernel1(positions)
+    kernel2 = gaussian_kde(x2)
+    values2 = kernel2(positions)
+    return entropy(values1,values2)
 
-features = df1.columns
-print(len(features))
-n_rows = 2
-n_cols = 4
 
-i = 0
-fig=plt.figure(figsize=(20,10))
-for feature in features:
-    if feature == 'id':
-        continue
-    i += 1
-    ax=fig.add_subplot(n_rows,n_cols,i) 
-    bins = np.linspace(min(df2[feature]), max(df2[feature]), 100)
-    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-    sns.distplot(df1.loc[df1[feature].isnull()==False][feature], color='green', label='df1')
-    sns.distplot(df2.loc[df2[feature].isnull()==False][feature], color='purple', label='df2')
-    kl_score = calc_kl_score(df1.loc[df1[feature].isnull()==False][feature],
-             df2.loc[df2[feature].isnull()==False][feature])
-    plt.legend(loc='best')
-    plt.title('Feature: ' + feature + ', K-L Score:' + str(round(kl_score, 4)))
-    plt.xlabel('Feature Values')
-    plt.ylabel('Percentage')
-fig.tight_layout()
-plt.show()
+def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
+    features = df.columns
+    print('Number of features: ' + str(len(features)))
+    
+    i = 0
+    fig=plt.figure(figsize=(20,10))
+    
+    for feature in features:
+        if feature in exclude_cols:
+            continue
+        i += 1
+        ax=fig.add_subplot(n_rows,n_cols,i) 
+        bins = np.linspace(min(df[feature]), max(df[feature]), 100)
+        
+        v1 = df1.loc[~df1[feature].isnull()][feature]
+        v2 = df2.loc[~df2[feature].isnull()][feature]
+        
+        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+        sns.distplot(v1, color='green', label=label1)
+        sns.distplot(v2, color='purple', label=label2)
+        
+        kl_score = calc_kl_score(v1, v2)
+        
+        plt.legend(loc='best')
+        plt.title('Feature: ' + feature + ', K-L Score:' + str(round(kl_score, 4)))
+        plt.xlabel('Feature Values')
+        plt.ylabel('Percentage')
+    fig.tight_layout()
+    plt.show()

@@ -310,7 +310,7 @@ def remove_multicollineary_features(feature_df, vif_threshold):
     vif["VIF Factor"] = [variance_inflation_factor(feature_df.values, i) for i in range(feature_df.shape[1])]
     vif["features"] = feature_df.columns  # This will get VIF for each feature. To drop individual feature, start from the one with highest VIF
     drop_lst = vif.loc[vif['VIF Factor']>vif_threshold]['features'].values
-    return list(drop_lst)
+    return vif, list(drop_lst)
 
 
 # Show kernel density distribution, calculate K-L score to show difference between the 2 probability distributions

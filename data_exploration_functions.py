@@ -318,6 +318,7 @@ def remove_multicollineary_features(feature_df, vif_threshold):
 ## Lower K-L score, the more similarity between the distribution
 import numpy as np
 from scipy.stats import gaussian_kde
+from scipy.stats import wasserstein_distance
 from scipy.stats import entropy
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -339,7 +340,8 @@ def calc_kl_score(x1, x2):
     values2 = kernel2(positions)
     return entropy(values1,values2)
 
-
+# wasserstein_distance works better than K-L, especially when the support of 2 distributions are different
+## such as one distribution has much fatter tail than the other
 def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
     kl_dct = {}
     
@@ -364,10 +366,11 @@ def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
         sns.distplot(v2, color='purple', label=label2)
         
         kl_score = calc_kl_score(v1, v2)
-        kl_dct[feature] = kl_score
+        w_dist = wasserstein_distance(v1, v2) # wasserstein_distance works better than K-L, especially when the support of 2 distributions are different
+        kl_dct[feature] = {'w_dist':w_dist, 'kl_score':kl_score}
         
         plt.legend(loc='best', fontsize=20)
-        plt.title('Feature: ' + feature + ', K-L Score:' + str(round(kl_score, 4)), fontsize=20)
+        plt.title('Feature: ' + feature + ', Divergence:' + str(round(w_dist, 8)), fontsize=20)
         plt.xticks(fontsize=20)
         plt.yticks(fontsize=20)
         plt.xlabel('Feature Values', fontsize=18)

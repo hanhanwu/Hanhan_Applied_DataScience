@@ -341,11 +341,13 @@ def calc_kl_score(x1, x2):
 
 
 def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
+    kl_dct = {}
+    
     features = df.columns
     print('Number of features: ' + str(len(features)))
     
     i = 0
-    fig=plt.figure(figsize=(20,10))
+    fig=plt.figure(figsize=(30,40))
     
     for feature in features:
         if feature in exclude_cols:
@@ -362,10 +364,16 @@ def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
         sns.distplot(v2, color='purple', label=label2)
         
         kl_score = calc_kl_score(v1, v2)
+        kl_dct[feature] = kl_score
         
-        plt.legend(loc='best')
-        plt.title('Feature: ' + feature + ', K-L Score:' + str(round(kl_score, 4)))
-        plt.xlabel('Feature Values')
-        plt.ylabel('Percentage')
+        plt.legend(loc='best', fontsize=20)
+        plt.title('Feature: ' + feature + ', K-L Score:' + str(round(kl_score, 4)), fontsize=20)
+        plt.xticks(fontsize=20)
+        plt.yticks(fontsize=20)
+        plt.xlabel('Feature Values', fontsize=18)
+        plt.ylabel('Percentage', fontsize=18)
+        
     fig.tight_layout()
     plt.show()
+    
+    return kl_dct

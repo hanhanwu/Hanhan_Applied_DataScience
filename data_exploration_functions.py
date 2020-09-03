@@ -290,7 +290,6 @@ def remove_highly_correlated_features(data, threshold):
     For feature pairs that are highly correlated, remove one of the feature from each pair.
     :param data: features input, pandas dataframe
     :param threshold: the correlation threshold decides which feature pairs are highly correlated, value between 0..1 range
-    :return: removed features, data with remained features
     """
     corr_matrix = data.corr().abs()  # create correlation matrix
     upper_matrix = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(np.bool))  # upper triangle

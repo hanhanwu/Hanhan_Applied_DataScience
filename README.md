@@ -16,6 +16,7 @@ Applied data science recommendations and tutorials
 ## [Fast Prototyping][81]
   * Fast Prototyping Tookit
 ## [Build ML Web Application][90]
+  * With Flask
   
 ## Database
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][83]

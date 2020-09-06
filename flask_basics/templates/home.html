@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Air Pollution</title>
+</head>
+
+<body>
+ <div class="login">
+	<h1>Vehicle Air Pollution</h1>
+     <h3> Enter the following values to predict the CO2 emission from the vehicle</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="enginesize" placeholder="Engine Size" required="required" />
+      <input type="text" name="cylinders" placeholder="Cylinders" required="required" />
+		  <input type="text" name="fuel" placeholder="Fuel" required="required" />
+
+        <button type="submit" class="btn">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

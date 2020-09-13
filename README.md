@@ -462,6 +462,8 @@ When you got the data from the client or from other teams, better to check the q
 ### Notes in Speed Up
 * Better not use pandas `iterrows()` but to store each record as a dictionary and store in a list for iteration. Iterating pandas rows can be much slower.
 
+# [Keep up with Industry Updates][91]
+
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
@@ -553,3 +555,4 @@ When you got the data from the client or from other teams, better to check the q
 [88]:https://paperswithcode.com/
 [89]:https://www.analyticsvidhya.com/blog/2020/08/a-beginners-guide-to-cap-theorem-for-data-engineering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [90]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/flask_basics
+[91]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/industry_updates.md

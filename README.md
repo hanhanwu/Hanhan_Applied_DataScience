@@ -18,7 +18,8 @@ Applied data science recommendations and tutorials
 ## [Build ML Web Application][90]
   * With Flask
   
-## Database
+## Data Engineering 
+* [Applied Data Engineering][92]
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][83]
 * [Consistency, Availability, Partition (CAP) for distributed DB][89]
   * I like how it explains why MongoDB is mainly CP, and why Cassandra is mainly AP.
@@ -556,3 +557,4 @@ When you got the data from the client or from other teams, better to check the q
 [89]:https://www.analyticsvidhya.com/blog/2020/08/a-beginners-guide-to-cap-theorem-for-data-engineering/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [90]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/flask_basics
 [91]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/industry_updates.md
+[92]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/data_engineering

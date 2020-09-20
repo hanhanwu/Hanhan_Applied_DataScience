@@ -21,7 +21,8 @@ Applied data science recommendations and tutorials
 ## Data Engineering 
 * [Applied Data Engineering][92]
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][83]
-* [Consistency, Availability, Partition (CAP) for distributed DB][89]
+* [Consistency, Availability, Partition Tolerance (CAP) for distributed DB][89]
+  * Partition means a break in communication then Partition tolerance would mean that the system should still be able to work even if there is a partition in the system. Meaning if a node fails to communicate, then one of the replicas of the node should be able to retrieve the data required by the user.
   * I like how it explains why MongoDB is mainly CP, and why Cassandra is mainly AP.
   * Now I understand why our Cassandra sometimes had delay in data consistecy but finally you will get all the updates. Its ain benefits is highly available.
 

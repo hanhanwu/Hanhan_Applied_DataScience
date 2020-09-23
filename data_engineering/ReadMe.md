@@ -12,6 +12,10 @@
   * Text index
   * Geospetial index
   * Adding partial index when creating an index
+### When to use MongoDB
+* You plan to integrate hundreds of different data sources, the document-based model of MongoDB will be a great fit as it will provide a single unified view of the data
+* When you are expecting a lot of reads and write operations from your application but you do not care much about some of the data being lost in the server crash
+* You can use it to store clickstream data and use it for the customer behavioral analysis
 
 
 [1]:https://docs.atlas.mongodb.com/getting-started/

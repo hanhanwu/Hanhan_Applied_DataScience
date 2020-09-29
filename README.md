@@ -13,6 +13,8 @@ Applied data science recommendations and tutorials
   * You can also find papers here under Methods groups: https://paperswithcode.com/methods
 
 # Applied Recommendations
+## [Stakeholder Notes][93]
+
 ## [Fast Prototyping][81]
   * Fast Prototyping Tookit
 ## [Build ML Web Application][90]
@@ -554,3 +556,4 @@ When you got the data from the client or from other teams, better to check the q
 [90]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/flask_basics
 [91]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/industry_updates.md
 [92]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/data_engineering
+[93]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/stakeholder_notes.md

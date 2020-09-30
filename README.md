@@ -17,8 +17,12 @@ Applied data science recommendations and tutorials
 
 ## [Fast Prototyping][81]
   * Fast Prototyping Tookit
-## [Build ML Web Application][90]
-  * With Flask
+  
+## Build ML Service/API
+* [Build ML Web Application with Flask][90]
+* [Deploy ML service with BentoML][94]
+  * [About BentoML][95]
+  * It allows you to deploy the trained model as REST API (built directly for you), docker image or python loadable file
   
 ## [Applied Data Engineering][92]
 
@@ -557,3 +561,5 @@ When you got the data from the client or from other teams, better to check the q
 [91]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/industry_updates.md
 [92]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/tree/master/data_engineering
 [93]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/stakeholder_notes.md
+[94]:https://colab.research.google.com/github/bentoml/BentoML/blob/master/guides/quick-start/bentoml-quick-start-guide.ipynb
+[95]:https://github.com/bentoml/BentoML

@@ -23,6 +23,9 @@ Applied data science recommendations and tutorials
 * [Deploy ML service with BentoML][94]
   * [About BentoML][95]
   * It allows you to deploy the trained model as REST API (built directly for you), docker image or python loadable file
+  * Correction
+    * For docker, the bento command should be `bentoml containerize IrisClassifier:latest -t iris-classifier:latest`
+      * "iris-classifier" is the image name, "latest" is the tag name
   
 ## [Applied Data Engineering][92]
 

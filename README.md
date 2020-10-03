@@ -263,6 +263,12 @@ When you got the data from the client or from other teams, better to check the q
 ### Decision Tree
 * [How to choose `ccp_alpha` for pruning to reduce overfitting][96]
 
+### Gradient Descent
+* It's almost the oldest optimization function, trying to find the local minimum through iteration.
+* [An easy way to understand it][98]
+* [How to implement gradient descent][97]
+  * `X` is feature set, `y` is lables, `theta` is (initial) weight; `alpha` is learning rate; `m` is number of records
+
 ## Model Evaluation
 ### Before Evaluation
 * There are things we can do to make the evaluation more reliable:
@@ -571,3 +577,5 @@ When you got the data from the client or from other teams, better to check the q
 [94]:https://colab.research.google.com/github/bentoml/BentoML/blob/master/guides/quick-start/bentoml-quick-start-guide.ipynb
 [95]:https://github.com/bentoml/BentoML
 [96]:https://www.analyticsvidhya.com/blog/2020/10/cost-complexity-pruning-decision-trees/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[97]:https://stackoverflow.com/questions/17784587/gradient-descent-using-python-and-numpy
+[98]:https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

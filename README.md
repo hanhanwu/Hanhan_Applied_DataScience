@@ -259,6 +259,9 @@ When you got the data from the client or from other teams, better to check the q
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
 * [How does kernal SVM work for nonlinear data][34]
   * Gaussian kernal is `rbf` kernal in sklearn
+  
+### Decision Tree
+* [How to choose `ccp_alpha` for pruning to reduce overfitting][96]
 
 ## Model Evaluation
 ### Before Evaluation
@@ -567,3 +570,4 @@ When you got the data from the client or from other teams, better to check the q
 [93]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/stakeholder_notes.md
 [94]:https://colab.research.google.com/github/bentoml/BentoML/blob/master/guides/quick-start/bentoml-quick-start-guide.ipynb
 [95]:https://github.com/bentoml/BentoML
+[96]:https://www.analyticsvidhya.com/blog/2020/10/cost-complexity-pruning-decision-trees/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

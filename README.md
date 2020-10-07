@@ -183,6 +183,7 @@ When you got the data from the client or from other teams, better to check the q
 ## Deal With Imbalanced Data
 ### Sampling Methods
 * There are oversampling, undersampling and synthetic sampling (which is also oversampling), combined sampling (oversampling + undersampling). In practice, I tried different methods in different projects, so far non of them worked well in both training and testing data.
+* [imbalanced-learn] has multiple advanced sampling methods
 ### Cost Sensitive Learning
 * This method is becoming more and more popular recently. Majorly you just set the class weights based on the importance of false positive and false negative.
 * In practice, it is worthy to know more from the customers or the marketing team, trying to understand the cost of TP/TN or FP/FN.
@@ -579,3 +580,4 @@ When you got the data from the client or from other teams, better to check the q
 [96]:https://www.analyticsvidhya.com/blog/2020/10/cost-complexity-pruning-decision-trees/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [97]:https://stackoverflow.com/questions/17784587/gradient-descent-using-python-and-numpy
 [98]:https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[99]:https://github.com/scikit-learn-contrib/imbalanced-learn

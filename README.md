@@ -253,6 +253,12 @@ When you got the data from the client or from other teams, better to check the q
     * Step 3: training[1,2,3], testing[4]
     * ...
   * Application - [sklearn time series split][77] 
+  
+### More about Emsembling
+* We know ensembling models tend to work better in many cases, such as Xgboost and LightGBM
+#### Super Learner
+* [Super Learner example][100]
+  * It trains on a list of models, and finally might be better than a specific "best model"
 
 
 ## Algorithms Details
@@ -581,3 +587,4 @@ When you got the data from the client or from other teams, better to check the q
 [97]:https://stackoverflow.com/questions/17784587/gradient-descent-using-python-and-numpy
 [98]:https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [99]:https://github.com/scikit-learn-contrib/imbalanced-learn
+[100]:https://machinelearningmastery.com/super-learner-ensemble-in-python/

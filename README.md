@@ -20,6 +20,7 @@ Applied data science recommendations and tutorials
   
 ## Build ML Service/API
 * [Build ML Web Application with Flask][90]
+  * [How to deploy flask app to Azure][101]
 * [Deploy ML service with BentoML][94]
   * [About BentoML][95]
   * It allows you to deploy the trained model as REST API (built directly for you), docker image or python loadable file
@@ -588,3 +589,4 @@ When you got the data from the client or from other teams, better to check the q
 [98]:https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [99]:https://github.com/scikit-learn-contrib/imbalanced-learn
 [100]:https://machinelearningmastery.com/super-learner-ensemble-in-python/
+[101]:https://www.analyticsvidhya.com/blog/2020/10/how-to-deploy-machine-learning-models-in-azure-cloud-with-the-help-of-python-and-flask/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

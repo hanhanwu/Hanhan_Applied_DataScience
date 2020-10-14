@@ -1,6 +1,9 @@
 # Meeting Notes with Stakeholders
 
 ## Rules of Thumb
+* Plain language to describe what does the OUTCOME look like in each step, when presenting the timeline
+* Highlight the OPPORTUNITIES to the clients/stakeholders
+* Besides bring up risks, if possible to list potential solutions will be better
 * Double check the action items at the end of the meeting with them
   * May need to put priority in the items
 * Company roadmap change

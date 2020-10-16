@@ -182,6 +182,9 @@ When you got the data from the client or from other teams, better to check the q
     * The requirement of box-cox is, all the values have to be positive.
 
 ## Deal With Imbalanced Data
+### Semi-supervised learning for imbalanced data
+* [2020 paper - Rethinking the Value of Labels for Improving Class-Imbalanced Learning][102]
+* Inspiration
 ### Sampling Methods
 * There are oversampling, undersampling and synthetic sampling (which is also oversampling), combined sampling (oversampling + undersampling). In practice, I tried different methods in different projects, so far non of them worked well in both training and testing data.
 * [imbalanced-learn] has multiple advanced sampling methods
@@ -203,7 +206,6 @@ When you got the data from the client or from other teams, better to check the q
   * If not trust the label quality, try clustering first, and check the pattern in each cluster, and compare with the given labels.
   * Communicate with the business experts frequently if possible, to understand how did the labels get generated.
   * If your model is supervised method, and if using all the data there will be huge data imbalance issue, better to choose representative sample data as the assumed label, and try to reduce the size, in order to reduce the data imbalance issue.
-
 
 ### Other Methods
 * Clustering & Multiple Model Training
@@ -590,3 +592,4 @@ When you got the data from the client or from other teams, better to check the q
 [99]:https://github.com/scikit-learn-contrib/imbalanced-learn
 [100]:https://machinelearningmastery.com/super-learner-ensemble-in-python/
 [101]:https://www.analyticsvidhya.com/blog/2020/10/how-to-deploy-machine-learning-models-in-azure-cloud-with-the-help-of-python-and-flask/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[102]:https://github.com/YyzHarry/imbalanced-semi-self

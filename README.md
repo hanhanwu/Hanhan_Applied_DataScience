@@ -38,6 +38,14 @@ Applied data science recommendations and tutorials
   * [Code example][79]
   * [Blog details][80]
   * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
+  
+## Federated Learning
+* Train federated data samples from different clients
+* [FedML: A Research Library and Benchmark for Federated Machine Learning][103]
+  * It describes the system design, new programming interface, application examples, benchmark, dataset, and some experimental results.
+* [Tensorflow built-in federated learning][104]
+  * It does federated learning for you with provided clients' data and model
+  * [Detailed tensorflow and keras federated learning ipyhton notebook][105]
 
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.
@@ -598,3 +606,6 @@ When you got the data from the client or from other teams, better to check the q
 [100]:https://machinelearningmastery.com/super-learner-ensemble-in-python/
 [101]:https://www.analyticsvidhya.com/blog/2020/10/how-to-deploy-machine-learning-models-in-azure-cloud-with-the-help-of-python-and-flask/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [102]:https://github.com/YyzHarry/imbalanced-semi-self
+[103]:https://arxiv.org/pdf/2007.13518.pdf
+[104]:https://www.tensorflow.org/federated
+[105]:https://github.com/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_image_classification.ipynb

@@ -40,7 +40,7 @@ Applied data science recommendations and tutorials
   * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
   
 ## Federated Learning
-* Train federated data samples from different clients
+* Federated Learning is a distributed machine learning approach which enables model training on a large corpus of decentralised data.
 * [FedML: A Research Library and Benchmark for Federated Machine Learning][103]
   * It describes the system design, new programming interface, application examples, benchmark, dataset, and some experimental results.
 * [Tensorflow built-in federated learning][104]

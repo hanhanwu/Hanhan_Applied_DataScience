@@ -46,7 +46,7 @@ Applied data science recommendations and tutorials
 * [Tensorflow built-in federated learning][104]
   * It does federated learning for you with provided clients' data and model
   * [Detailed tensorflow and keras federated learning ipyhton notebook][105]
-* [On device training example][106]
+* [On device training example (PyTorch)][106]
   * Model is trained locally in each device, then local models are uploaded to the remote server to create an averaged model and sent back to each device. This process will be repeated to keep updating local and federated models' performance
 
 ## Data Quality Check

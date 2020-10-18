@@ -44,10 +44,10 @@ Applied data science recommendations and tutorials
 * [FedML: A Research Library and Benchmark for Federated Machine Learning][103]
   * It describes the system design, new programming interface, application examples, benchmark, dataset, and some experimental results.
 * [Tensorflow built-in federated learning][104]
-  * It does federated learning for you with provided clients' data and model
+  * The way how this example works is, it radomly choose some clients' data (or use aggregation function to do that more efficiently), then sends the multi-clients' data to the remote server to train a model
   * [Detailed tensorflow and keras federated learning ipyhton notebook][105]
 * [On device training example (PyTorch)][106]
-  * Model is trained locally in each device, then local models are uploaded to the remote server to create an averaged model and sent back to each device. This process will be repeated to keep updating local and federated models' performance
+  * Model is trained locally on each device, then local models are uploaded to the remote server to create an averaged model and sent back to each device. This process will be repeated to keep updating local and federated models' performance
 
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.

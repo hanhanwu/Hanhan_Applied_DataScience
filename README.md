@@ -46,6 +46,8 @@ Applied data science recommendations and tutorials
 * [Tensorflow built-in federated learning][104]
   * It does federated learning for you with provided clients' data and model
   * [Detailed tensorflow and keras federated learning ipyhton notebook][105]
+* [On device training example][106]
+  * Model is trained locally in each device, then local models are uploaded to the remote server to create an averaged model and sent back to each device. This process will be repeated to keep updating local and federated models' performance
 
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.
@@ -609,3 +611,4 @@ When you got the data from the client or from other teams, better to check the q
 [103]:https://arxiv.org/pdf/2007.13518.pdf
 [104]:https://www.tensorflow.org/federated
 [105]:https://github.com/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_image_classification.ipynb
+[106]:https://towardsdatascience.com/federated-learning-3097547f8ca3

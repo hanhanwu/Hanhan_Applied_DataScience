@@ -1,6 +1,7 @@
 # Meeting Notes with Stakeholders
 
 ## Rules of Thumb
+* When the stakeholder asks the challenging questions, try to understand why they are having those requirements
 * Plain language to describe what does the OUTCOME look like in each step, when presenting the timeline
 * Highlight the OPPORTUNITIES to the clients/stakeholders
 * Besides bring up risks, if possible to list potential solutions will be better

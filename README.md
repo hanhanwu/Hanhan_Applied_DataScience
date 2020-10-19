@@ -46,6 +46,7 @@ Applied data science recommendations and tutorials
 * [Tensorflow built-in federated learning][104]
   * The way how this example works is, it radomly choose some clients' data (or use aggregation function to do that more efficiently), then sends the multi-clients' data to the remote server to train a model
   * [Detailed tensorflow and keras federated learning ipyhton notebook][105]
+  * [All the tensorflow federated tutorials][107]
 * [On device training example (PyTorch)][106]
   * Model is trained locally on each device, then local models are uploaded to the remote server to create an averaged model and sent back to each device. This process will be repeated to keep updating local and federated models' performance
 
@@ -612,3 +613,4 @@ When you got the data from the client or from other teams, better to check the q
 [104]:https://www.tensorflow.org/federated
 [105]:https://github.com/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_image_classification.ipynb
 [106]:https://towardsdatascience.com/federated-learning-3097547f8ca3
+[107]:https://github.com/tensorflow/federated/tree/master/docs/tutorials

@@ -10,6 +10,7 @@
   * May need to put priority in the items
 * Company roadmap change
   * The roadmap change might affect the timeline and plan of each project
+* Also good to know how are they going to sell to the clients, this will help adjust the DS solution and the communication with the stakeholders
 
 ## Technical Stakeholders
 ### Roles

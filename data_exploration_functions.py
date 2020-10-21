@@ -83,6 +83,28 @@ def check_percentile(target_df):
                                  'perct90', 'perct99', 'perct99.9', 'max']]
     return dist_df
 
+# Compare the boundary for each label
+def boundary_compare(df1, df2, b_name1, b_name2):
+    dct1, dct2 = {}, {}
+    idx = 0
+
+    for col in df1.columns:
+        if col != 'is_trustworthy':
+            idx += 1
+            dct1[idx] = {'feature': col, b_name1: np.nanpercentile(df1[col], 100)}
+            dct2[idx] = {'feature': col, b_name2: np.nanpercentile(df2[col], 100)}
+            
+    dist_df1 = pd.DataFrame(dct1).T
+    dist_df1 = dist_df1[['feature', b_name1]]
+    dist_df2 = pd.DataFrame(dct2).T
+    dist_df2 = dist_df2[['feature', b_name2]]
+    
+    boundary_comapre_df = dist_df1.merge(dist_df2, on='feature')
+    boundary_comapre_df['smaller_boundary'] = boundary_comapre_df[[b_name1,b_name2]].min(axis=1)
+    boundary_comapre_df['boundary_diff'] = abs(boundary_comapre_df[b_name1] - boundary_comapre_df[b_name2])
+    boundary_comapre_df['boundary_diff_ratio'] = boundary_comapre_df['boundary_diff']/(boundary_comapre_df['smaller_boundary']+0.0001)
+    return boundary_comapre_df
+
 
 # remove outliers of specific numerical features
 def remove_outliers(target_df, low, high, exclude_cols):

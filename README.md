@@ -16,7 +16,9 @@ Applied data science recommendations and tutorials
 ## [Stakeholder Notes][93]
 
 ## [Fast Prototyping][81]
-  * Fast Prototyping Tookit
+* Fast Prototyping Tookit
+* My favorite presentation tool Prezi: https://prezi.com/welcome#/about-you
+  * It's a very nice tool to bring the audience to the stories
   
 ## Build ML Service/API
 * [Build ML Web Application with Flask][90]

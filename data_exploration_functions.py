@@ -168,7 +168,7 @@ def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_col
 
     
   # plot categorical feature distribution for each class
-  def plot_cat_feature_distribution_with_label(labeled_feature_df, label_col, n_rows, n_cols):
+def plot_cat_feature_distribution_with_label(labeled_feature_df, label_col, n_rows, n_cols):
     plt.rcParams.update({'font.size': 20})
 
     features = labeled_feature_df.columns

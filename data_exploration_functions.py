@@ -18,7 +18,7 @@ def show_num_feature_distribution(feature_df, n_rows, n_cols):
         bins = np.linspace(np.nanmin(feature_df[feature]), np.nanmax(feature_df[feature]), 100)
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 
-        plt.hist(feature_df[feature], bins, alpha=0.75, label='median = ' + str(round(np.median(feature_df[feature]), 3)), 
+        plt.hist(feature_df[feature], bins, alpha=0.75, label='median = ' + str(round(np.nanmedian(feature_df[feature]), 3)), 
                  color = 'g', edgecolor = 'k', range=(bins.min(),bins.max()),
                  weights=np.zeros_like(feature_df[feature]) + 1. / feature_df[feature].shape[0])
         plt.legend(loc='best')
@@ -50,7 +50,7 @@ def plot_cat_feature_distribution(feature_df, n_rows, n_cols):
         plt.bar(x_pos, y_values, align='center', alpha=0.6)
         plt.xticks(x_pos, x_values)
         plt.xlabel('Distinct Categorical Value')
-        plt.ylabel('Percentage')
+        plt.ylabel('Value')
         plt.title(feature)
 
         rects = axes.patches
@@ -197,7 +197,7 @@ def plot_cat_feature_distribution_with_label(labeled_feature_df, label_col, n_ro
         plt.bar(fraud_x_pos+width, fraud_y_values, width, align='center', alpha=0.6, color='red', label='fraud')
         plt.xticks(nonfraud_x_pos+width/2, nonfraud_x_values)
         plt.xlabel('Distinct Categorical Value')
-        plt.ylabel('Percentage')
+        plt.ylabel('Value')
         plt.title(feature)
 
         rects = axes.patches
@@ -365,7 +365,7 @@ def calc_kl_score(x1, x2):
 # wasserstein_distance works better than K-L, especially when the support of 2 distributions are different
 ## such as one distribution has much fatter tail than the other
 def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
-    kl_dct = {}
+    dist_diff_dct = {}
     
     features = df.columns
     print('Number of features: ' + str(len(features)))
@@ -389,7 +389,7 @@ def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
         
         kl_score = calc_kl_score(v1, v2)
         w_dist = wasserstein_distance(v1, v2) # wasserstein_distance works better than K-L, especially when the support of 2 distributions are different
-        kl_dct[feature] = {'w_dist':w_dist, 'kl_score':kl_score}
+        dist_diff_dct[feature] = {'w_dist':w_dist, 'kl_score':kl_score}
         
         plt.legend(loc='best', fontsize=20)
         plt.title('Feature: ' + feature + ', Divergence:' + str(round(w_dist, 8)), fontsize=20)
@@ -401,4 +401,4 @@ def plot_dist_diff(df, df1, df2, n_rows, n_cols, exclude_cols, label1, label2):
     fig.tight_layout()
     plt.show()
     
-    return kl_dct
+    return dist_diff_dct

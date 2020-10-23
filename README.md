@@ -113,6 +113,11 @@ When you got the data from the client or from other teams, better to check the q
   * It's recommended that to use the model run on raw features without any preprocessing, this is the baseline result. Then run the same model with preprocessed data, to compare. So that you will know how much does preprocessing affect your prediction in each project.
 * Sometimes I also check boxplot, but the data I am dealing with tend to have large amount of outliers, and imputing data above & below 1.5*IQR will reduce the prediction power too much.
 * <b>Better to know what caused the outliers</b>, this may help you decide how to deal with them
+* Decide which are outliers
+  * Distributions
+  * Boxplot, 1.5IQR
+  * [Modified Z score][108]
+    * Check `MAD` value
 * To deal with ourliers, I normally use:
   * Simply replace the outliers with NULL
   * Replace outliers with median/mean/mode, or a special value
@@ -616,3 +621,4 @@ When you got the data from the client or from other teams, better to check the q
 [105]:https://github.com/tensorflow/federated/blob/master/docs/tutorials/federated_learning_for_image_classification.ipynb
 [106]:https://towardsdatascience.com/federated-learning-3097547f8ca3
 [107]:https://github.com/tensorflow/federated/tree/master/docs/tutorials
+[108]:https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm

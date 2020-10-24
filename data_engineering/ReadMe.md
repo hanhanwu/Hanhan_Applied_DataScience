@@ -4,6 +4,10 @@
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][6]
 * [SQl vs NoSQL][8]
 
+## Hadoop Ecostsems
+* [Brief intro about Hadoop ecosystem][9]
+  * I like the "big data processing stages" diagrama
+
 ## NoSQL General
 ### [NoSQL Categories]
 * Document based
@@ -58,3 +62,4 @@
 [6]:https://www.analyticsvidhya.com/blog/2020/07/difference-between-sql-keys-primary-key-super-key-candidate-key-foreign-key/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [7]:https://www.analyticsvidhya.com/blog/2020/09/different-nosql-databases-every-data-scientist-must-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [8]:https://www.analyticsvidhya.com/blog/2020/10/sql-vs-nosql-databases-a-key-concept-every-data-engineer-should-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[9]:https://www.analyticsvidhya.com/blog/2020/10/introduction-hadoop-ecosystem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

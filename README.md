@@ -301,6 +301,13 @@ When you got the data from the client or from other teams, better to check the q
 * [An easy way to understand it][98]
 * [How to implement gradient descent][97]
   * `X` is feature set, `y` is lables, `theta` is (initial) weight; `alpha` is learning rate; `m` is number of records
+  
+### [Adaboost vs Gradient Boost]
+* The final comparision table is very helpful
+  * weights vs gradient
+  * tree depth
+  * classifier weights
+  * data variance capture
 
 ## Model Evaluation
 ### Before Evaluation
@@ -622,3 +629,4 @@ When you got the data from the client or from other teams, better to check the q
 [106]:https://towardsdatascience.com/federated-learning-3097547f8ca3
 [107]:https://github.com/tensorflow/federated/tree/master/docs/tutorials
 [108]:https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm
+[109]:https://www.analyticsvidhya.com/blog/2020/10/adaboost-and-gradient-boost-comparitive-study-between-2-popular-ensemble-model-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

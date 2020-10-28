@@ -53,6 +53,15 @@
 * When you are expecting a lot of reads and write operations from your application but you do not care much about some of the data being lost in the server crash
 * You can use it to store clickstream data and use it for the customer behavioral analysis
 
+## Spark
+* [Tips to make spark job more efficient][10]
+  * Configuring number of Executors, Cores, and Memory
+  * Avoid Long Lineage
+  * Broadcasting 
+  * Larger partition of dataset --> to allow more parallelism on your job
+  * Columnar File Formats, such as parquet
+  * Use dataframe as much as possible, rather than RDD. Because spark daatfarmes had associated metadata to allow spark optimize the query plans
+
 
 [1]:https://docs.atlas.mongodb.com/getting-started/
 [2]:https://www.w3schools.com/python/python_mongodb_insert.asp
@@ -63,3 +72,4 @@
 [7]:https://www.analyticsvidhya.com/blog/2020/09/different-nosql-databases-every-data-scientist-must-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [8]:https://www.analyticsvidhya.com/blog/2020/10/sql-vs-nosql-databases-a-key-concept-every-data-engineer-should-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [9]:https://www.analyticsvidhya.com/blog/2020/10/introduction-hadoop-ecosystem/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[10]:https://www.analyticsvidhya.com/blog/2020/10/how-can-you-optimize-your-spark-jobs-and-attain-efficiency-tips-and-tricks/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

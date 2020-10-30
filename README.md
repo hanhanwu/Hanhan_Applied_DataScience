@@ -43,6 +43,7 @@ Applied data science recommendations and tutorials
   
 ## Federated Learning
 * Federated Learning is a distributed machine learning approach which enables model training on a large corpus of decentralised data.
+  * [The aggregation algorithm used in federated learning][110] - it's mainly to address data imbalance between clients and data non-representativeness
 * [FedML: A Research Library and Benchmark for Federated Machine Learning][103]
   * It describes the system design, new programming interface, application examples, benchmark, dataset, and some experimental results.
 * [Tensorflow built-in federated learning][104]
@@ -630,3 +631,4 @@ When you got the data from the client or from other teams, better to check the q
 [107]:https://github.com/tensorflow/federated/tree/master/docs/tutorials
 [108]:https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm
 [109]:https://www.analyticsvidhya.com/blog/2020/10/adaboost-and-gradient-boost-comparitive-study-between-2-popular-ensemble-model-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[110]:https://github.com/hanhanwu/readings/blob/master/federated-learning_aggregation.pdf

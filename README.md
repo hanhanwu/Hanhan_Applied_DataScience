@@ -17,8 +17,9 @@ Applied data science recommendations and tutorials
 
 ## [Fast Prototyping][81]
 * Fast Prototyping Tookit
-* My favorite presentation tool Prezi: https://prezi.com/welcome#/about-you
+* My favorite presentation tool [Prezi][112]
   * It's a very nice tool to bring the audience to the stories
+* Need big data environment, [cloudxlab saves efforts in environment setup][111]
   
 ## Build ML Service/API
 * [Build ML Web Application with Flask][90]
@@ -632,3 +633,5 @@ When you got the data from the client or from other teams, better to check the q
 [108]:https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm
 [109]:https://www.analyticsvidhya.com/blog/2020/10/adaboost-and-gradient-boost-comparitive-study-between-2-popular-ensemble-model-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [110]:https://github.com/hanhanwu/readings/blob/master/federated-learning_aggregation.pdf
+[111]:https://cloudxlab.com/#pricing
+[112]:https://prezi.com/welcome#/about-you

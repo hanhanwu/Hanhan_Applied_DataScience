@@ -1,5 +1,7 @@
 # My Story Telling Gallery 🌺
 
+❣️❣️ <b>NOTE:</b> Company private demos won't be shown here.
+
 * [2020-11-04: STEM Lightening Lunch Talk @ Mastercard][1]
   * 5 min talk
   * The audience are colleagues who's interested in this lunch talk. 

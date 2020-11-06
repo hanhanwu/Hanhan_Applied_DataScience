@@ -338,6 +338,7 @@ When you got the data from the client or from other teams, better to check the q
 #### Evaluation for Time Series Data
 * The model doesn't have to be forecasting/time series models only, it can be classification model too with features generated using sliding window/tumbling window.
 * No matter which model to use, when there is time series in the data, better to use walk-forward evaluation, which is to train on historical but predict on the future data.
+  * Better to sort the input data in time order, even though the model doesn't check historical records and the features already added time series value, if the dta is not sorted in time order, when the later records appeared before its historical record during training, it can still create bias
 
 #### [sklearn classification evaluation metrics][19]
 * ROC Curve vs. Precision-Recall Curve

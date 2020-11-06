@@ -305,7 +305,7 @@ When you got the data from the client or from other teams, better to check the q
 * [How to implement gradient descent][97]
   * `X` is feature set, `y` is lables, `theta` is (initial) weight; `alpha` is learning rate; `m` is number of records
   
-### [Adaboost vs Gradient Boost]
+### [Adaboost vs Gradient Boost][109]
 * The final comparision table is very helpful
   * weights vs gradient
   * tree depth
@@ -335,6 +335,10 @@ When you got the data from the client or from other teams, better to check the q
 ### Evaluation Methods
 * There is a suggestion for model evaluation, which is, choose and train models on the same dataset and averaging the evaluation results. The idea here is, "combined models increase prediction accuracy"
 * "Probability" means predict continuous values (such as probability, or regression results), "Response" means predict specific classes
+#### Evaluation for Time Series Data
+* The model doesn't have to be forecasting/time series models only, it can be classification model too with features generated using sliding window/tumbling window.
+* No matter which model to use, when there is time series in the data, better to use walk-forward evaluation, which is to train on historical but predict on the future data.
+
 #### [sklearn classification evaluation metrics][19]
 * ROC Curve vs. Precision-Recall Curve
   * ROC curve requires the 2 classes are balanced. Precision-Recall curve is better at being used on imbalanced dataset.

@@ -63,6 +63,14 @@
   * Larger partition of dataset --> to allow more parallelism on your job
   * Columnar File Formats, such as parquet
   * Use dataframe as much as possible, rather than RDD. Because spark daatfarmes had associated metadata to allow spark optimize the query plans
+  
+## Cloud Platforms
+### Google BigQuery
+* [console.cloud.google.com][13]
+  * Search for "BigQuery"
+* It also has a dashboard with it, feeling like redash (for redshift)
+  * [A brief guide][14]
+* Simple SQL
 
 
 [1]:https://docs.atlas.mongodb.com/getting-started/
@@ -77,3 +85,5 @@
 [10]:https://www.analyticsvidhya.com/blog/2020/10/how-can-you-optimize-your-spark-jobs-and-attain-efficiency-tips-and-tricks/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [11]:https://www.analyticsvidhya.com/blog/2020/10/hadoop-distributed-file-system-hdfs-architecture-a-guide-to-hdfs-for-every-data-engineer/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [12]:https://www.analyticsvidhya.com/blog/2020/10/getting-started-with-apache-hive/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[13]:console.cloud.google.com
+[14]:https://www.analyticsvidhya.com/blog/2020/11/basic-introduction-to-google-bigquery-and-data-studio-every-data-scientist-should-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

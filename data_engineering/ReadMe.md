@@ -63,6 +63,8 @@
   * Larger partition of dataset --> to allow more parallelism on your job
   * Columnar File Formats, such as parquet
   * Use dataframe as much as possible, rather than RDD. Because spark daatfarmes had associated metadata to allow spark optimize the query plans
+* [RDD vs Dataframe vs Dataset][15]
+  * Dataset has more features but dataframe still has best performance
   
 ## Cloud Platforms
 ### Google BigQuery
@@ -87,3 +89,4 @@
 [12]:https://www.analyticsvidhya.com/blog/2020/10/getting-started-with-apache-hive/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [13]:console.cloud.google.com
 [14]:https://www.analyticsvidhya.com/blog/2020/11/basic-introduction-to-google-bigquery-and-data-studio-every-data-scientist-should-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[15]:https://www.analyticsvidhya.com/blog/2020/11/what-is-the-difference-between-rdds-dataframes-and-datasets/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

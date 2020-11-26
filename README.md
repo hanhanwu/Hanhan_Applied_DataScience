@@ -17,8 +17,6 @@ Applied data science recommendations and tutorials
 
 ## [Fast Prototyping][81]
 * Fast Prototyping Tookit
-* My favorite presentation tool [Prezi][112]
-  * It's a very nice tool to bring the audience to the stories
 * Need big data environment, [cloudxlab saves efforts in environment setup][111]
 ### [My Story Telling Collections][113]
 
@@ -27,6 +25,8 @@ Applied data science recommendations and tutorials
 ## Build ML Service/API
 * [Build ML Web Application with Flask][90]
   * [How to deploy flask app to Azure][101]
+  * Flask vs FastAPI
+    * Personally, I didn't find fastapi is better, because when I was using a HTML template to get user typed input and generate the model output, with flask it was simple, you just need to render the template. Using fastapi with template rendering was much more complex.
 * [Deploy ML service with BentoML][94]
   * [About BentoML][95]
   * It allows you to deploy the trained model as REST API (built directly for you), docker image or python loadable file

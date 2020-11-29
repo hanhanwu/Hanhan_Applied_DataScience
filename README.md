@@ -54,8 +54,12 @@ Applied data science recommendations and tutorials
   * The way how this example works is, it radomly choose some clients' data (or use aggregation function to do that more efficiently), then sends the multi-clients' data to the remote server to train a model
   * [Detailed tensorflow and keras federated learning ipyhton notebook][105]
   * [All the tensorflow federated tutorials][107]
-* [On device training example (PyTorch)][106]
-  * Model is trained locally on each device, then local models are uploaded to the remote server to create an averaged model and sent back to each device. This process will be repeated to keep updating local and federated models' performance
+* How to Customize Federated Learning
+  * [Inspiration][115]
+    * It captures the core part of FL,  global model global params (weights), local model local params (weights), aggregated params (weights) are used to update the global model and then distributed to the local model for next iteration of params aggregation. Repeat.
+    * The FL aggregation method was built upon deep learning and used for update the weights. If we want to apply FL in classical ML method, we can borrow the idea and instead of updating weights, we can update params.
+    * It also compared SGD with FL, and FL does have certain optimization function.
+
 
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.
@@ -645,3 +649,4 @@ When you got the data from the client or from other teams, better to check the q
 [112]:https://prezi.com/welcome#/about-you
 [113]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/story_telling/README.md
 [114]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md
+[115]:https://towardsdatascience.com/federated-learning-a-step-by-step-implementation-in-tensorflow-aac568283399

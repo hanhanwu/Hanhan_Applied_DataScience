@@ -219,7 +219,10 @@ When you got the data from the client or from other teams, better to check the q
     * This is data dependent, not all the dataset could show obvious class boundary
 ### Sampling Methods
 * There are oversampling, undersampling and synthetic sampling (which is also oversampling), combined sampling (oversampling + undersampling). In practice, I tried different methods in different projects, so far non of them worked well in both training and testing data.
-* [imbalanced-learn] has multiple advanced sampling methods
+* [imbalanced-learn][99] has multiple advanced sampling methods
+* [Compare sample feature and population feature distributions][116]
+  * Numerical features: KS (Kolmogorov-Smirnov) test
+  * Categorical features: (Pearson’s) chi-square test
 ### Cost Sensitive Learning (class weights)
 * This method is becoming more and more popular recently. Majorly you just set the class weights based on the importance of false positive and false negative.
 * In practice, it is worthy to know more from the customers or the marketing team, trying to understand the cost of TP/TN or FP/FN.
@@ -650,3 +653,4 @@ When you got the data from the client or from other teams, better to check the q
 [113]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/story_telling/README.md
 [114]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md
 [115]:https://towardsdatascience.com/federated-learning-a-step-by-step-implementation-in-tensorflow-aac568283399
+[116]:https://www.analyticsvidhya.com/blog/2020/11/big-data-to-small-data-welcome-to-the-world-of-reservoir-sampling/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

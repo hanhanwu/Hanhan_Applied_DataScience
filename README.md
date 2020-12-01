@@ -320,6 +320,12 @@ When you got the data from the client or from other teams, better to check the q
   * tree depth
   * classifier weights
   * data variance capture
+  
+### L1 vs L2
+* L1 regularization adds the penalty term in cost function by adding the absolute value of weight(Wj) parameters, while L2 regularization adds the squared value of weights(Wj) in the cost function.
+* L1 pushes weight `w` towards 0 no matter it's positive or negative, therefore, L1 tend to be used for feature selection
+  * If w is positive, the regularization L1 parameter λ>0 will push w to be less positive, by subtracting λ from w. If w is negative, λ will be added to w, pushing it to be less negative. Hence, this has the effect of pushing w towards 0.
+* As for dealing with multicollinearity, L1, L2 and Elastic Net (uses both l1, L2) could all do some help
 
 ## Model Evaluation
 ### Before Evaluation

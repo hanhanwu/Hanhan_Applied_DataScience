@@ -3,6 +3,10 @@
 ## Relational Database
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][6]
 * [SQl vs NoSQL][8]
+* [SQL Window functions][16]
+  * `Row_Number`, `Rank` vs `Dense_Rank`, `Nth_Value`, `Ntile`, `Lead and Lag`
+    * When there areduplicated values, using Dense_Rank is better than Rank and Nth_Value
+  * Works in both MSSQL and MySQL
 
 ## Hadoop Ecostsems
 * [Brief intro about Hadoop ecosystem][9]
@@ -90,3 +94,4 @@
 [13]:console.cloud.google.com
 [14]:https://www.analyticsvidhya.com/blog/2020/11/basic-introduction-to-google-bigquery-and-data-studio-every-data-scientist-should-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [15]:https://www.analyticsvidhya.com/blog/2020/11/what-is-the-difference-between-rdds-dataframes-and-datasets/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[16]:https://www.analyticsvidhya.com/blog/2020/12/window-function-a-must-know-sql-concept/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

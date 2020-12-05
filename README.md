@@ -42,6 +42,7 @@ Applied data science recommendations and tutorials
 ### Ray
 * Ray vs Python multiprocessing vs Python Serial coding
   * [Code example][79]
+  * [My code example][117]
   * [Blog details][80]
   * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
   
@@ -660,3 +661,4 @@ When you got the data from the client or from other teams, better to check the q
 [114]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md
 [115]:https://towardsdatascience.com/federated-learning-a-step-by-step-implementation-in-tensorflow-aac568283399
 [116]:https://www.analyticsvidhya.com/blog/2020/11/big-data-to-small-data-welcome-to-the-world-of-reservoir-sampling/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[117]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb

@@ -232,7 +232,7 @@ When you got the data from the client or from other teams, better to check the q
     * The cost matrix is example dependent. Each row has the cost of [FP, FN, TP, TN]. So when you are creating this cost matrix yourself, your training & testing data all records the costs, each row of your data is an example. [Sample Model Prediction][36]
     * The drawback is, testing data also needs the cost matrix, but in practice, you may not know. However this method can still be used in train-validation dataset, in order to find the optimal model.
 ### Thresholding
-* When the prediction result is in probability format, we can change the threshold of class prediction. By default the reshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
+* When the prediction result is in probability format, we can change the threshold of class prediction. By default the threshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
 <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/error_rate_thresholds.png" width="500" height="200">
 
 ### Given Partial Labels

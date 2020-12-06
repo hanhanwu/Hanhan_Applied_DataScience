@@ -415,7 +415,8 @@ When you got the data from the client or from other teams, better to check the q
 ### After Evaluation - The confidence/reliability of prediction
 * [Calibration][22]
 * [Concordant & Discordant][25]
-* [KS Test][26] - Kolmogorov-Smirnov (K-S) chart is a measure of the degree of separation between the positive and negative distributions.
+* KS Test - Kolmogorov-Smirnov (K-S) chart is a measure of the difference between the y_true and y_pred distributions for each class respectively. It's a method can be used to compare 2 samples.
+  * KS test vs t-test: Imagine that the population means were similar but the variances were very different. The Kolmogorov-Smirnov test could pick this difference up but the t-test cannot
 
 ## Time Series Analysis Cheatsheet
 * Data Exploration

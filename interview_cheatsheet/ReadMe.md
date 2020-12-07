@@ -6,6 +6,11 @@
 
 ## Model Training & Param Tuning Examples
 * xgboost with cv: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/try_lightfGBM_cv.ipynb
+  * `xgb.cv` doesn't work for some datasets, the split function might return error
+    * Such as this dataset, I'm using sklearn cross validation to do it: https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/interview_cheatsheet/xgboost_CV_HPO.ipynb
+    * However, `xgb.cv` could return the number of optimal n_estimators for xgboost, but sklearn `cross_val_score` noly returns the metrics of each fold. 
+    * To help optimize params, bothneed to work with param tuning
+* xgboost param tuning:
   * What often to tune: https://github.com/hanhanwu/Hanhan_Data_Science_Resources/blob/master/Experiences.md#tune-xgboost
   * All params: https://xgboost.readthedocs.io/en/latest/parameter.html
 * lightGBM with cv: https://github.com/hanhanwu/Hanhan_COLAB_Experiemnts/blob/master/link_prediction.ipynb

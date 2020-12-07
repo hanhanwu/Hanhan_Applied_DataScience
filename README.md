@@ -362,9 +362,14 @@ When you got the data from the client or from other teams, better to check the q
   * Both of them have TPR (recall/sensitivity, the percentage of TP cases are described as positive), the difference is in precision and FPR.
     * `FPR = FP/(FP + TN)`, when the negative class is much larger than positive class, FPR can be small.
     * `Precision = TP/(TP + FP)`, it indicates the percentage of TP are correct. When the negative class is much larger than the positive class, this can be affected less, comparing with ROC.
+* Logloss is used for probability output, it's not used as a regression method in sklearn
 #### [sklearn regression evaluation metrics][20]
-* Logloss works better for discrete numerical target; MSE/RMSE works better for continuous target
+* MSE/RMSE works better for continuous target
 * `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.
+  * Interpretation
+    * 1 is the best, meaning no error
+    * 0 means your regression is no better than taking the mean value
+    * Negative value means you are doing worse than the mean value
   * It's between 0% to 100%
     * 0% indicates that the model explains none of the variability of the response data around its mean.
     * 100% indicates that the model explains all the variability of the response data around its mean.

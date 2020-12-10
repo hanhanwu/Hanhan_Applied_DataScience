@@ -22,3 +22,9 @@
 
 ## Model Evaluation
 * sklearn metrics: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
+
+## General Model Pros & Cons
+| Model | Pros | Cons | Description |
+| --- | --- | --- | --- |
+| Bayesian Classifier | Fast in training and querying large dataset; And can be constantly trained on new coming data without the old data | Cannot deal with the combinations of features caused outcome changes | The basic idea of Bayesian classifier is to get the label's probability by multiplying the probability of each independent features, for example, the category of a text where each token is the feature and the category is the label |
+| Decision Tree | Easy to interpret; no feature preprocessing is needed; can handle the combination of features; can handle misxed data type in features (but decision tree regressor cannot) | Not good at dealing with numerical dependent data, a regressor tree can divide the data into mean values with lowest variance, but when the data is complex, the tree can grow very large; higher variance that a small change in the data could largely affect the model output | |

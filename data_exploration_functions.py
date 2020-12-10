@@ -1,8 +1,28 @@
 # These are the data exploration functions I often use
 import matplotlib.pyplot as plt
 
+# plot individual kernel density curve
+n_rows = 1
+n_cols = 1
 
-# plot numerical features distribution
+i = 1
+fig=plt.figure(figsize=(10,7))
+
+ax=fig.add_subplot(n_rows,n_cols,i) 
+bins = np.linspace(0, 1, 100)
+props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+sns.kdeplot(volatility_df['prediction_prob_std'].values)
+
+plt.legend(loc='best', fontsize=25)
+plt.title('Prepdiction Probability  Std Distribution (all)', fontsize=25)
+plt.xlabel('pred_prob_std', fontsize=25)
+plt.ylabel('density', fontsize=25)
+fig.tight_layout()
+plt.show()
+
+
+
+# plot numerical features distribution (histogram)
 def show_num_feature_distribution(feature_df, n_rows, n_cols):
     plt.rcParams.update({'font.size': 20})
 
@@ -27,6 +47,36 @@ def show_num_feature_distribution(feature_df, n_rows, n_cols):
         plt.ylabel('Percentage')
     fig.tight_layout()
     plt.show()
+    
+    
+    
+# plot numerical features distribution (KDE)
+n_rows = 3
+n_cols = 3
+
+i = 0
+fig=plt.figure(figsize=(20,10))
+
+for feature in score_df.columns:
+    if feature in ['rid', 'prediction_prob', 'prediction', 'score']:
+        continue
+    i += 1
+    ax=fig.add_subplot(n_rows,n_cols,i) 
+    bins = np.linspace(0, 1, 100)
+    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+
+    sns.kdeplot(score_df.loc[(score_df['prediction']==1) & (score_df['score'] > 0)][feature].values,
+                 color='green', label='pred trustworthy', alpha=0.5)
+    sns.kdeplot(score_df.loc[(score_df['prediction']==0) & (score_df['score'] > 0)][feature].values,
+                 color='red', label='pred non-trustworthy', alpha=0.5)
+
+    plt.legend(loc='best', fontsize=10)
+    plt.title(feature + ' (score > 0)', fontsize=15)
+    plt.xlabel('Feature Value', fontsize=15)
+    plt.ylabel('Density', fontsize=15)
+fig.tight_layout()
+plt.show()
+    
     
     
 # Plot categorical features distribution

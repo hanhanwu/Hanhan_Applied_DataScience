@@ -479,7 +479,7 @@ When you got the data from the client or from other teams, better to check the q
   * "Shapley value for each feature is basically trying to find the correct weight such that the sum of all Shapley values is the difference between the predictions and average value of the model. In other words, Shapley values correspond to the contribution of each feature towards pushing the prediction away from the expected value."
     * So higher shaply value indicates the feature pushes the prediction towards the positive class more.
     * So lower shaply value indicates the feature pushes the prediction towards the negative class more.
-* [More details from my practice][68]
+* [More details from my practice][68], including shap decision plot
 
 ### [ELI5][70]
 * It supports feature importance interpretation for those famous emsembling models, as well as deep learning model output interpretation.

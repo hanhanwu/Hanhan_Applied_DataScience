@@ -40,7 +40,7 @@ def show_num_feature_distribution(feature_df, n_rows, n_cols):
 
         plt.hist(feature_df[feature], bins, alpha=0.75, label='median = ' + str(round(np.nanmedian(feature_df[feature]), 3)), 
                  color = 'g', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(feature_df[feature]) + 1. / feature_df[feature].shape[0])
+                 weights=np.zeros_like(feature_df[feature]) + 1. / feature_df[feature].shape[0])  # weights here covert count into percentage for y-axis
         plt.legend(loc='best')
         plt.title('Feature: ' + feature)
         plt.xlabel('Feature Values')

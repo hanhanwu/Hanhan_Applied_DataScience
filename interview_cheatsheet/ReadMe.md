@@ -30,3 +30,24 @@
 | Decision Tree | Easy to interpret; no feature preprocessing is needed; can handle the combination of features; can handle misxed data type in features (but decision tree regressor cannot) | Not good at dealing with numerical dependent data, a regressor tree can divide the data into mean values with lowest variance, but when the data is complex, the tree can grow very large; higher variance that a small change in the data could largely affect the model output | |
 | SVM | Better for high dimensional data (especailly when the # of dimensions is higher than the # of observations); Fast prediction once the hyperplane is found; Affected less by the outliers since the support vectors only use points near the margins | It can be tricky to find the right kernel function when the classes are in nonlinear relationship; It doesn't do well on overlapped classes | SVM is trying to find a line (hyperplane) that can seperate classes clearly by maximize the distances between support vectors (data points near the margins). For nonlinear relationship between classes, we can try kernel trick to convert to a linear problem | 
 | KNN | The reasonging process is easy to understand; | Needs all the data to present when adding new data and therefore can be time consuming; Needs to scale all the features into the same range | It using distance methods to find K most similar objects and the averaged value is the prediction value, `K>1` can reduce the impact from the outlier |
+
+### Unsupervised
+* Clustering
+  * Hierarchical Clustering: Closest objects grouped together, and later it's the centroid of each group to decide which groups to form a larger group
+    * Tree like structure, dendrogram
+  * k-means: Divided into distinct groups using distances
+  * Density based such as DBSCAN
+* Multidimensional Scaling
+  * Convert 2+ dimensions into 2 dimensions
+  * Original distance using distance methods such as euclidean distance (2+ features), then plot on 2D space with some initial distances. Through multiple iteration that each iteration is trying to reduce the total distance error. Stop until the error cannot be reduced further
+* NMF (Non-negative Matrix factorization)
+  * It's a method can be used to categorize the data without using labels. Such as categorize text into topics
+  * It starts with initialized features matrics and weights matrix, keep updating them according to update rules. Repeat until the product of features matrix and weights matrics is close enough to the data matrix
+  
+### Optimization
+* Simulated Annealing: It's trying to improve the solution by determining the cost for a similar solution that's a small distance away and ina random direction from the solution in the question. If the cost is lower, it became the new solution, otherwise it became the new solution with a certain probability which depends on the tenperature
+  * Therefore, with the termperature is higher initially, it tends to accept worse solution (in order to avoid stucking in a local minimum)
+  * When the termperature is 0, the algorithm stops
+* Genetic Algorithms: It starts with random soltions and in each iteration, it selects the strongest solutions (those with optimal costs) to do mutation or crossover to create a new population, repeat until the population has not improved over several generations
+
+

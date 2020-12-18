@@ -19,9 +19,6 @@
   * random forest was used as the example
   * Optuna is a great param tuning tool to be used with sklearn cross validation
   * It's also fast and convenient to tune multiple models together
-### Relevant Interview Questions
-* When tuning tree model's params, would that affect the feature importance?
-  * It could. For example, when change the max depth of the model, a single feature (such as numerical feature) could be splited more than once, and the change in max depth could affect this type spliting and therefore affect the feature importance
 
 ## Model Evaluation
 * sklearn metrics: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
@@ -59,3 +56,10 @@
 * CI, p-value, t-test, z-test
   * https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/pvalue_ttest_ztest.md
   * https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/Learning_Notes/interval_estimation.md 
+
+## Interview Questions
+* When tuning tree model's params, would that affect the feature importance?
+  * It could. For example, when change the max depth of the model, a single feature (such as numerical feature) could be splited more than once, and the change in max depth could affect this type spliting and therefore affect the feature importance
+* When there are lots of features, how could you tell which features are useful?
+  * Check the feature correlation with the label first
+  * Feature importance, sometimes even go deeper to check how does each feature affect the positive/negative class

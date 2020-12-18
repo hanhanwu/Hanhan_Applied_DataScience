@@ -19,6 +19,9 @@
   * random forest was used as the example
   * Optuna is a great param tuning tool to be used with sklearn cross validation
   * It's also fast and convenient to tune multiple models together
+### Relevant Interview Questions
+* When tuning tree model's params, would that affect the feature importance?
+  * It could. For example, when change the max depth of the model, a single feature (such as numerical feature) could be splited more than once, and the change in max depth could affect this type spliting and therefore affect the feature importance
 
 ## Model Evaluation
 * sklearn metrics: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
@@ -50,4 +53,9 @@
   * When the termperature is 0, the algorithm stops
 * Genetic Algorithms: It starts with random soltions and in each iteration, it selects the strongest solutions (those with optimal costs) to do mutation or crossover to create a new population, repeat until the population has not improved over several generations
 
-
+## Relevant Links
+### Statistics
+* A/B test: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/Applied_Statistics/ABTest_Experiments 
+* CI, p-value, t-test, z-test
+  * https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/pvalue_ttest_ztest.md
+  * https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/Learning_Notes/interval_estimation.md 

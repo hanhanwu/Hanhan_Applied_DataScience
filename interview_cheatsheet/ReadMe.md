@@ -63,3 +63,8 @@
 * When there are lots of features, how could you tell which features are useful?
   * Check the feature correlation with the label first
   * Feature importance, sometimes even go deeper to check how does each feature affect the positive/negative class
+* How to interpret p-value, coefficients, r-square in linear regression output
+  * Coefficient indicates the change in the response variable when a unit of an independent variable changes while all the other independent variables stay constant
+  * The null hypothesis is a coefficient is 0, so when p-value is larger than the significant level, accept the null hypothesis, then the coefficient is 0 and the independent variable is not important to the linear regression model
+  * R-Square = Expected Variance/Total Variance. It's the percentage of the response variable variation that is explained by the model.
+    * Better to check residual plot with R square, if there is a pattern in the residual plot instead of the randomness, then even if R square is high, there is still unexplained pattern in the data

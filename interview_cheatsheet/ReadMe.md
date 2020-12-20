@@ -68,3 +68,12 @@
   * The null hypothesis is a coefficient is 0, so when p-value is larger than the significant level, accept the null hypothesis, then the coefficient is 0 and the independent variable is not important to the linear regression model
   * R-Square = Expected Variance/Total Variance. It's the percentage of the response variable variation that is explained by the model.
     * Better to check residual plot with R square, if there is a pattern in the residual plot instead of the randomness, then even if R square is high, there is still unexplained pattern in the data
+* How are you going to find the root cause
+  * Check correlation, feaure importance to find potenail factors
+  * To check cause, might use A/B test to experiment: https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/Applied_Statistics/ABTest_Experiments/detailed_ABTest_Experiment.ipynb
+    * Factor X in 2 groups x1, x2
+    * H0: x1-x2=0
+    * Estimate sample size if necessary, which needs the probaility of Type I, II error, detectable effect, baseline metrics, std1 and std2 can be caluclated from detectable effect and baseline metrics
+    * To check whether the differece between x1, x2 is expected (if so, accept H0), we need confidence interval, which needs p_hat and the margin of error
+      * `p_hat = control group metric/2 group totoal metric`
+      * `margin of error` needs z score (calculated from confidence level), std

@@ -77,3 +77,8 @@
     * To check whether the differece between x1, x2 is expected (if so, accept H0), we need confidence interval, which needs p_hat and the margin of error
       * `p_hat = control group metric/2 group totoal metric`
       * `margin of error` needs z score (calculated from confidence level), std
+* Explain the difference between L1, L2
+  * https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when
+  * The square, circle regions in L1, L2 are the feasible region for the regularization
+  * The contours represent the different loss values for unregularized regression model
+  * Because the square is more angular, it's more likely for the contours to get min loss when a coefficient is 0 (the location is the intersection point of the feasible region boundry and the x, y axis, x, y are the coefficients). This is also why L1 tend to be used for feature selection since some features will get 0 coefficient

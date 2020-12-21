@@ -82,3 +82,8 @@
   * The square, circle regions in L1, L2 are the feasible region for the regularization
   * The contours represent the different loss values for unregularized regression model
   * Because the square is more angular, it's more likely for the contours to get min loss when a coefficient is 0 (the location is the intersection point of the feasible region boundry and the x, y axis, x, y are the coefficients). This is also why L1 tend to be used for feature selection since some features will get 0 coefficient
+* Explain the math behind PCA
+  * `SNR (signal to noise ratio) = P_signal/P_noise`, signal represents all the valid values within a variable's value range, they are the wanted components; the noise part is caused by random factors and should be removed. The objective of PCA is trying to increase the signal content while reducing the noise.
+  * PCA is basically one type of Singular Value Decomposition (SVD), meaning we are breaking or decomposing a larger value (i.e. a singular value) into smaller values.
+    * PCA covariance matrix converts (larger values) to eigenvectors (smaller values, priciple components), A*A_transform, A is the feature matrix
+    * Earlier principle components captures more covariance info

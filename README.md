@@ -363,7 +363,8 @@ When you got the data from the client or from other teams, better to check the q
     * `FPR = FP/(FP + TN)`, when the negative class is much larger than positive class, FPR can be small.
     * `Precision = TP/(TP + FP)`, it indicates the percentage of TP are correct. When the negative class is much larger than the positive class, this can be affected less, comparing with ROC.
 * Logloss is used for <b>probability output</b>, therefore it's not used as a regression method in sklearn
-  * But since logloss represents the probability of prediction, sometimes we still want to use it as metrics for regression problem. We can scale the dependent variable into [0,1] range then use logloss
+  * In deep learning loss function doesn't have to be logloss, it can simple be "mean_absolute_error"
+
 #### [sklearn regression evaluation metrics][20]
 * MSE/RMSE works better for continuous target
 * `R-square = explained variation / total variation`, it means the percentage of response variable variance explained by the model.

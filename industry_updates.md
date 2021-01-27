@@ -12,4 +12,19 @@
   * It was implemented in Xgboost and LightGBM
 
 
+## Useful Python Libraries
+* [check this one][2]
+  * `Joblib`
+    * It helps speed up any function using `Parallel()`, we can compare this with Ray, to use it on Ray function to see the spped improvement
+    * More efficient for data dumping and loading than pickle
+  * `Black`
+    * Auto formating to PEP8
+    * Black gives you speed, determinism, and freedom from `pycodestyle` nagging about formatting :D Yeah, `pycodestyle` nags
+  * `Pip-review`
+    * Auto upgrade packages
+    * Iteractively upgrade packages (ask for the approval for each package)
+    
+
+
 [1]:https://www.analyticsvidhya.com/blog/2020/02/everything-you-should-know-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[2]:https://www.analyticsvidhya.com/blog/2021/01/5-python-packages-every-data-scientist-must-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

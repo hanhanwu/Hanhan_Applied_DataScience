@@ -5,6 +5,7 @@ In the industry, you do need to build a customized data science pipeline to solv
 ## General Architecture
 
 To be added...
+* [Some points to be considered][5]
 
 ## Core Parts
 
@@ -22,3 +23,4 @@ To be added...
 [2]:https://github.com/optuna/optuna
 [3]:https://github.com/hanhanwu/Hanhan_COLAB_Experiemnts/blob/master/optuna_quickstart.ipynb
 [4]:https://towardsdatascience.com/optuna-vs-hyperopt-which-hyperparameter-optimization-library-should-you-choose-ed8564618151
+[5]:https://www.analyticsvidhya.com/blog/2021/01/a-look-at-machine-learning-system-design/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

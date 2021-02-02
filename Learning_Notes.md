@@ -22,6 +22,12 @@
   * For example there is a dataset, we are not sure which is real fraud, nonfarud. We can try multiple unsupervised or even supervised estimators to make the prediction, choose the aggregated results to label the data or label part of the data that we have more confidence. 
   * With the pseudo labeled data, we can use it as training data for supervised learning, and may achieve better accuracy in the final prediction.
 
+## Censored Regression Model
+* "Censoring is a form of missing-data problem, in which observations greater than a certain threshold are clipped down to that threshold, or observations less than a certain threshold are clipped up to that threshold, or both. These are called right, left and interval censoring,"
+* [Censored model (imputed & unimputed) to complete the distribution][19]
+* [Censored regressio model, right censored only][20]
+* [Fitting censored data by converting the MLE into a convex optimization problem][21]
+* [Multiple methods to fit censored data][22]
 
 ## Bayes Classification Methods
 * Bayes' Theorem vs Naive Bayesian
@@ -172,3 +178,7 @@
 [16]:https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
 [17]:https://towardsdatascience.com/how-to-conduct-a-proper-root-cause-analysis-789b9847f84b
 [18]:https://www.tableau.com/learn/articles/root-cause-analysis
+[19]:https://docs.pymc.io/notebooks/censored_data.html
+[20]:https://www.statsmodels.org/stable/duration.html
+[21]:https://www.cvxpy.org/examples/applications/censored_data.html
+[22]:https://fizzy.cc/censoring-data-in-survival-analysis/

@@ -25,7 +25,7 @@
 ## Censored Regression Model
 * "Censoring is a form of missing-data problem, in which observations greater than a certain threshold are clipped down to that threshold, or observations less than a certain threshold are clipped up to that threshold, or both. These are called right, left and interval censoring,"
 * [Censored model (imputed & unimputed) to complete the distribution][19]
-* [Censored regressio model, right censored only][20]
+* [Censored regression model, right censored only][20]
 * [Fitting censored data by converting the MLE into a convex optimization problem][21]
 * [Multiple methods to fit censored data][22]
 

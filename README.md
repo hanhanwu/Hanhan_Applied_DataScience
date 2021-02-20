@@ -157,6 +157,8 @@ When you got the data from the client or from other teams, better to check the q
 * Dimensional Reduction Algorithms
   * [sklearn decomposition][15]
   * [The intermediate result from autoencoder - encoder][60]
+  * [sklearn manifold learning][118]
+    * [Each algorithm][119]
 * Feature Selection Methods
   * [sklearn feature selection][16]
   
@@ -672,3 +674,5 @@ When you got the data from the client or from other teams, better to check the q
 [115]:https://towardsdatascience.com/federated-learning-a-step-by-step-implementation-in-tensorflow-aac568283399
 [116]:https://www.analyticsvidhya.com/blog/2020/11/big-data-to-small-data-welcome-to-the-world-of-reservoir-sampling/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [117]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb
+[118]:https://scikit-learn.org/stable/modules/manifold.html
+[119]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.manifold

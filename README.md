@@ -556,6 +556,10 @@ When you got the data from the client or from other teams, better to check the q
 
 # [Keep up with Industry Updates][91]
 
+# Mentoring Resources
+* [Sealine - A tool to teach ML concepts][120]
+  * [Examples][121]
+
 
 [1]:https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 [2]:https://chrisalbon.com/machine_learning/feature_selection/anova_f-value_for_feature_selection/
@@ -676,3 +680,5 @@ When you got the data from the client or from other teams, better to check the q
 [117]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb
 [118]:https://scikit-learn.org/stable/modules/manifold.html
 [119]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.manifold
+[120]:https://github.com/anish-lakkapragada/SeaLion
+[121]:https://github.com/anish-lakkapragada/SeaLion/tree/main/examples

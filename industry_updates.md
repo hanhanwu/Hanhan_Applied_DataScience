@@ -11,6 +11,10 @@
 * Extends Pruning to other tree based algorithms such as random forest and gradient boosting
   * It was implemented in Xgboost and LightGBM
 
+## [MLESAC - Getting better regression results for outlier corrupted data]
+  * Maximum Likelihood Estimator Sample Consensus (MLESAC)
+  * It adopts the same sampling strategy as RANSAC to generate putative solutions but chooses the solution that maximizes the likelihood rather than just the number of inliers. 
+
 
 ## Useful Python Libraries
 * [check this one][2]
@@ -28,3 +32,4 @@
 
 [1]:https://www.analyticsvidhya.com/blog/2020/02/everything-you-should-know-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:https://www.analyticsvidhya.com/blog/2021/01/5-python-packages-every-data-scientist-must-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[3]:https://www.analyticsvidhya.com/blog/2021/02/new-approach-for-regression-analysis-ransac-and-mlesac/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29#_ftn5

@@ -11,9 +11,9 @@
 * Extends Pruning to other tree based algorithms such as random forest and gradient boosting
   * It was implemented in Xgboost and LightGBM
 
-## [MLESAC - Getting better regression results for outlier corrupted data]
-  * Maximum Likelihood Estimator Sample Consensus (MLESAC)
-  * It adopts the same sampling strategy as RANSAC to generate putative solutions but chooses the solution that maximizes the likelihood rather than just the number of inliers. 
+## [MLESAC - Getting better regression results for outlier corrupted data][3]
+* Maximum Likelihood Estimator Sample Consensus (MLESAC)
+* It adopts the same sampling strategy as RANSAC to generate putative solutions but chooses the solution that maximizes the likelihood rather than just the number of inliers. 
 
 
 ## Useful Python Libraries

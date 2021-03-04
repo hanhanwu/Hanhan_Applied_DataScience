@@ -190,10 +190,10 @@ When you got the data from the client or from other teams, better to check the q
 * one-hot features
 * decision tree paths as the feature
 * Methods to deal with categorical features
-  * 🚫The most simple label encoding is to convert each uniaque categorical value into a unique number. But this might make the machine learning model misunderstand the relationship between these converted numerical values.
-    * ❌ Better not use this type of converted numerical values to calculate any type of relationship, such as correlation.
-    * Instead can use the methods below:
-  * [10+ Built-in Categorical Encoding Methods][37]
+  * The most simple label encoding is to convert each uniaque categorical value into a unique number (use sklearn label encoding). But better to check how does the model hadle categorical features
+    * [LightGBM offers good accuracy with integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
+    * [You can also have categorical features as direct input][123], [but need to specify that as categorical type]
+  * Besides, there are other label encoding methods, [10+ Built-in Categorical Encoding Methods][37]
     * [Params for each encoding method][84]
     * [More descriptions of some of the encoding methods][85] 
       * Base N creates less dimensions while represent the data effciently, if you choose the proper N
@@ -682,3 +682,6 @@ When you got the data from the client or from other teams, better to check the q
 [119]:https://scikit-learn.org/stable/modules/classes.html#module-sklearn.manifold
 [120]:https://github.com/anish-lakkapragada/SeaLion
 [121]:https://github.com/anish-lakkapragada/SeaLion/tree/main/examples
+[122]:https://lightgbm.readthedocs.io/en/latest/Advanced-Topics.html
+[123]:https://lightgbm.readthedocs.io/en/latest/Features.html#optimal-split-for-categorical-features
+[124]:https://medium.com/analytics-vidhya/lightgbm-for-regression-with-categorical-data-b08eaff501d1

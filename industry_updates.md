@@ -1,5 +1,9 @@
 # Keep Up with Industry Updates 🌺
 
+## [2021 paper - Model Complexity of Deep Learning: A Survey]
+* It talks about deep learning complexity from Model framework, Model size, Optimization process, Data complexity
+
+
 ## [2020 Feb - Latest Scikit-Learn Updates][1]
 * Some updates here have already appeared in R before, but still good to know now they are in python too
 * Added Stacking
@@ -33,3 +37,4 @@
 [1]:https://www.analyticsvidhya.com/blog/2020/02/everything-you-should-know-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [2]:https://www.analyticsvidhya.com/blog/2021/01/5-python-packages-every-data-scientist-must-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [3]:https://www.analyticsvidhya.com/blog/2021/02/new-approach-for-regression-analysis-ransac-and-mlesac/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29#_ftn5
+[4]:https://arxiv.org/pdf/2103.05127.pdf

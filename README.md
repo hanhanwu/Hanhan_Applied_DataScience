@@ -89,6 +89,11 @@ When you got the data from the client or from other teams, better to check the q
 
 ### Bivariate Analysis
 * Check correlation between every 2 continuous variables
+* Person vs Spearman
+  * Pearson correlation evaluated the linear relationship between two continuous variables. 
+    * A relationship is linear when a change in one variable is associated with a proportional change in the other variable. 
+  * Spearman evaluates a monotonic relationship. 
+    * A monotonic relationship is one where the variables change together but not necessarily at a constant rate.
 * 2 way table or Stacked Column Chart - for 2 variable variables, check count, percentage of group by the 2 variables
 * Check chi-square test between 2 categorical features (similar to correlation for continuous features)
   * probability 0 means the 2 variables are dependent; 1 means independent; a value x in [0,1] range means the dependence between the 2 variables is at `(1-x)*100%`

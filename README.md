@@ -268,6 +268,16 @@ When you got the data from the client or from other teams, better to check the q
   
 ## Models
 [My code][12]
+### Baseline Models for R&D
+* During R&D, there will be more and more fancy methods, especially those in deep learning. Are they going to perform better comparing with these easy-to-implement baselines?
+* Categorize based on words/characters
+  * Naive Bayesian
+  * Fisher Methods
+  * You can do self-implementation, [check chapter 6][125]
+* Find themes of a piece of text
+  * Non-Negative Matrix Factorization 
+  * You can do self-implementation, [check chapter 10][125]
+
 ### Which Model to Choose
 * Linear or Nonlinear
   * In the code [here][11], we can use residual plot to check whether there is linear/non-linear relationship between the feature set and the label, to decide to use linear/nonlinear model.
@@ -302,7 +312,7 @@ When you got the data from the client or from other teams, better to check the q
     * ...
   * Application - [sklearn time series split][77] 
   
-### More about Emsembling
+### More about Ensembling
 * We know ensembling models tend to work better in many cases, such as Xgboost and LightGBM
 #### Super Learner
 * [Super Learner example][100]
@@ -690,3 +700,4 @@ When you got the data from the client or from other teams, better to check the q
 [122]:https://lightgbm.readthedocs.io/en/latest/Advanced-Topics.html
 [123]:https://lightgbm.readthedocs.io/en/latest/Features.html#optimal-split-for-categorical-features
 [124]:https://medium.com/analytics-vidhya/lightgbm-for-regression-with-categorical-data-b08eaff501d1
+[125]:https://github.com/ShawnLeee/the-book/blob/master/pybooks/Programming%20Collective%20Intelligence.pdf

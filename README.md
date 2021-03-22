@@ -112,6 +112,19 @@ When you got the data from the client or from other teams, better to check the q
     * Mantel-Haenszed Chi-Square for ordinal categorical variable (categorical values in order)
   * ANOVA: categorical features vs cotinuous label; or vice versa
   
+### Regression Coefficients
+* [Unstandardized vs Standarddized Regression Coefficients][126]
+  * Unstandardized coefficient α are used for independent variables when they all kept their own units (such as kg, meters, years old, etc.). It means when there  is one unit change in the independent variable, there is α cahnge in the dependent variable y.
+    * However, because those independent variables are in different units, based on unstandardized coefficients, we cannot tell which feature is more important
+  * So we need standardized coefficient β, larger abs(β) indicates the feature is more important
+    * Method 1 to calculate β is to convert each observation of an independent variable to <b>0 mean and 1 std</b>
+      *  new_x_i = (x_i - Mean_x) / Std_x, do this for both independent and dependent variables
+      *  Then get β
+    * Method 2
+      * Linear Regression: β_x = α_x * (std_x / std_y)
+      * Logistic Regression: β_x = (sqrt(3)/pi) * α_x * std_x
+    * It means when there is 1 std increase in the independent variable, there is β std increase in the dependent variable
+  
 ### Deal With Missing Values
 * <b>Check whether missing values appear in different values with different probability.</b> This may help understand whether the missing value is missing completely at random (missing with same probability for different values) or whether there are certain values tend to have more missing values and why.
 * Deletion
@@ -701,3 +714,4 @@ When you got the data from the client or from other teams, better to check the q
 [123]:https://lightgbm.readthedocs.io/en/latest/Features.html#optimal-split-for-categorical-features
 [124]:https://medium.com/analytics-vidhya/lightgbm-for-regression-with-categorical-data-b08eaff501d1
 [125]:https://github.com/ShawnLeee/the-book/blob/master/pybooks/Programming%20Collective%20Intelligence.pdf
+[126]:https://www.analyticsvidhya.com/blog/2021/03/standardized-vs-unstandardized-regression-coefficient/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

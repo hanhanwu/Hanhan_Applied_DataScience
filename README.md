@@ -492,6 +492,12 @@ When you got the data from the client or from other teams, better to check the q
 * [Python Linear Programming - scipy.optimize.linprog][55]
   * [How to use this library...][56]
   * Only supports minimized problem, so you need to adjust the optimization function if it's supposed to be maximized
+
+### [Pareto Front][127]
+* When you have multiple evluation metrics (or objective functions), this method helps to find those records with at least 1 metric wroks better.
+* With this method, it helps remove more unnecessary records --> more efficient.
+* It can be used in param tuning.
+* The idea can be modified for other use, such as instead of having at least 1 metric works better, we can define all the metrics or a certain metrics work better, etc.
   
 ## Interpretating Machine Learning Model
 ### Lime - Visualize feature importance for all machine learning models
@@ -715,3 +721,4 @@ When you got the data from the client or from other teams, better to check the q
 [124]:https://medium.com/analytics-vidhya/lightgbm-for-regression-with-categorical-data-b08eaff501d1
 [125]:https://github.com/ShawnLeee/the-book/blob/master/pybooks/Programming%20Collective%20Intelligence.pdf
 [126]:https://www.analyticsvidhya.com/blog/2021/03/standardized-vs-unstandardized-regression-coefficient/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[127]:https://en.wikipedia.org/wiki/Pareto_efficiency#Pareto_frontier

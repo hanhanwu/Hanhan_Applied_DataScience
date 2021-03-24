@@ -209,9 +209,9 @@ When you got the data from the client or from other teams, better to check the q
 * decision tree paths as the feature
 * Methods to deal with categorical features
   * The most simple label encoding is to convert each uniaque categorical value into a unique number (use sklearn label encoding). But better to check how does the model hadle categorical features
-    * [LightGBM offers good accuracy with integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
-    * [You can also have categorical features as direct input][123], [but need to specify that as categorical type]
-  * Besides, there are other label encoding methods, [10+ Built-in Categorical Encoding Methods][37]
+    * [LightGBM offers good accuracy with built-in integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
+    * [You can also have categorical features as direct input][123], [but need to specify that as categorical type][124]
+  * [10+ Built-in Categorical Encoding Methods][37]
     * [Params for each encoding method][84]
     * [More descriptions of some of the encoding methods][85] 
       * Base N creates less dimensions while represent the data effciently, if you choose the proper N
@@ -220,6 +220,9 @@ When you got the data from the client or from other teams, better to check the q
         * 2 methods mentioned in the article to reduce target leakage/overfitting
         * When the categories in training and testing data are distributed improperly, the categories may assume extreme value
     * Better to remove highly correlated features after applying these encoding methods. Even if the feature correlations affect tree models less, too many dimensions are not optimal to tree models either, might lead to large trees.
+  * [Beta Target Encoding][128]
+    * requires minimal updates and can be used for online learning
+    * [Check its python implementation][129], supports numerical target  
   * Concat multiple categorical features as 1 feature
   * Convert to value frequency or response rate, aggregated value. Also for categorical value, we can use part of the value and convert to numerical values
 * Normalize data into [0, 1] without min, max
@@ -722,3 +725,5 @@ When you got the data from the client or from other teams, better to check the q
 [125]:https://github.com/ShawnLeee/the-book/blob/master/pybooks/Programming%20Collective%20Intelligence.pdf
 [126]:https://www.analyticsvidhya.com/blog/2021/03/standardized-vs-unstandardized-regression-coefficient/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [127]:https://en.wikipedia.org/wiki/Pareto_efficiency#Pareto_frontier
+[128]:https://mattmotoki.github.io/beta-target-encoding.html
+[129]:https://www.kaggle.com/mmotoki/beta-target-encoding

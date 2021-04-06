@@ -507,6 +507,8 @@ When you got the data from the client or from other teams, better to check the q
    * Param Tuning  - Pareto Front improves the efficiency, MADM find the optimal option
   
 ## Interpretating Machine Learning Model
+### [Interpretable Machine Learning][131]
+* It has summarized different methods in ML model interpretations, such as NN interpretation, model-agnostic interpretation, etc.
 ### Lime - Visualize feature importance for all machine learning models
 * Their GitHub, Examples and the Paper: https://github.com/marcotcr/lime
   * Interpretable: The explanation must be easy to understand depending on the target demographic
@@ -732,3 +734,4 @@ When you got the data from the client or from other teams, better to check the q
 [128]:https://mattmotoki.github.io/beta-target-encoding.html
 [129]:https://www.kaggle.com/mmotoki/beta-target-encoding
 [130]:https://scikit-criteria.readthedocs.io/en/latest/api/madm/madm.html
+[131]:https://christophm.github.io/interpretable-ml-book/index.html

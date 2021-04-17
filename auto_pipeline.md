@@ -11,6 +11,7 @@ In the industry, you do need to build a customized data science pipeline to solv
 * Airflow
 * [MLOps][10]
   * [Here's a simple example][11] with [code][12], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
+  * Might be Azure ML specific, check [getting started here][13]
 
 ## General Architecture
 
@@ -48,3 +49,4 @@ To be added...
 [10]:https://github.com/microsoft/MLOps
 [11]:https://www.analyticsvidhya.com/blog/2021/04/bring-devops-to-data-science-with-continuous-mlops/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [12]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML
+[13]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md

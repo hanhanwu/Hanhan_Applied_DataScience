@@ -6,6 +6,12 @@ In the industry, you do need to build a customized data science pipeline to solv
 * [Google AutoML Table][7]
   * From structured data to dashboard, the whole system design is very smooth 
 
+## Auto Deployment Tools
+* Luigi
+* Airflow
+* [MLOps][10]
+  * [Here's a simple example][11] with [code][12], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
+
 ## General Architecture
 
 To be added...
@@ -39,3 +45,6 @@ To be added...
 [7]:https://cloud.google.com/automl-tables
 [8]:https://github.com/google/model_search
 [9]:https://ai.googleblog.com/2021/02/introducing-model-search-open-source.html?m=1
+[10]:https://github.com/microsoft/MLOps
+[11]:https://www.analyticsvidhya.com/blog/2021/04/bring-devops-to-data-science-with-continuous-mlops/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[12]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML

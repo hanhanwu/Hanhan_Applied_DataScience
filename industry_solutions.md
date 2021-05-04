@@ -5,6 +5,7 @@
 * [This article][1] provided their suggestions in:
   * feature engineering
   * customized loss function
+    * In that formula, `𝕀` is an indicator variable, which means it's 1 when the condition specified at its bottom right satisfied, otherwise it's 0
 
 
 [1]:https://doordash.engineering/2021/04/28/improving-eta-prediction-accuracy-for-long-tail-events/

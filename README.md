@@ -482,6 +482,9 @@ When you got the data from the client or from other teams, better to check the q
   
   
 ## Optimization Problem
+
+### [Param Tuning in Industry Pipelines][132]
+
 ### Linear Programming
 * This is a common solution used in industry problems. With multiple constraint functions and 1 function for optimized solution.
 * [My code - Linear Programming to Get Optimized List of Youtube Videos][52]
@@ -732,3 +735,4 @@ When you got the data from the client or from other teams, better to check the q
 [129]:https://www.kaggle.com/mmotoki/beta-target-encoding
 [130]:https://scikit-criteria.readthedocs.io/en/latest/api/madm/madm.html
 [131]:https://christophm.github.io/interpretable-ml-book/index.html
+[132]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md#param-tuning-hpo

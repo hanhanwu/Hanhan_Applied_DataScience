@@ -1,6 +1,6 @@
 # Keep Up with Industry Updates 🌺
 
-## [2021 paper - Model Complexity of Deep Learning: A Survey]
+## [2021 paper - Model Complexity of Deep Learning: A Survey][4]
 * It talks about deep learning complexity from Model framework, Model size, Optimization process, Data complexity
 
 

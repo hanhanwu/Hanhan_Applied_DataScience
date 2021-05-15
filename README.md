@@ -60,9 +60,6 @@ Applied data science recommendations and tutorials
     * The FL aggregation method was built upon deep learning and used for update the weights. If we want to apply FL in classical ML method, we can borrow the idea and instead of updating weights, we can update params.
     * It also compared SGD with FL, and FL does have certain optimization function.
     
-## Chained Pipeline Tools
-* Luigi
-* Airflow
 
 ## Data Quality Check
 When you got the data from the client or from other teams, better to check the quality first.

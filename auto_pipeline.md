@@ -24,8 +24,14 @@ To be added...
 * [Hyperopt][1]
 * [Optuna][2]
   * [Quick start][3] - You will see how to tune param with multiple estimators and params, nice visualization too
-* [Optuna vs Hyperopt][4]
-  * It compared the 2 tools from different important aspects, and in every aspects, Optuna appears to be no worse
+  * [Optuna vs Hyperopt][4]
+    * It compared the 2 tools from different important aspects, and in every aspects, Optuna appears to be better overall
+  * [Using Optuna in different models][14]
+* Bayesian Optimizaton
+  * It considers past model info to select params for the new model
+  * [An example][15] 
+    * Bayes_opt may not be faster than hyperopt but you can stop whenever you want and get current best results. It also shows the tuning progress that contains which value got selected in each trial
+ 
 
 ### Model Selection
 * [Google Model Search][8]
@@ -50,3 +56,5 @@ To be added...
 [11]:https://www.analyticsvidhya.com/blog/2021/04/bring-devops-to-data-science-with-continuous-mlops/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [12]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML
 [13]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md
+[14]:https://www.kaggle.com/dixhom/bayesian-optimization-with-optuna-stacking
+[15]:https://www.analyticsvidhya.com/blog/2021/05/bayesian-optimization-bayes_opt-or-hyperopt/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

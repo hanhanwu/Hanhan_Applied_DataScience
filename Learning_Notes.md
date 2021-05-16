@@ -7,6 +7,8 @@
 
 
 ## Monte Carlo Simulation
+* Monte Carlo Simulation, unlike propagation of error, can work on data distribution other than normal distribution and data with big standard deviation.
+  *  Propagation of error uses uncertainty (std) in the normal distribution, but sometimes in reality, some values in the distribution could never appear (such as income should not be negative) [Reference][23]
 * [The basic idea of Monte Carlo Simulation][2] is, you generate large amount of random "lines" that all satisfy the same distribution. So that you will have a bunch of records to evaluate your model. The example here is pretty good.
 * [Hamiltonian Monte Carlo (HMC)][3] is a Markov chain Monte Carlo (MCMC) algorithm. Hamiltonian dynamics can be used to produce distant proposals for the Metropolis algorithm, thereby avoiding the slow exploration of the state space that results from the diffusive behaviour of simple random-walk proposals.
   * [To get the distribution of your data][4]
@@ -182,3 +184,4 @@
 [20]:https://www.statsmodels.org/stable/duration.html
 [21]:https://www.cvxpy.org/examples/applications/censored_data.html
 [22]:https://fizzy.cc/censoring-data-in-survival-analysis/
+[23]:https://www.analyticsvidhya.com/blog/2021/04/how-to-perform-monte-carlo-simulation/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

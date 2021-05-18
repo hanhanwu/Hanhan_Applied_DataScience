@@ -26,6 +26,7 @@ To be added...
   * [Quick start][3] - You will see how to tune param with multiple estimators and params, nice visualization too
   * [Optuna vs Hyperopt][4]
     * It compared the 2 tools from different important aspects, and in every aspects, Optuna appears to be better overall
+    * Optuna's TPE appears better than hyperopt's Adaptive TPE
   * [Using Optuna in different models][14]
 * Bayesian Optimizaton
   * It considers past model info to select params for the new model

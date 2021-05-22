@@ -79,6 +79,7 @@
       * `margin of error` needs z score (calculated from confidence level), std
 * Explain the difference between L1, L2
   * https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when
+  * https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
   * The square, circle regions in L1, L2 are the feasible region for the regularization
   * The contours represent the different loss values for unregularized regression model
   * Because the square is more angular, it's more likely for the contours to get min loss when a coefficient is 0 (the location is the intersection point of the feasible region boundry and the x, y axis, x, y are the coefficients). This is also why L1 tend to be used for feature selection since some features will get 0 coefficient

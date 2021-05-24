@@ -597,6 +597,9 @@ When you got the data from the client or from other teams, better to check the q
 ### Notes in Speed Up
 * Better not use pandas `iterrows()` but to store each record as a dictionary and store in a list for iteration. Iterating pandas rows can be much slower.
 
+## [Learning Notes][133]
+* How to apply Monte Carlo Simulation
+
 # [Keep up with Industry Updates][91]
 
 # Mentoring Resources
@@ -736,3 +739,4 @@ When you got the data from the client or from other teams, better to check the q
 [130]:https://scikit-criteria.readthedocs.io/en/latest/api/madm/madm.html
 [131]:https://christophm.github.io/interpretable-ml-book/index.html
 [132]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md#param-tuning-hpo
+[133]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Learning_Notes.md

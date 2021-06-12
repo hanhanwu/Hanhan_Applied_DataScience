@@ -86,20 +86,22 @@ When you got the data from the client or from other teams, better to check the q
 
 ### Bivariate Analysis
 * Check correlation between every 2 continuous variables
-* Person vs Spearman
-  * Pearson correlation evaluated the linear relationship between two continuous variables. 
-    * A relationship is linear when a change in one variable is associated with a proportional change in the other variable. 
-  * Spearman evaluates a monotonic relationship. 
-    * A monotonic relationship is one where the variables change together but not necessarily at a constant rate.
+  * Person vs Spearman
+    * Pearson correlation evaluated the linear relationship between two continuous variables. 
+      * A relationship is linear when a change in one variable is associated with a proportional change in the other variable. 
+    * Spearman evaluates a monotonic relationship. 
+      * A monotonic relationship is one where the variables change together but not necessarily at a constant rate.
+  * Check chi-square test between 2 categorical features (similar to correlation for continuous features)
+    * probability 0 means the 2 variables are dependent; 1 means independent; a value x in [0,1] range means the dependence between the 2 variables is at `(1-x)*100%`
+    * [sklearn chi-square][4]
+  * Check ANOVA between categorical and continuous variables
+    * [Example to check ANOVA f-value][2]
+    * [sklearn ANOVA][3]
+    * Lower F-score the higher dependent between the variables
+    * Besides ANOVA, we could calculate t-score or z-score (less than 30 records)
+* Comparing with correlation, Mutual Information (MI) measures the non-linear dependency between 2 random variables
+  * Larger MI, larger dependency 
 * 2 way table or Stacked Column Chart - for 2 variable variables, check count, percentage of group by the 2 variables
-* Check chi-square test between 2 categorical features (similar to correlation for continuous features)
-  * probability 0 means the 2 variables are dependent; 1 means independent; a value x in [0,1] range means the dependence between the 2 variables is at `(1-x)*100%`
-  * [sklearn chi-square][4]
-* Check ANOVA between categorical and continuous variables
-  * [Example to check ANOVA f-value][2]
-  * [sklearn ANOVA][3]
-  * Lower F-score the higher dependent between the variables
-  * Besides ANOVA, we could calculate t-score or z-score (less than 30 records)
 * For features that are highly dependent on each other, in parametrics algorithms these features should be removed to reduce error; in nonparametrics algorithms, I still recommend to remove them, because for algorithms such as trees tend to put highly dependent features at the same importance level, which won't contribute feature importance much.
 * Feature selection based on the dependency between features and the label
   * Select features that have stronger correlation with the label, because these features tend to contribute to the label values.

@@ -92,7 +92,8 @@ When you got the data from the client or from other teams, better to check the q
     * Spearman evaluates a monotonic relationship. 
       * A monotonic relationship is one where the variables change together but not necessarily at a constant rate.
   * Check chi-square test between 2 categorical features (similar to correlation for continuous features)
-    * probability 0 means the 2 variables are dependent; 1 means independent; a value x in [0,1] range means the dependence between the 2 variables is at `(1-x)*100%`
+    * (p-value) probability 0 means the 2 variables are dependent; 1 means independent; a value x in [0,1] range means the dependence between the 2 variables is at `(1-x)*100%`
+      * H0 (Null Hypothesis) = The 2 variables to be compared are independent. Normally when p-value < 0.05 we reject H0 and the 2 variables are independent.
     * [sklearn chi-square][4]
   * Check ANOVA between categorical and continuous variables
     * [Example to check ANOVA f-value][2]

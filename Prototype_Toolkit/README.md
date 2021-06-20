@@ -1,6 +1,11 @@
 # Prototype Toolkit
 
 ## Fast Prototyping
+### [Some advanced tools][10]
+* Tools like TPOT, MLBOX can do both params tuning and model selection
+  * MLBox also do some data preprocessing
+* Tools like HungaBunga, LazyPredict runs on a list of models and show you a list of results  
+
 ### PyCaret
 * Easy code, interactive visualization for model plot, model comparison, model interpretation, etc.
 * [PyCaret Youtube Demos][1]
@@ -33,3 +38,4 @@
 [7]:https://www.analyticsvidhya.com/blog/2020/05/pycaret-machine-learning-model-seconds/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [8]:https://pycaret.org/clustering/
 [9]:https://pycaret.org/trigonometry-features/
+[10]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/README.md#advanced-tools

@@ -527,6 +527,7 @@ When you got the data from the client or from other teams, better to check the q
   * You also need to specify all the class names in `LimeTabularExplainer`, especially in classification problem, otherwise the visualization cannot show classes well
   
 ### SHAP
+* SHAP value is a type of feature importance value: https://christophm.github.io/interpretable-ml-book/shap.html#shap-feature-importance
 * It uses Shapley values at its core and is aimed at explaining each individual record.
   * "Shapley value for each feature is basically trying to find the correct weight such that the sum of all Shapley values is the difference between the predictions and average value of the model. In other words, Shapley values correspond to the contribution of each feature towards pushing the prediction away from the expected value."
     * So higher shaply value indicates the feature pushes the prediction towards the positive class more.

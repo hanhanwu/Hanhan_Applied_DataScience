@@ -584,11 +584,6 @@ When you got the data from the client or from other teams, better to check the q
   * [Original tutorial][18]
   
 ### Python Tools
-* [Some quick methods in pandas][32]
-  * pivot table - generate aggregate results for multiple columns
-  * multi-indexing - using the values of multiple columns as the index to locate
-  * cross-tab - this can be used to check whether a feature affects the label with percentage value
-  * cut - binning
 * [MLFlow - Machine Learning Life Cycle Platform][58]
   * Record and query experiments: code, data, config, and results.
   * Packaging format for reproducible runs on any platform.

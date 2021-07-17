@@ -322,9 +322,9 @@ When you got the data from the client or from other teams, better to check the q
 ### Cross Validation
 * When there is time order in the data
   * Solution - Forward Chaining
-    * Step 1: training[1], testing[2]
-    * Step 2: training[1,2], testing[3]
-    * Step 3: training[1,2,3], testing[4]
+    * Step 1: training(1), testing(2)
+    * Step 2: training(1,2), testing(3)
+    * Step 3: training(1,2,3), testing(4)
     * ...
   * Application - [sklearn time series split][77] 
   

@@ -9,9 +9,9 @@
 ## Monte Carlo Simulation
 * Monte Carlo Simulation, unlike propagation of error, can work on data distribution other than normal distribution and data with big standard deviation.
   * This method allows you to simiulate some PDFs based on known params, the params can be generated from existing data or based on your assumption [See example here][23], [full list in this R package][24]
-  * When the data sample is not showing any obvious PDF, you can use non-parametric method, which doesn't need you to specify the params but just need the original data input [See example here][23], [full list in this R package][24]
+  * When the data sample is not showing any obvious PDF, you can use non-parametric method, which doesn't need you to specify the params but just need the original data input [See example here][23]💝, [full list in this R package][24]
   * Propagation of error uses uncertainty (std) in the normal distribution, but sometimes in reality, some values in the distribution could never appear (such as income should not be negative) [Reference][23]
-* [The basic idea of Monte Carlo Simulation][2] is, you generate large amount of random "lines" that all satisfy the same distribution. So that you will have a bunch of records to evaluate your model. The example here is pretty simple and informative 💖
+* [The basic idea of Monte Carlo Simulation][2] is, you generate large amount of random "lines" that all satisfy the same distribution. So that you will have a bunch of records to evaluate your model.
 * [Hamiltonian Monte Carlo (HMC)][3] is a Markov chain Monte Carlo (MCMC) algorithm. Hamiltonian dynamics can be used to produce distant proposals for the Metropolis algorithm, thereby avoiding the slow exploration of the state space that results from the diffusive behaviour of simple random-walk proposals.
   * [To get the distribution of your data][4]
     * You can try the `fit_and_plot` to get the data distribution

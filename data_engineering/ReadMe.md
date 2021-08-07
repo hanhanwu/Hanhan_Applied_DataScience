@@ -5,7 +5,7 @@
   * Super key
     * Candidate key
       * Primary key, Foreign key, Composite key
-      * Alternative key
+      * Alternative key (secondary key)
 * [SQl vs NoSQL][8]
 * [SQL Window functions][16]
   * `Row_Number`, `Rank` vs `Dense_Rank`, `Nth_Value`, `Ntile`, `Lead and Lag`

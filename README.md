@@ -36,6 +36,9 @@ Applied data science recommendations and tutorials
       * "iris-classifier" is the image name, "latest" is the tag name
   
 ## [Applied Data Engineering][92]
+* Rational databases
+* Big Data Systems
+* Big Data Cloud Platforms
 
 ## Parallel Processing
 ### Ray

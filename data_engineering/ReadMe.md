@@ -2,11 +2,19 @@
 
 ## Relational Database
 * [Super key, Candidate key, Primary key, Alternative key, Composite key, Foreign key][6]
+  * Super key
+    * Candidate key
+      * Primary key, Foreign key, Composite key
+      * Alternative key
 * [SQl vs NoSQL][8]
 * [SQL Window functions][16]
   * `Row_Number`, `Rank` vs `Dense_Rank`, `Nth_Value`, `Ntile`, `Lead and Lag`
     * When there areduplicated values, using Dense_Rank is better than Rank and Nth_Value
   * Works in both MSSQL and MySQL
+* [Indexing][17]
+  * Dense Index: it has an index for every record, therefore records saved in DB can be ordered or unordered
+  * Sparse Index: it has index only for anchor record (first record) of each block, therefore records saved in DB has to be ordered
+  * [B-Tree indexing example in MySQL][18]
 
 ## Hadoop Ecostsems
 * [Brief intro about Hadoop ecosystem][9]
@@ -96,3 +104,5 @@
 [14]:https://www.analyticsvidhya.com/blog/2020/11/basic-introduction-to-google-bigquery-and-data-studio-every-data-scientist-should-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [15]:https://www.analyticsvidhya.com/blog/2020/11/what-is-the-difference-between-rdds-dataframes-and-datasets/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [16]:https://www.analyticsvidhya.com/blog/2020/12/window-function-a-must-know-sql-concept/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[17]:https://www.analyticsvidhya.com/blog/2021/06/understand-the-concept-of-indexing-in-depth/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[18]:https://www.codebyamir.com/blog/mysql-database-indexing-for-developers

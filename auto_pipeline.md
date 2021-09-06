@@ -28,6 +28,13 @@ To be added...
     * It compared the 2 tools from different important aspects, and in every aspects, Optuna appears to be better overall
     * Optuna's TPE appears better than hyperopt's Adaptive TPE
   * [Using Optuna in different models][14]
+* [Keras Tuner][17]
+  * It can be used to tune neural networks, the user interface is similar to Optuna
+  * [Different types of tuners][18]: hyperband, bayesian optimization and random search
+  * It also provides a tuner for sklearn models, [sklearn tuner][16]
+* [FLAML][19] 
+  * In some cases, FLAML can be more efficient than optuna in param tuning and even deliver better testing performance within a shorter time
+  * It developed 2 searching algorithms (CFO, Blend Search), CFO works faster with higher testing performance in many cases
 * Bayesian Optimizaton
   * It considers past model info to select params for the new model
   * [An example][15] 
@@ -59,3 +66,7 @@ To be added...
 [13]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md
 [14]:https://www.kaggle.com/dixhom/bayesian-optimization-with-optuna-stacking
 [15]:https://www.analyticsvidhya.com/blog/2021/05/bayesian-optimization-bayes_opt-or-hyperopt/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[16]:https://keras.io/api/keras_tuner/tuners/sklearn/
+[17]:https://keras.io/keras_tuner/
+[18]:https://keras.io/api/keras_tuner/tuners/
+[19]:https://github.com/microsoft/FLAML

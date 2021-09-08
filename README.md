@@ -69,9 +69,9 @@ When you got the data from the client or from other teams, better to check the q
 ### Label Quality Check
 * Overall Check
   * Data Imbalance
-* Within Each Unit
-  * Unit here can be each account/user/application/etc.
-  * How does different labels distribute within each unit
+* Within Each Group
+  * "Group" here can be each account/user/application/etc.
+  * How does different labels distribute within each group
   * Better to understand why
 
 ## Data Exploration

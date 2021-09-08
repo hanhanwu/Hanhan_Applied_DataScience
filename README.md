@@ -86,6 +86,10 @@ When you got the data from the client or from other teams, better to check the q
 * Check distinct values count and percentage
   * Pay attention to features with 0 variance or low variance, think about the causes. Features with 0 variance should be removed before model training.
   * For categorical features, besides count of unique values, we can also use [Simpson's Diversity Index][50]
+* Use q-q plot to check whether the data distribution aligns with an assumed distribution
+  * [Example][134]
+  * When the distribution aligns, the q-q plot will show a roughly straight line
+  * q-q plot can also be used to check skewness
 
 ### Bivariate Analysis
 * Check correlation between every 2 continuous variables
@@ -742,3 +746,5 @@ When you got the data from the client or from other teams, better to check the q
 [131]:https://christophm.github.io/interpretable-ml-book/index.html
 [132]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md#param-tuning-hpo
 [133]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Learning_Notes.md
+[134]:https://www.analyticsvidhya.com/blog/2021/09/q-q-plot-ensure-your-ml-model-is-based-on-the-right-distributions/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+

@@ -583,7 +583,7 @@ When you got the data from the client or from other teams, better to check the q
 * How does R output use p-value in regression
   * In R, after we have applied regression, we will see coefficient values as well as p-values.
   * The null hypothesis is, coefficient is 0 for a variable (no effect to the model). 
-  * So when p-value is lower than the significance level, fail to reject the null hypothesis, which also means the variable should be included in the model. When p-value is high, accept the null hypothesis, and the variable should be removed from the model.
+  * So when p-value is lower than the significance level, reject the null hypothesis, which also means the variable should be included in the model. When p-value is high, accept the null hypothesis, and the variable should be removed from the model.
 
 #### Reference
 * [7 R data manipulation tools][14]

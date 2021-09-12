@@ -319,6 +319,7 @@ When you got the data from the client or from other teams, better to check the q
 * Spot-check Model Evaluation
   * After you have a few list of models, you want to quickly check which one performs better. What I'm doing here is, for each model, use all the training data but with stratified kfold cross validation. Finally it evaluates the average score and the score variance.
     * Some people think it's important to use bootstrap, which split the data into multiple folds and run on each fold or it will use different seeds to run the same model multiple times. I'm not using bootstrap here, because the first solution is similar to stratified kfold cross valiation, the second solution, I will use it when I have finalized 1 model, and use bootstrap to deliver the final evaluation results.
+* [Tools other than TPOT][135]
 ### Notes for Evaluation Methods in Model Selection
 * R-Square, RSS (residual sum of squares), will decrease when there are more features, but the test error may not drop. <b>Therefore, R-Square, RSS should not be used for selecting models that have different number of features.</b>
   * `RSS = MSE*n`
@@ -747,4 +748,4 @@ When you got the data from the client or from other teams, better to check the q
 [132]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/auto_pipeline.md#param-tuning-hpo
 [133]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Learning_Notes.md
 [134]:https://www.analyticsvidhya.com/blog/2021/09/q-q-plot-ensure-your-ml-model-is-based-on-the-right-distributions/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-
+[135]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice#advanced-tools

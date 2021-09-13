@@ -120,7 +120,7 @@ When you got the data from the client or from other teams, better to check the q
   * ANOVA: categorical features vs cotinuous label; or vice versa
   
 ### Regression Coefficients
-* [Unstandardized vs Standarddized Regression Coefficients][126]
+* [Unstandardized vs Standardized Regression Coefficients][126]
   * Unstandardized coefficient α are used for independent variables when they all kept their own units (such as kg, meters, years old, etc.). It means when there  is one unit change in the independent variable, there is α cahnge in the dependent variable y.
     * However, because those independent variables are in different units, based on unstandardized coefficients, we cannot tell which feature is more important
   * So we need standardized coefficient β, larger abs(β) indicates the feature is more important

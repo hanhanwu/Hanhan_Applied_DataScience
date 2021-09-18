@@ -343,7 +343,7 @@ When you got the data from the client or from other teams, better to check the q
 * We know ensembling models tend to work better in many cases, such as Xgboost and LightGBM
 #### Super Learner
 * [Super Learner example][100]
-  * It trains on a list of models, and finally might be better than a specific "best model"
+  * It trains on a list of base models, using the predictions as the input of a meta model to predict the targets, and finally might be better than a specific "best model"
 
 
 ## Algorithms Details

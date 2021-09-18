@@ -336,6 +336,9 @@ When you got the data from the client or from other teams, better to check the q
     * ...
   * Application - [sklearn time series split][77] 
   
+### Multi-Tag Prediction
+* [A simple example using OneVsRest][136]
+
 ### More about Ensembling
 * We know ensembling models tend to work better in many cases, such as Xgboost and LightGBM
 #### Super Learner
@@ -749,3 +752,4 @@ When you got the data from the client or from other teams, better to check the q
 [133]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/Learning_Notes.md
 [134]:https://www.analyticsvidhya.com/blog/2021/09/q-q-plot-ensure-your-ml-model-is-based-on-the-right-distributions/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [135]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice#advanced-tools
+[136]:https://www.analyticsvidhya.com/blog/2021/09/onevsrest-classifier-for-predicting-multiple-tags-of-research-articles/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

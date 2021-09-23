@@ -258,6 +258,7 @@ When you got the data from the client or from other teams, better to check the q
 * [Compare sample feature and population feature distributions][116]
   * Numerical features: KS (Kolmogorov-Smirnov) test
   * Categorical features: (Pearson’s) chi-square test
+* [Probability * Non-probability Sampling Methods][138]
 ### Cost Sensitive Learning (class weights)
 * This method is becoming more and more popular recently. Majorly you just set the class weights based on the importance of false positive and false negative.
 * In practice, it is worthy to know more from the customers or the marketing team, trying to understand the cost of TP/TN or FP/FN.
@@ -756,3 +757,4 @@ When you got the data from the client or from other teams, better to check the q
 [135]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice#advanced-tools
 [136]:https://www.analyticsvidhya.com/blog/2021/09/onevsrest-classifier-for-predicting-multiple-tags-of-research-articles/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [137]:https://www.analyticsvidhya.com/blog/2021/09/different-type-of-correlation-metrics-used-by-data-scientist/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[138]:https://www.analyticsvidhya.com/blog/2021/09/a-complete-guide-on-sampling-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

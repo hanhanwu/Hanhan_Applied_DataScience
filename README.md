@@ -93,6 +93,8 @@ When you got the data from the client or from other teams, better to check the q
 
 ### Bivariate Analysis
 * Check correlation between every 2 continuous variables
+  * [More methods to check correlations][137], including methods work for both linear and non-linear correlation, and can be used for ordinal data
+    * Point Biserial Correlation, Kendall Rank Correlation, Spearman’s Rank Correlation, Pearson Correlation and its limitation (linear only, cant be used for ordinal data) 
   * Person vs Spearman
     * Pearson correlation evaluated the linear relationship between two continuous variables. 
       * A relationship is linear when a change in one variable is associated with a proportional change in the other variable. 
@@ -753,3 +755,4 @@ When you got the data from the client or from other teams, better to check the q
 [134]:https://www.analyticsvidhya.com/blog/2021/09/q-q-plot-ensure-your-ml-model-is-based-on-the-right-distributions/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [135]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice#advanced-tools
 [136]:https://www.analyticsvidhya.com/blog/2021/09/onevsrest-classifier-for-predicting-multiple-tags-of-research-articles/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[137]:https://www.analyticsvidhya.com/blog/2021/09/different-type-of-correlation-metrics-used-by-data-scientist/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

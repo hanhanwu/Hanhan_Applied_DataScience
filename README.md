@@ -49,6 +49,8 @@ Applied data science recommendations and tutorials
   * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
   
 ## Federated Learning
+* [In this paper, a simple application of federated learning][140]
+  * Shared & aggregated weights, instead of shared data 
 * Federated Learning is a distributed machine learning approach which enables model training on a large corpus of decentralised data.
   * [The aggregation algorithm used in federated learning][110] - it's mainly to address data imbalance between clients and data non-representativeness. The algorithm is to sum up the weighted model parameter from each selected client's model as the general model param, the weight is the percentage of data records of the client among all the selected clients' records.
 * [FedML: A Research Library and Benchmark for Federated Machine Learning][103]
@@ -761,3 +763,4 @@ When you got the data from the client or from other teams, better to check the q
 [137]:https://www.analyticsvidhya.com/blog/2021/09/different-type-of-correlation-metrics-used-by-data-scientist/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [138]:https://www.analyticsvidhya.com/blog/2021/09/a-complete-guide-on-sampling-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [139]:https://www.analyticsvidhya.com/blog/2021/10/mlops-and-the-importance-of-data-drift-detection/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[140]:https://link.springer.com/content/pdf/10.1007/s10922-021-09609-5.pdf

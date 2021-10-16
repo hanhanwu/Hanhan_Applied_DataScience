@@ -73,6 +73,8 @@ When you got the data from the client or from other teams, better to check the q
   * "Group" here can be each account/user/application/etc.
   * How does different labels distribute within each group
   * Better to understand why
+### Data Drift Check
+* [Different methods to detect concept drift, covariate drift][139]
 
 ## Data Exploration
 * [My Code - IPython][11]
@@ -758,3 +760,4 @@ When you got the data from the client or from other teams, better to check the q
 [136]:https://www.analyticsvidhya.com/blog/2021/09/onevsrest-classifier-for-predicting-multiple-tags-of-research-articles/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [137]:https://www.analyticsvidhya.com/blog/2021/09/different-type-of-correlation-metrics-used-by-data-scientist/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [138]:https://www.analyticsvidhya.com/blog/2021/09/a-complete-guide-on-sampling-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[139]:https://www.analyticsvidhya.com/blog/2021/10/mlops-and-the-importance-of-data-drift-detection/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29

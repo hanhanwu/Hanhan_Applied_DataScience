@@ -221,6 +221,9 @@ When you got the data from the client or from other teams, better to check the q
 * one-hot features
 * decision tree paths as the feature
 * Methods to deal with categorical features
+  * [Some simple categorical encoding methods][141]
+    * one-hot encoding, binary encoding, ordinal encoding, label encoding, frequency encoding
+    * sklearn's onehot encoding is faster but only returns a numpy array, pandas' `get_dummies()` is slower but more convenient for pandas dataframe 
   * The most simple label encoding is to convert each uniaque categorical value into a unique number (use sklearn label encoding). But better to check how does the model hadle categorical features
     * [LightGBM offers good accuracy with built-in integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
     * [You can also have categorical features as direct input][123], [but need to specify that as categorical type][124]
@@ -764,3 +767,4 @@ When you got the data from the client or from other teams, better to check the q
 [138]:https://www.analyticsvidhya.com/blog/2021/09/a-complete-guide-on-sampling-techniques/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [139]:https://www.analyticsvidhya.com/blog/2021/10/mlops-and-the-importance-of-data-drift-detection/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [140]:https://link.springer.com/content/pdf/10.1007/s10922-021-09609-5.pdf
+[141]:https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html

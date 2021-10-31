@@ -387,7 +387,8 @@ def remove_multicollineary_features(feature_df, vif_threshold):
 
 
 # Show kernel density distribution, calculate K-L score to show difference between the 2 probability distributions
-## Lower K-L score, the more similarity between the distribution
+## Lower K-L score, the more similarity between 2 probability distributions
+## Check what is probability distribution ("probability" is the probability of each category): https://machinelearningmastery.com/divergence-between-probability-distributions/
 import numpy as np
 from scipy.stats import gaussian_kde
 from scipy.stats import wasserstein_distance

@@ -77,6 +77,11 @@ When you got the data from the client or from other teams, better to check the q
   * Better to understand why
 ### Data Drift Check
 * [Different methods to detect concept drift, covariate drift][139]
+  * How to use K-S test to compare 2 numerical distributions: https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy
+    * K-S test can be used even when the 2 distributions are in different length  
+    * But I found, no matter it's K-S test or wasserstein distance, even when 2 distributions look similar, K-S' null hypothesis can be rejected (indicating 2 distributions are not identical) and wasserstein distance can be large... 
+  * Chi-square is used for comparing categorical features' distributions but has many requirements of the input, such as the 2 distributions share the same length
+  * [PSI looks like a better measure of the similarity of numerical distributions][142] 
 
 ## Data Exploration
 * [My Code - IPython][11]
@@ -768,3 +773,4 @@ When you got the data from the client or from other teams, better to check the q
 [139]:https://www.analyticsvidhya.com/blog/2021/10/mlops-and-the-importance-of-data-drift-detection/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [140]:https://link.springer.com/content/pdf/10.1007/s10922-021-09609-5.pdf
 [141]:https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html
+[142]:https://github.com/mwburke/population-stability-index

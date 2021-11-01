@@ -6,16 +6,13 @@ In the industry, you do need to build a customized data science pipeline to solv
 * [Google AutoML Table][7]
   * From structured data to dashboard, the whole system design is very smooth 
 
-## Auto Deployment Tools
+## Pipeline Tools
 * Luigi
 * Airflow
-* [MLOps][10]
-  * [Here's a simple example][11] with [code][12], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
-  * Might be Azure ML specific, check [getting started here][13]
+* [Orchest][20]
+  * The pipeline it allows you to build can use both `.py` and ipython notebooks, looks convenient
 
 ## General Architecture
-
-To be added...
 * [Some points to be considered][5]
 
 ## Core Parts
@@ -45,11 +42,16 @@ To be added...
 * [Google Model Search][8]
   * "The Model Search system consists of multiple trainers, a search algorithm, a transfer learning algorithm and a database to store the various evaluated models. The system runs both training and evaluation experiments for various ML models (different architectures and training techniques) in an adaptive, yet asynchronous fashion. While each trainer conducts experiments independently, all trainers share the knowledge gained from their experiments. At the beginning of every cycle, the search algorithm looks up all the completed trials and uses beam search to decide what to try next. It then invokes mutation over one of the best architectures found thus far and assigns the resulting model back to a trainer." 
   * [Model Search Intro][9]
+* [MLJAR is a nice automl tool][21]
+  * Besides EDA, model selection and param tuning, it will stack models at the end to achieve better results 
 
 ### Security Threats to Machine Learnig Systems
 * [Some threats before/during/after model training, interesting][6]
 
-
+## Auto Deployment Tools
+* [MLOps][10]
+  * [Here's a simple example][11] with [code][12], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
+  * Might be Azure ML specific, check [getting started here][13]
 
 [1]:https://github.com/hyperopt/hyperopt
 [2]:https://github.com/optuna/optuna
@@ -70,3 +72,5 @@ To be added...
 [17]:https://keras.io/keras_tuner/
 [18]:https://keras.io/api/keras_tuner/tuners/
 [19]:https://github.com/microsoft/FLAML
+[20]:https://orchest.readthedocs.io/en/latest/getting_started/quickstart.html
+[21]:https://github.com/mljar/mljar-supervised

@@ -624,6 +624,8 @@ When you got the data from the client or from other teams, better to check the q
 
 ## [Learning Notes][133]
 * How to apply Monte Carlo Simulation
+* 3 types of t-test
+* Regression plots, comparing model output with random output
 
 # [Keep up with Industry Updates][91]
 

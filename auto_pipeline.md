@@ -53,6 +53,10 @@ In the industry, you do need to build a customized data science pipeline to solv
   * [Here's a simple example][11] with [code][12], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
   * Might be Azure ML specific, check [getting started here][13]
 
+* ZenML
+* Inferrd: https://docs.inferrd.com/
+  * Easily deploy your model on GPUs 
+
 [1]:https://github.com/hyperopt/hyperopt
 [2]:https://github.com/optuna/optuna
 [3]:https://github.com/hanhanwu/Hanhan_COLAB_Experiemnts/blob/master/optuna_quickstart.ipynb

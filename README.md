@@ -535,7 +535,12 @@ When you got the data from the client or from other teams, better to check the q
 * Use Cases
    * Param Tuning  - Pareto Front improves the efficiency, MADM find the optimal option
   
-## Interpretating Machine Learning Model
+## Interpreting Machine Learning Model
+### Dashboard Tools
+* Tableau
+* [Spotfire][143]
+* [Redash][144]
+
 ### [Interpretable Machine Learning][131]
 * It has summarized different methods in ML model interpretations, such as NN interpretation, model-agnostic interpretation, etc.
 ### Lime - Visualize feature importance for all machine learning models
@@ -776,3 +781,5 @@ When you got the data from the client or from other teams, better to check the q
 [140]:https://link.springer.com/content/pdf/10.1007/s10922-021-09609-5.pdf
 [141]:https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html
 [142]:https://github.com/mwburke/population-stability-index
+[143]:https://www.analyticsvidhya.com/blog/2021/12/introduction-to-tibco-spotfire-for-interactive-data-visualization-and-analysis/?utm_source=feedburner&utm_medium=email
+[144]:https://github.com/getredash/redash

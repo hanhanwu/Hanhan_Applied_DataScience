@@ -1,5 +1,11 @@
 # Keep Up with Industry Updates 🌺
 
+## [2021 Some DS Trending]
+* Infinity: https://huggingface.co/infinity
+  * Infinity is the on-prem containerized solution delivering Transformers accuracy at 1ms latency.
+* Hugging Face - Optimum: https://github.com/huggingface/optimum
+  * 🤗 Optimum is an extension of 🤗 Transformers, providing a set of performance optimization tools enabling maximum efficiency to train and run models on targeted hardware.
+
 ## [2021 paper - Model Complexity of Deep Learning: A Survey][4]
 * It talks about deep learning complexity from Model framework, Model size, Optimization process, Data complexity
 
@@ -38,3 +44,4 @@
 [2]:https://www.analyticsvidhya.com/blog/2021/01/5-python-packages-every-data-scientist-must-know/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [3]:https://www.analyticsvidhya.com/blog/2021/02/new-approach-for-regression-analysis-ransac-and-mlesac/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29#_ftn5
 [4]:https://arxiv.org/pdf/2103.05127.pdf
+[5]:https://www.analyticsvidhya.com/blog/2021/12/a-review-of-2021-and-trends-in-2022-a-technical-overview-of-the-data-industry/?utm_source=feedburner&utm_medium=email

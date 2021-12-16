@@ -1,6 +1,6 @@
 # Keep Up with Industry Updates 🌺
 
-## [2021 Some DS Trending]
+## [2021 Some DS Trending][5]
 * Infinity: https://huggingface.co/infinity
   * Infinity is the on-prem containerized solution delivering Transformers accuracy at 1ms latency.
 * Hugging Face - Optimum: https://github.com/huggingface/optimum

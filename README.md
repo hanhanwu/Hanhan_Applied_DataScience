@@ -208,6 +208,7 @@ When you got the data from the client or from other teams, better to check the q
   * scatter plot to check the relationship; we can also use pandas cross tab method
   * Binning
   * Such as `log`, here are a list of methods for nonlinear transformation: https://people.revoledu.com/kardi/tutorial/Regression/nonlinear/NonLinearTransformation.htm
+  * Kernel functions
   * PCA - It can convert the whole feature set into normalized linear combination
     * [How to use PCA for dimensional reduction/feature selection][29]
     * The components are independent from each other, earlier components capture more variance. Each principle component is also a linear combination of original features

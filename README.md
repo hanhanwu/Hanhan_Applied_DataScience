@@ -22,11 +22,13 @@ Applied data science recommendations and tutorials
 
 ## [Build Auto Data Science Pipeline][114]
   
-## Build ML Service/API
+## MLOps
 * [Build ML Web Application with Flask][90]
   * [How to deploy flask app to Azure][101]
   * Flask vs FastAPI
     * Personally, I didn't find fastapi is better, because when I was using a HTML template to get user typed input and generate the model output, with flask it was simple, you just need to render the template. Using fastapi with template rendering was much more complex.
+* [ML App with Streamlit][145]
+  * The UI and the 3D visualization built 
 * [Deploy ML service with BentoML][94]
   * [About BentoML][95]
   * It allows you to deploy the trained model as REST API (built directly for you), docker image or python loadable file
@@ -784,3 +786,4 @@ When you got the data from the client or from other teams, better to check the q
 [142]:https://github.com/mwburke/population-stability-index
 [143]:https://www.analyticsvidhya.com/blog/2021/12/introduction-to-tibco-spotfire-for-interactive-data-visualization-and-analysis/?utm_source=feedburner&utm_medium=email
 [144]:https://github.com/getredash/redash
+[145]:https://www.analyticsvidhya.com/blog/2021/12/ml-hyperparameter-optimization-app-using-streamlit/?utm_source=feedburner&utm_medium=email

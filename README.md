@@ -36,6 +36,12 @@ Applied data science recommendations and tutorials
   * Correction
     * For docker, the bento command should be `bentoml containerize IrisClassifier:latest -t iris-classifier:latest`
       * "iris-classifier" is the image name, "latest" is the tag name
+* [MLOps][146]
+  * [Here's a simple example][147] with [code][148], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
+  * Might be Azure ML specific, check [getting started here][149]
+* ZenML: https://github.com/zenml-io/zenml
+* Inferrd: https://docs.inferrd.com/
+  * Easily deploy your model on GPUs 
   
 ## [Applied Data Engineering][92]
 * Rational databases
@@ -787,3 +793,7 @@ When you got the data from the client or from other teams, better to check the q
 [143]:https://www.analyticsvidhya.com/blog/2021/12/introduction-to-tibco-spotfire-for-interactive-data-visualization-and-analysis/?utm_source=feedburner&utm_medium=email
 [144]:https://github.com/getredash/redash
 [145]:https://www.analyticsvidhya.com/blog/2021/12/ml-hyperparameter-optimization-app-using-streamlit/?utm_source=feedburner&utm_medium=email
+[146]:https://github.com/microsoft/MLOps
+[147]:https://www.analyticsvidhya.com/blog/2021/04/bring-devops-to-data-science-with-continuous-mlops/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[148]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML
+[149]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md

@@ -12,6 +12,9 @@ In the industry, you do need to build a customized data science pipeline to solv
 * [Orchest][20]
   * The pipeline it allows you to build can use both `.py` and ipython notebooks, looks convenient
 
+## Cloud Platforms
+* [Google Cloud Platform (GCP) for ML][22]
+
 ## General Architecture
 * [Some points to be considered][5]
 
@@ -48,14 +51,7 @@ In the industry, you do need to build a customized data science pipeline to solv
 ### Security Threats to Machine Learnig Systems
 * [Some threats before/during/after model training, interesting][6]
 
-## Auto Deployment Tools
-* [MLOps][10]
-  * [Here's a simple example][11] with [code][12], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
-  * Might be Azure ML specific, check [getting started here][13]
 
-* ZenML
-* Inferrd: https://docs.inferrd.com/
-  * Easily deploy your model on GPUs 
 
 [1]:https://github.com/hyperopt/hyperopt
 [2]:https://github.com/optuna/optuna
@@ -66,10 +62,6 @@ In the industry, you do need to build a customized data science pipeline to solv
 [7]:https://cloud.google.com/automl-tables
 [8]:https://github.com/google/model_search
 [9]:https://ai.googleblog.com/2021/02/introducing-model-search-open-source.html?m=1
-[10]:https://github.com/microsoft/MLOps
-[11]:https://www.analyticsvidhya.com/blog/2021/04/bring-devops-to-data-science-with-continuous-mlops/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
-[12]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML
-[13]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md
 [14]:https://www.kaggle.com/dixhom/bayesian-optimization-with-optuna-stacking
 [15]:https://www.analyticsvidhya.com/blog/2021/05/bayesian-optimization-bayes_opt-or-hyperopt/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [16]:https://keras.io/api/keras_tuner/tuners/sklearn/
@@ -78,3 +70,4 @@ In the industry, you do need to build a customized data science pipeline to solv
 [19]:https://github.com/microsoft/FLAML
 [20]:https://orchest.readthedocs.io/en/latest/getting_started/quickstart.html
 [21]:https://github.com/mljar/mljar-supervised
+[22]:https://www.analyticsvidhya.com/blog/2022/01/google-cloud-platform/?utm_source=feedburner&utm_medium=email

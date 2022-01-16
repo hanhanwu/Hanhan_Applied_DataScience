@@ -42,6 +42,10 @@ Applied data science recommendations and tutorials
 * ZenML: https://github.com/zenml-io/zenml
 * Inferrd: https://docs.inferrd.com/
   * Easily deploy your model on GPUs 
+* More Open Source MLOps Tools
+  * [DVC Studio, MLFlow][150] 
+  * DVC Studio: https://github.com/iterative/dvc
+  * MLFlow: https://github.com/mlflow/mlflow
   
 ## [Applied Data Engineering][92]
 * Rational databases
@@ -797,3 +801,4 @@ When you got the data from the client or from other teams, better to check the q
 [147]:https://www.analyticsvidhya.com/blog/2021/04/bring-devops-to-data-science-with-continuous-mlops/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [148]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML
 [149]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md
+[150]:https://www.analyticsvidhya.com/blog/2022/01/overview-of-mlops-with-open-source-tools/?utm_source=feedburner&utm_medium=email

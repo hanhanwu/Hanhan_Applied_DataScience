@@ -37,7 +37,8 @@
   * `Pip-review`
     * Auto upgrade packages
     * Iteractively upgrade packages (ask for the approval for each package)
-    
+* [Histogram Gradient Boosting (HGB)][6]
+  * It does feature binning 
 
 
 [1]:https://www.analyticsvidhya.com/blog/2020/02/everything-you-should-know-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
@@ -45,3 +46,4 @@
 [3]:https://www.analyticsvidhya.com/blog/2021/02/new-approach-for-regression-analysis-ransac-and-mlesac/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29#_ftn5
 [4]:https://arxiv.org/pdf/2103.05127.pdf
 [5]:https://www.analyticsvidhya.com/blog/2021/12/a-review-of-2021-and-trends-in-2022-a-technical-overview-of-the-data-industry/?utm_source=feedburner&utm_medium=email
+[6]:https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier

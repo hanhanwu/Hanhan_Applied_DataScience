@@ -36,7 +36,7 @@ Applied data science recommendations and tutorials
   * Correction
     * For docker, the bento command should be `bentoml containerize IrisClassifier:latest -t iris-classifier:latest`
       * "iris-classifier" is the image name, "latest" is the tag name
-* [MLOps][146]
+* [MLOps library][146]
   * [Here's a simple example][147] with [code][148], you can write a pipeline in .py, then specify the devops workflow in .yaml to run not only ML pipeline but also other devops work
   * Might be Azure ML specific, check [getting started here][149]
 * ZenML: https://github.com/zenml-io/zenml
@@ -46,6 +46,10 @@ Applied data science recommendations and tutorials
   * [DVC Studio, MLFlow][150] 
   * DVC Studio: https://github.com/iterative/dvc
   * MLFlow: https://github.com/mlflow/mlflow
+* [About Kubernetes][151]
+  * Conscepts
+  * Commands
+  * How to deploy your application using Kubernetes together with Docker 
   
 ## [Applied Data Engineering][92]
 * Rational databases
@@ -802,3 +806,4 @@ When you got the data from the client or from other teams, better to check the q
 [148]:https://github.com/amitvkulkarni/Bring-DevOps-to-Machine-Learning-with-CML
 [149]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md
 [150]:https://www.analyticsvidhya.com/blog/2022/01/overview-of-mlops-with-open-source-tools/?utm_source=feedburner&utm_medium=email
+[151]:https://www.analyticsvidhya.com/blog/2022/01/a-comprehensive-guide-on-kubernetes/?utm_source=feedburner&utm_medium=email

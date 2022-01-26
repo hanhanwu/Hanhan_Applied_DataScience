@@ -557,6 +557,7 @@ When you got the data from the client or from other teams, better to check the q
 * Tableau
 * [Spotfire][143]
 * [Redash][144]
+* [ExplainerDashboard][152]
 
 ### [Interpretable Machine Learning][131]
 * It has summarized different methods in ML model interpretations, such as NN interpretation, model-agnostic interpretation, etc.
@@ -807,3 +808,4 @@ When you got the data from the client or from other teams, better to check the q
 [149]:https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md
 [150]:https://www.analyticsvidhya.com/blog/2022/01/overview-of-mlops-with-open-source-tools/?utm_source=feedburner&utm_medium=email
 [151]:https://www.analyticsvidhya.com/blog/2022/01/a-comprehensive-guide-on-kubernetes/?utm_source=feedburner&utm_medium=email
+[152]:https://github.com/oegedijk/explainerdashboard

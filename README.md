@@ -50,6 +50,7 @@ Applied data science recommendations and tutorials
   * Conscepts
   * Commands
   * How to deploy your application using Kubernetes together with Docker 
+  * [More suggestions about Kubernetes in production][153]
   
 ## [Applied Data Engineering][92]
 * Rational databases
@@ -809,3 +810,4 @@ When you got the data from the client or from other teams, better to check the q
 [150]:https://www.analyticsvidhya.com/blog/2022/01/overview-of-mlops-with-open-source-tools/?utm_source=feedburner&utm_medium=email
 [151]:https://www.analyticsvidhya.com/blog/2022/01/a-comprehensive-guide-on-kubernetes/?utm_source=feedburner&utm_medium=email
 [152]:https://github.com/oegedijk/explainerdashboard
+[153]:https://www.analyticsvidhya.com/blog/2022/01/a-basic-guide-to-kubernetes-in-production/?utm_source=feedburner&utm_medium=email

@@ -252,6 +252,7 @@ When you got the data from the client or from other teams, better to check the q
     * [LightGBM offers good accuracy with built-in integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
     * [You can also have categorical features as direct input][123], [but need to specify that as categorical type][124]
   * [10+ Built-in Categorical Encoding Methods][37]
+    * Target Encoder is a popular method, and [this paper][155] tells the drawbacks of target encoding for reducible bias, and indicating that using smoothing regularization can reduce such bias. [We can do smoothing regularization through the param here][156]
     * [Params for each encoding method][84]
     * [More descriptions of some of the encoding methods][85] 
       * Base N creates less dimensions while represent the data effciently, if you choose the proper N
@@ -813,3 +814,5 @@ When you got the data from the client or from other teams, better to check the q
 [152]:https://github.com/oegedijk/explainerdashboard
 [153]:https://www.analyticsvidhya.com/blog/2022/01/a-basic-guide-to-kubernetes-in-production/?utm_source=feedburner&utm_medium=email
 [154]:https://www.analyticsvidhya.com/blog/2022/01/deploying-ml-models-using-kubernetes/?utm_source=feedburner&utm_medium=email
+[155]:https://arxiv.org/pdf/2201.11358.pdf
+[156]:https://contrib.scikit-learn.org/category_encoders/targetencoder.html

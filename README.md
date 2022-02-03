@@ -256,7 +256,7 @@ When you got the data from the client or from other teams, better to check the q
     * [Params for each encoding method][84]
     * [More descriptions of some of the encoding methods][85] 
       * Base N creates less dimensions while represent the data effciently, if you choose the proper N
-      * "In target encoding, we calculate the mean of the target variable for each category and replace the category variable with the mean value."
+      * "In target encoding, for numerical target, we calculate the mean of the target variable for each category and replace the category variable with the mean value; for categorical target, the posterior probability of the target replaces each category"
         * Target encoding should only be applied to the training data to avoid target leakage
         * 2 methods mentioned in the article to reduce target leakage/overfitting
         * When the categories in training and testing data are distributed improperly, the categories may assume extreme value

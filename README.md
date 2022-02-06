@@ -23,6 +23,8 @@ Applied data science recommendations and tutorials
 ## [Build Auto Data Science Pipeline][114]
   
 ## MLOps
+* [Deploy deep learning web application with TensorFlow.js][157]
+  * It includes image labeling, modeling with Google Colab and deployment on TensorFlow.js 
 * [Build ML Web Application with Flask][90]
   * [How to deploy flask app to Azure][101]
   * Flask vs FastAPI
@@ -816,3 +818,4 @@ When you got the data from the client or from other teams, better to check the q
 [154]:https://www.analyticsvidhya.com/blog/2022/01/deploying-ml-models-using-kubernetes/?utm_source=feedburner&utm_medium=email
 [155]:https://arxiv.org/pdf/2201.11358.pdf
 [156]:https://contrib.scikit-learn.org/category_encoders/targetencoder.html
+[157]:https://www.analyticsvidhya.com/blog/2021/12/custom-object-detection-on-the-browser-using-tensorflow-js/?utm_source=feedburner&utm_medium=email

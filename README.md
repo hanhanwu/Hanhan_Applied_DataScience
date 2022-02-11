@@ -304,6 +304,8 @@ When you got the data from the client or from other teams, better to check the q
 * When the prediction result is in probability format, we can change the threshold of class prediction. By default the threshold is 50-50. With the evaluation metric, better to <b>draw a curve with thresholds as x-axis and evaluation result as y-axis</b>, so that we will know which threshold to choose is better.
 <img src="https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/images/error_rate_thresholds.png" width="500" height="200">
 
+* [Here's a method to find the best threold when your evaluation metric is ROC-AUC or precision-recall][158]
+
 ### Given Partial Labels
 * When the labels are given by the client, without being able to work with any business expert, there can be many problems. Especially when they only gave you 1 class of the labels, and you might need to assume the rest of the data all belong to the other label, it can be more problematic.
 * Here're the suggestions
@@ -819,3 +821,4 @@ When you got the data from the client or from other teams, better to check the q
 [155]:https://arxiv.org/pdf/2201.11358.pdf
 [156]:https://contrib.scikit-learn.org/category_encoders/targetencoder.html
 [157]:https://www.analyticsvidhya.com/blog/2021/12/custom-object-detection-on-the-browser-using-tensorflow-js/?utm_source=feedburner&utm_medium=email
+[158]:https://machinelearningmastery.com/threshold-moving-for-imbalanced-classification/

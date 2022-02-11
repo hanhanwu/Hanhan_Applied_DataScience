@@ -548,6 +548,7 @@ When you got the data from the client or from other teams, better to check the q
 * [Python Linear Programming - scipy.optimize.linprog][55]
   * [How to use this library...][56]
   * Only supports minimized problem, so you need to adjust the optimization function if it's supposed to be maximized
+* [LP Modeler - PuLP][159]
 
 ### [Pareto Front][127] & [MADM][130]
 * Pareto Front
@@ -822,3 +823,4 @@ When you got the data from the client or from other teams, better to check the q
 [156]:https://contrib.scikit-learn.org/category_encoders/targetencoder.html
 [157]:https://www.analyticsvidhya.com/blog/2021/12/custom-object-detection-on-the-browser-using-tensorflow-js/?utm_source=feedburner&utm_medium=email
 [158]:https://machinelearningmastery.com/threshold-moving-for-imbalanced-classification/
+[159]:https://www.analyticsvidhya.com/blog/2022/02/optimal-resource-allocation-using-python/?utm_source=feedburner&utm_medium=email 

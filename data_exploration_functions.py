@@ -328,24 +328,15 @@ visualizer.fit(X_train, y_train)  # Fit the training data to the model
 visualizer.score(X_test, y_test)  # Evaluate the model on the test data
 visualizer.poof()
 
-# Check close to constant features
-def get_constant_cols(df, exclude_cols=[]):
-    constant_cols = []
-    
-    for col in df.columns:
-        if col in exclude_cols:
-            continue
-        if df.loc[~df[col].isna()][col].nunique() == 1:
-            constant_cols.append(col)
-    return constant_cols
 
-def get_close_constant_cols(df, high_end=99.9, exclude_cols=[]):
+# Check close to constant features
+def get_constant_cols(df, exclude_cols=[], major_rate=0.9999):
     constant_cols = []
     
     for col in df.columns:
         if col in exclude_cols:
             continue
-        if np.nanpercentile(df[col], high_end) == np.nanpercentile(df[col], 0):
+        if (df[col].dropna().nunique() == 1) or (df[col].value_counts().iloc[0]/len(df) >= major_rate):
             constant_cols.append(col)
     return constant_cols
 

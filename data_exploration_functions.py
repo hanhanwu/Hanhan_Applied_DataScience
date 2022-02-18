@@ -80,28 +80,30 @@ plt.show()
     
     
 # Plot categorical features distribution
-def plot_cat_feature_distribution(feature_df, n_rows, n_cols):
-    plt.rcParams.update({'font.size': 20})
+def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20]):
+    feature_df = df.copy()
+    feature_df = feature_df.astype('str').fillna('NA')
+    
+    plt.rcParams.update({'font.size': 30})
 
     features = feature_df.columns
 
     i = 0
-    fig=plt.figure(figsize=(40, 20))
+    fig=plt.figure(figsize=(fsize[0], fsize[1]))
     for feature in features:
-        if feature == 'rid' or feature == 'isfraud':
+        if feature in exclude_cols:
             continue
         i += 1
         ax=fig.add_subplot(n_rows,n_cols,i) 
         axes = plt.gca()
-
         x_values = feature_df[feature].value_counts().index.values
         x_pos = np.arange(len(x_values))
         y_values = feature_df[feature].value_counts().values
-        plt.bar(x_pos, y_values, align='center', alpha=0.6)
+        plt.bar(x_pos, y_values, align='center', alpha=0.6, color='b')
         plt.xticks(x_pos, x_values)
-        plt.xlabel('Distinct Categorical Value')
-        plt.ylabel('Value')
-        plt.title(feature)
+        plt.xlabel('Distinct Categorical Value', fontsize=30)
+        plt.ylabel('Value Count', fontsize=30)
+        plt.title(feature, fontsize=30)
 
         rects = axes.patches
         total_ct = sum(y_values)
@@ -112,6 +114,42 @@ def plot_cat_feature_distribution(feature_df, n_rows, n_cols):
                     ha='center', va='bottom')
     fig.tight_layout()
     plt.show()
+    
+sns.set(font_scale=2)
+plot_cat_feature_distribution(cat_df, n_rows=6, n_cols=3, exclude_cols=[target], fsize=[60, 30])
+
+
+# Plot categorical features distribution (with Hue)
+def plot_cat_feature_class_distribution(df, class_col, n_rows, n_cols, exclude_cols=[], fsize=[40, 20]):
+    feature_df = df.copy()
+    feature_df = feature_df.astype('str').fillna('NA')
+    
+    plt.rcParams.update({'font.size': 30})
+
+    features = feature_df.columns
+
+    i = 0
+    fig=plt.figure(figsize=(fsize[0], fsize[1]))
+    for feature in features:
+        if feature in exclude_cols:
+            continue
+        i += 1
+        ax=fig.add_subplot(n_rows,n_cols,i) 
+        axes = plt.gca()
+        
+        class_ct_df = feature_df[[feature, class_col]]\
+          .groupby([feature, class_col], as_index=False)[target]\
+          .agg(['count']).reset_index()
+        class_ct_df['perct'] = round(class_ct_df['count']*100/len(feature_df), 2)
+        
+        ax=sns.barplot(x=feature, hue=class_col, y='perct', data=class_ct_df)
+        for container in ax.containers:
+            ax.bar_label(container)
+    fig.tight_layout()
+    plt.show()
+    
+sns.set(font_scale=2)
+plot_cat_feature_class_distribution(cat_df, class_col=target, n_rows=9, n_cols=2, exclude_cols=[target], fsize=[60, 50])
     
     
 # output more percentile -> easier to see outliers than pandas `describe()` function

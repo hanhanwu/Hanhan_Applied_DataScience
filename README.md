@@ -174,6 +174,8 @@ When you got the data from the client or from other teams, better to check the q
   * Similar Case Imputation - For different group of values, impute with the selected value from that group
 * Impute with special values, such as "MISSING", -1, etc.
 * KNN Imputation
+* [LGBM Imputation][160]
+  * It uses LGBM to impute misseing values 
 * Model prediction to compare whether imputing missing values will help
 
 ### Deal With Outliers
@@ -824,3 +826,4 @@ When you got the data from the client or from other teams, better to check the q
 [157]:https://www.analyticsvidhya.com/blog/2021/12/custom-object-detection-on-the-browser-using-tensorflow-js/?utm_source=feedburner&utm_medium=email
 [158]:https://machinelearningmastery.com/threshold-moving-for-imbalanced-classification/
 [159]:https://www.analyticsvidhya.com/blog/2022/02/optimal-resource-allocation-using-python/?utm_source=feedburner&utm_medium=email 
+[160]:https://github.com/analokmaus/kuma_utils/blob/master/preprocessing/imputer.py

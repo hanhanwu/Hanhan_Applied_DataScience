@@ -1,37 +1,18 @@
 # These are the data exploration functions I often use
 import matplotlib.pyplot as plt
-
-# plot individual kernel density curve
-n_rows = 1
-n_cols = 1
-
-i = 1
-fig=plt.figure(figsize=(10,7))
-
-ax=fig.add_subplot(n_rows,n_cols,i) 
-bins = np.linspace(0, 1, 100)
-props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-sns.kdeplot(volatility_df['prediction_prob_std'].values)
-
-plt.legend(loc='best', fontsize=25)
-plt.title('Prepdiction Probability  Std Distribution (all)', fontsize=25)
-plt.xlabel('pred_prob_std', fontsize=25)
-plt.ylabel('density', fontsize=25)
-fig.tight_layout()
-plt.show()
-
+import seaborn as sns
 
 
 # plot numerical features distribution (histogram)
-def show_num_feature_distribution(feature_df, n_rows, n_cols):
+def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20], color='g'):    
     plt.rcParams.update({'font.size': 20})
 
     features = feature_df.columns
 
     i = 0
-    fig=plt.figure(figsize=(40, 15))
+    fig=plt.figure(figsize=(fsize[0], fsize[1]))
     for feature in features:
-        if feature == 'id' or feature == 'label':
+        if feature in exclude_cols:
             continue
         i += 1
         ax=fig.add_subplot(n_rows,n_cols,i) 
@@ -39,16 +20,45 @@ def show_num_feature_distribution(feature_df, n_rows, n_cols):
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 
         plt.hist(feature_df[feature], bins, alpha=0.75, label='median = ' + str(round(np.nanmedian(feature_df[feature]), 3)), 
-                 color = 'g', edgecolor = 'k', range=(bins.min(),bins.max()),
+                 color = color, edgecolor = 'k', range=(bins.min(),bins.max()),
                  weights=np.zeros_like(feature_df[feature]) + 1. / feature_df[feature].shape[0])  # weights here covert count into percentage for y-axis
+        plt.legend(loc='best')
+        plt.title('Feature: ' + feature)
+        plt.xlabel('Feature Values')
+        plt.ylabel('Density')
+    fig.tight_layout()
+    plt.show()
+    
+# plot numerical feature distribution for each class
+def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_cols):
+    plt.rcParams.update({'font.size': 20})
+
+    features = [col for col in labeled_feature_df.columns if col != label_col]
+    fraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==1]
+    nonfraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==0]
+
+    i = 0
+    fig=plt.figure(figsize=(40, 15))
+    for feature in features:
+        if feature == 'rid' or feature == 'isfraud':
+            continue
+        i += 1
+        ax=fig.add_subplot(n_rows,n_cols,i) 
+        bins = np.linspace(np.nanmin(labeled_feature_df[feature]), np.nanmax(labeled_feature_df[feature]), 100)
+        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+
+        plt.hist(fraud_df[feature], bins, alpha=0.75, label='fraud', 
+                 color = 'r', edgecolor = 'k', range=(bins.min(),bins.max()),
+                 weights=np.zeros_like(fraud_df[feature]) + 1. / fraud_df[feature].shape[0])
+        plt.hist(nonfraud_df[feature], bins, alpha=0.5, label='nonfraud', 
+                 color = 'b', edgecolor = 'k', range=(bins.min(),bins.max()),
+                 weights=np.zeros_like(nonfraud_df[feature]) + 1. / nonfraud_df[feature].shape[0])
         plt.legend(loc='best')
         plt.title('Feature: ' + feature)
         plt.xlabel('Feature Values')
         plt.ylabel('Percentage')
     fig.tight_layout()
     plt.show()
-    
-    
     
 # plot numerical features distribution (KDE)
 n_rows = 3
@@ -222,90 +232,6 @@ def remove_outliers(target_df, low, high, exclude_cols):
 
     return processed_df
 
-
-# plot numerical feature distribution for each class
-def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_cols):
-    plt.rcParams.update({'font.size': 20})
-
-    features = [col for col in labeled_feature_df.columns if col != label_col]
-    fraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==1]
-    nonfraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==0]
-
-    i = 0
-    fig=plt.figure(figsize=(40, 15))
-    for feature in features:
-        if feature == 'rid' or feature == 'isfraud':
-            continue
-        i += 1
-        ax=fig.add_subplot(n_rows,n_cols,i) 
-        bins = np.linspace(np.nanmin(labeled_feature_df[feature]), np.nanmax(labeled_feature_df[feature]), 100)
-        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-
-        plt.hist(fraud_df[feature], bins, alpha=0.75, label='fraud', 
-                 color = 'r', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(fraud_df[feature]) + 1. / fraud_df[feature].shape[0])
-        plt.hist(nonfraud_df[feature], bins, alpha=0.5, label='nonfraud', 
-                 color = 'b', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(nonfraud_df[feature]) + 1. / nonfraud_df[feature].shape[0])
-        plt.legend(loc='best')
-        plt.title('Feature: ' + feature)
-        plt.xlabel('Feature Values')
-        plt.ylabel('Percentage')
-    fig.tight_layout()
-    plt.show()
-
-    
-  # plot categorical feature distribution for each class
-def plot_cat_feature_distribution_with_label(labeled_feature_df, label_col, n_rows, n_cols):
-    plt.rcParams.update({'font.size': 20})
-
-    features = labeled_feature_df.columns
-    fraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==1]
-    nonfraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==0]
-
-    i = 0
-    fig=plt.figure(figsize=(40, 20))
-    for feature in features:
-        if feature == 'rid' or feature == 'isfraud':
-            continue
-        i += 1
-        ax=fig.add_subplot(n_rows,n_cols,i) 
-        axes = plt.gca()
-        width = 0.2
-
-        fraud_x_values = fraud_df[feature].value_counts().index.values
-        fraud_x_pos = np.arange(len(fraud_x_values))
-        fraud_y_values = fraud_df[feature].value_counts().values
-        
-        nonfraud_x_values = nonfraud_df[feature].value_counts().index.values
-        nonfraud_x_pos = np.arange(len(nonfraud_x_values))
-        nonfraud_y_values = nonfraud_df[feature].value_counts().values
-        
-        plt.bar(nonfraud_x_pos, nonfraud_y_values, width, align='center', alpha=0.6, color='green', label='nonfraud')
-        plt.bar(fraud_x_pos+width, fraud_y_values, width, align='center', alpha=0.6, color='red', label='fraud')
-        plt.xticks(nonfraud_x_pos+width/2, nonfraud_x_values)
-        plt.xlabel('Distinct Categorical Value')
-        plt.ylabel('Value')
-        plt.title(feature)
-
-        rects = axes.patches
-        nonfraud_total_ct = sum(nonfraud_y_values)
-        fraud_total_ct = sum(fraud_y_values)
-
-        for v, count in zip(rects, nonfraud_y_values):
-            height = v.get_height()
-            axes.text(v.get_x() + v.get_width() / 2, height/2, str(round(count*100.0/nonfraud_total_ct, 2))+'%',
-                    ha='center', va='bottom')
-        
-        for v, count in zip(rects, fraud_y_values):
-            height = v.get_height()
-            axes.text(v.get_x() + v.get_width()*1.5, height/(nonfraud_total_ct/fraud_total_ct), str(round(count*100.0/fraud_total_ct, 2))+'%',
-                    ha='center', va='bottom')
-            
-        ax.legend()
-    fig.tight_layout()
-    plt.show()
-
     
 # replace null with median or mode
 def replace_na(feature_df, agg):
@@ -318,23 +244,6 @@ def replace_na(feature_df, agg):
         elif agg == 'mode':
             processed_df[feature] = processed_df[feature].fillna(processed_df[feature].mode().iloc[0])
     return processed_df
-
-
-# categorical vs categorical (chi2); numerical vs categorical (f_classif, namely ANOVA)
-def dependency_chosen_features(feature_df, label_col, pvalue_threshold, feature_type):
-    if feature_type == 'num':
-        _, pvalue_lst = f_classif(feature_df, feature_df[label_col])
-    else:
-        _, pvalue_lst = chi2(feature_df, feature_df[label_col])
-    
-    features = feature_df.columns
-    
-    high_dependency_features = []
-    
-    for i in range(len(features)):
-        if features[i] != label_col and pvalue_lst[i] <= pvalue_threshold:
-            high_dependency_features.append(features[i])
-    return high_dependency_features
 
 
 # scatter plot to show linearity relationship
@@ -386,34 +295,64 @@ scaler = MinMaxScaler()
 scaler.fit(df)
 norm_df = scaler.transform(df)
 
-# Remove 2D highly correlated features 
+
+# Remove 2D highly correlated num features 
 ## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation
-def remove_highly_correlated_features(data, threshold):
+def get_num_correlated_features(df, corr_method='pearson', threshold=0.9, exclude_cols=[]):
     """
-    For feature pairs that are highly correlated, remove one of the feature from each pair.
+    Find correlated feature pairs. Higher threshold, higher correlation.
     :param data: features input, pandas dataframe
-    :param threshold: the correlation threshold decides which feature pairs are highly correlated, value between 0..1 range
+    :param corr_method: ‘pearson’, ‘kendall’, ‘spearman’
+    :param threshold: the correlation threshold decides which feature pairs are highly correlated, abs value between 0..1 range
     """
-    corr_matrix = data.corr().abs()  # create correlation matrix
+    corr_dct = {}
+    
+    corr_matrix = df.corr(method=corr_method).abs()  # create correlation matrix
     upper_matrix = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(np.bool))  # upper triangle
+    
+    for col in df.columns:
+        if col in exclude_cols:
+            continue
+        corr_lst = list(upper_matrix[col].where(upper_matrix[col] >= threshold).dropna().index)
+        if len(corr_lst) > 0:
+            corr_dct.setdefault(col, [])
+            corr_dct[col].extend(corr_lst)
+    
     drop_lst = [column for column in upper_matrix.columns if any(upper_matrix[column] > threshold)]
 
-    return drop_lst
+    return corr_dct, drop_lst
 
-
-# Remove 3D+ highly correlated features, to deal with multicollinearity issue
+# Remove 3D+ highly correlated num features, to deal with multicollinearity issue
 ## Normally when VIF is between 5 and 10, there could be multicollineary issue of the feature. 
 ## When VIF > 10, it's too high and the feature should be removed.
 ## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation
 ## NOTE: deal with nan before using this method, otherwise SVD won't converge
 from statsmodels.stats.outliers_influence import variance_inflation_factor
-def remove_multicollineary_features(feature_df, vif_threshold):
+def get_multicollineary_features(df, vif_threshold=10, exclude_cols=[]):
+    cols = [col for col in df.columns if col not in exclude_cols]
+    feature_df = df[cols].fillna(-999)
+    
     vif = pd.DataFrame()
     vif["VIF Factor"] = [variance_inflation_factor(feature_df.values, i) for i in range(feature_df.shape[1])]
     vif["features"] = feature_df.columns  # This will get VIF for each feature. To drop individual feature, start from the one with highest VIF
     drop_lst = vif.loc[vif['VIF Factor']>vif_threshold]['features'].values
     return vif, list(drop_lst)
 
+# Correlation: categorical vs categorical (chi2); numerical vs categorical (f_classif, namely ANOVA)
+def dependency_chosen_features(feature_df, label_col, pvalue_threshold, feature_type):
+    if feature_type == 'num':
+        _, pvalue_lst = f_classif(feature_df, feature_df[label_col])
+    else:
+        _, pvalue_lst = chi2(feature_df, feature_df[label_col])
+    
+    features = feature_df.columns
+    
+    high_dependency_features = []
+    
+    for i in range(len(features)):
+        if features[i] != label_col and pvalue_lst[i] <= pvalue_threshold:
+            high_dependency_features.append(features[i])
+    return high_dependency_features
 
 # Show kernel density distribution, calculate K-L score to show difference between the 2 probability distributions
 ## Lower K-L score, the more similarity between 2 probability distributions

@@ -21,6 +21,7 @@
   * I like the "big data processing stages" diagrama
   * [Hive][12] - It can convert query into map reduce work which saves lots of effort to write map reduce code. But it doesn't work well with real time data.
     * [Hive internal & external tables][19] 
+    * [How to improve Hive query efficiency][20]
 * [HDFS Architecture][11]
 
 ## NoSQL General
@@ -108,3 +109,4 @@
 [17]:https://www.analyticsvidhya.com/blog/2021/06/understand-the-concept-of-indexing-in-depth/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 [18]:https://www.codebyamir.com/blog/mysql-database-indexing-for-developers
 [19]:https://www.analyticsvidhya.com/blog/2022/01/hive-internal-and-external-tables/?utm_source=feedburner&utm_medium=email
+[20]:https://www.analyticsvidhya.com/blog/2022/02/performance-tuning-practices-in-hive/?utm_source=feedburner&utm_medium=email

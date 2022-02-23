@@ -30,33 +30,32 @@ def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], f
     plt.show()
     
 # plot numerical feature distribution for each class
-def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_cols):
+def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_cols, exclude_cols=[], fsize=[60, 60]):
     plt.rcParams.update({'font.size': 20})
 
-    features = [col for col in labeled_feature_df.columns if col != label_col]
-    fraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==1]
-    nonfraud_df = labeled_feature_df.loc[labeled_feature_df[label_col]==0]
+    pos_df = labeled_feature_df.loc[labeled_feature_df[label_col]==1]
+    neg_df = labeled_feature_df.loc[labeled_feature_df[label_col]==0]
 
     i = 0
-    fig=plt.figure(figsize=(40, 15))
-    for feature in features:
-        if feature == 'rid' or feature == 'isfraud':
+    fig=plt.figure(figsize=(fsize[0], fsize[1]))
+    for feature in labeled_feature_df.columns:
+        if feature in exclude_cols:
             continue
         i += 1
         ax=fig.add_subplot(n_rows,n_cols,i) 
         bins = np.linspace(np.nanmin(labeled_feature_df[feature]), np.nanmax(labeled_feature_df[feature]), 100)
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 
-        plt.hist(fraud_df[feature], bins, alpha=0.75, label='fraud', 
+        plt.hist(pos_df[feature], bins, alpha=0.8, label=f'{label_col}=1', 
+                 color = 'g', edgecolor = 'k', range=(bins.min(),bins.max()),
+                 weights=np.zeros_like(pos_df[feature]) + 1. / pos_df[feature].shape[0])
+        plt.hist(neg_df[feature], bins, alpha=0.5, label=f'{label_col}=0', 
                  color = 'r', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(fraud_df[feature]) + 1. / fraud_df[feature].shape[0])
-        plt.hist(nonfraud_df[feature], bins, alpha=0.5, label='nonfraud', 
-                 color = 'b', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(nonfraud_df[feature]) + 1. / nonfraud_df[feature].shape[0])
+                 weights=np.zeros_like(neg_df[feature]) + 1. / neg_df[feature].shape[0])
         plt.legend(loc='best')
         plt.title('Feature: ' + feature)
         plt.xlabel('Feature Values')
-        plt.ylabel('Percentage')
+        plt.ylabel('Density')
     fig.tight_layout()
     plt.show()
     

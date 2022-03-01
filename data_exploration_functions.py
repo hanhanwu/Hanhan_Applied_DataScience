@@ -1,6 +1,19 @@
 # These are the data exploration functions I often use
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn import preprocessing
+
+# How to convert str features to "category" while keeping their missing values
+le = preprocessing.LabelEncoder()
+isnull_mask = raw_df[cat_cols].isnull()
+
+le_cat_df = raw_df[cat_cols]
+for le_col in encoding_cols:
+    le_cat_df[le_col] = le.fit_transform(le_cat_df[le_col].astype('str'))
+    
+le_cat_df = le_cat_df.where(~isnull_mask, raw_df[cat_cols])
+le_cat_df = le_cat_df.astype('category')
+print(le_cat_df.isnull().sum())
 
 
 # plot numerical features distribution (histogram)

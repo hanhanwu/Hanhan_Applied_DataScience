@@ -551,6 +551,9 @@ When you got the data from the client or from other teams, better to check the q
   * [How to use this library...][56]
   * Only supports minimized problem, so you need to adjust the optimization function if it's supposed to be maximized
 * [LP Modeler - PuLP][159]
+  * [Pulp example with concept description][161], concept includes:
+    * convex vs concave vs non-convex
+    * infeasible or unbounded solution 
 
 ### [Pareto Front][127] & [MADM][130]
 * Pareto Front
@@ -827,3 +830,4 @@ When you got the data from the client or from other teams, better to check the q
 [158]:https://machinelearningmastery.com/threshold-moving-for-imbalanced-classification/
 [159]:https://www.analyticsvidhya.com/blog/2022/02/optimal-resource-allocation-using-python/?utm_source=feedburner&utm_medium=email 
 [160]:https://github.com/analokmaus/kuma_utils/blob/master/preprocessing/imputer.py
+[161]:https://www.analyticsvidhya.com/blog/2022/03/linear-programming-discrete-optimization-with-pulp/?utm_source=feedburner&utm_medium=email

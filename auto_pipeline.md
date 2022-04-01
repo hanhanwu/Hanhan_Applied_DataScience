@@ -19,6 +19,13 @@ In the industry, you do need to build a customized data science pipeline to solv
 * [Some points to be considered][5]
 
 ## Core Parts
+### Feature Store
+* Reusable features for both online and offline usage, you are also monitor and validate the results
+* Feast is open source: https://github.com/feast-dev/feast
+  * In each feature view, there are stored features, entity (such as primary key) and data source
+  * If you want to join features from different feature views, you can still use entity 
+* Tecton is a paid tool: https://docs.tecton.ai/
+  * We can borrow some ideas about how it works: https://docs.tecton.ai/
 
 ### Param Tuning (HPO)
 * [Hyperopt][1]

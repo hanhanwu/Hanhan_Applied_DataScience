@@ -21,6 +21,12 @@ Applied data science recommendations and tutorials
 ### [My Story Telling Collections][113]
 
 ## [Build Auto Data Science Pipeline][114]
+* Pipeline tools
+* Platforms
+* Core Components
+  * Feature Store
+  * HPO
+  * etc. 
   
 ## MLOps
 * [Deploy deep learning web application with TensorFlow.js][157]

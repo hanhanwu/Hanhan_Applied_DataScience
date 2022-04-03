@@ -22,11 +22,10 @@
   * Association rules only has Apiori... Even Spark has FP-Growth...
   * Things like param tuning looks like a blackbox
 
-## Param Tuning
-* [Bayesian Optimization][2]
-  * "This is a constrained global optimization package built upon bayesian inference and gaussian process, that attempts to find the maximum value of an unknown function in as few iterations as possible. This technique is particularly suited for optimization of high cost functions, situations where the balance between exploration and exploitation is important."
-  * [Example for tuning CatBoost, LightGBM, XGBoost][3]
-    * [Description][4]
+### [Mercury - Convert Jupyter Notebook to Web App][11]
+* Mercury Github: https://github.com/mljar/mercury
+* [An example][12]
+
 
 
 [1]:https://www.youtube.com/channel/UCxA1YTYJ9BEeo50lxyI_B3g
@@ -39,3 +38,5 @@
 [8]:https://pycaret.org/clustering/
 [9]:https://pycaret.org/trigonometry-features/
 [10]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/README.md#advanced-tools
+[11]:https://mljar.com/mercury/
+[12]: https://www.analyticsvidhya.com/blog/2022/04/how-to-convert-jupyter-notebook-into-ml-web-app/?utm_source=feedburner&utm_medium=email

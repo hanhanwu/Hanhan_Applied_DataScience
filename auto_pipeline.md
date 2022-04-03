@@ -42,8 +42,11 @@ In the industry, you do need to build a customized data science pipeline to solv
 * [FLAML][19] 
   * In some cases, FLAML can be more efficient than optuna in param tuning and even deliver better testing performance within a shorter time
   * It developed 2 searching algorithms (CFO, Blend Search), CFO works faster with higher testing performance in many cases
-* Bayesian Optimizaton
+* [Bayesian Optimizaton][25]
   * It considers past model info to select params for the new model
+  * "This is a constrained global optimization package built upon bayesian inference and gaussian process, that attempts to find the maximum value of an unknown function in as few iterations as possible. This technique is particularly suited for optimization of high cost functions, situations where the balance between exploration and exploitation is important."
+  * [Example for tuning CatBoost, LightGBM, XGBoost][26]
+    * [Description][27] 
   * [An example][15] 
     * Bayes_opt may not be faster than hyperopt but you can stop whenever you want and get current best results. It also shows the tuning progress that contains which value got selected in each trial
  
@@ -80,3 +83,6 @@ In the industry, you do need to build a customized data science pipeline to solv
 [22]:https://www.analyticsvidhya.com/blog/2022/01/google-cloud-platform/?utm_source=feedburner&utm_medium=email
 [23]:https://github.com/feast-dev/feast
 [24]:https://docs.tecton.ai/
+[25]:https://github.com/fmfn/BayesianOptimization
+[26]:https://github.com/hanhanwu/Hanhan_COLAB_Experiemnts/blob/master/optuna_quickstart.ipynb
+[27]:https://towardsdatascience.com/optuna-vs-hyperopt-which-hyperparameter-optimization-library-should-you-choose-ed8564618151

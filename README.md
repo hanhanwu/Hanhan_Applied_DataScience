@@ -15,8 +15,8 @@ Applied data science recommendations and tutorials
 # Applied Recommendations
 ## [Stakeholder Notes][93]
 
-## [Fast Prototyping][81]
-* Fast Prototyping Tookit
+## [Prototyping][81]
+* Prototyping Tookit
 * Need big data environment, [cloudxlab saves efforts in environment setup][111]
 ### [My Story Telling Collections][113]
 

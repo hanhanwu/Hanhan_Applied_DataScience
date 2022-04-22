@@ -74,7 +74,12 @@ Applied data science recommendations and tutorials
   * [Blog details][80]
   * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
   
-## Federated Learning
+## AI Ethics
+* [Different tools for measuring AI Ethics][162]
+  * Questions to think when using these tools:
+    * If a model can't pass the AI Ethics measurement, can we get suggestions to be able to passs the measurement?
+
+### Federated Learning
 * [In this paper, a simple application of federated learning][140]
   * Shared & aggregated weights, instead of shared data 
 * Federated Learning is a distributed machine learning approach which enables model training on a large corpus of decentralised data.
@@ -837,3 +842,4 @@ When you got the data from the client or from other teams, better to check the q
 [159]:https://www.analyticsvidhya.com/blog/2022/02/optimal-resource-allocation-using-python/?utm_source=feedburner&utm_medium=email 
 [160]:https://github.com/analokmaus/kuma_utils/blob/master/preprocessing/imputer.py
 [161]:https://www.analyticsvidhya.com/blog/2022/03/linear-programming-discrete-optimization-with-pulp/?utm_source=feedburner&utm_medium=email
+[162]:https://datakind-ai-ethics.netlify.app/#/fairness/scorecard

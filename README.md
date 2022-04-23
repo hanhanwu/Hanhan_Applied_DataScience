@@ -66,13 +66,18 @@ Applied data science recommendations and tutorials
 * Big Data Systems
 * Big Data Cloud Platforms
 
-## Parallel Processing
+## Code Speed Up Methods
 ### Ray
 * Ray vs Python multiprocessing vs Python Serial coding
   * [Code example][79]
   * [My code example][117]
   * [Blog details][80]
   * To sum up, Ray is faster than python multiprocessing. It seems that the basic steps are initialize actors, and for each actor, call the function you want to be processed distributedly.
+
+### Numba
+* [Check this example][163]
+* It can speedup functions using dict/list/set or numpy, and numerical data
+  * Only support subset of functions, and doesn't support mixed data type  
   
 ## AI Ethics
 * [Different tools for measuring AI Ethics][162]
@@ -843,3 +848,4 @@ When you got the data from the client or from other teams, better to check the q
 [160]:https://github.com/analokmaus/kuma_utils/blob/master/preprocessing/imputer.py
 [161]:https://www.analyticsvidhya.com/blog/2022/03/linear-programming-discrete-optimization-with-pulp/?utm_source=feedburner&utm_medium=email
 [162]:https://datakind-ai-ethics.netlify.app/#/fairness/scorecard
+[163]:https://www.analyticsvidhya.com/blog/2021/04/numba-for-data-science-make-your-py-code-run-1000x-faster/

@@ -29,6 +29,8 @@ Applied data science recommendations and tutorials
   * etc. 
   
 ## MLOps
+* Docker
+  * [Docker for beginner][164] 
 * [Deploy deep learning web application with TensorFlow.js][157]
   * It includes image labeling, modeling with Google Colab and deployment on TensorFlow.js 
 * [Build ML Web Application with Flask][90]
@@ -849,3 +851,4 @@ When you got the data from the client or from other teams, better to check the q
 [161]:https://www.analyticsvidhya.com/blog/2022/03/linear-programming-discrete-optimization-with-pulp/?utm_source=feedburner&utm_medium=email
 [162]:https://datakind-ai-ethics.netlify.app/#/fairness/scorecard
 [163]:https://www.analyticsvidhya.com/blog/2021/04/numba-for-data-science-make-your-py-code-run-1000x-faster/
+[164]:https://www.analyticsvidhya.com/blog/2022/04/docker-tutorial-for-beginners-part-i/?utm_source=feedburner&utm_medium=email

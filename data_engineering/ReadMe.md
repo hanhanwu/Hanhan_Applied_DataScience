@@ -20,6 +20,8 @@
 * [Brief intro about Hadoop ecosystem][9]
   * I like the "big data processing stages" diagrama
   * [Hive][12] - It can convert query into map reduce work which saves lots of effort to write map reduce code. But it doesn't work well with real time data.
+    * [Hive DDL (date definition language) commands][21] 
+      * [A bit more hive queries][23] 
     * [Hive internal & external tables][19] 
     * [How to improve Hive query efficiency][20]
 * [HDFS Architecture][11]
@@ -89,6 +91,8 @@
   * [A brief guide][14]
 * Simple SQL
 
+### Azure Storage
+* [From Blob Storage to SQL Database Using Azure Data Factory][22]
 
 [1]:https://docs.atlas.mongodb.com/getting-started/
 [2]:https://www.w3schools.com/python/python_mongodb_insert.asp
@@ -110,3 +114,6 @@
 [18]:https://www.codebyamir.com/blog/mysql-database-indexing-for-developers
 [19]:https://www.analyticsvidhya.com/blog/2022/01/hive-internal-and-external-tables/?utm_source=feedburner&utm_medium=email
 [20]:https://www.analyticsvidhya.com/blog/2022/02/performance-tuning-practices-in-hive/?utm_source=feedburner&utm_medium=email
+[21]:https://www.analyticsvidhya.com/blog/2022/04/an-overview-on-ddl-commands-in-apache-hive/?utm_source=feedburner&utm_medium=email
+[22]:https://www.analyticsvidhya.com/blog/2022/04/from-blob-storage-to-sql-database-using-azure-data-factory/?utm_source=feedburner&utm_medium=email
+[23]:https://www.analyticsvidhya.com/blog/2022/04/beginners-guide-to-data-warehouse-using-hive-query-language/?utm_source=feedburner&utm_medium=email

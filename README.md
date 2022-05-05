@@ -193,7 +193,11 @@ When you got the data from the client or from other teams, better to check the q
 * Impute with special values, such as "MISSING", -1, etc.
 * KNN Imputation
 * [LGBM Imputation][160]
-  * It uses LGBM to impute misseing values 
+  * It uses LGBM to impute missing values 
+* [Miss Forest, Mice Forest][165]
+  * Handle missing values with random forest
+  * It explains how
+  * Works for both numerical, categorical features 
 * Model prediction to compare whether imputing missing values will help
 
 ### Deal With Outliers
@@ -852,3 +856,4 @@ When you got the data from the client or from other teams, better to check the q
 [162]:https://datakind-ai-ethics.netlify.app/#/fairness/scorecard
 [163]:https://www.analyticsvidhya.com/blog/2021/04/numba-for-data-science-make-your-py-code-run-1000x-faster/
 [164]:https://www.analyticsvidhya.com/blog/2022/04/docker-tutorial-for-beginners-part-i/?utm_source=feedburner&utm_medium=email
+[165]:https://www.analyticsvidhya.com/blog/2022/05/handling-missing-values-with-random-forest/?utm_source=feedburner&utm_medium=email

@@ -85,6 +85,9 @@ Applied data science recommendations and tutorials
 * [Different tools for measuring AI Ethics][162]
   * Questions to think when using these tools:
     * If a model can't pass the AI Ethics measurement, can we get suggestions to be able to passs the measurement?
+* [Google AI Principles][166]
+  * It suggests to evaluate model performance for each segment/subgroup too, to see whether there could be bias
+  * Data exploration can also disclose some bias in the data, so [Google introduced Facets for some data exploration][167] 
 
 ### Federated Learning
 * [In this paper, a simple application of federated learning][140]
@@ -857,3 +860,5 @@ When you got the data from the client or from other teams, better to check the q
 [163]:https://www.analyticsvidhya.com/blog/2021/04/numba-for-data-science-make-your-py-code-run-1000x-faster/
 [164]:https://www.analyticsvidhya.com/blog/2022/04/docker-tutorial-for-beginners-part-i/?utm_source=feedburner&utm_medium=email
 [165]:https://www.analyticsvidhya.com/blog/2022/05/handling-missing-values-with-random-forest/?utm_source=feedburner&utm_medium=email
+[166]:https://ai.google/principles
+[167]:https://github.com/PAIR-code/facets

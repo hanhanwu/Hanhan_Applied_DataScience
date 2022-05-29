@@ -590,12 +590,14 @@ When you got the data from the client or from other teams, better to check the q
 * Use Cases
    * Param Tuning  - Pareto Front improves the efficiency, MADM find the optimal option
   
-## Interpreting Machine Learning Model
+## Model Explainability
 ### Dashboard Tools
 * Tableau
 * [Spotfire][143]
 * [Redash][144]
 * [ExplainerDashboard][152]
+
+### [Interpret Clustering with Decision Tree][168]
 
 ### [Interpretable Machine Learning][131]
 * It has summarized different methods in ML model interpretations, such as NN interpretation, model-agnostic interpretation, etc.
@@ -862,3 +864,4 @@ When you got the data from the client or from other teams, better to check the q
 [165]:https://www.analyticsvidhya.com/blog/2022/05/handling-missing-values-with-random-forest/?utm_source=feedburner&utm_medium=email
 [166]:https://ai.google/principles
 [167]:https://github.com/PAIR-code/facets
+[168]:https://www.analyticsvidhya.com/blog/2022/05/adding-explainability-to-clustering/?utm_source=feedburner&utm_medium=email

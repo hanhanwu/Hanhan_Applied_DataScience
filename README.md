@@ -599,6 +599,10 @@ When you got the data from the client or from other teams, better to check the q
 
 ### [Interpret Clustering with Decision Tree][168]
 
+### Plot Decision Tree Boundry
+* [Example][169]
+  * [Code][170] 
+
 ### [Interpretable Machine Learning][131]
 * It has summarized different methods in ML model interpretations, such as NN interpretation, model-agnostic interpretation, etc.
 ### Lime - Visualize feature importance for all machine learning models
@@ -865,3 +869,5 @@ When you got the data from the client or from other teams, better to check the q
 [166]:https://ai.google/principles
 [167]:https://github.com/PAIR-code/facets
 [168]:https://www.analyticsvidhya.com/blog/2022/05/adding-explainability-to-clustering/?utm_source=feedburner&utm_medium=email
+[169]:https://ubc-cs.github.io/cpsc330/lectures/22_deployment-conclusion.html
+[170]:https://github.com/UBC-CS/cpsc330/blob/master/lectures/code/plotting_functions.py#L30

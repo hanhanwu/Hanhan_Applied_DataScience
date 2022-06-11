@@ -94,6 +94,9 @@
 ### Azure Storage
 * [From Blob Storage to SQL Database Using Azure Data Factory][22]
 
+### Snowflake Data Warehouse
+* [Architecture][24]
+
 [1]:https://docs.atlas.mongodb.com/getting-started/
 [2]:https://www.w3schools.com/python/python_mongodb_insert.asp
 [3]:https://docs.mongodb.com/manual/reference/
@@ -117,3 +120,4 @@
 [21]:https://www.analyticsvidhya.com/blog/2022/04/an-overview-on-ddl-commands-in-apache-hive/?utm_source=feedburner&utm_medium=email
 [22]:https://www.analyticsvidhya.com/blog/2022/04/from-blob-storage-to-sql-database-using-azure-data-factory/?utm_source=feedburner&utm_medium=email
 [23]:https://www.analyticsvidhya.com/blog/2022/04/beginners-guide-to-data-warehouse-using-hive-query-language/?utm_source=feedburner&utm_medium=email
+[24]:https://www.analyticsvidhya.com/blog/2022/06/snowflake-architecture-and-key-concepts-for-data-warehouse/?utm_source=feedburner&utm_medium=email

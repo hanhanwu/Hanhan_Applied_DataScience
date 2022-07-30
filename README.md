@@ -214,6 +214,7 @@ When you got the data from the client or from other teams, better to check the q
   * Boxplot, 1.5IQR
   * [Modified Z score][108]
     * Check `MAD` value
+* [ML methods can be used for anomaly detection][172]
 * To deal with ourliers, I normally use:
   * Simply replace the outliers with NULL
   * Replace outliers with median/mean/mode, or a special value
@@ -873,3 +874,4 @@ When you got the data from the client or from other teams, better to check the q
 [169]:https://ubc-cs.github.io/cpsc330/lectures/22_deployment-conclusion.html
 [170]:https://github.com/UBC-CS/cpsc330/blob/master/lectures/code/plotting_functions.py#L30
 [171]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/AI_Experiments/learning_notes.md#tips-on-improving-deep-learning-performance
+[172]:https://www.analyticsvidhya.com/blog/2021/04/dealing-with-anomalies-in-the-data/

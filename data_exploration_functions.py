@@ -43,6 +43,21 @@ def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], f
     plt.show()
     
 # plot numerical feature distribution for each class
+def plot_num_feature_group_distribution(df, group_col, n_rows, n_cols, exclude_col=[], figsize=[20, 10], font_scale=1, bins=100, palette=["red", "blue", "green"]):
+    sns.set(font_scale=font_scale)
+    f, axes = plt.subplots(n_rows, n_cols, figsize=(figsize[0], figsize[1]))
+    
+    features = df.columns
+    for ax, feature in zip(axes.flat, features):
+        if feature in exclude_col:
+            continue
+        sns.histplot(df, x=feature , hue=group_col, ax=ax, stat='density',palette=palette, bins=bins)
+        
+# plot 1 numerical value dist per group
+df.pivot(columns=seg_col, values=value_col)\
+            .plot.hist(alpha=0.4, legend=True, bins=100, density=True, color=['green', 'red', 'blue'], figsize=(10,5))
+    
+# plot numerical feature distribution for each class
 def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_cols, exclude_cols=[], fsize=[60, 60]):
     plt.rcParams.update({'font.size': 20})
 

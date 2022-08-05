@@ -257,6 +257,8 @@ When you got the data from the client or from other teams, better to check the q
   * scatter plot to check the relationship; we can also use pandas cross tab method
   * Binning
   * Such as `log`, here are a list of methods for nonlinear transformation: https://people.revoledu.com/kardi/tutorial/Regression/nonlinear/NonLinearTransformation.htm
+    * 🌺 Some data do need to use log, such as "income" in banking data. There is a common assunption that, income data is log-normally distributed. Applying `log` on the better can be better.
+    * This can be applied to features that have inevitable "outliers" that you should not remove, but it could make the overall distribution hard to see. When there are non-positive values, sometimes you might need to use `np.log(df + 1) * np.sign(df)`
   * Kernel functions
   * PCA - It can convert the whole feature set into normalized linear combination
     * [How to use PCA for dimensional reduction/feature selection][29]

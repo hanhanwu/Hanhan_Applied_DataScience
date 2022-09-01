@@ -7,6 +7,7 @@ Applied data science recommendations and tutorials
 # Important Tips
 * Sampling strategies should be documented.
 * Split data into train and test first, then do data preprocessing on training data. After model trained, apply the final data preprocessing methods on the testing data.
+* [Working Notes][173] 🌺
 * [Deep Learning tips][171]
 
 ## Research Resources
@@ -877,3 +878,4 @@ When you got the data from the client or from other teams, better to check the q
 [170]:https://github.com/UBC-CS/cpsc330/blob/master/lectures/code/plotting_functions.py#L30
 [171]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/AI_Experiments/learning_notes.md#tips-on-improving-deep-learning-performance
 [172]:https://www.analyticsvidhya.com/blog/2021/04/dealing-with-anomalies-in-the-data/
+[173]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/working_notes.md

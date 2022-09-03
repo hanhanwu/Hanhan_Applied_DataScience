@@ -163,6 +163,9 @@ When you got the data from the client or from other teams, better to check the q
     * Besides ANOVA, we could calculate t-score or z-score (less than 30 records)
 * Comparing with correlation, Mutual Information (MI) measures the non-linear dependency between 2 random variables
   * Larger MI, larger dependency 
+* [Using PPS (predictive powerscore) to check asymmetrical correlation][174]
+  * Sometimes x can predict y but y can't predict x, this is asymmetrical 
+  * Besides using it as correlation between features, PPS can also be used to check stronger predictors
 * 2 way table or Stacked Column Chart - for 2 variable variables, check count, percentage of group by the 2 variables
 * For features that are highly dependent on each other, in parametrics algorithms these features should be removed to reduce error; in nonparametrics algorithms, I still recommend to remove them, because for algorithms such as trees tend to put highly dependent features at the same importance level, which won't contribute feature importance much.
 * Feature selection based on the dependency between features and the label
@@ -879,3 +882,4 @@ When you got the data from the client or from other teams, better to check the q
 [171]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/blob/master/AI_Experiments/learning_notes.md#tips-on-improving-deep-learning-performance
 [172]:https://www.analyticsvidhya.com/blog/2021/04/dealing-with-anomalies-in-the-data/
 [173]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/working_notes.md
+[174]:https://www.analyticsvidhya.com/blog/2020/12/using-predictive-power-score-to-pinpoint-non-linear-correlations/

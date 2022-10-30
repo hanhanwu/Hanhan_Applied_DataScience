@@ -421,6 +421,10 @@ When you got the data from the client or from other teams, better to check the q
 
 
 ## Algorithms Details
+### RBF Kernel
+* Radial Basis Function kernel (RBF kernel) is used to determine edge weights in affinity matrix, a matrix defines a pairwise relationship points
+* [Reference][175]
+
 ### SVM
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
 * [How does kernal SVM work for nonlinear data][34]
@@ -883,3 +887,4 @@ When you got the data from the client or from other teams, better to check the q
 [172]:https://www.analyticsvidhya.com/blog/2021/04/dealing-with-anomalies-in-the-data/
 [173]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/working_notes.md
 [174]:https://www.analyticsvidhya.com/blog/2020/12/using-predictive-power-score-to-pinpoint-non-linear-correlations/
+[175]:https://towardsdatascience.com/how-to-benefit-from-the-semi-supervised-learning-with-label-spreading-algorithm-2f373ae5de96

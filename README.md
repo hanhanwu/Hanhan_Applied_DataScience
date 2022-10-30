@@ -422,8 +422,13 @@ When you got the data from the client or from other teams, better to check the q
 
 ## Algorithms Details
 ### RBF Kernel
-* Radial Basis Function kernel (RBF kernel) is used to determine edge weights in affinity matrix, a matrix defines a pairwise relationship points
+* Radial Basis Function kernel (RBF kernel) is used to determine edge weights in affinity matrix, a matrix defines a pairwise relationship points.
+  * Sklrean's implementation of RBF kernel looks slightly different as it replaces 1/2sigma^2 with a hyperparameter gamma. The effect is the same as it allows you to control the smoothness of the function. High gamma extends the influence of each individual point wide, hence creating a smooth transition in label probabilities. Meanwhile, low gamma leads to only the closest neighbors having influence over the label probabilities.  
 * [Reference][175]
+
+### Semi Supervised Learning
+* [How does label propagation work][176]
+* [How does label spreading work][175]
 
 ### SVM
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
@@ -888,3 +893,4 @@ When you got the data from the client or from other teams, better to check the q
 [173]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/working_notes.md
 [174]:https://www.analyticsvidhya.com/blog/2020/12/using-predictive-power-score-to-pinpoint-non-linear-correlations/
 [175]:https://towardsdatascience.com/how-to-benefit-from-the-semi-supervised-learning-with-label-spreading-algorithm-2f373ae5de96
+[176]:https://towardsdatascience.com/semi-supervised-learning-how-to-assign-labels-with-label-propagation-algorithm-9f1683f4d0eb

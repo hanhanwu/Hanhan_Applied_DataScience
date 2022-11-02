@@ -431,6 +431,9 @@ When you got the data from the client or from other teams, better to check the q
 * [How does label propagation work][176]
 * [How does label spreading work][175]
   * To be more accurate, I would say the difference between hard clamping and soft clamping is the weight (alpha) on original label is 0 or not, [check sklearn's description][178]
+#### PU Learning
+* Only has positive & ublabled data
+* [PU learning - How does E&N work][179]
 
 ### SVM
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
@@ -1794,3 +1797,4 @@ When you got the data from the client or from other teams, better to check the q
 [176]:https://scikit-learn.org/stable/modules/semi_supervised.html#label-propagation
 [177]:https://towardsdatascience.com/t-sne-machine-learning-algorithm-a-great-tool-for-dimensionality-reduction-in-python-ec01552f1a1e
 [178]:https://scikit-learn.org/stable/modules/semi_supervised.html#label-propagation
+[179]:https://towardsdatascience.com/semi-supervised-classification-of-unlabeled-data-pu-learning-81f96e96f7cb

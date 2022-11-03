@@ -434,6 +434,8 @@ When you got the data from the client or from other teams, better to check the q
 #### PU Learning
 * Only has positive & ublabled data
 * [PU learning - How does E&N work][179]
+* How to evaluate PU learning without negative label
+  * [Evaluation Method Proposal 1][180]
 
 ### SVM
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
@@ -1798,3 +1800,4 @@ When you got the data from the client or from other teams, better to check the q
 [177]:https://towardsdatascience.com/t-sne-machine-learning-algorithm-a-great-tool-for-dimensionality-reduction-in-python-ec01552f1a1e
 [178]:https://scikit-learn.org/stable/modules/semi_supervised.html#label-propagation
 [179]:https://towardsdatascience.com/semi-supervised-classification-of-unlabeled-data-pu-learning-81f96e96f7cb
+[180]:https://link.springer.com/content/pdf/10.1007/978-3-662-44415-3_24.pdf

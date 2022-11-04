@@ -31,6 +31,9 @@ Applied data science recommendations and tutorials
   * etc. 
   
 ## MLOps
+* Google ML Engineering Guides
+  * [MLOps architecture][181]
+  * [ML Pipeline best suggestions][182]
 * Docker
   * [Docker for beginner][164] 
 * [Deploy deep learning web application with TensorFlow.js][157]
@@ -1801,3 +1804,5 @@ When you got the data from the client or from other teams, better to check the q
 [178]:https://scikit-learn.org/stable/modules/semi_supervised.html#label-propagation
 [179]:https://towardsdatascience.com/semi-supervised-classification-of-unlabeled-data-pu-learning-81f96e96f7cb
 [180]:https://link.springer.com/content/pdf/10.1007/978-3-662-44415-3_24.pdf
+[181]:https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+[182]:https://developers.google.com/machine-learning/guides/rules-of-ml

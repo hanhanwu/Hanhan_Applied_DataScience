@@ -254,6 +254,11 @@ When you got the data from the client or from other teams, better to check the q
     * [Each algorithm][119]
   * [How does t-SNE work][177]
   * [How does PCA work][184], great way to explain "eigenvalue" also plot the explained variance of each principle component
+    * Unsupervised
+    * Needs data standardization
+  * [How does LDA work][185] 
+    * Supervised, as it's trying to separate classes as much as possible
+    * Needs data standardization
 * Feature Selection Methods
   * [sklearn feature selection][16]
   
@@ -1810,3 +1815,4 @@ When you got the data from the client or from other teams, better to check the q
 [182]:https://developers.google.com/machine-learning/guides/rules-of-ml
 [183]:https://stats.stackexchange.com/questions/594659/is-one-variable-with-theoretical-distribution-and-a-second-variable-with-same-ob/594660#594660
 [184]:https://towardsdatascience.com/pca-principal-component-analysis-how-to-get-superior-results-with-fewer-dimensions-7a70e8ab798c
+[185]:https://towardsdatascience.com/lda-linear-discriminant-analysis-how-to-improve-your-models-with-supervised-dimensionality-52464e73930f

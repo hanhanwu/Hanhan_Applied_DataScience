@@ -248,17 +248,33 @@ When you got the data from the client or from other teams, better to check the q
 * Use tree models to find feature importance
   * Better to remove highly correlated features before doing this. Some tree model will put highly correlated features all as important if one of them is highly ranked
 * Dimensional Reduction Algorithms
+  * <b>Better to use standardize data before applying these methods</b>, by making data on the same scale, distance calculation makes more sense.
   * [sklearn decomposition][15]
   * [The intermediate result from autoencoder - encoder][60]
   * [sklearn manifold learning][118]
     * [Each algorithm][119]
-  * [How does t-SNE work][177]
   * [How does PCA work][184], great way to explain "eigenvalue" also plot the explained variance of each principle component
-    * Unsupervised
+    * Unsupervised, linear
     * Needs data standardization
   * [How does LDA work][185] 
-    * Supervised, as it's trying to separate classes as much as possible
+    * Linear, Supervised, as it's trying to separate classes as much as possible
     * Needs data standardization
+  * [How does t-SNE work][177]
+    * Linear, Unsupervised, Non-parametric (no explicit data mapping function), therefore mainly used in visualization 
+    * "Similarity" & normal distribution in original dimension, "similarity" & t-distribution in lower dimension. 
+      * Both probability distributions are used to calculate similarity socres
+      * t-distribution has "flatter" shape with longer tails, so that data points can be spread out in lower dimensions, to avoid high density of gathering
+    * "Perplexity" determines the density
+    * Needs data standardization
+  * [How does Isomap work][187]
+    * Unsupervised, Nonlinear, with the help of [MDS (multidimensional scaling)][186], it will try to keep both global and local (between-point distance) structure
+      * Linear method like PCA focuses on keeping global structure more
+  * [How does LLE work][188]
+    * Nonlinear, Unsupervised
+    * Focusing on local structure more, more efficient than Isomap as it doesn't need to calculate pair-wise distance, but Isomap works better when you want to keep both global and local structure
+  * [How does UMAP work][189]
+    * Supports both supervised & unsupervised
+    * Trying to maintain both local & global structures
 * Feature Selection Methods
   * [sklearn feature selection][16]
   
@@ -1816,3 +1832,7 @@ When you got the data from the client or from other teams, better to check the q
 [183]:https://stats.stackexchange.com/questions/594659/is-one-variable-with-theoretical-distribution-and-a-second-variable-with-same-ob/594660#594660
 [184]:https://towardsdatascience.com/pca-principal-component-analysis-how-to-get-superior-results-with-fewer-dimensions-7a70e8ab798c
 [185]:https://towardsdatascience.com/lda-linear-discriminant-analysis-how-to-improve-your-models-with-supervised-dimensionality-52464e73930f
+[186]:https://towardsdatascience.com/mds-multidimensional-scaling-smart-way-to-reduce-dimensionality-in-python-7c126984e60b
+[187]:https://towardsdatascience.com/isomap-embedding-an-awesome-approach-to-non-linear-dimensionality-reduction-fc7efbca47a0
+[188]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
+[189]:https://towardsdatascience.com/umap-dimensionality-reduction-an-incredibly-robust-machine-learning-algorithm-b5acb01de568

@@ -326,11 +326,10 @@ norm_df = scaler.transform(df)
 # Get highly correlated cat cols
 def get_cat_correlated_features(le_cat_df, exclude_cols=[], p_threshold=0.05):
     """
-    The null hypothesis is, the 2 categorical cols has a relationship.
-    When the generated p value lower than p_threshold, reject the null hypothesis.
+    The null hypothesis is, the 2 categorical cols are independent.
+    When the generated p value lower than p_threshold, reject the null hypothesis, and the 2 cols are dependent.
     References:
       * https://stats.stackexchange.com/questions/110718/chi-squared-test-with-scipy-whats-the-difference-between-chi2-contingency-and
-      * 
     """
     cat_cols = [col for col in le_cat_df.columns if col not in exclude_cols]
     corr_cols = {}
@@ -340,7 +339,7 @@ def get_cat_correlated_features(le_cat_df, exclude_cols=[], p_threshold=0.05):
         for j in range(i+1, len(cat_cols)):
             col_j = cat_cols[j]
             p_value = ss.chi2_contingency(pd.crosstab(le_cat_df[col_i], le_cat_df[col_j]))[1]
-            if p_value >= p_threshold:
+            if p_value < p_threshold:
                 corr_cols.setdefault(col_i, {})
                 corr_cols[col_i] = {'corr_col': col_j, 'p_value': p_value}
                 

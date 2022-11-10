@@ -310,11 +310,8 @@ When you got the data from the client or from other teams, better to check the q
 * decision tree paths as the feature
 * Methods to deal with categorical features
   * [Some simple categorical encoding methods][141]
-    * one-hot encoding, binary encoding, ordinal encoding, label encoding, frequency encoding
-    * sklearn's onehot encoding is faster but only returns a numpy array, pandas' `get_dummies()` is slower but more convenient for pandas dataframe 
-  * The most simple label encoding is to convert each uniaque categorical value into a unique number (use sklearn label encoding). But better to check how does the model hadle categorical features
-    * [LightGBM offers good accuracy with built-in integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
-    * [You can also have categorical features as direct input][123], [but need to specify that as categorical type][124]
+    * I often use label encoding to convert categorical target value to numerical format, and use ordinal encoding to convert categorical target value to ordinal numerical format
+  * [LightGBM offers good accuracy with built-in integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]. [You can also have categorical features as direct input][123], [but need to specify that as categorical type][124]
   * [10+ Built-in Categorical Encoding Methods][37]
     * Target Encoder is a popular method, and [this paper][155] tells the drawbacks of target encoding for reducible bias, and indicating that using smoothing regularization can reduce such bias. [We can do smoothing regularization through the param here][156]
     * [Params for each encoding method][84]

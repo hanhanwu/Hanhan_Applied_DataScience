@@ -451,14 +451,15 @@ When you got the data from the client or from other teams, better to check the q
 * [Reference][175]
 
 ### Semi Supervised Learning
-* [How does label propagation work][176]
-* [How does label spreading work][175]
-  * To be more accurate, I would say the difference between hard clamping and soft clamping is the weight (alpha) on original label is 0 or not, [check sklearn's description][178]
-#### PU Learning
+* When you have labeled data for all classes:
+  * [How does label propagation work][176]
+  * [How does label spreading work][175]
+    * To be more accurate, I would say the difference between hard clamping and soft clamping is the weight (alpha) on original label is 0 or not, [check sklearn's description][178]
+  * [How does self-training classifier work][190]
 * Only has positive & ublabled data
-* [PU learning - How does E&N work][179]
-* How to evaluate PU learning without negative label
-  * [Evaluation Method Proposal 1][180]
+  * [PU learning - How does E&N work][179]
+  * How to evaluate PU learning without negative label
+    * [Evaluation Method Proposal 1][180]
 
 ### SVM
 * [How did margin generated][33] - margin has maximized orthogonal distance between the cloest points in each category and the hyperplane, these closest points are supporting vectors
@@ -1833,3 +1834,4 @@ When you got the data from the client or from other teams, better to check the q
 [187]:https://towardsdatascience.com/isomap-embedding-an-awesome-approach-to-non-linear-dimensionality-reduction-fc7efbca47a0
 [188]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
 [189]:https://towardsdatascience.com/umap-dimensionality-reduction-an-incredibly-robust-machine-learning-algorithm-b5acb01de568
+[190]:https://towardsdatascience.com/self-training-classifier-how-to-make-any-algorithm-behave-like-a-semi-supervised-one-2958e7b54ab7

@@ -16,6 +16,55 @@ le_cat_df = le_cat_df.astype('category')
 print(le_cat_df.isnull().sum())
 
 
+# plot 1 line with annotations
+def plot_performance_lst(performance_lst, y_label, title):
+    plt.figure(figsize=(15,7))
+    ax = plt.gca()
+    ax.set_ylim([0, 1]) # set y-axis range
+    
+    x = [i+1 for i in range(len(performance_lst))]
+    y = performance_lst
+    
+    ax.plot(x, y, color='g')
+    
+    # anchor text to show text in the plot
+    anchored_text = AnchoredText(f'Average {y_label} is {round(np.mean(performance_lst), 4)}', loc=3, prop={'size': 12})  # the location code: https://matplotlib.org/3.1.0/api/offsetbox_api.html
+    ax.add_artist(anchored_text)  
+    
+    # annotate y_value along the line
+    for i,j in zip(x,y):
+        ax.annotate(str(round(j, 4)),xy=(i,j))  
+    
+    plt.xlabel('epoch #')
+    plt.ylabel(y_label)
+    plt.title(title)
+    plt.show()
+    
+    
+# plot multiple dot-line with annotation
+def plot_performance_per_threshold(threshold_performance_dct, color_dct, title, fig_size=[15, 7]):
+    plt.figure(figsize=(fig_size[0], fig_size[1]))
+    ax = plt.gca()
+    ax.set_ylim([0, 1]) # set y-axis range
+    
+    x = threshold_performance_dct['threshold_lst']
+    
+    for performance_name, performance_lst in threshold_performance_dct.items():
+        if (performance_name=='threshold_lst'):
+            continue
+        ax.plot(x, performance_lst, color=color_dct[performance_name], label=performance_name, marker='*')
+        
+        # annotate y_value along the line
+        for i,j in zip(x, performance_lst):
+            ax.annotate(str(j),xy=(i,j)) 
+    
+    plt.xlabel('Positive Label Threshold')
+    plt.ylabel('Performance')
+    plt.legend(loc='best')
+    plt.title(title)
+    plt.show()
+
+
 # plot numerical features distribution (histogram)
 def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20], color='g'):    
     plt.rcParams.update({'font.size': 20})

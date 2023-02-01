@@ -372,27 +372,30 @@ scaler.fit(df)
 norm_df = scaler.transform(df)
 
 
-# Get highly correlated cat cols
-def get_cat_correlated_features(le_cat_df, exclude_cols=[], p_threshold=0.05):
-    """
-    The null hypothesis is, the 2 categorical cols are independent.
-    When the generated p value lower than p_threshold, reject the null hypothesis, and the 2 cols are dependent.
-    References:
-      * https://stats.stackexchange.com/questions/110718/chi-squared-test-with-scipy-whats-the-difference-between-chi2-contingency-and
-    """
-    cat_cols = [col for col in le_cat_df.columns if col not in exclude_cols]
-    corr_cols = {}
-
+# Get cat cols' correlation
+def get_cat_correlation(df, method='chi2', p_threshold=0.05):
+    corr_lst = []
+    cat_cols = df.columns
+    
+    start = timeit.default_timer()
     for i in range(len(cat_cols)-1):
-        col_i = cat_cols[i]
         for j in range(i+1, len(cat_cols)):
-            col_j = cat_cols[j]
-            p_value = ss.chi2_contingency(pd.crosstab(le_cat_df[col_i], le_cat_df[col_j]))[1]
-            if p_value < p_threshold:
-                corr_cols.setdefault(col_i, {})
-                corr_cols[col_i] = {'corr_col': col_j, 'p_value': p_value}
+            contingency_table = pd.crosstab(df[cat_cols[i]].fillna('NA'), df[cat_cols[j]].fillna('NA'))  # Fill NA with 'NA' so that cramerv won't throw error when a feature's missing rate is high
+            
+            if method == 'chi2':
+                test_static, p, dof, expected_feq = chi2_contingency(contingency_table)
+                corr_result = 'correlated' if p < p_threshold else 'not correlated'
+            elif method == 'cramer':
+                corr_result = contingency.association(contingency_table, method='cramer')
+            else:
+                print('"method" has to be "chi2" or "cramer"')
+                return None
                 
-    return corr_cols
+            corr_lst.append([cat_cols[i], cat_cols[j], corr_result])
+            
+    corr_df = pd.DataFrame(corr_lst, columns=['var1', 'var2', method])
+    print(round(timeit.default_timer() - start, 4), "seconds")
+    return corr_df
 
 # Get 2D highly correlated num features 
 ## NOTE: Please normalize the feature before doing this, otherwise features with higher values tend to show higher correlation

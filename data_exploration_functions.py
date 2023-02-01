@@ -384,7 +384,7 @@ def get_cat_correlation(df, method='chi2', p_threshold=0.05):
             
             if method == 'chi2':
                 test_static, p, dof, expected_feq = chi2_contingency(contingency_table)
-                corr_result = 'correlated' if p < p_threshold else 'not correlated'
+                corr_result = 'correlated' if p <= p_threshold else 'not correlated'
             elif method == 'cramer':
                 corr_result = contingency.association(contingency_table, method='cramer')
             else:

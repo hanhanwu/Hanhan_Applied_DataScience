@@ -205,7 +205,7 @@ sns.set(font_scale=2)
 plot_cat_feature_distribution(cat_df, n_rows=6, n_cols=3, exclude_cols=[target], fsize=[60, 30])
 
 
-# Plot categorical features distribution (with Hue)
+# Plot categorical features distribution in each class (with Hue)
 def plot_cat_feature_class_distribution(df, class_col, n_rows, n_cols, exclude_cols=[], fsize=[40, 20]):
     feature_df = df.copy()
     feature_df = feature_df.astype('str').fillna('NA')
@@ -224,7 +224,7 @@ def plot_cat_feature_class_distribution(df, class_col, n_rows, n_cols, exclude_c
         axes = plt.gca()
         
         class_ct_df = feature_df[[feature, class_col]]\
-          .groupby([feature, class_col], as_index=False)[target]\
+          .groupby([feature, class_col], as_index=False)[class_col]\
           .agg(['count']).reset_index()
         class_ct_df['perct'] = round(class_ct_df['count']*100/len(feature_df), 2)
         

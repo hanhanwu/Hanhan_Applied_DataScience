@@ -12,6 +12,15 @@
 * [It supports multiple classical ML models][29]
 * [Its models can handle categorical features automatically][30]
 
+
+## [Monotonic Constraints in LGBM][31]
+* This can be used when a feature and target needs to follow monotonic relationship
+* You cannuse SHAP to check the interpretability after applying the constraint
+* Too many monotonic constraints can cause overfitting in the model
+* In the case experimented in our team, feature importance didn't get affected, model performance didn't get affected too much
+* Numerical features only
+
+
 ## Target Encoder
 * [Original Paper][1]
 * This paper presents a simple data-preprocessing scheme that transforms high-cardinality categorical attributes into quasicontinuous scalar attributes suited for use in regression-type models. The key transformation used in the proposed scheme is one that maps each instance (value) of a high-cardinality categorical to the probability estimate of the target attribute. * In a classification scenario, the numerical representation corresponds to the posterior probability of the target, conditioned by the value of the categorical attribute. In a prediction scenario, the numerical representation corresponds to the expected value of the target given the value of the categorical attribute.
@@ -206,3 +215,4 @@
 [28]:https://github.com/tensorflow/decision-forests
 [29]:https://www.tensorflow.org/decision_forests/api_docs/python/tfdf/keras
 [30]:https://www.tensorflow.org/decision_forests/tutorials/beginner_colab
+[31]:https://lightgbm.readthedocs.io/en/latest/Parameters.html#monotone_constraints

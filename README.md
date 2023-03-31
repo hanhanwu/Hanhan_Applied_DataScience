@@ -148,7 +148,7 @@ When you got the data from the client or from other teams, better to check the q
 
 ### Bivariate Analysis
 * Check correlation between every 2 continuous variables
-  * [More methods to check correlations][137], including methods work for both linear and non-linear correlation, and can be used for ordinal data
+  * [More methods to check correlations][137]
     * Point Biserial Correlation, Kendall Rank Correlation, Spearman’s Rank Correlation, Pearson Correlation and its limitation (linear only, cant be used for ordinal data) 
   * Person vs Spearman
     * Pearson correlation evaluated the linear relationship between two continuous variables. 

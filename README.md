@@ -121,6 +121,8 @@ When you got the data from the client or from other teams, better to check the q
   * "Group" here can be each account/user/application/etc.
   * How does different labels distribute within each group
   * Better to understand why
+* Label Quality
+  * [Confident Learning][191]: `Cleanlab` is a python package provides insights on potential mistakenly labeled data
 ### Data Drift Check
 * [Different methods to detect concept drift, covariate drift][139]
   * How to use K-S test to compare 2 numerical distributions: https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy
@@ -1835,3 +1837,4 @@ When you got the data from the client or from other teams, better to check the q
 [188]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
 [189]:https://towardsdatascience.com/umap-dimensionality-reduction-an-incredibly-robust-machine-learning-algorithm-b5acb01de568
 [190]:https://towardsdatascience.com/self-training-classifier-how-to-make-any-algorithm-behave-like-a-semi-supervised-one-2958e7b54ab7
+[191]:https://l7.curtisnorthcutt.com/confident-learning

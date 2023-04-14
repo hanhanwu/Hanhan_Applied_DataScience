@@ -130,6 +130,8 @@ When you got the data from the client or from other teams, better to check the q
     * But I found, no matter it's K-S test or wasserstein distance, even when 2 distributions look similar, K-S' null hypothesis can be rejected (indicating 2 distributions are not identical) and wasserstein distance can be large... 
   * Chi-square is used for comparing categorical features' distributions, it's non-parametric too but requires the 2 distributions share the same length...
   * [PSI looks like a better measure of the similarity of numerical distributions][142] 
+* [Continual Learning with Ensembling models][192]
+  * Add trained model's knowledge to the new data, new model
 
 ## Data Exploration
 * [My Code - IPython][11]
@@ -1838,3 +1840,4 @@ When you got the data from the client or from other teams, better to check the q
 [189]:https://towardsdatascience.com/umap-dimensionality-reduction-an-incredibly-robust-machine-learning-algorithm-b5acb01de568
 [190]:https://towardsdatascience.com/self-training-classifier-how-to-make-any-algorithm-behave-like-a-semi-supervised-one-2958e7b54ab7
 [191]:https://l7.curtisnorthcutt.com/confident-learning
+[192]:https://towardsdatascience.com/you-dont-need-neural-networks-to-do-continual-learning-2ed3bfe3dbfc

@@ -745,6 +745,7 @@ When you got the data from the client or from other teams, better to check the q
 * How to apply Monte Carlo Simulation
 * 3 types of t-test
 * Regression plots, comparing model output with random output
+* [Promising New Methods Mentioned in My Garden][193]
 
 # [Keep up with Industry Updates][91]
 
@@ -1841,3 +1842,4 @@ When you got the data from the client or from other teams, better to check the q
 [190]:https://towardsdatascience.com/self-training-classifier-how-to-make-any-algorithm-behave-like-a-semi-supervised-one-2958e7b54ab7
 [191]:https://l7.curtisnorthcutt.com/confident-learning
 [192]:https://towardsdatascience.com/you-dont-need-neural-networks-to-do-continual-learning-2ed3bfe3dbfc
+[193]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md

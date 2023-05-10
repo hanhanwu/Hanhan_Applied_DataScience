@@ -1219,6 +1219,11 @@ When you got the data from the client or from other teams, better to check the q
     * sklearn's onehot encoding is faster but only returns a numpy array, pandas' `get_dummies()` is slower but more convenient for pandas dataframe 
   * The most simple label encoding is to convert each uniaque categorical value into a unique number (use sklearn label encoding). But better to check how does the model hadle categorical features
     * [LightGBM offers good accuracy with built-in integer-encoded categorical features. LightGBM applies Fisher (1958) to find the optimal split over categories][122]
+    * [XGBoost after v1.7.0][194], it enables using original categorical values in a more mature way
+      * [Code example][196]
+      * Using auto label encoding or one-hot encoding
+      * [Same as LGBM, it uses Fisher to optimize the split][195] 
+      * It also supports a maximum category threshold to avoid overfitting
     * [You can also have categorical features as direct input][123], [but need to specify that as categorical type][124]
   * [10+ Built-in Categorical Encoding Methods][37]
     * Target Encoder is a popular method, and [this paper][155] tells the drawbacks of target encoding for reducible bias, and indicating that using smoothing regularization can reduce such bias. [We can do smoothing regularization through the param here][156]
@@ -1843,3 +1848,6 @@ When you got the data from the client or from other teams, better to check the q
 [191]:https://l7.curtisnorthcutt.com/confident-learning
 [192]:https://towardsdatascience.com/you-dont-need-neural-networks-to-do-continual-learning-2ed3bfe3dbfc
 [193]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md
+[194]:https://developer.nvidia.com/blog/categorical-features-in-xgboost-without-manual-encoding/
+[195]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html#optimal-partitioning
+[196]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html

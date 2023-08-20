@@ -65,9 +65,12 @@ def plot_performance_per_threshold(threshold_performance_dct, color_dct, title, 
     plt.show()
 
 
+
 # plot numerical features distribution (histogram)
-def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20], color='g'):    
-    plt.rcParams.update({'font.size': 20})
+def plot_num_feature_distribution(feature_df, n_rows, n_cols, 
+                                  exclude_cols=[], fsize=[40, 20], 
+                                  color='g', font_size=20):    
+    plt.rcParams.update({'font.size': font_size})
 
     features = feature_df.columns
 
@@ -81,7 +84,8 @@ def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], f
         bins = np.linspace(np.nanmin(feature_df[feature]), np.nanmax(feature_df[feature]), 100)
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 
-        plt.hist(feature_df[feature], bins, alpha=0.75, label='median = ' + str(round(np.nanmedian(feature_df[feature]), 3)), 
+        plt.hist(feature_df[feature], bins, alpha=0.75, 
+                 label='median = ' + str(round(np.nanmedian(feature_df[feature]), 3)), 
                  color = color, edgecolor = 'k', range=(bins.min(),bins.max()),
                  weights=np.zeros_like(feature_df[feature]) + 1. / feature_df[feature].shape[0])  # weights here covert count into percentage for y-axis
         plt.legend(loc='best')
@@ -90,52 +94,29 @@ def plot_num_feature_distribution(feature_df, n_rows, n_cols, exclude_cols=[], f
         plt.ylabel('Density')
     fig.tight_layout()
     plt.show()
-    
-# plot numerical feature distribution for each class
-def plot_num_feature_group_distribution(df, group_col, n_rows, n_cols, exclude_col=[], figsize=[20, 10], font_scale=1, bins=100, palette=["red", "blue", "green"]):
+
+
+# plot numerical feature distribution in each group
+def plot_num_feature_distribution_per_group(grouped_df, group_col, n_rows, n_cols, exclude_col=[], 
+                                            figsize=[20, 10], font_scale=1, 
+                                            bins=100, palette=["red", "blue", "green"]):
     sns.set(font_scale=font_scale)
     f, axes = plt.subplots(n_rows, n_cols, figsize=(figsize[0], figsize[1]))
     
-    features = df.columns
+    features = grouped_df.columns
     for ax, feature in zip(axes.flat, features):
         if feature in exclude_col:
             continue
-        sns.histplot(df, x=feature , hue=group_col, ax=ax, stat='density',palette=palette, bins=bins)
-        
+        sns.histplot(grouped_df, x=feature,
+                     hue=group_col, ax=ax, s
+                     tat='density', palette=palette, bins=bins)
+
+
 # plot 1 numerical value dist per group
 df.pivot(columns=seg_col, values=value_col)\
             .plot.hist(alpha=0.4, legend=True, bins=100, density=True, color=['green', 'red', 'blue'], figsize=(10,5))
-    
-# plot numerical feature distribution for each class
-def show_num_distribution_has_label(labeled_feature_df, label_col, n_rows, n_cols, exclude_cols=[], fsize=[60, 60]):
-    plt.rcParams.update({'font.size': 20})
 
-    pos_df = labeled_feature_df.loc[labeled_feature_df[label_col]==1]
-    neg_df = labeled_feature_df.loc[labeled_feature_df[label_col]==0]
 
-    i = 0
-    fig=plt.figure(figsize=(fsize[0], fsize[1]))
-    for feature in labeled_feature_df.columns:
-        if feature in exclude_cols:
-            continue
-        i += 1
-        ax=fig.add_subplot(n_rows,n_cols,i) 
-        bins = np.linspace(np.nanmin(labeled_feature_df[feature]), np.nanmax(labeled_feature_df[feature]), 100)
-        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-
-        plt.hist(pos_df[feature], bins, alpha=0.8, label=f'{label_col}=1', 
-                 color = 'g', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(pos_df[feature]) + 1. / pos_df[feature].shape[0])
-        plt.hist(neg_df[feature], bins, alpha=0.5, label=f'{label_col}=0', 
-                 color = 'r', edgecolor = 'k', range=(bins.min(),bins.max()),
-                 weights=np.zeros_like(neg_df[feature]) + 1. / neg_df[feature].shape[0])
-        plt.legend(loc='best')
-        plt.title('Feature: ' + feature)
-        plt.xlabel('Feature Values')
-        plt.ylabel('Density')
-    fig.tight_layout()
-    plt.show()
-    
 # plot numerical features distribution (KDE)
 n_rows = 3
 n_cols = 3
@@ -166,12 +147,11 @@ plt.show()
     
     
 # Plot categorical features distribution
-def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20]):
+def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20], font_size=20):
+    plt.rcParams.update({'font.size': font_size})
+    
     feature_df = df.copy()
     feature_df = feature_df.astype('str').fillna('NA')
-    
-    plt.rcParams.update({'font.size': 30})
-
     features = feature_df.columns
 
     i = 0
@@ -186,10 +166,10 @@ def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40
         x_pos = np.arange(len(x_values))
         y_values = feature_df[feature].value_counts().values
         plt.bar(x_pos, y_values, align='center', alpha=0.6, color='b')
-        plt.xticks(x_pos, x_values)
-        plt.xlabel('Distinct Categorical Value', fontsize=30)
-        plt.ylabel('Value Count', fontsize=30)
-        plt.title(feature, fontsize=30)
+        plt.xticks(x_pos, x_values, rotation=45, ha="right")
+        plt.xlabel('Distinct Categorical Value', fontsize=font_size)
+        plt.ylabel('Value Count', fontsize=font_size)
+        plt.title(feature, fontsize=font_size)
 
         rects = axes.patches
         total_ct = sum(y_values)
@@ -200,18 +180,16 @@ def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40
                     ha='center', va='bottom')
     fig.tight_layout()
     plt.show()
+
+
+# Plot categorical features distribution in each group
+def plot_cat_feature_distribution_per_group(grouped_df, group_col, n_rows, n_cols,
+                                            exclude_cols=[], fsize=[40, 20], 
+                                            font_size=20, palette=['green', 'red', 'orange']):
+    plt.rcParams.update({'font.size': font_size})
     
-sns.set(font_scale=2)
-plot_cat_feature_distribution(cat_df, n_rows=6, n_cols=3, exclude_cols=[target], fsize=[60, 30])
-
-
-# Plot categorical features distribution in each class (with Hue)
-def plot_cat_feature_class_distribution(df, class_col, n_rows, n_cols, exclude_cols=[], fsize=[40, 20]):
-    feature_df = df.copy()
+    feature_df = grouped_df.copy()
     feature_df = feature_df.astype('str').fillna('NA')
-    
-    plt.rcParams.update({'font.size': 30})
-
     features = feature_df.columns
 
     i = 0
@@ -220,24 +198,22 @@ def plot_cat_feature_class_distribution(df, class_col, n_rows, n_cols, exclude_c
         if feature in exclude_cols:
             continue
         i += 1
-        ax=fig.add_subplot(n_rows,n_cols,i) 
+        ax=fig.add_subplot(n_rows, n_cols, i) 
         axes = plt.gca()
         
-        class_ct_df = feature_df[[feature, class_col]]\
-          .groupby([feature, class_col], as_index=False)[class_col]\
+        class_ct_df = feature_df[[feature, group_col]]\
+          .groupby([feature, group_col], as_index=False)[group_col]\
           .agg(['count']).reset_index()
         class_ct_df['perct'] = round(class_ct_df['count']*100/len(feature_df), 2)
         
-        ax=sns.barplot(x=feature, hue=class_col, y='perct', data=class_ct_df)
+        ax=sns.barplot(x=feature, hue=group_col, y='perct', data=class_ct_df, palette=palette)
         for container in ax.containers:
             ax.bar_label(container)
     fig.tight_layout()
     plt.show()
     
-sns.set(font_scale=2)
-plot_cat_feature_class_distribution(cat_df, class_col=target, n_rows=9, n_cols=2, exclude_cols=[target], fsize=[60, 50])
-    
-    
+
+
 # output more percentile -> easier to see outliers than pandas `describe()` function
 def check_percentile(target_df):
     dct = {}

@@ -67,6 +67,7 @@ def plot_performance_per_threshold(threshold_performance_dct, color_dct, title, 
 
 
 # plot numerical features distribution (histogram)
+# Usage: https://github.com/hanhanwu/Hanhan_My_Garden/blob/main/code/secret_guest/data_distributions.ipynb
 def plot_num_feature_distribution(feature_df, n_rows, n_cols, 
                                   exclude_cols=[], fsize=[40, 20], 
                                   color='g', font_size=20):    
@@ -97,6 +98,7 @@ def plot_num_feature_distribution(feature_df, n_rows, n_cols,
 
 
 # plot numerical feature distribution in each group
+# Usage: https://github.com/hanhanwu/Hanhan_My_Garden/blob/main/code/secret_guest/data_distributions.ipynb
 def plot_num_feature_distribution_per_group(grouped_df, group_col, n_rows, n_cols, exclude_col=[], 
                                             figsize=[20, 10], font_scale=1, 
                                             bins=100, palette=["red", "blue", "green"]):
@@ -147,6 +149,7 @@ plt.show()
     
     
 # Plot categorical features distribution
+# Usage: https://github.com/hanhanwu/Hanhan_My_Garden/blob/main/code/secret_guest/data_distributions.ipynb
 def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40, 20], font_size=20):
     plt.rcParams.update({'font.size': font_size})
     
@@ -183,6 +186,7 @@ def plot_cat_feature_distribution(df, n_rows, n_cols, exclude_cols=[], fsize=[40
 
 
 # Plot categorical features distribution in each group
+# Usage: https://github.com/hanhanwu/Hanhan_My_Garden/blob/main/code/secret_guest/data_distributions.ipynb
 def plot_cat_feature_distribution_per_group(grouped_df, group_col, n_rows, n_cols,
                                             exclude_cols=[], fsize=[40, 20], 
                                             font_size=20, palette=['green', 'red', 'orange']):

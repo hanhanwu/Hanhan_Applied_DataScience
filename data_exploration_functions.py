@@ -105,13 +105,11 @@ def plot_num_feature_distribution_per_group(grouped_df, group_col, n_rows, n_col
     sns.set(font_scale=font_scale)
     f, axes = plt.subplots(n_rows, n_cols, figsize=(figsize[0], figsize[1]))
     
-    features = grouped_df.columns
+    features = [col for col in grouped_df.columns if col not in exclude_col]
     for ax, feature in zip(axes.flat, features):
-        if feature in exclude_col:
-            continue
         sns.histplot(grouped_df, x=feature,
-                     hue=group_col, ax=ax, s
-                     tat='density', palette=palette, bins=bins)
+                     hue=group_col, ax=ax,
+                     stat='density', palette=palette, bins=bins)
 
 
 # plot 1 numerical value dist per group

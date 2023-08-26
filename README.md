@@ -124,12 +124,15 @@ When you got the data from the client or from other teams, better to check the q
 * Label Quality
   * [Confident Learning][191]: `Cleanlab` is a python package provides insights on potential mistakenly labeled data
 ### Data Drift Check
+* [When to use which metrics to measure drift or compare distributions][197]
+  * KS vs PSI vs WD
+  * It also has KL, JS 
 * [Different methods to detect concept drift, covariate drift][139]
   * How to use K-S test to compare 2 numerical distributions: https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy
     * K-S test can be used even when the 2 distributions are in different length, and it's non-parametric
     * But I found, no matter it's K-S test or wasserstein distance, even when 2 distributions look similar, K-S' null hypothesis can be rejected (indicating 2 distributions are not identical) and wasserstein distance can be large... 
   * Chi-square is used for comparing categorical features' distributions, it's non-parametric too but requires the 2 distributions share the same length...
-  * [PSI looks like a better measure of the similarity of numerical distributions][142] 
+  * [PSI is used when your data has normal fluctuations and you mainly care about significant drift in numerical data][142] 
 * [Continual Learning with Ensembling models][192]
   * Add trained model's knowledge to the new data, new model
 
@@ -1851,3 +1854,4 @@ When you got the data from the client or from other teams, better to check the q
 [194]:https://developer.nvidia.com/blog/categorical-features-in-xgboost-without-manual-encoding/
 [195]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html#optimal-partitioning
 [196]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html
+[197]:https://www.evidentlyai.com/blog/data-drift-detection-large-datasets

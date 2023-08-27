@@ -126,7 +126,8 @@ When you got the data from the client or from other teams, better to check the q
 ### Data Drift Check
 * [When to use which metrics to measure drift or compare distributions][197]
   * KS vs PSI vs WD
-  * It also has KL, JS 
+  * It also has KL, JS, which both can be applied to numerical distributions or categorical distributions.
+    * Details on how did I apply these methods can be found in: https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/data_exploration_functions.py
 * [Different methods to detect concept drift, covariate drift][139]
   * How to use K-S test to compare 2 numerical distributions: https://stackoverflow.com/questions/10884668/two-sample-kolmogorov-smirnov-test-in-python-scipy
     * K-S test can be used even when the 2 distributions are in different length, and it's non-parametric

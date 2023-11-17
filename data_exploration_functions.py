@@ -119,31 +119,23 @@ df.pivot(columns=seg_col, values=value_col)\
 
 
 # plot numerical features distribution (KDE)
-n_rows = 3
-n_cols = 3
-
-i = 0
-fig=plt.figure(figsize=(20,10))
-
-for feature in score_df.columns:
-    if feature in ['rid', 'prediction_prob', 'prediction', 'score']:
-        continue
-    i += 1
-    ax=fig.add_subplot(n_rows,n_cols,i) 
-    bins = np.linspace(0, 1, 100)
-    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-
-    sns.kdeplot(score_df.loc[(score_df['prediction']==1) & (score_df['score'] > 0)][feature].values,
-                 color='green', label='pred trustworthy', alpha=0.5)
-    sns.kdeplot(score_df.loc[(score_df['prediction']==0) & (score_df['score'] > 0)][feature].values,
-                 color='red', label='pred non-trustworthy', alpha=0.5)
-
-    plt.legend(loc='best', fontsize=10)
-    plt.title(feature + ' (score > 0)', fontsize=15)
-    plt.xlabel('Feature Value', fontsize=15)
-    plt.ylabel('Density', fontsize=15)
-fig.tight_layout()
-plt.show()
+def plot_overall_calibration(all_calibrated_df, color_dct, fig_len, fig_width, image_path):
+    prod_lst = set(all_calibrated_df.index)
+    fig=plt.figure(figsize=(fig_len, fig_width))
+    
+    ax=fig.add_subplot(1,1,1) 
+    for prod in prod_lst:
+        calib_df = all_calibrated_df.loc[prod]
+        ax.plot(calib_df['campaign_month'], calib_df['r2'], color=color_dct[prod], label=prod, marker='*')
+        plt.xlabel('Camapign Month', fontsize=15)
+        plt.ylabel('Calibration R2 Score', fontsize=15)
+        plt.legend(loc='best')
+        plt.title('Monthly Product Calibration R2 Score', fontsize=15)
+        plt.xticks(rotation=30)
+        plt.tick_params(axis='both', labelsize=12)
+        
+    plt.tight_layout()
+    plt.savefig(image_path, dpi = 100)
     
     
     

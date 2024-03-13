@@ -210,24 +210,37 @@ def plot_cat_feature_distribution_per_group(grouped_df, group_col, n_rows, n_col
     
 
 
-# output more percentile -> easier to see outliers than pandas `describe()` function
-def check_percentile(target_df):
-    dct = {}
-    idx = 0
+## check percentile for each colummn
+def get_percentile(col):
+    result = {'min': np.nanpercentile(col, 0), '1%':np.nanpercentile(col, 1),
+             '5%':np.nanpercentile(col, 5), '15%':np.nanpercentile(col, 15),
+             '25%':np.nanpercentile(col, 25), '50%':np.nanpercentile(col, 50), '75%':np.nanpercentile(col, 75),
+             '85%':np.nanpercentile(col, 85), '95%':np.nanpercentile(col, 95), '99%':np.nanpercentile(col, 99),
+              'max':np.nanpercentile(col, 100)}
+    return result
+    
+df = df.set_index('accountid')
+percentile_df = df.apply(get_percentile)  # apply function to all the columns
+pd.set_option('max_colwidth', 800)
+pd.DataFrame(percentile_df)
 
-    for col in target_df.columns:
-        if target_df[col].dtypes != 'O' and col != 'label' and col != 'id':
-            idx += 1
-            dct[idx] = {'feature': col,
-                                'min': np.nanpercentile(target_df[col], 0), 'perct1': np.nanpercentile(target_df[col], 1),
-                                'perct5': np.nanpercentile(target_df[col], 5), 'perct25': np.nanpercentile(target_df[col], 25),
-                                'perct50': np.nanpercentile(target_df[col], 50), 'perct75': np.nanpercentile(target_df[col], 75),
-                                'perct90': np.nanpercentile(target_df[col], 90), 'perct99': np.nanpercentile(target_df[col], 99),
-                               'perct99.9': np.nanpercentile(target_df[col], 99.9), 'max': np.nanpercentile(target_df[col], 100)}
-    dist_df = pd.DataFrame(dct).T
-    dist_df = dist_df[['feature', 'min', 'perct1', 'perct5', 'perct25', 'perct50', 'perct75',
-                                 'perct90', 'perct99', 'perct99.9', 'max']]
-    return dist_df
+### another get percentile function
+def get_percentile(df):
+    dist_dct = {}
+    idx = 0
+    
+    for col in df.columns:
+        tmp_dct = {'col': col, 'min': np.nanpercentile(df[col], 0), '1%':np.nanpercentile(df[col], 1),
+             '5%':np.nanpercentile(df[col], 5), '15%':np.nanpercentile(df[col], 15),
+             '25%':np.nanpercentile(df[col], 25), '35%':np.nanpercentile(df[col], 35),
+            '50%':np.nanpercentile(df[col], 50), '75%':np.nanpercentile(df[col], 75),
+             '85%':np.nanpercentile(df[col], 85), '95%':np.nanpercentile(df[col], 95), '99%':np.nanpercentile(df[col], 99),
+              'max':np.nanpercentile(df[col], 100)}
+        dist_dct[idx] = tmp_dct
+        idx += 1
+    result = pd.DataFrame(dist_dct).T
+    result = result[['col', 'min', '1%', '5%', '15%', '25%', '35%', '50%', '75%', '85%', '95%', '99%', 'max']]
+    return result
 
 # Compare the boundary for each label
 def boundary_compare(df1, df2, b_name1, b_name2):

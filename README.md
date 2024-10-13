@@ -31,6 +31,7 @@ Applied data science recommendations and tutorials
   * etc. 
   
 ## MLOps
+* 🌺 [Made with ML][198]
 * Google ML Engineering Guides
   * [MLOps architecture][181]
   * [ML Pipeline best suggestions][182]
@@ -925,4 +926,26 @@ When you got the data from the client or from other teams, better to check the q
 [173]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/working_notes.md
 [174]:https://www.analyticsvidhya.com/blog/2020/12/using-predictive-power-score-to-pinpoint-non-linear-correlations/
 [175]:https://towardsdatascience.com/how-to-benefit-from-the-semi-supervised-learning-with-label-spreading-algorithm-2f373ae5de96
-[176]:https://towardsdatascience.com/semi-supervised-learning-how-to-assign-labels-with-label-propagation-algorithm-9f1683f4d0eb
+[176]:https://scikit-learn.org/stable/modules/semi_supervised.html#label-propagation
+[177]:https://towardsdatascience.com/t-sne-machine-learning-algorithm-a-great-tool-for-dimensionality-reduction-in-python-ec01552f1a1e
+[178]:https://scikit-learn.org/stable/modules/semi_supervised.html#label-propagation
+[179]:https://towardsdatascience.com/semi-supervised-classification-of-unlabeled-data-pu-learning-81f96e96f7cb
+[180]:https://link.springer.com/content/pdf/10.1007/978-3-662-44415-3_24.pdf
+[181]:https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+[182]:https://developers.google.com/machine-learning/guides/rules-of-ml
+[183]:https://stats.stackexchange.com/questions/594659/is-one-variable-with-theoretical-distribution-and-a-second-variable-with-same-ob/594660#594660
+[184]:https://towardsdatascience.com/pca-principal-component-analysis-how-to-get-superior-results-with-fewer-dimensions-7a70e8ab798c
+[185]:https://towardsdatascience.com/lda-linear-discriminant-analysis-how-to-improve-your-models-with-supervised-dimensionality-52464e73930f
+[186]:https://towardsdatascience.com/mds-multidimensional-scaling-smart-way-to-reduce-dimensionality-in-python-7c126984e60b
+[187]:https://towardsdatascience.com/isomap-embedding-an-awesome-approach-to-non-linear-dimensionality-reduction-fc7efbca47a0
+[188]:https://towardsdatascience.com/lle-locally-linear-embedding-a-nifty-way-to-reduce-dimensionality-in-python-ab5c38336107
+[189]:https://towardsdatascience.com/umap-dimensionality-reduction-an-incredibly-robust-machine-learning-algorithm-b5acb01de568
+[190]:https://towardsdatascience.com/self-training-classifier-how-to-make-any-algorithm-behave-like-a-semi-supervised-one-2958e7b54ab7
+[191]:https://l7.curtisnorthcutt.com/confident-learning
+[192]:https://towardsdatascience.com/you-dont-need-neural-networks-to-do-continual-learning-2ed3bfe3dbfc
+[193]:https://github.com/lady-h-world/My_Garden/blob/main/reading_pages/Graden_Museum/weaponry.md
+[194]:https://developer.nvidia.com/blog/categorical-features-in-xgboost-without-manual-encoding/
+[195]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html#optimal-partitioning
+[196]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html
+[197]:https://www.evidentlyai.com/blog/data-drift-detection-large-datasets
+[198]:https://madewithml.com/

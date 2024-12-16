@@ -1,6 +1,8 @@
 # Hanhan_Applied_DataScience
 Applied data science recommendations and tutorials
 
+# [AI Notes][199]
+
 # Older Notes
 * [Better 4 Industry][67]
 
@@ -949,3 +951,4 @@ When you got the data from the client or from other teams, better to check the q
 [196]:https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html
 [197]:https://www.evidentlyai.com/blog/data-drift-detection-large-datasets
 [198]:https://madewithml.com/
+[199]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/AI_Learning_Notes.md

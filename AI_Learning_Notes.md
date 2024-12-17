@@ -3,7 +3,7 @@
 ## LlamaIndex Examples
 * [LlamaIndex Examples][2]
 * [Emsemble Retriever][4]
-  * LlamaIndex specific 🦙
+  * LlamaIndex specific 📍
   * It can retrieve data from different sources 
 * [Retrieval][1]
   * File retriever vs Chunk retriever

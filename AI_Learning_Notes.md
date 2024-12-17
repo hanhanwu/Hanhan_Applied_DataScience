@@ -13,6 +13,7 @@
     * [Specific example of auto retrieval][6]
       * It generates inferred query, also generates inferred filters <b>based on real examples from the text</b>
       * If the user query is too shot, how does this inferred query look like? 🤔
+    * 🌟 Inspiration: build an agent using auto retrieval at doc level and chunk level
 * [Subquestion Query Engine][3]
   * Break down a complex query into sub queries
 

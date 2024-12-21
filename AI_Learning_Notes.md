@@ -16,6 +16,14 @@
     * 🌟 Inspiration: build an agent using auto retrieval at doc level and chunk level
 * [Subquestion Query Engine][3]
   * Break down a complex query into sub queries
+* [Corrective RAG Workflow][7]
+  * It uses LLM to evaluate the retrieval relevancy, for non-relevant nodes (chunks), it uses LLM to adjust the query to improve its search performance and search the info online.
+  * 🌟 Inspirations:
+    * The LLM prompt to check retrieval relevancy
+    * LLM to transform the query to improve search performance
+    * Searching online can be an option when the retrieved node is irrelevant
+  * Does this method guarantee the online searched resluts are more relevant than the "irrelevant node"? 🤔 
+
 
 
 [1]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/10k_apple_tesla/demo_file_retrieval.ipynb
@@ -24,3 +32,4 @@
 [4]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/10k_apple_tesla/demo_ensemble_retrieval.ipynb
 [5]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/advanced_rag/auto_retrieval_img.png
 [6]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/advanced_rag/auto_retrieval.ipynb
+[7]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/advanced_rag/corrective_rag_workflow.ipynb

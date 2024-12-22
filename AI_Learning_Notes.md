@@ -7,6 +7,7 @@
   * It can retrieve data from different sources 
 * [Retrieval][1]
   * File retriever vs Chunk retriever
+    * File-level retrieval is useful for handling user questions that require the entire document context to properly answer the question. It can be slower and more expensive than chunk level retrieval. 
   * Build an agent to decide file-level or chunk-level retrieving
   * Auto Retrieval: How to make file-level retrieval more sophisticated by allowing the LLM to infer a set of metadata filters, based on some relevant example documents
     * [How does auto retrieval work][5]

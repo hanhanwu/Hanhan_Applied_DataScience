@@ -23,8 +23,23 @@
     * The LLM prompt to check retrieval relevancy
     * LLM to transform the query to improve search performance
     * Searching online can be an option when the retrieved node is irrelevant
-  * Does this method guarantee the online searched resluts are more relevant than the "irrelevant node"? 🤔 
+  * Does this method guarantee the online searched resluts are more relevant than the "irrelevant node"? 🤔
 
+ 
+## LangChain Universe 😉
+* [LangSmith Cookbook][8], different ways to test & evaluate & optimization
+  * LangServe is replaced by LangGraph 
+
+### LangGraph
+* [LangGraph github][9]: build agent workflows
+
+
+## LlamaIndex vs Langchain
+* [DataCamp Comparison][10]
+  * LlamaIndex is good at indexing large datasets and retrieving relevant information quickly and accurately --> use it when information retrieval is critica
+  * Langchain is modular, flexible to customize
+  * 🌟 Inspirations:
+    * How about use LlamaIndex for retrieval and use Langchain for others in LangGraph 🤔
 
 
 [1]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/10k_apple_tesla/demo_file_retrieval.ipynb
@@ -34,3 +49,6 @@
 [5]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/advanced_rag/auto_retrieval_img.png
 [6]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/advanced_rag/auto_retrieval.ipynb
 [7]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/advanced_rag/corrective_rag_workflow.ipynb
+[8]:https://github.com/langchain-ai/langsmith-cookbook/tree/main
+[9]:https://github.com/langchain-ai/langgraph
+[10]:https://www.datacamp.com/blog/langchain-vs-llamaindex?utm_source=google&utm_medium=paid_search&utm_campaignid=19589720821&utm_adgroupid=152984010854&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=724847709973&utm_targetid=dsa-2222697810678&utm_loc_interest_ms=&utm_loc_physical_ms=9000960&utm_content=DSA~blog~Artificial-Intelligence&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-row-p1_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na-dec24&gad_source=1&gclid=CjwKCAiAjp-7BhBZEiwAmh9rBQQoaxAXWDeMMQY5qKPVmH3n3s_j-VdMZJiW_yWJPysrdFyReTQIxRoCU7MQAvD_BwE

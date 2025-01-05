@@ -42,7 +42,7 @@
 
 ### LangGraph
 * [LangGraph github][9]: build agent workflows
-* [LangGraph exercise][11]
+* [LangGraph exercise][11] 💖
 
 
 ## LlamaIndex vs Langchain

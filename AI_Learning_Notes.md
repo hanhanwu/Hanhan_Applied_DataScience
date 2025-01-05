@@ -1,9 +1,11 @@
 # AI Learning Notes
 
 ## Promising to Explore
-### Text Chunking
-* [LangChain's Text Spliter][13] vs [Chonkie][14]
-* [Langchain has more options for embeddings, retrievers, etc.][16]
+### RAG Techniques
+* [RAG Techniques][18]
+* Text Chunking
+  * [LangChain's Text Spliter][13] vs [Chonkie][14]
+  * [Langchain has more options for embeddings, retrievers, etc.][16]
 
 ### Agents
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
@@ -71,3 +73,4 @@
 [15]:https://app.khoj.dev/agents
 [16]:https://python.langchain.com/docs/integrations/text_embedding/
 [17]:https://langchain-ai.github.io/langgraph/tutorials/introduction/
+[18]:https://github.com/NirDiamant/RAG_Techniques

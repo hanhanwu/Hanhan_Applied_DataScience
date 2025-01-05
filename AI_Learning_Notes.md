@@ -3,6 +3,7 @@
 ## Promising to Explore
 ### Text Chunking
 * [LangChain's Text Spliter][13] vs [Chonkie][14]
+* [Langchain has more options for embeddings, retrievers, etc.][16]
 
 ### Agents
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
@@ -67,3 +68,4 @@
 [13]:https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/
 [14]:https://docs.chonkie.ai/chunkers/overview
 [15]:https://app.khoj.dev/agents
+[16]:https://python.langchain.com/docs/integrations/text_embedding/

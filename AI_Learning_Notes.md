@@ -42,6 +42,7 @@
 
 ### LangGraph
 * [LangGraph github][9]: build agent workflows
+* [LangGraph Basics][17]: how to use Time Travel, Human in the Loop, etc.
 * [LangGraph exercise][11] 💖
 
 
@@ -69,3 +70,4 @@
 [14]:https://docs.chonkie.ai/chunkers/overview
 [15]:https://app.khoj.dev/agents
 [16]:https://python.langchain.com/docs/integrations/text_embedding/
+[17]:https://langchain-ai.github.io/langgraph/tutorials/introduction/

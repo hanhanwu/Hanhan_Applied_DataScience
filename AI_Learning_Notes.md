@@ -1,5 +1,13 @@
 # AI Learning Notes
 
+## Promising to Explore
+### Text Chunking
+* [LangChain's Text Spliter][13] vs [Chonkie][14]
+
+### Agents
+* [Khoj - A Few Clicks to Create Your Own Agents][15]
+
+
 ## LlamaIndex Examples
 * [LlamaIndex Examples][2]
 * [Emsemble Retriever][4]
@@ -56,3 +64,6 @@
 [10]:https://www.datacamp.com/blog/langchain-vs-llamaindex?utm_source=google&utm_medium=paid_search&utm_campaignid=19589720821&utm_adgroupid=152984010854&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=724847709973&utm_targetid=dsa-2222697810678&utm_loc_interest_ms=&utm_loc_physical_ms=9000960&utm_content=DSA~blog~Artificial-Intelligence&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-row-p1_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na-dec24&gad_source=1&gclid=CjwKCAiAjp-7BhBZEiwAmh9rBQQoaxAXWDeMMQY5qKPVmH3n3s_j-VdMZJiW_yWJPysrdFyReTQIxRoCU7MQAvD_BwE
 [11]:https://github.com/hanhanwu/Hanhan_LangGraph_Exercise
 [12]:https://smith.langchain.com/hub/
+[13]:https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/
+[14]:https://docs.chonkie.ai/chunkers/overview
+[15]:https://app.khoj.dev/agents

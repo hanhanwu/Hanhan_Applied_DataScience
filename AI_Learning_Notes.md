@@ -1,6 +1,9 @@
 # AI Learning Notes
 
 ## Promising to Explore
+### RAG Alternatives
+* [CAG (Cache-augmented generation), a faster alternative for RAG][19]
+
 ### RAG Techniques
 * [RAG Techniques][18]
 * Text Chunking
@@ -74,3 +77,4 @@
 [16]:https://python.langchain.com/docs/integrations/text_embedding/
 [17]:https://langchain-ai.github.io/langgraph/tutorials/introduction/
 [18]:https://github.com/NirDiamant/RAG_Techniques
+[19]:https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec

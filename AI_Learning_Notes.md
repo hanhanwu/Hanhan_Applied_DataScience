@@ -1,6 +1,9 @@
 # AI Learning Notes
 
 ## Promising to Explore
+### Improve LLM Performance
+* [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
+
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
 
@@ -78,3 +81,5 @@
 [17]:https://langchain-ai.github.io/langgraph/tutorials/introduction/
 [18]:https://github.com/NirDiamant/RAG_Techniques
 [19]:https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec
+[20]:https://cleanlab.ai/tlm/
+[21]:https://cleanlab.ai/blog/simpleqa/

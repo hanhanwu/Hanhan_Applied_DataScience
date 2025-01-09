@@ -10,6 +10,7 @@
 ### RAG Techniques
 * [RAG Techniques][18]
 * Text Chunking
+  * [Explain how does chunking work][22] 
   * [LangChain's Text Spliter][13] vs [Chonkie][14]
   * [Langchain has more options for embeddings, retrievers, etc.][16]
 
@@ -83,3 +84,4 @@
 [19]:https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec
 [20]:https://cleanlab.ai/tlm/
 [21]:https://cleanlab.ai/blog/simpleqa/
+[22]:https://www.linkedin.com/posts/avi-chawla_5-chunking-strategies-for-rag-explained-in-activity-7283052020809277441-OxZo?utm_source=share&utm_medium=member_desktop

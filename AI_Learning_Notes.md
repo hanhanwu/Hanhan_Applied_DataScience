@@ -16,6 +16,7 @@
 
 ### Agents
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
+* [Browser Use - Allow agents to interact with the browser][23]
 
 
 ## LlamaIndex Examples
@@ -85,3 +86,4 @@
 [20]:https://cleanlab.ai/tlm/
 [21]:https://cleanlab.ai/blog/simpleqa/
 [22]:https://www.linkedin.com/posts/avi-chawla_5-chunking-strategies-for-rag-explained-in-activity-7283052020809277441-OxZo?utm_source=share&utm_medium=member_desktop
+[23]:https://docs.browser-use.com/introduction

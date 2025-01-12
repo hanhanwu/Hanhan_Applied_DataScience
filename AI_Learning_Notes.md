@@ -19,6 +19,18 @@
 * [Browser Use - Allow agents to interact with the browser][23]
 
 
+## LangChain Universe 😉
+* [LangChain's RAG chatbot][24], much better than its tutorials, it allows to use different LLMs and can write code for you! 💖
+* [LangSmith Cookbook][8], different ways to test & evaluate & optimization
+  * LangServer is replaced by LangGraph
+* [Prompts in LangChain Hub][12]
+
+### LangGraph
+* [LangGraph github][9]: build agent workflows
+* [LangGraph Basics][17]: how to use Time Travel, Human in the Loop, etc.
+* [LangGraph exercise][11] 💖
+
+
 ## LlamaIndex Examples
 * [LlamaIndex Examples][2]
 * [Emsemble Retriever][4]
@@ -45,17 +57,6 @@
   * Does this method guarantee the online searched resluts are more relevant than the "irrelevant node"? 🤔
 
  
-## LangChain Universe 😉
-* [LangSmith Cookbook][8], different ways to test & evaluate & optimization
-  * LangServe is replaced by LangGraph
-* [Prompts in LangChain Hub][12]
-
-### LangGraph
-* [LangGraph github][9]: build agent workflows
-* [LangGraph Basics][17]: how to use Time Travel, Human in the Loop, etc.
-* [LangGraph exercise][11] 💖
-
-
 ## LlamaIndex vs Langchain
 * [DataCamp Comparison][10]
   * LlamaIndex is good at indexing large datasets and retrieving relevant information quickly and accurately --> use it when information retrieval is critica
@@ -87,3 +88,4 @@
 [21]:https://cleanlab.ai/blog/simpleqa/
 [22]:https://www.linkedin.com/posts/avi-chawla_5-chunking-strategies-for-rag-explained-in-activity-7283052020809277441-OxZo?utm_source=share&utm_medium=member_desktop
 [23]:https://docs.browser-use.com/introduction
+[24]:https://chat.langchain.com/

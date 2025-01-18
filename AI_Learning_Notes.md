@@ -3,6 +3,7 @@
 ## Promising to Explore
 ### Improve LLM Performance
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
+* [Use TLM in LangChain][25]
 
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
@@ -89,3 +90,4 @@
 [22]:https://www.linkedin.com/posts/avi-chawla_5-chunking-strategies-for-rag-explained-in-activity-7283052020809277441-OxZo?utm_source=share&utm_medium=member_desktop
 [23]:https://docs.browser-use.com/introduction
 [24]:https://chat.langchain.com/
+[25]:https://help.cleanlab.ai/tlm/use-cases/tlm_langchain/

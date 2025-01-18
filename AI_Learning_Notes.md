@@ -1,10 +1,6 @@
 # AI Learning Notes
 
 ## Promising to Explore
-### Improve LLM Performance
-* [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
-* [Use TLM in LangChain][25]
-
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
 
@@ -18,6 +14,10 @@
 ### Agents
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
 * [Browser Use - Allow agents to interact with the browser][23]
+
+### Evaluation & Improve LLM Performance
+* [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
+* [Use TLM in LangChain][25]
 
 
 ## LangChain Universe 😉

@@ -1,6 +1,11 @@
 # AI Learning Notes
 
 ## Promising to Explore
+### Encoders (for Embeddings)
+* [ColBERT][26]
+  * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
+  * ColBERT uses the MaxSim operation, which computes the maximum similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.
+
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
 
@@ -15,9 +20,9 @@
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
 * [Browser Use - Allow agents to interact with the browser][23]
 
-### Evaluation & Improve LLM Performance
+### Evaluation
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
-* [Use TLM in LangChain][25]
+  * [Use TLM in LangChain][25]
 
 
 ## LangChain Universe 😉
@@ -91,3 +96,4 @@
 [23]:https://docs.browser-use.com/introduction
 [24]:https://chat.langchain.com/
 [25]:https://help.cleanlab.ai/tlm/use-cases/tlm_langchain/
+[26]:https://github.com/stanford-futuredata/ColBERT

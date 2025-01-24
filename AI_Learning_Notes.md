@@ -19,6 +19,7 @@
 ### Agents
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
 * [Browser Use - Allow agents to interact with the browser][23]
+* [Agentic AI Design Patterns][27]
 
 ### Evaluation
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
@@ -97,3 +98,4 @@
 [24]:https://chat.langchain.com/
 [25]:https://help.cleanlab.ai/tlm/use-cases/tlm_langchain/
 [26]:https://github.com/stanford-futuredata/ColBERT
+[27]:https://www.linkedin.com/posts/avi-chawla_5-%F0%9D%97%BA%F0%9D%97%BC%F0%9D%98%80%F0%9D%98%81-%F0%9D%97%BD%F0%9D%97%BC%F0%9D%97%BD%F0%9D%98%82%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BF-%F0%9D%97%94%F0%9D%97%B4%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%B0-activity-7288083231944388608-V-iW/?utm_source=share&utm_medium=member_desktop

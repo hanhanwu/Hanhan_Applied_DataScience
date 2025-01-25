@@ -26,6 +26,10 @@
   * [Use TLM in LangChain][25]
 
 
+## LLM Visualization
+* [Visually to understand LLM models in detail][28] 💖
+
+
 ## LangChain Universe 😉
 * [LangChain's RAG chatbot][24], much better than its tutorials, it allows to use different LLMs and can write code for you! 💖
 * [LangSmith Cookbook][8], different ways to test & evaluate & optimization
@@ -99,3 +103,4 @@
 [25]:https://help.cleanlab.ai/tlm/use-cases/tlm_langchain/
 [26]:https://github.com/stanford-futuredata/ColBERT
 [27]:https://www.linkedin.com/posts/avi-chawla_5-%F0%9D%97%BA%F0%9D%97%BC%F0%9D%98%80%F0%9D%98%81-%F0%9D%97%BD%F0%9D%97%BC%F0%9D%97%BD%F0%9D%98%82%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BF-%F0%9D%97%94%F0%9D%97%B4%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%B0-activity-7288083231944388608-V-iW/?utm_source=share&utm_medium=member_desktop
+[28]:https://bbycroft.net/llm

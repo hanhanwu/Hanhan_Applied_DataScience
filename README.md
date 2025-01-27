@@ -200,6 +200,14 @@ When you got the data from the client or from other teams, better to check the q
     * It means when there is 1 std increase in the independent variable, there is β std increase in the dependent variable
   
 ### Deal With Missing Values
+* [MissForest][200]
+  * It can get more accurate results when imputing the missing at random
+  * How it works:
+    * - Step 1: To begin, impute the missing feature with a random guess — Mean, Median, etc.
+    * - Step 2: Model the missing feature using Random Forest.
+    * - Step 3: Impute ONLY originally missing values using Random Forest’s prediction.
+    * - Step 4: Back to Step 2. Use the imputed dataset from Step 3 to train the next Random Forest model.
+    * - Step 5: Repeat until convergence (or max iterations). 
 * <b>Check whether missing values appear in different values with different probability.</b> This may help understand whether the missing value is missing completely at random (missing with same probability for different values) or whether there are certain values tend to have more missing values and why.
 * Deletion
   * List wise deletion - remove the whole list
@@ -952,3 +960,4 @@ When you got the data from the client or from other teams, better to check the q
 [197]:https://www.evidentlyai.com/blog/data-drift-detection-large-datasets
 [198]:https://madewithml.com/
 [199]:https://github.com/hanhanwu/Hanhan_Applied_DataScience/blob/master/AI_Learning_Notes.md
+[200]:https://github.com/yuenshingyan/MissForest

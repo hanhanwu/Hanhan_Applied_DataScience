@@ -25,6 +25,11 @@
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
   * [Use TLM in LangChain][25]
 
+### LLM Model Fine Tuning
+* [How to fine tune DeepSeek R1][30]
+  * R1 is reasoning model 
+  * [the completed code][29] 
+
 
 ## LLM Visualization
 * [Visually to understand LLM models in detail][28] 💖
@@ -104,3 +109,5 @@
 [26]:https://github.com/stanford-futuredata/ColBERT
 [27]:https://www.linkedin.com/posts/avi-chawla_5-%F0%9D%97%BA%F0%9D%97%BC%F0%9D%98%80%F0%9D%98%81-%F0%9D%97%BD%F0%9D%97%BC%F0%9D%97%BD%F0%9D%98%82%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BF-%F0%9D%97%94%F0%9D%97%B4%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%B0-activity-7288083231944388608-V-iW/?utm_source=share&utm_medium=member_desktop
 [28]:https://bbycroft.net/llm
+[29]:https://github.com/patchy631/ai-engineering-hub/blob/main/DeepSeek-finetuning/Fine_tune_DeepSeek.ipynb
+[30]:https://www.linkedin.com/posts/akshay-pachaar_step-by-step-deepseek-r1-distilled-llama-activity-7289954078418182144-lPIG?utm_source=share&utm_medium=member_desktop

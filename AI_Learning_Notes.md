@@ -32,6 +32,7 @@
  
 ### AI Application Deployment
 * [Ray Serve: Deploy AI application with scale][31]
+  * [Ray Serve with Langchain][32] 
 
 
 ## LLM Visualization
@@ -115,3 +116,4 @@
 [29]:https://github.com/patchy631/ai-engineering-hub/blob/main/DeepSeek-finetuning/Fine_tune_DeepSeek.ipynb
 [30]:https://www.linkedin.com/posts/akshay-pachaar_step-by-step-deepseek-r1-distilled-llama-activity-7289954078418182144-lPIG?utm_source=share&utm_medium=member_desktop
 [31]:https://docs.ray.io/en/latest/serve/index.html
+[32]:https://python.langchain.com/docs/integrations/providers/ray_serve/

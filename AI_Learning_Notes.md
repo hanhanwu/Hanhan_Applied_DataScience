@@ -28,7 +28,10 @@
 ### LLM Model Fine Tuning
 * [How to fine tune DeepSeek R1][30]
   * R1 is reasoning model 
-  * [the completed code][29] 
+  * [the completed code][29]
+ 
+### AI Application Deployment
+* [Ray Serve: Deploy AI application with scale][31]
 
 
 ## LLM Visualization
@@ -111,3 +114,4 @@
 [28]:https://bbycroft.net/llm
 [29]:https://github.com/patchy631/ai-engineering-hub/blob/main/DeepSeek-finetuning/Fine_tune_DeepSeek.ipynb
 [30]:https://www.linkedin.com/posts/akshay-pachaar_step-by-step-deepseek-r1-distilled-llama-activity-7289954078418182144-lPIG?utm_source=share&utm_medium=member_desktop
+[31]:https://docs.ray.io/en/latest/serve/index.html

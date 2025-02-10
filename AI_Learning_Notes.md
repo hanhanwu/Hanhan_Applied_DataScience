@@ -24,6 +24,9 @@
 ### Evaluation
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
   * [Use TLM in LangChain][25]
+* [VertaxAI Search: grounding for Gemini RAG][33]
+  * Check the video, it shows how could you get python code for this
+* [Opik: trace RAG workflow & evaluate LLM apps][34]
 
 ### LLM Model Fine Tuning
 * [How to fine tune DeepSeek R1][30]
@@ -117,3 +120,5 @@
 [30]:https://www.linkedin.com/posts/akshay-pachaar_step-by-step-deepseek-r1-distilled-llama-activity-7289954078418182144-lPIG?utm_source=share&utm_medium=member_desktop
 [31]:https://docs.ray.io/en/latest/serve/index.html
 [32]:https://python.langchain.com/docs/integrations/providers/ray_serve/
+[33]:https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview
+[34]:https://github.com/comet-ml/opik

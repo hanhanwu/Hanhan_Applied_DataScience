@@ -11,6 +11,8 @@
 
 ### RAG Techniques
 * [RAG Techniques][18]
+* [ColiVara - Improve Retrieval without Chunking][35]
+  * It treats docs as images and uses vision models for embedding, just like a human would do. This provides far better accuracy than traditional RAG systems that rely on chunking, without latency issues. 
 * Text Chunking
   * [Explain how does chunking work][22] 
   * [LangChain's Text Spliter][13] vs [Chonkie][14]
@@ -122,3 +124,4 @@
 [32]:https://python.langchain.com/docs/integrations/providers/ray_serve/
 [33]:https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview
 [34]:https://github.com/comet-ml/opik
+[35]:https://github.com/tjmlabs/ColiVara

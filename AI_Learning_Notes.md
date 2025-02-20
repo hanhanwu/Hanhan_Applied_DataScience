@@ -8,6 +8,9 @@
 
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
+* [Zep][36]
+  * "Build AI agents that continually learn. Power personalized experiences."
+  * It uses temporal knowledge graph
 
 ### RAG Techniques
 * [RAG Techniques][18]
@@ -49,6 +52,8 @@
 * [LangSmith Cookbook][8], different ways to test & evaluate & optimization
   * LangServer is replaced by LangGraph
 * [Prompts in LangChain Hub][12]
+* [Langchain MCP adapters][37]
+  * [MCP][38]: The Model Context Protocol (MCP) lets you build servers that expose data and functionality to LLM applications in a secure, standardized way. Think of it like a web API, but specifically designed for LLM interactions.
 
 ### LangGraph
 * [LangGraph github][9]: build agent workflows
@@ -125,3 +130,6 @@
 [33]:https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview
 [34]:https://github.com/comet-ml/opik
 [35]:https://github.com/tjmlabs/ColiVara
+[36]:https://github.com/getzep/zep?tab=readme-ov-file#examples
+[37]:https://github.com/langchain-ai/langchain-mcp-adapters
+[38]:https://github.com/modelcontextprotocol/python-sdk

@@ -14,6 +14,7 @@
 
 ### RAG Techniques
 * [RAG Techniques][18]
+* [LangChain bRAG][39]
 * [ColiVara - Improve Retrieval without Chunking][35]
   * It treats docs as images and uses vision models for embedding, just like a human would do. This provides far better accuracy than traditional RAG systems that rely on chunking, without latency issues. 
 * Text Chunking
@@ -133,3 +134,4 @@
 [36]:https://github.com/getzep/zep?tab=readme-ov-file#examples
 [37]:https://github.com/langchain-ai/langchain-mcp-adapters
 [38]:https://github.com/modelcontextprotocol/python-sdk
+[39]:https://github.com/bRAGAI/bRAG-langchain/

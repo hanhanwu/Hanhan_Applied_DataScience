@@ -21,6 +21,7 @@
     * <b>Query Decomposition</b>: breakdown complex queries into sub questions --> answer recursively or individually
     * <b>Step Back Query</b>: generate higher level query to emphasize a bigger picture better
     * <b>HyDE</b>: generate hypothetical document for retrieval
+  * [Routing][41]: the process of dynamically directing a query to the most appropriate retriever, database, or model based on its content 
 * [ColiVara - Improve Retrieval without Chunking][35]
   * It treats docs as images and uses vision models for embedding, just like a human would do. This provides far better accuracy than traditional RAG systems that rely on chunking, without latency issues. 
 * Text Chunking
@@ -142,3 +143,4 @@
 [38]:https://github.com/modelcontextprotocol/python-sdk
 [39]:https://github.com/bRAGAI/bRAG-langchain/
 [40]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B2%5D_rag_with_multi_query.ipynb
+[41]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B3%5D_rag_routing_and_query_construction.ipynb

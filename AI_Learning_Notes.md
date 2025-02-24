@@ -15,6 +15,12 @@
 ### RAG Techniques
 * [RAG Techniques][18]
 * [LangChain bRAG][39]
+  * [Query Translation][40] 💖
+    * <b>Multi Query</b>: improve output info coverage, handle ambiguous queries better  --> Enable Diverse Information Coverage
+    * <b>RAG Fusion</b>: multiple retrieval from different retrievers, index variations, or different ranking strategies --> Improved Retrieval Ranking
+    * <b>Query Decomposition</b>: breakdown complex queries into sub questions --> answer recursively or individually
+    * <b>Step Back Query</b>: generate higher level query to emphasize a bigger picture better
+    * <b>HyDE</b>: generate hypothetical document for retrieval
 * [ColiVara - Improve Retrieval without Chunking][35]
   * It treats docs as images and uses vision models for embedding, just like a human would do. This provides far better accuracy than traditional RAG systems that rely on chunking, without latency issues. 
 * Text Chunking
@@ -135,3 +141,4 @@
 [37]:https://github.com/langchain-ai/langchain-mcp-adapters
 [38]:https://github.com/modelcontextprotocol/python-sdk
 [39]:https://github.com/bRAGAI/bRAG-langchain/
+[40]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B2%5D_rag_with_multi_query.ipynb

@@ -8,6 +8,7 @@
 * [ColBERT][26]
   * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
   * ColBERT uses the MaxSim operation, which computes the maximum similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.
+  * [How to use ColBERT in RAG][43]
 
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
@@ -148,3 +149,4 @@
 [40]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B2%5D_rag_with_multi_query.ipynb
 [41]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B3%5D_rag_routing_and_query_construction.ipynb
 [42]:https://github.com/DS4SD/docling
+[43]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B4%5D_rag_indexing_and_advanced_retrieval.ipynb

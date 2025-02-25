@@ -1,6 +1,9 @@
 # AI Learning Notes
 
 ## Promising to Explore
+### Document Parsing
+* [Docling][42]
+
 ### Encoders (for Embeddings)
 * [ColBERT][26]
   * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
@@ -144,3 +147,4 @@
 [39]:https://github.com/bRAGAI/bRAG-langchain/
 [40]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B2%5D_rag_with_multi_query.ipynb
 [41]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B3%5D_rag_routing_and_query_construction.ipynb
+[42]:https://github.com/DS4SD/docling

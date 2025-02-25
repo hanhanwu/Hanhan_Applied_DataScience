@@ -7,7 +7,7 @@
 ### Encoders (for Embeddings)
 * [ColBERT][26]
   * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
-  * ColBERT uses the MaxSim operation, which computes the maximum similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.
+  * ColBERT uses the MaxSim operation, which computes the maximum semantic similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.
   * [How to use ColBERT in RAG][43]
 
 ### RAG Alternatives

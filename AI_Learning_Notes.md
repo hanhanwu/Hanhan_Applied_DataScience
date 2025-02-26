@@ -25,7 +25,10 @@
     * <b>Query Decomposition</b>: breakdown complex queries into sub questions --> answer recursively or individually
     * <b>Step Back Query</b>: generate higher level query to emphasize a bigger picture better
     * <b>HyDE</b>: generate hypothetical document for retrieval
-  * [Routing][41]: the process of dynamically directing a query to the most appropriate retriever, database, or model based on its content 
+  * [Routing][41]: the process of dynamically directing a query to the most appropriate retriever, database, or model based on its content
+  * [Cohere Rerank to improve retrieval relevancy for the query][44] 🌟
+    * [How to use Cohere Rerank in Langchain][45]
+    * Will be helpful to get the reranked document relevancy score
 * [ColiVara - Improve Retrieval without Chunking][35]
   * It treats docs as images and uses vision models for embedding, just like a human would do. This provides far better accuracy than traditional RAG systems that rely on chunking, without latency issues. 
 * Text Chunking
@@ -150,3 +153,5 @@
 [41]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B3%5D_rag_routing_and_query_construction.ipynb
 [42]:https://github.com/DS4SD/docling
 [43]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B4%5D_rag_indexing_and_advanced_retrieval.ipynb
+[44]:https://cohere.com/blog/rerank
+[45]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B5%5D_rag_retrieval_and_reranking.ipynb

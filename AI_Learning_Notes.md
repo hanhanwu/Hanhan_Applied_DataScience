@@ -38,7 +38,6 @@
 
 ### Agents
 * [Khoj - A Few Clicks to Create Your Own Agents][15] 💖
-  * Took me 1 minute to create a RAG agent 
 * [Browser Use - Allow agents to interact with the browser][23]
 * [Agentic AI Design Patterns][27]
 

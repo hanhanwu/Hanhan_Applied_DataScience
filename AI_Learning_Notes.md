@@ -37,7 +37,6 @@
   * [Langchain has more options for embeddings, retrievers, etc.][16]
 
 ### Agents
-* [Khoj - A Few Clicks to Create Your Own Agents][15] 💖
 * [Browser Use - Allow agents to interact with the browser][23]
 * [Agentic AI Design Patterns][27]
 
@@ -59,6 +58,7 @@
     
 ### 0 Code AI Developers
 * [AutoAgent][46]: prompts to create agent
+* [Khoj - A Few Clicks to Create Your Own Agents][15] 💖
 
 
 ## LLM Visualization

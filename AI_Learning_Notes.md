@@ -56,9 +56,9 @@
 * [Ray Serve: Deploy AI application with scale][31]
   * [Ray Serve with Langchain][32]
     
-### 0 Code AI Developers
-* [AutoAgent][46]: prompts to create agent
-* [Khoj - A Few Clicks to Create Your Own Agents][15] 💖
+### 0 Code AI Developers 💖
+* [Srcbook - Prompt to build an app][46], the app is written in TypeScript, you can also edit the generated code, supports both web and mobile app
+* [Khoj - A Few Clicks to Create Your Own Agents][15]
 
 
 ## LLM Visualization
@@ -158,4 +158,4 @@
 [43]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B4%5D_rag_indexing_and_advanced_retrieval.ipynb
 [44]:https://cohere.com/blog/rerank
 [45]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B5%5D_rag_retrieval_and_reranking.ipynb
-[46]:https://github.com/HKUDS/AutoAgent
+[46]:https://srcbook.com/

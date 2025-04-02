@@ -55,6 +55,7 @@
 ### AI Application Deployment
 * [Ray Serve: Deploy AI application with scale][31]
   * [Ray Serve with Langchain][32]
+  * [Ray Serve LLM][47]
     
 ### 0 Code AI Developers 💖
 * [Srcbook - Prompt to build an app][46], the app is written in TypeScript, you can also edit the generated code, supports both web and mobile app
@@ -159,3 +160,4 @@
 [44]:https://cohere.com/blog/rerank
 [45]:https://github.com/bRAGAI/bRAG-langchain/blob/main/notebooks/%5B5%5D_rag_retrieval_and_reranking.ipynb
 [46]:https://srcbook.com/
+[47]:https://www.anyscale.com/blog/llm-apis-ray-data-serve

@@ -51,6 +51,9 @@
 * [How to fine tune DeepSeek R1][30]
   * R1 is reasoning model 
   * [the completed code][29]
+* [Reinforcement Fine-tuning of LLMs][49]
+  * It uses an online reward approach so you don't need any static labels at the start
+  * [Example code][50]
  
 ### AI Application Deployment
 * [Ray Serve: Deploy AI application with scale][31]
@@ -163,3 +166,5 @@
 [46]:https://srcbook.com/
 [47]:https://www.anyscale.com/blog/llm-apis-ray-data-serve
 [48]:https://docs.ray.io/en/latest/data/working-with-llms.html#batch-inference-with-an-openai-compatible-endpoint
+[49]:https://www.linkedin.com/posts/avi-chawla_supervised-reinforcement-fine-tuning-in-activity-7316413686955290624-LUfi?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[50]:https://colab.research.google.com/drive/1bURdkV_StTbTsYgisUPHaHJqeAr-hMGz?usp=sharing

@@ -24,7 +24,7 @@
     * <b>RAG Fusion</b>: multiple retrieval from different retrievers, index variations, or different ranking strategies --> Improved Retrieval Ranking
     * <b>Query Decomposition</b>: breakdown complex queries into sub questions --> answer recursively or individually
     * <b>Step Back Query</b>: generate higher level query to emphasize a bigger picture better
-    * <b>HyDE</b>: generate hypothetical document for retrieval
+    * <b>HyDE</b>: generate hypothetical document for better retrieval
   * [Routing][41]: the process of dynamically directing a query to the most appropriate retriever, database, or model based on its content
   * [Cohere Rerank to improve retrieval relevancy for the query][44] 🌟
     * [How to use Cohere Rerank in Langchain][45]

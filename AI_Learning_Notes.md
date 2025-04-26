@@ -49,6 +49,7 @@
 * [Opik: trace RAG workflow & evaluate LLM apps][34]
 
 ### LLM Model Fine Tuning
+* [Transformer Lab: Experiment with Fine Tuning LLM Models][52]
 * [How to fine tune DeepSeek R1][30]
   * R1 is reasoning model 
   * [the completed code][29]
@@ -170,3 +171,4 @@
 [49]:https://www.linkedin.com/posts/avi-chawla_supervised-reinforcement-fine-tuning-in-activity-7316413686955290624-LUfi?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [50]:https://colab.research.google.com/drive/1bURdkV_StTbTsYgisUPHaHJqeAr-hMGz?usp=sharing
 [51]:https://github.com/wassim249/fastapi-langgraph-agent-production-ready-template
+[52]:https://github.com/transformerlab/transformerlab-app

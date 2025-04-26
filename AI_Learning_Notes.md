@@ -40,6 +40,10 @@
 * [Browser Use - Allow agents to interact with the browser][23]
 * [Agentic AI Design Patterns][27]
 * [FastAPI Langgraph Agent Production Ready Code Template][51]
+* [Build MCP Agents with Langchain][54]
+
+### Architecture
+* [FastAPI & MCP & LangGraph Template][53]
 
 ### Evaluation
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
@@ -172,3 +176,5 @@
 [50]:https://colab.research.google.com/drive/1bURdkV_StTbTsYgisUPHaHJqeAr-hMGz?usp=sharing
 [51]:https://github.com/wassim249/fastapi-langgraph-agent-production-ready-template
 [52]:https://github.com/transformerlab/transformerlab-app
+[53]:https://github.com/NicholasGoh/fastapi-mcp-langgraph-template
+[54]:https://composio.dev/blog/langchain-mcp-adapter-a-step-by-step-guide-to-build-mcp-agents/

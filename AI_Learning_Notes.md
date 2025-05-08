@@ -4,7 +4,8 @@
 ### Document Parsing
 * [Docling][42]
 
-### Encoders (for Embeddings)
+### Embeding
+* [Word2Vec: Faster & Lighter Embedding][55] 
 * [ColBERT][26]
   * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
   * ColBERT uses the MaxSim operation, which computes the maximum semantic similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.
@@ -178,3 +179,4 @@
 [52]:https://github.com/transformerlab/transformerlab-app
 [53]:https://github.com/NicholasGoh/fastapi-mcp-langgraph-template
 [54]:https://composio.dev/blog/langchain-mcp-adapter-a-step-by-step-guide-to-build-mcp-agents/
+[55]:https://github.com/MinishLab/model2vec

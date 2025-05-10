@@ -72,6 +72,9 @@
 * [Srcbook - Prompt to build an app][46], the app is written in TypeScript, you can also edit the generated code, supports both web and mobile app
 * [Khoj - A Few Clicks to Create Your Own Agents][15]
 
+### AI Models
+* [Mistral AI Classifiers][56]
+  * "Utilize our small yet highly efficient models and training methods to develop custom classifiers for moderation, intent detection, sentiment analysis, data clustering, fraud detection, spam filtering, recommendation systems, etc."
 
 ## LLM Visualization
 * [Visually to understand LLM models in detail][28] 💖
@@ -180,3 +183,4 @@
 [53]:https://github.com/NicholasGoh/fastapi-mcp-langgraph-template
 [54]:https://composio.dev/blog/langchain-mcp-adapter-a-step-by-step-guide-to-build-mcp-agents/
 [55]:https://github.com/MinishLab/model2vec
+[56]:https://www.linkedin.com/posts/mistralai_classifier-factory-mistral-ai-large-language-activity-7318357052580339714-kXSz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk

@@ -1,6 +1,6 @@
 # AI Learning Notes
 
-## Promising to Explore
+## 🍀Promising to Explore
 ### Document Parsing
 * [Docling][42]
 
@@ -36,6 +36,13 @@
   * [Explain how does chunking work][22] 
   * [LangChain's Text Spliter][13] vs [Chonkie][14]
   * [Langchain has more options for embeddings, retrievers, etc.][16]
+* [Extend RAG with RCA (Root Cause Analysis)][57] 🌟
+  * Input error code --> causal knowledge graph --> output causes
+  * To build causal knowledge graph (RAG & RCA):
+    * Retriever: Retrieves documents such as failure reports, maintenance logs, expert knowledge, etc.
+    * Generator: Reads the retrieved text and generates structured causal relationships.
+    * These relationships are added to the causal knowledge graph.
+  * If input can't find knowledge in the causal knowledge graph, go through RAG & RCA process.
 
 ### Agents
 * [Browser Use - Allow agents to interact with the browser][23]
@@ -76,11 +83,11 @@
 * [Mistral AI Classifiers][56]
   * "Utilize our small yet highly efficient models and training methods to develop custom classifiers for moderation, intent detection, sentiment analysis, data clustering, fraud detection, spam filtering, recommendation systems, etc."
 
-## LLM Visualization
+### LLM Visualization
 * [Visually to understand LLM models in detail][28] 💖
 
 
-## LangChain Universe 😉
+## 🍀LangChain Universe 😉
 * [LangChain's RAG chatbot][24], much better than its tutorials, it allows to use different LLMs and can write code for you! 💖
 * [LangSmith Cookbook][8], different ways to test & evaluate & optimization
   * LangServer is replaced by LangGraph
@@ -92,40 +99,14 @@
 * [LangGraph github][9]: build agent workflows
 * [LangGraph Basics][17]: how to use Time Travel, Human in the Loop, etc.
 * [LangGraph exercise][11] 💖
-
-
-## LlamaIndex Examples
-* [LlamaIndex Examples][2]
-* [Emsemble Retriever][4]
-  * LlamaIndex specific 📍
-  * It can retrieve data from different sources 
-* [Retrieval][1]
-  * File retriever vs Chunk retriever
-    * File-level retrieval is useful for handling user questions that require the entire document context to properly answer the question. It can be slower and more expensive than chunk level retrieval. 
-  * Build an agent to decide file-level or chunk-level retrieving
-  * Auto Retrieval: How to make file-level retrieval more sophisticated by allowing the LLM to infer a set of metadata filters, based on some relevant example documents
-    * [How does auto retrieval work][5]
-    * [Specific example of auto retrieval][6]
-      * It generates inferred query, also generates inferred filters <b>based on real examples from the text</b>
-      * If the user query is too shot, how does this inferred query look like? 🤔
-    * 🌟 Inspiration: build an agent using auto retrieval at doc level and chunk level
-* [Subquestion Query Engine][3]
-  * Break down a complex query into sub queries
-* [Corrective RAG Workflow][7]
-  * It uses LLM to evaluate the retrieval relevancy, for non-relevant nodes (chunks), it uses LLM to adjust the query to improve its search performance and search the info online.
-  * 🌟 Inspirations:
-    * The LLM prompt to check retrieval relevancy
-    * LLM to transform the query to improve search performance
-    * Searching online can be an option when the retrieved node is irrelevant
-  * Does this method guarantee the online searched resluts are more relevant than the "irrelevant node"? 🤔
-
  
-## LlamaIndex vs Langchain
+### LlamaIndex vs Langchain
 * [DataCamp Comparison][10]
   * LlamaIndex is good at indexing large datasets and retrieving relevant information quickly and accurately --> use it when information retrieval is critica
   * Langchain is modular, flexible to customize
   * 🌟 Inspirations:
     * How about use LlamaIndex for retrieval and use Langchain for others in LangGraph 🤔
+
 
 
 [1]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/10k_apple_tesla/demo_file_retrieval.ipynb
@@ -184,3 +165,4 @@
 [54]:https://composio.dev/blog/langchain-mcp-adapter-a-step-by-step-guide-to-build-mcp-agents/
 [55]:https://github.com/MinishLab/model2vec
 [56]:https://www.linkedin.com/posts/mistralai_classifier-factory-mistral-ai-large-language-activity-7318357052580339714-kXSz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[57]:https://blog.fltech.dev/entry/2025/04/16/rca-plm-ja

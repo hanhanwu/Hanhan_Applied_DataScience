@@ -1,6 +1,10 @@
 # AI Learning Notes
 
 ## 🍀Promising to Explore
+
+### Prompt Engineering
+* [Prompt methods with reasoning][58]
+
 ### Document Parsing
 * [Docling][42]
 
@@ -166,3 +170,4 @@
 [55]:https://github.com/MinishLab/model2vec
 [56]:https://www.linkedin.com/posts/mistralai_classifier-factory-mistral-ai-large-language-activity-7318357052580339714-kXSz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [57]:https://blog.fltech.dev/entry/2025/04/16/rca-plm-ja
+[58]:https://www.linkedin.com/posts/akshay-pachaar_3-prompting-techniques-for-reasoning-in-llms-activity-7333793371729076224-vMkF?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk

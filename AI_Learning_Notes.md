@@ -57,6 +57,8 @@
 
 ### Architecture
 * [FastAPI & MCP & LangGraph Template][53]
+* <b>GCP</b>
+  * [GCP multi-agent systems][60]
 
 ### Evaluation
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
@@ -173,3 +175,4 @@
 [57]:https://blog.fltech.dev/entry/2025/04/16/rca-plm-ja
 [58]:https://www.linkedin.com/posts/akshay-pachaar_3-prompting-techniques-for-reasoning-in-llms-activity-7333793371729076224-vMkF?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [59]:https://qdrant.tech/articles/what-is-a-vector-database/
+[60]:https://cloud.google.com/blog/products/ai-machine-learning/build-and-manage-multi-system-agents-with-vertex-ai

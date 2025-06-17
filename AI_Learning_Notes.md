@@ -56,6 +56,7 @@
 * [Build MCP Agents with Langchain][54]
 
 ### Architecture
+* [syftr: Find Optimal Agentic Workflow][61]
 * [FastAPI & MCP & LangGraph Template][53]
 * <b>GCP</b>
   * [GCP multi-agent systems][60]
@@ -176,3 +177,4 @@
 [58]:https://www.linkedin.com/posts/akshay-pachaar_3-prompting-techniques-for-reasoning-in-llms-activity-7333793371729076224-vMkF?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [59]:https://qdrant.tech/articles/what-is-a-vector-database/
 [60]:https://cloud.google.com/blog/products/ai-machine-learning/build-and-manage-multi-system-agents-with-vertex-ai
+[61]:https://github.com/datarobot/syftr

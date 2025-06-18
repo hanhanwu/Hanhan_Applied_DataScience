@@ -8,8 +8,7 @@
 ### Document Parsing
 * [Docling][42]
 
-### Embeding
-* [How does Vector Database work][59]
+### Embedding
 * [Word2Vec: Faster & Lighter Embedding][55] 
 * [ColBERT][26]
   * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
@@ -56,6 +55,8 @@
 * [Build MCP Agents with Langchain][54]
 
 ### Architecture
+* [How does Vector Database work][59]
+  * [The VectorDB improved key words search's efficiency and effectiveness][62] 
 * [syftr: Find Optimal Agentic Workflow][61]
 * [FastAPI & MCP & LangGraph Template][53]
 * <b>GCP</b>
@@ -178,3 +179,4 @@
 [59]:https://qdrant.tech/articles/what-is-a-vector-database/
 [60]:https://cloud.google.com/blog/products/ai-machine-learning/build-and-manage-multi-system-agents-with-vertex-ai
 [61]:https://github.com/datarobot/syftr
+[62]:https://github.com/weaviate/weaviate

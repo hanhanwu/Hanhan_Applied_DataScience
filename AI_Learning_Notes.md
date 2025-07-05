@@ -69,6 +69,10 @@
   * Check the video, it shows how could you get python code for this
 * [Opik: trace RAG workflow & evaluate LLM apps][34]
 
+### Open Source RAGs
+* [LangConnect-Client][63]
+  * [LangConnect][64] 
+
 ### LLM Model Fine Tuning
 * [Transformer Lab: Experiment with Fine Tuning LLM Models][52]
 * [How to fine tune DeepSeek R1][30]
@@ -180,3 +184,5 @@
 [60]:https://cloud.google.com/blog/products/ai-machine-learning/build-and-manage-multi-system-agents-with-vertex-ai
 [61]:https://github.com/datarobot/syftr
 [62]:https://github.com/weaviate/weaviate
+[63]:https://github.com/teddynote-lab/LangConnect-Client
+[64]:https://github.com/langchain-ai/langconnect

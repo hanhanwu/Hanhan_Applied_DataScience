@@ -47,6 +47,7 @@
     * Generator: Reads the retrieved text and generates structured causal relationships.
     * These relationships are added to the causal knowledge graph.
   * If input can't find knowledge in the causal knowledge graph, go through RAG & RCA process.
+  * [How did the KG was built][65], hypergraph
 
 ### Agents
 * [Browser Use - Allow agents to interact with the browser][23]
@@ -186,3 +187,4 @@
 [62]:https://github.com/weaviate/weaviate
 [63]:https://github.com/teddynote-lab/LangConnect-Client
 [64]:https://github.com/langchain-ai/langconnect
+[65]:https://blog-en.fltech.dev/entry/2025/06/02/kgla-en

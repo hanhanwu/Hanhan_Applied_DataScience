@@ -53,6 +53,11 @@
   * [How did the KG was built][65], hypergraph
 
 ### Agents
+* [Tips for Context Engineering from Langchain][67]
+  * Write context
+  * Select context
+  * Compress context
+  * Isolate context 
 * [Browser Use - Allow agents to interact with the browser][23]
 * [Agentic AI Design Patterns][27]
 * [FastAPI Langgraph Agent Production Ready Code Template][51]
@@ -192,3 +197,4 @@
 [64]:https://github.com/langchain-ai/langconnect
 [65]:https://blog-en.fltech.dev/entry/2025/06/02/kgla-en
 [66]:https://www.linkedin.com/posts/activity-7351026313387782144-fGJ2?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[67]:https://blog.langchain.com/context-engineering-for-agents/

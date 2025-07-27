@@ -4,6 +4,8 @@
 
 ### Synthetic Data
 * [SynthLLM: Generate Synthetic Q&A with LLM and graph][66]
+* [Simulate Social Behaviours with Agents][68]
+  * [The paper][69] 
 
 ### Prompt Engineering
 * [Prompt methods with reasoning][58]
@@ -198,3 +200,5 @@
 [65]:https://blog-en.fltech.dev/entry/2025/06/02/kgla-en
 [66]:https://www.linkedin.com/posts/activity-7351026313387782144-fGJ2?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [67]:https://blog.langchain.com/context-engineering-for-agents/
+[68]:https://github.com/tsinghua-fib-lab/agentsociety/
+[69]:https://aclanthology.org/2025.acl-industry.94.pdf

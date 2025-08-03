@@ -74,6 +74,7 @@
   * [GCP multi-agent systems][60]
 
 ### Evaluation
+* [Beyond A/B Test - Different production tests methods for model performance][70]
 * [Trustworthy Language Model (TLM)][20], [reduce Hallucinations][21] for any LLM
   * [Use TLM in LangChain][25]
 * [VertaxAI Search: grounding for Gemini RAG][33]
@@ -202,3 +203,4 @@
 [67]:https://blog.langchain.com/context-engineering-for-agents/
 [68]:https://github.com/tsinghua-fib-lab/agentsociety/
 [69]:https://aclanthology.org/2025.acl-industry.94.pdf
+[70]:https://www.linkedin.com/posts/avi-chawla_4-ways-to-test-ml-models-in-production-activity-7357713588267991042-kGq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk

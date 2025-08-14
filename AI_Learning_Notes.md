@@ -14,7 +14,9 @@
 * [Docling][42]
 
 ### Embedding
-* [Model2Vec: Faster & Lighter Embedding][55] 
+* [Model2Vec: Faster & Lighter Embedding][55]
+  * Static Embedding method, which means each token has fixed representation and therefore not context aware. This is also why this type of model is fast.
+  * Because it's not context aware, can be less accurate 
 * [ColBERT][26]
   * Enables more effective retrieval than bi-encoder, more efficient than cross-encoder
   * ColBERT uses the MaxSim operation, which computes the maximum semantic similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.

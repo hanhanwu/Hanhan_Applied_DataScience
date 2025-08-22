@@ -97,6 +97,7 @@
   * [Example code][50]
  
 ### AI Application Deployment
+* [Beta9 - Deploy AI Application in Serverless Manner][71]
 * [Ray Serve: Deploy AI application with scale][31]
   * [Ray Serve with Langchain][32]
   * [Ray Serve LLM][47]
@@ -206,3 +207,4 @@
 [68]:https://github.com/tsinghua-fib-lab/agentsociety/
 [69]:https://aclanthology.org/2025.acl-industry.94.pdf
 [70]:https://www.linkedin.com/posts/avi-chawla_4-ways-to-test-ml-models-in-production-activity-7357713588267991042-kGq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[71]:https://github.com/beam-cloud/beta9

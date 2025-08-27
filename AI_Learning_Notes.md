@@ -5,7 +5,11 @@
 ### Synthetic Data
 * [SynthLLM: Generate Synthetic Q&A with LLM and graph][66]
 * [Simulate Social Behaviours with Agents][68]
-  * [The paper][69] 
+  * [The paper][69]
+ 
+### Knowledge Graph
+* [Financial KG][73]
+  * [The KG this paper has built][72], the load this file into KG tools to extract knowledge
 
 ### Prompt Engineering
 * [Prompt methods with reasoning][58]
@@ -208,3 +212,5 @@
 [69]:https://aclanthology.org/2025.acl-industry.94.pdf
 [70]:https://www.linkedin.com/posts/avi-chawla_4-ways-to-test-ml-models-in-production-activity-7357713588267991042-kGq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [71]:https://github.com/beam-cloud/beta9
+[72]:https://anonymous.4open.science/r/KG-Financial-Datasets-SP-100-529B/README.md
+[73]:https://arxiv.org/pdf/2508.17906

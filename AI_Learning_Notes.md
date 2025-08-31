@@ -18,6 +18,8 @@
 * [Docling][42]
 
 ### Embedding
+* [Contextualized Chunk Embeddings][74]
+  * [Performance comparison with a few other embedding models][75] 
 * [Model2Vec: Faster & Lighter Embedding][55]
   * Static Embedding method, which means each token has fixed representation and therefore not context aware. This is also why this type of model is fast.
   * Because it's not context aware, can be less accurate 
@@ -214,3 +216,5 @@
 [71]:https://github.com/beam-cloud/beta9
 [72]:https://anonymous.4open.science/r/KG-Financial-Datasets-SP-100-529B/README.md
 [73]:https://arxiv.org/pdf/2508.17906
+[74]:https://docs.voyageai.com/docs/contextualized-chunk-embeddings#quickstart
+[75]:https://blog.voyageai.com/2025/07/23/voyage-context-3/

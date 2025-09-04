@@ -18,6 +18,7 @@
 * [Docling][42]
 
 ### Embedding
+* [Google Deep Mind EmbeddingGemma][76] - Small, Fast, on-device/offline, supports multilingual embedding.
 * [Contextualized Chunk Embeddings][74]
   * [Performance comparison with a few other embedding models][75] 
 * [Model2Vec: Faster & Lighter Embedding][55]
@@ -218,3 +219,4 @@
 [73]:https://arxiv.org/pdf/2508.17906
 [74]:https://docs.voyageai.com/docs/contextualized-chunk-embeddings#quickstart
 [75]:https://blog.voyageai.com/2025/07/23/voyage-context-3/
+[76]:https://developers.googleblog.com/en/introducing-embeddinggemma/

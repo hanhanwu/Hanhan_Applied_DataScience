@@ -91,6 +91,7 @@
 * [Opik: trace RAG workflow & evaluate LLM apps][34]
 
 ### Open Source RAGs
+* [RAG-Anything][77]: all-in-one context-aware multimodal processing 
 * [LangConnect-Client][63]
   * [LangConnect][64] 
 
@@ -220,3 +221,4 @@
 [74]:https://docs.voyageai.com/docs/contextualized-chunk-embeddings#quickstart
 [75]:https://blog.voyageai.com/2025/07/23/voyage-context-3/
 [76]:https://developers.googleblog.com/en/introducing-embeddinggemma/
+[77]:https://github.com/HKUDS/RAG-Anything

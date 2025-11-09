@@ -41,6 +41,7 @@
 
 ### RAG Alternatives
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
+  * [RAG + CAG][82]: RAG retrieval & CAG's KV-cache layer (for faster reusable memory), letting the model carry forward context, reasoning traces, and prior outputs.
 * [Zep][36]
   * "Build AI agents that continually learn. Power personalized experiences."
   * It uses temporal knowledge graph
@@ -236,3 +237,4 @@
 [79]:https://arxiv.org/pdf/2510.04618
 [80]:https://arxiv.org/pdf/2510.04618
 [81]:https://www.linkedin.com/posts/akshay-pachaar_heres-a-common-misconception-about-rag-activity-7393265204421304320-T0jf?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[82]:https://www.linkedin.com/posts/brijpandeyji_most-people-talk-about-rag-as-if-its-the-activity-7392913035993972736-hUgL/?utm_medium=ios_app&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk&utm_source=social_share_send&utm_campaign=mail

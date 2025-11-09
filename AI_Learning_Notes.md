@@ -24,6 +24,9 @@
 ### Document Parsing
 * [Docling][42]
 
+### Indexing
+* [Different indexing methods for RAG][81]
+
 ### Embedding
 * [Google Deep Mind EmbeddingGemma][76] - Small, Fast, on-device/offline, supports multilingual embedding.
 * [Contextualized Chunk Embeddings][74]
@@ -232,3 +235,4 @@
 [78]:https://www.linkedin.com/posts/activity-7386157423780216832-UGme/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [79]:https://arxiv.org/pdf/2510.04618
 [80]:https://arxiv.org/pdf/2510.04618
+[81]:https://www.linkedin.com/posts/akshay-pachaar_heres-a-common-misconception-about-rag-activity-7393265204421304320-T0jf?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk

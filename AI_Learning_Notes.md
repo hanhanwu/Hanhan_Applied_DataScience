@@ -28,6 +28,7 @@
 * [Different indexing methods for RAG][81]
 
 ### Embedding
+* [Hugging Face Embedding Models Leaderboard to Find Top Embedding Models][85]
 * [Google Deep Mind EmbeddingGemma][76] - Small, Fast, on-device/offline, supports multilingual embedding.
 * [Contextualized Chunk Embeddings][74]
   * [Performance comparison with a few other embedding models][75] 
@@ -246,3 +247,4 @@
 [82]:https://www.linkedin.com/posts/brijpandeyji_most-people-talk-about-rag-as-if-its-the-activity-7392913035993972736-hUgL/?utm_medium=ios_app&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk&utm_source=social_share_send&utm_campaign=mail
 [83]:https://github.com/microsoft/agent-lightning
 [84]:https://github.com/openpipe/ART
+[85]:https://huggingface.co/spaces/mteb/leaderboard?benchmark_name=RTEB%28beta%29&utm_source=fnf&utm_medium=linkedin&utm_term=achawla&utm_content=embedding-leaderboard-rteb%28beta%29

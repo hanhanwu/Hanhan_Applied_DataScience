@@ -75,6 +75,12 @@
   * [How did the KG was built][65], hypergraph
 
 ### Agents
+* [Microsoft Agent Lightning][83]
+  * Build with ANY agent framework
+  * Selectively optimize one or more agents in a multi-agent system
+  * Embraces Algorithms like Reinforcement Learning, Automatic Prompt Optimization, Supervised Fine-tuning and more
+* [ART - Agent Reinforcement Trainer][84]
+  * ART is an open-source RL framework that improves agent reliability by allowing LLMs to learn from experience.  
 * [Tips for Context Engineering from Langchain][67]
   * Write context
   * Select context
@@ -238,3 +244,5 @@
 [80]:https://arxiv.org/pdf/2510.04618
 [81]:https://www.linkedin.com/posts/akshay-pachaar_heres-a-common-misconception-about-rag-activity-7393265204421304320-T0jf?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
 [82]:https://www.linkedin.com/posts/brijpandeyji_most-people-talk-about-rag-as-if-its-the-activity-7392913035993972736-hUgL/?utm_medium=ios_app&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk&utm_source=social_share_send&utm_campaign=mail
+[83]:https://github.com/microsoft/agent-lightning
+[84]:https://github.com/openpipe/ART

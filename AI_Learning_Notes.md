@@ -15,6 +15,7 @@
 * [Prompt methods with reasoning][58]
 
 ### Context Engineering Solutions
+* [TOON Format for Token Efficiency][86], can be used in context
 * [ARQ (Attentive Reasoning Queries)][78]
   * It creates structured context ("guidelines" or "journey"), selecting the most relevant context, add into the prompt and execute at the step where needs the context
 * [AEC (Agentic Context Engine)][80], [the paper][79]
@@ -248,3 +249,4 @@
 [83]:https://github.com/microsoft/agent-lightning
 [84]:https://github.com/openpipe/ART
 [85]:https://huggingface.co/spaces/mteb/leaderboard?benchmark_name=RTEB%28beta%29&utm_source=fnf&utm_medium=linkedin&utm_term=achawla&utm_content=embedding-leaderboard-rteb%28beta%29
+[86]:https://github.com/toon-format/toon

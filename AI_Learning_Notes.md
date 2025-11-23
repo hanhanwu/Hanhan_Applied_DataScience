@@ -6,6 +6,8 @@
 * [SynthLLM: Generate Synthetic Q&A with LLM and graph][66]
 * [Simulate Social Behaviours with Agents][68]
   * [The paper][69]
+* [Verbalized Sampling - A prompting strategy to improve LLM output's diversity][87]
+  * [The paper][88] 
  
 ### Knowledge Graph
 * [Financial KG][73]
@@ -250,3 +252,5 @@
 [84]:https://github.com/openpipe/ART
 [85]:https://huggingface.co/spaces/mteb/leaderboard?benchmark_name=RTEB%28beta%29&utm_source=fnf&utm_medium=linkedin&utm_term=achawla&utm_content=embedding-leaderboard-rteb%28beta%29
 [86]:https://github.com/toon-format/toon
+[87]:https://github.com/CHATS-lab/verbalized-sampling
+[88]:https://arxiv.org/pdf/2510.01171

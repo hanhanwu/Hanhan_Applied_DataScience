@@ -6,15 +6,15 @@
 * [SynthLLM: Generate Synthetic Q&A with LLM and graph][66]
 * [Simulate Social Behaviours with Agents][68]
   * [The paper][69]
-* [Verbalized Sampling - A prompting strategy to improve LLM output's diversity][87]
-  * [The paper][88] 
  
 ### Knowledge Graph
 * [Financial KG][73]
   * [The KG this paper has built][72], the load this file into KG tools to extract knowledge
 
-### Prompt Engineering
+### Prompt Engineering & Prompt Strategy
 * [Prompt methods with reasoning][58]
+* [Verbalized Sampling - A prompting strategy to improve LLM output's diversity][87]
+  * [The paper][88] 
 
 ### Context Engineering Solutions
 * [TOON Format for Token Efficiency][86], can be used in context

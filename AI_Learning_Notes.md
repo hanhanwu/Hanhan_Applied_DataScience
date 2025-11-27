@@ -8,6 +8,8 @@
   * [The paper][69]
  
 ### Knowledge Graph
+* [FalkorDB: Build Fast Knowledge Graph][89]
+  * https://github.com/FalkorDB/FalkorDB 
 * [Financial KG][73]
   * [The KG this paper has built][72], the load this file into KG tools to extract knowledge
 
@@ -156,14 +158,10 @@
 * [LangGraph github][9]: build agent workflows
 * [LangGraph Basics][17]: how to use Time Travel, Human in the Loop, etc.
 * [LangGraph exercise][11] 💖
- 
-### LlamaIndex vs Langchain
-* [DataCamp Comparison][10]
-  * LlamaIndex is good at indexing large datasets and retrieving relevant information quickly and accurately --> use it when information retrieval is critica
-  * Langchain is modular, flexible to customize
-  * 🌟 Inspirations:
-    * How about use LlamaIndex for retrieval and use Langchain for others in LangGraph 🤔
 
+### Strategy
+* The content here can be more political...
+* [Google Whitepaper: POC to Production][90], more for GCP to build AI agent
 
 
 [1]:https://github.com/run-llama/llamacloud-demo/blob/main/examples/10k_apple_tesla/demo_file_retrieval.ipynb
@@ -254,3 +252,5 @@
 [86]:https://github.com/toon-format/toon
 [87]:https://github.com/CHATS-lab/verbalized-sampling
 [88]:https://arxiv.org/pdf/2510.01171
+[89]:[https://github.com/FalkorDB/FalkorDB](https://www.linkedin.com/posts/akshay-pachaar_microsoft-google-aws-everyones-trying-activity-7398702041004503041-kJgu?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk)
+[90]:https://www.kaggle.com/whitepaper-prototype-to-production

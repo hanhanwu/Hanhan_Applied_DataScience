@@ -7,6 +7,9 @@
 * [Simulate Social Behaviours with Agents][68]
   * [The paper][69]
  
+### Benchmark Datasets
+* [VeganRibs benchmark][91] tests an LLM's skill at handling conflicts by seeing if it can follow system-level instructions even when a user's input tries to contradict them.
+ 
 ### Knowledge Graph
 * [FalkorDB: Build Fast Knowledge Graph][89]
   * https://github.com/FalkorDB/FalkorDB 
@@ -254,3 +257,4 @@
 [88]:https://arxiv.org/pdf/2510.01171
 [89]:[https://github.com/FalkorDB/FalkorDB](https://www.linkedin.com/posts/akshay-pachaar_microsoft-google-aws-everyones-trying-activity-7398702041004503041-kJgu?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk)
 [90]:https://www.kaggle.com/whitepaper-prototype-to-production
+[91]:https://huggingface.co/datasets/itayhf/security_steerability

@@ -84,6 +84,10 @@
   * [How did the KG was built][65], hypergraph
 
 ### Agents
+* [Agentic Postgres][92]
+    * Agentic Postgres enables agents not just to interact with the database but also understand how to use it well.
+    * With 10+ years of Postgres experience and distilled it into a set of built-in master prompts, it gives agents safe, structured access to the database through high-level tools for schema design, query tuning, migrations, and more.
+    * The MCP server also performs native full-text and semantic search over the Postgres docs, so agents can instantly retrieve the right context as they think.  
 * [Microsoft Agent Lightning][83]
   * Build with ANY agent framework
   * Selectively optimize one or more agents in a multi-agent system
@@ -163,7 +167,6 @@
 * [LangGraph exercise][11] 💖
 
 ### Strategy
-* The content here can be more political...
 * [Google Whitepaper: POC to Production][90], more for GCP to build AI agent
 
 
@@ -258,3 +261,4 @@
 [89]:[https://github.com/FalkorDB/FalkorDB](https://www.linkedin.com/posts/akshay-pachaar_microsoft-google-aws-everyones-trying-activity-7398702041004503041-kJgu?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk)
 [90]:https://www.kaggle.com/whitepaper-prototype-to-production
 [91]:https://huggingface.co/datasets/itayhf/security_steerability
+[92]:https://www.tigerdata.com/blog/postgres-for-agents

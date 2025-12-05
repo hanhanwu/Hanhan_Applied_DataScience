@@ -12,7 +12,16 @@
  
 ### Knowledge Graph
 * [FalkorDB: Build Fast Knowledge Graph][89]
-  * https://github.com/FalkorDB/FalkorDB 
+  * https://github.com/FalkorDB/FalkorDB
+* [Extend RAG with RCA (Root Cause Analysis)][57] 🌟
+  * Input error code --> causal knowledge graph --> output causes
+  * To build causal knowledge graph (RAG & RCA):
+    * Retriever: Retrieves documents such as failure reports, maintenance logs, expert knowledge, etc.
+    * Generator: Reads the retrieved text and generates structured causal relationships.
+    * These relationships are added to the causal knowledge graph.
+  * If input can't find knowledge in the causal knowledge graph, go through RAG & RCA process.
+  * [How did the KG was built][65], hypergraph
+  * [How does Fujitsu' causal analysis work with knowledge graph and LLM][93]
 * [Financial KG][73]
   * [The KG this paper has built][72], the load this file into KG tools to extract knowledge
 
@@ -74,14 +83,6 @@
   * [Explain how does chunking work][22] 
   * [LangChain's Text Spliter][13] vs [Chonkie][14]
   * [Langchain has more options for embeddings, retrievers, etc.][16]
-* [Extend RAG with RCA (Root Cause Analysis)][57] 🌟
-  * Input error code --> causal knowledge graph --> output causes
-  * To build causal knowledge graph (RAG & RCA):
-    * Retriever: Retrieves documents such as failure reports, maintenance logs, expert knowledge, etc.
-    * Generator: Reads the retrieved text and generates structured causal relationships.
-    * These relationships are added to the causal knowledge graph.
-  * If input can't find knowledge in the causal knowledge graph, go through RAG & RCA process.
-  * [How did the KG was built][65], hypergraph
 
 ### Agents
 * [Agentic Postgres][92]
@@ -262,3 +263,4 @@
 [90]:https://www.kaggle.com/whitepaper-prototype-to-production
 [91]:https://huggingface.co/datasets/itayhf/security_steerability
 [92]:https://www.tigerdata.com/blog/postgres-for-agents
+[93]:https://blog-en.fltech.dev/entry/2025/10/22/causalai-causal-action-optimization-en

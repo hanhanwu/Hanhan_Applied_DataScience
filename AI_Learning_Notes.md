@@ -11,6 +11,7 @@
 * [VeganRibs benchmark][91] tests an LLM's skill at handling conflicts by seeing if it can follow system-level instructions even when a user's input tries to contradict them.
  
 ### Knowledge Graph
+* [kg-gen][94] converts any plain text into knowledge graph
 * [FalkorDB: Build Fast Knowledge Graph][89]
   * https://github.com/FalkorDB/FalkorDB
 * [Extend RAG with RCA (Root Cause Analysis)][57] 🌟
@@ -264,3 +265,4 @@
 [91]:https://huggingface.co/datasets/itayhf/security_steerability
 [92]:https://www.tigerdata.com/blog/postgres-for-agents
 [93]:https://blog-en.fltech.dev/entry/2025/10/22/causalai-causal-action-optimization-en
+[94]:https://github.com/stair-lab/kg-gen

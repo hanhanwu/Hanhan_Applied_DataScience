@@ -58,14 +58,8 @@
   * ColBERT uses the MaxSim operation, which computes the maximum semantic similarity between query and document token embeddings. This allows for <b>fine-grained matching at the token level</b>, leading to better relevance estimation, especially <b>in cases where specific terms in the query are critical for retrieval</b>.
   * [How to use ColBERT in RAG][43]
 
-### RAG Alternatives
-* [CAG (Cache-augmented generation), a faster alternative for RAG][19]
-  * [RAG + CAG][82]: RAG retrieval & CAG's KV-cache layer (for faster reusable memory), letting the model carry forward context, reasoning traces, and prior outputs.
-* [Zep][36]
-  * "Build AI agents that continually learn. Power personalized experiences."
-  * It uses temporal knowledge graph
-
 ### RAG Techniques
+* BM25 is effective in exact keyword matching --> BM25 + vector search --> better semantic search + keywords search
 * [RAG Techniques][18]
 * [LangChain bRAG][39]
   * [Query Translation][40] 💖
@@ -84,6 +78,13 @@
   * [Explain how does chunking work][22] 
   * [LangChain's Text Spliter][13] vs [Chonkie][14]
   * [Langchain has more options for embeddings, retrievers, etc.][16]
+
+### RAG Alternatives
+* [CAG (Cache-augmented generation), a faster alternative for RAG][19]
+  * [RAG + CAG][82]: RAG retrieval & CAG's KV-cache layer (for faster reusable memory), letting the model carry forward context, reasoning traces, and prior outputs.
+* [Zep][36]
+  * "Build AI agents that continually learn. Power personalized experiences."
+  * It uses temporal knowledge graph
 
 ### Agents
 * [Agentic Postgres][92]

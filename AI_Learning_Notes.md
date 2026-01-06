@@ -9,6 +9,8 @@
  
 ### Benchmark Datasets
 * [VeganRibs benchmark][91] tests an LLM's skill at handling conflicts by seeing if it can follow system-level instructions even when a user's input tries to contradict them.
+* [DSR-Bench][95] is a benchmark for LLMs designed to test their structural reasoning ability: the ability to understand and manipulate data according to specific relationships such as order, hierarchy, and connectivity.
+  * [the data][96] 
  
 ### Knowledge Graph
 * [kg-gen][94] converts any plain text into knowledge graph
@@ -267,3 +269,5 @@
 [92]:https://www.tigerdata.com/blog/postgres-for-agents
 [93]:https://blog-en.fltech.dev/entry/2025/10/22/causalai-causal-action-optimization-en
 [94]:https://github.com/stair-lab/kg-gen
+[95]:https://github.com/dransyhe/DSR-Bench
+[96]:https://huggingface.co/collections/vitercik-lab/dsr-bench

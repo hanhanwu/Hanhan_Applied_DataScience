@@ -37,7 +37,7 @@
 * [TOON Format for Token Efficiency][86], can be used in context
 * [ARQ (Attentive Reasoning Queries)][78]
   * It creates structured context ("guidelines" or "journey"), selecting the most relevant context, add into the prompt and execute at the step where needs the context
-* [AEC (Agentic Context Engine)][80], [the paper][79]
+* [ACE (Agentic Context Engine)][80], [the paper][79]
   * ACE works by maintaining a structured, evolving playbook of discrete knowledge "bullets", selecting the most relevant ones for each task, feeding them to the LLM as context, and updating the playbook over time based on task feedback.
   * We can imagine each "bullets" is like a JSON file that stores the context and the meta data
 

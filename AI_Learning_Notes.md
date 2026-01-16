@@ -82,6 +82,9 @@
   * [Langchain has more options for embeddings, retrievers, etc.][16]
 
 ### RAG Alternatives
+* [UniversalRAG][97] for multimodal data
+  * Adaptive Granularity Unit: adaptive chunking (by sematicly coherent section) for each madality (media format)
+  * 2 layer retrieval: coarse --> fine retrieval
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
   * [RAG + CAG][82]: RAG retrieval & CAG's KV-cache layer (for faster reusable memory), letting the model carry forward context, reasoning traces, and prior outputs.
 * [Zep][36]
@@ -271,3 +274,4 @@
 [94]:https://github.com/stair-lab/kg-gen
 [95]:https://github.com/dransyhe/DSR-Bench
 [96]:https://huggingface.co/collections/vitercik-lab/dsr-bench
+[97]:https://arxiv.org/abs/2504.20734

@@ -10,7 +10,8 @@
 ### Benchmark Datasets
 * [VeganRibs benchmark][91] tests an LLM's skill at handling conflicts by seeing if it can follow system-level instructions even when a user's input tries to contradict them.
 * [DSR-Bench][95] is a benchmark for LLMs designed to test their structural reasoning ability: the ability to understand and manipulate data according to specific relationships such as order, hierarchy, and connectivity.
-  * [the data][96] 
+  * [the data][96]
+* [FinanceBench - Finance QA data][98]
  
 ### Knowledge Graph
 * [kg-gen][94] converts any plain text into knowledge graph
@@ -62,6 +63,8 @@
 
 ### RAG Techniques
 * BM25 is effective in exact keyword matching --> BM25 + vector search --> better semantic search + keywords search
+* [PageIndex - Retrieval based on content structure, no embedding, no chunking][99]
+  * It might work better on complex documents that need multi-step reasoning, such as FinanceBench 
 * [RAG Techniques][18]
 * [LangChain bRAG][39]
   * [Query Translation][40] 💖
@@ -275,3 +278,5 @@
 [95]:https://github.com/dransyhe/DSR-Bench
 [96]:https://huggingface.co/collections/vitercik-lab/dsr-bench
 [97]:https://arxiv.org/abs/2504.20734
+[98]:https://huggingface.co/datasets/PatronusAI/financebench
+[99]:https://github.com/VectifyAI/PageIndex/tree/main

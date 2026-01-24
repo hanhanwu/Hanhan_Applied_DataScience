@@ -50,6 +50,9 @@
 
 ### Embedding
 * [Hugging Face Embedding Models Leaderboard to Find Top Embedding Models][85]
+* [MangoDB Voyage-4 embedding Models family share the same embedding vector space][100], reducing the serving cost when changing embedding models within the family
+  * Voyage-4-large also activates only the experts relevant to each input, which preserves retrieval quality while reducing compute per query.
+  * Serving cost includes document re-embedding, chunk re-computing, vector re-generation
 * [Google Deep Mind EmbeddingGemma][76] - Small, Fast, on-device/offline, supports multilingual embedding.
 * [Contextualized Chunk Embeddings][74]
   * [Performance comparison with a few other embedding models][75] 
@@ -280,3 +283,4 @@
 [97]:https://arxiv.org/abs/2504.20734
 [98]:https://huggingface.co/datasets/PatronusAI/financebench
 [99]:https://github.com/VectifyAI/PageIndex/tree/main
+[100]:https://www.linkedin.com/posts/avi-chawla_100-thats-how-much-data-you-re-index-when-activity-7420752228048822272-mY5n?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk

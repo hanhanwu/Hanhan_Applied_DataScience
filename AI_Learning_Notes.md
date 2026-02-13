@@ -91,6 +91,7 @@
 * [UniversalRAG][97] for multimodal data
   * Adaptive Granularity Unit: adaptive chunking (by sematicly coherent section) for each madality (media format)
   * 2 layer retrieval: coarse --> fine retrieval
+* [RAG-Anything][101] also supports multi-modal
 * [CAG (Cache-augmented generation), a faster alternative for RAG][19]
   * [RAG + CAG][82]: RAG retrieval & CAG's KV-cache layer (for faster reusable memory), letting the model carry forward context, reasoning traces, and prior outputs.
 * [Zep][36]
@@ -284,3 +285,4 @@
 [98]:https://huggingface.co/datasets/PatronusAI/financebench
 [99]:https://github.com/VectifyAI/PageIndex/tree/main
 [100]:https://www.linkedin.com/posts/avi-chawla_100-thats-how-much-data-you-re-index-when-activity-7420752228048822272-mY5n?utm_source=share&utm_medium=member_desktop&rcm=ACoAABUa5xMBAWvx7L2IKhfsBuLjhTEWJhTYoNk
+[101]:https://github.com/HKUDS/RAG-Anything

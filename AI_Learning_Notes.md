@@ -198,7 +198,7 @@
 [11]:https://github.com/hanhanwu/Hanhan_LangGraph_Exercise
 [12]:https://smith.langchain.com/hub/
 [13]:https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/
-[14]:https://docs.chonkie.ai/chunkers/overview
+[14]:[https://docs.chonkie.ai/chunkers/overview](https://docs.chonkie.ai/oss/chunkers/overview)
 [15]:https://app.khoj.dev/agents
 [16]:https://python.langchain.com/docs/integrations/text_embedding/
 [17]:https://langchain-ai.github.io/langgraph/tutorials/introduction/
